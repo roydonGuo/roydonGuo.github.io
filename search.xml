@@ -25,6 +25,16 @@
       
       
       
+        <tags>
+            
+            <tag> Redis </tag>
+            
+            <tag> Redis-cli </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -46,9 +56,9 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -68,9 +78,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
