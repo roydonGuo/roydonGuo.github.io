@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>roydon</title>
   <icon>https://www.gravatar.com/avatar/1f7db1d1028f88f34a35f0165ae44600</icon>
-  <subtitle>希望你所做的能换来你所想拥有的一切</subtitle>
+  
   <link href="https://roydonguo.github.io/atom.xml" rel="self"/>
   
   <link href="https://roydonguo.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://roydonguo.github.io/</id>
   
   <author>
-    <name>Roydon</name>
+    <name>roydon</name>
     <email>3133010060@qq.com</email>
   </author>
   
