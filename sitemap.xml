@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://roydonguo.github.io/changebg/index.html</loc>
+    
+    <lastmod>2022-08-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/Gallery/wallpaper/index.html</loc>
+    
+    <lastmod>2022-08-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/Gallery/index.html</loc>
+    
+    <lastmod>2022-08-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/link/index.html</loc>
+    
+    <lastmod>2022-08-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydonguo.github.io/posts/Hello.html</loc>
     
     <lastmod>2022-08-21</lastmod>
@@ -21,24 +57,6 @@
   
   <url>
     <loc>https://roydonguo.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-08-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/Gallery/index.html</loc>
-    
-    <lastmod>2022-08-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/link/index.html</loc>
     
     <lastmod>2022-08-21</lastmod>
     
