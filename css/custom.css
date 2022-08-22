@@ -14,6 +14,39 @@
   font-weight: lighter;
 }
 
+/* 上一篇 || 下一篇 */
+#pagination.pagination-post {
+  background: transparent;
+
+}
+
+#pagination.pagination-post a:hover {
+  color: hotpink;
+  font-size: 19px;
+}
+
+.article-sort-item-img {
+  border-radius: 8px;
+}
+
+/* 相关推荐 */
+.relatedPosts>.relatedPosts-list>div {
+  border-radius: 8px;
+  border: 2px solid pink;
+}
+
+.relatedPosts>.relatedPosts-list>div a:hover {
+  font-size: 16px;
+}
+
+div#post {
+  border: 2px solid pink;
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+  background: hotpink
+}
+
 div#menus {
   font-family: 'ZhuZiAYuanJWD';
 }
@@ -52,7 +85,9 @@ svg.icon {
 .icon-zhongbiao::before {
   color: #f7c768;
 }
-
+.tk-meta-input .el-input-group__prepend {
+  background-color: pink;
+}
 /* bilibli番剧插件 */
 .bangumi-active {
   background: #dbecfe !important;

@@ -1339,8 +1339,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #d2ebfd;
-  --hr-before-color: #bfe4fb;
+  --hr-border: #80ffff;
+  --hr-before-color: #4dffff;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -1353,7 +1353,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #fe07c4;
+  --btn-hover-color: #ff69b4;
   --btn-color: #fff;
   --btn-bg: #ffc0cb;
   --text-bg-hover: rgba(255,192,203,0.7);
@@ -1367,7 +1367,7 @@ canvas:not(#ribbon-canvas),
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #fe07c4;
+  --pseudo-hover: #ff69b4;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
 }
@@ -1478,7 +1478,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #00c4b6;
+  background: #ff69b4;
   color: #f7f7f7;
 }
 button {
@@ -3387,7 +3387,6 @@ h1.page-title + .tag-cloud-list {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #ffc0cb;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3401,7 +3400,6 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
   content: '';
 }
 #page-header.full_page {
@@ -3432,7 +3430,6 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #page-header #site-subtitle {
-  color: var(--light-grey);
   font-size: 1.15em;
 }
 @media screen and (min-width: 768px) {
@@ -3453,7 +3450,6 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header #site_social_icons .social-icon {
   margin: 0 10px;
-  color: var(--light-grey);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
   font-size: 1.43em;
 }
@@ -3466,7 +3462,6 @@ h1.page-title + .tag-cloud-list {
 #page-header #scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
-  color: var(--light-grey);
   font-size: 30px;
 }
 #page-header.not-home-page {
@@ -3495,9 +3490,6 @@ h1.page-title + .tag-cloud-list {
   #page-header.post-bg {
     height: 360px;
   }
-}
-#page-header.post-bg:before {
-  background-color: rgba(0,0,0,0.5);
 }
 #page-header #post-info {
   position: absolute;
@@ -3753,7 +3745,6 @@ h1.page-title + .tag-cloud-list {
   padding: 0;
   width: max-content;
   border-radius: 5px;
-  background-color: var(--sidebar-bg);
   -webkit-box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   -webkit-animation: sub_menus 0.3s 0.1s ease both;
@@ -3837,7 +3828,7 @@ h1.page-title + .tag-cloud-list {
   text-align: center;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: #ffc0cb;
   color: var(--white);
 }
 #pagination .pagination-info {
@@ -3916,7 +3907,7 @@ h1.page-title + .tag-cloud-list {
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: ##371FE;
+  color: #800080;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -4502,7 +4493,7 @@ h1.page-title + .tag-cloud-list {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #ffc0cb;
-  --waline-active-color: #fe07c4;
+  --waline-active-color: #ff69b4;
 }
 #waline-wrap .vuser {
   -webkit-transition: all 0.5s;

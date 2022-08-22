@@ -11,7 +11,7 @@
 }
 
 #page-header.post-bg {
-    height: 250px;
+    height: 200px;
     background-image: ''
 }
 #page-header #post-info {
@@ -22,7 +22,7 @@
     text-align: center;
 }
 #page-header.not-home-page {
-    height: 250px;
+    height: 200px;
 }
 #page-header #page-site-info {
     position: absolute;
