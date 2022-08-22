@@ -4,6 +4,9 @@
   font-display: swap;
   font-weight: lighter;
 } */
+
+/* @import "//at.alicdn.com/t/c/font_3603575_86n1rki3ukk.css"; */
+
 @font-face {
   font-family: ZhuZiAYuanJWD;
   src: url(https://cdn.cbd.int/anzhiyu-blog@latest/fonts/ZhuZiAWan.woff2);
@@ -390,80 +393,12 @@ div#category {
   border-radius: 10px;
 }
 
-@import "//at.alicdn.com/t/c/font_3603575_uxkr2cn65j.css";
 
-@font-face {
-  font-family: 'iconfont';
-  src: url('iconfont.eot');
-  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
-    url('iconfont.woff') format('woff'),
-    url('iconfont.ttf') format('truetype'),
-    url('iconfont.svg#iconfont') format('svg');
-}
 
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 1em;
-  /* 可以定义图标大小 */
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* 若已经在项目设置中勾选了彩色选项，则无需再定义图标颜色*/
-.icon-rat:before {
-  color: #85c3de;
-}
-
-.icon-ox:before {
-  color: #ffaf6e;
-}
-
-.icon-tiger:before {
-  color: #f7c768;
-}
-
-.icon-rabbit:before {
-  color: #ffbdd8;
-}
-
-.icon-dragon:before {
-  color: #ff8787;
-}
-
-.icon-snake:before {
-  color: #c3d686;
-}
-
-.icon-horse:before {
-  color: #ffaf6e;
-}
-
-.icon-goat:before {
-  color: #f7c768;
-}
-
-.icon-monkey:before {
-  color: #c3d686;
-}
-
-.icon-rooster:before {
-  color: #ff8787;
-}
-
-.icon-dog:before {
-  color: #85c3de;
-}
-
-.icon-boar:before {
-  color: #ffbdd8;
+.social-qq:before {
+  content: "\e626";
+  /* 修改颜色 */
+  /* color: blue; */
+  /* 修改大小 */
+  font-size: 24px;
 }
