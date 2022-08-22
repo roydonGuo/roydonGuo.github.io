@@ -47,3 +47,17 @@
 #ghbdages{
     margin: 0 auto;
 }
+#recent-posts > .recent-post-item .post_cover {
+    border-radius: 8px;
+}
+#recent-posts > .recent-post-item {
+    height: 15em;
+}
+#aside-content .aside-list > .aside-list-item .thumbnail > img {
+    border-radius: 8px;
+}
+#aside-content .card-info #card-info-btn {
+    border-radius: 8px;
+    margin: 14px 30px;
+
+}
