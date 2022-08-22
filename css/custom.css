@@ -13,6 +13,13 @@
   font-display: swap;
   font-weight: lighter;
 }
+.bangumi-item .bangumi-picture img{
+  border-radius: 6px;
+}
+/* 主页中间博客名位置 */
+#page-header.full_page #site-info {
+  top: 38%;
+}
 
 /* 上一篇 || 下一篇 */
 #pagination.pagination-post {
@@ -85,9 +92,11 @@ svg.icon {
 .icon-zhongbiao::before {
   color: #f7c768;
 }
+
 .tk-meta-input .el-input-group__prepend {
   background-color: pink;
 }
+
 /* bilibli番剧插件 */
 .bangumi-active {
   background: #dbecfe !important;
@@ -279,10 +288,33 @@ div#category {
 
 .twikoo {
   box-shadow: 2px 2px 5px #bbb;
-  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  background: rgba(221, 183, 215, 0.8);
   border-radius: 8px;
   padding: 30px;
   margin: 30px 0px 0px 0px;
+}
+
+.twikoo .el-input__inner:hover,
+.twikoo .el-textarea__inner:hover {
+  border-color: rgba(255, 0, 25, 0.5);
+}
+
+.twikoo input {
+  color: black;
+}
+
+.tk-content::before {
+  border-right: 15px solid hotpink;
+  top: 6px;
+}
+
+.tk-content {
+  background: hotpink;
+  padding: 1px 20px;
+}
+.tk-content p{
+  margin: 6px 6px;
 }
 
 /* 鼠标图标 */
