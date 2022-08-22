@@ -198,28 +198,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/manifest.json"/>
-      <url>/manifest.json</url>
-      
-        <content type="html"><![CDATA[{"name":"Roydon`Blog","short_name":"roydon","theme_color":"#49b1f5","background_color":"#49b1f5","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>相册</title>
-      <link href="/Gallery/index.html"/>
-      <url>/Gallery/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images7.alphacoders.com/108/thumbbig-1081742.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">电脑壁纸</div>  <p>皑如山上雪</p>  <a href='/Gallery/wallpaper'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images6.alphacoders.com/124/thumbbig-1245752.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">二刺螈</div>  <p>二刺螈</p>  <a href='/Gallery/twospace'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images3.alphacoders.com/118/thumbbig-1180467.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">手机壁纸</div>  <p>皎若云间月</p>  <a href='/Gallery/phone'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images6.alphacoders.com/117/thumbbig-1173817.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">原神</div>  <p>原神</p>  <a href='/Gallery/genshin'></a>  </figcaption>  </figure>  </div><div class="note pink icon-padding modern"><i class="note-icon fas fa-bullhorn"></i><p>2023快到了……</p></div><div class="tabs" id="$"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#$-1"><i class="fas fa-bomb"></i>描述</button></li><li class="tab"><button type="button" data-href="#$-2">友情链接</button></li><li class="tab"><button type="button" data-href="#$-3">关于</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="$-1"><p><strong><mark class="hl-label default">先帝</mark> 创业未半，而<mark class="hl-label blue">中道崩殂</mark> 。今天下三分，<mark class="hl-label pink">益州疲敝</mark> ，此诚<mark class="hl-label red">危急存亡之秋</mark> 也！然侍衞之臣，不懈于内；<mark class="hl-label purple">忠志之士</mark> ，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="$-2"><p><strong>This is 友情链接.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="$-3"><p><strong>This is 关于.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><p><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"><br><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"></p><div class="timeline red"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>8-21</p></div></div><div class='timeline-item-content'><img class="inline-img" src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg" style="height:100px"/><img class="inline-img" src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg" style="height:100px"/></div></div></div><div class="timeline pink"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>08-20</p></div></div><div class='timeline-item-content'><div class="fj-gallery"><p><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"><br><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"></p>          </div></div></div></div><div class="flink"><div class="flink-name">友情链接</div><div class="flink-desc">那些人，那些事</div> <div class="flink-list">          <div class="flink-list-item">            <a href="https://jerryc.me/" title="JerryC" target="_blank">              <div class="flink-item-icon">                <img class="no-lightbox" src="https://jerryc.me/img/avatar.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="JerryC" />              </div>              <div class="flink-item-name">JerryC</div>               <div class="flink-item-desc" title="今日事,今日毕">今日事,今日毕</div>            </a>          </div>          <div class="flink-list-item">            <a href="https://hexo.io/zh-tw/" title="Hexo" target="_blank">              <div class="flink-item-icon">                <img class="no-lightbox" src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="Hexo" />              </div>              <div class="flink-item-name">Hexo</div>               <div class="flink-item-desc" title="快速、简单且强大的网誌框架">快速、简单且强大的网誌框架</div>            </a>          </div></div></div><div class="btn-center"><a class="btn-beautify outline pink larger" href="https://github.com/roydonGuo/roydonGuo.github.io"   title="github"><i class="far fa-hand-point-right"></i><span>github</span></a></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -243,21 +221,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/changebg.css"/>
-      <url>/css/changebg.css</url>
+      <link href="/css/opacity.css"/>
+      <url>/css/opacity.css</url>
       
-        <content type="html"><![CDATA[/* 由于全屏会出bug，所以直接给他隐藏 */.winbox {    border-radius: 12px;    overflow: hidden;}.wb-full {    display: none;}.wb-min {    background-position: center;}[data-theme='dark'] .wb-body,[data-theme='dark'] #changeBgBox {    background: #333 !important;}.bgbox {    display: flex;    flex-wrap: wrap;    justify-content: space-between;}.pimgbox,.imgbox,.box {    width: 166px;    margin: 10px;    background-size: cover}.pimgbox,.imgbox {    border-radius: 10px;    overflow: hidden;}.pimgbox {    height: 240px;}.imgbox {    height: 95px;}.box {    height: 100px;}/* 老用户如果不再使用页面版可删除下面代码 *//* #color {    border: none;    background: transparent;    width: 166px;    height: 110px;    margin: 5px 10px;    position: relative;    cursor: pointer;}#color::before {    position: absolute;    color: rgb(255, 255, 255);    left: 38px;    top: 44px;    content: '自定义颜色';} */@media screen and (max-width: 768px) {    /* 背景 */    .pimgbox,    .imgbox,    .box {        height: 73px;        width: 135px;    }    .pimgbox {        height: 205px;    }    /* 老用户如果不再使用页面版可删除下面代码 */    /* #color {        width: 141px;        height: 83px;        margin: 7px;    }    #color::before {        left: 33px;        top: 33px;    }     */    /* 2.0新增内容 */        .wb-min {        display: none;    }    #changeBgBox .wb-body::-webkit-scrollbar {        display: none;    }}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/changebg.js"/>
-      <url>/js/changebg.js</url>
-      
-        <content type="html"><![CDATA[// 存数据// name：命名 data：数据function saveData(name, data) {    localStorage.setItem(name, JSON.stringify({ 'time': Date.now(), 'data': data }))}// 取数据// name：命名 time：过期时长,单位分钟,如传入30,即加载数据时如果超出30分钟返回0,否则返回数据function loadData(name, time) {    let data = JSON.parse(localStorage.getItem(name));    // 过期或有错误返回 0    let t = 0    if (data != null) t = Date.now() - data.time    if (t < time * 60 * 1000 && t > 0) return data.data;    // 没过期返回数据    return 0;}// 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用// 读取背景try {    let data = loadData('blogbg', 1440)    if (data) changeBg(data, 1)    else localStorage.removeItem('blogbg');} catch (error) { localStorage.removeItem('blogbg'); }// 切换背景函数// 此处的flag是为了每次读取时都重新存储一次,导致过期时间不稳定// 如果flag为0则存储,即设置背景. 为1则不存储,即每次加载自动读取背景.function changeBg(s, flag) {    let bg = document.getElementById('web_bg')    if (s.charAt(0) == '#') {        bg.style.backgroundColor = s        bg.style.backgroundImage = 'none'    } else bg.style.backgroundImage = s    if (!flag) { saveData('blogbg', s) }}// 以下为2.0新增内容// 创建窗口var winbox = ''function createWinbox() {    winbox = WinBox({        id: 'changeBgBox',        index: 999,        title: "切换背景",        x: "center",        y: "center",        minwidth: '300px',        height: "60%",        background: 'var(--leonus-blue)'    });    winResize();    window.addEventListener('resize', winResize)    // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义    winbox.body.innerHTML = `    <div id="article-container" style="padding:10px;">        <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>    <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>    </div>        <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_1920x1080.jpg)" class="imgbox" onclick="changeBg('url(https\://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_1920x1080.jpg)')"></a>    </div>                <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>    </div>        <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>     </div>`;}// 适应窗口大小function winResize() {    var offsetWid = document.documentElement.clientWidth;    if (offsetWid <= 768) {        winbox.resize(offsetWid * 0.95 + "px", "70%").move("center", "center");    } else {        winbox.resize(offsetWid * 0.6 + "px", "70%").move("center", "center");    }}// 切换状态，窗口已创建则控制窗口显示和隐藏，没窗口则创建窗口function toggleWinbox() {    if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');    else createWinbox();}]]></content>
+        <content type="html"><![CDATA[/* .aside-card-widget {    background-color: rgba(255, 255, 255, 0.8)    }#recent-posts>.recent-post-item {    background-color: rgba(255, 255, 255, 0.8)} */:root {    --blockquote-color: #333;    --card-bg: rgba(250, 250, 250, .75);}#page-header.post-bg {    height: 250px;}#page-header #post-info {    position: absolute;    bottom: 30px;    padding: 0 8%;    width: 100%;    text-align: center;}#page-header.not-home-page {    height: 250px;}#page-header #page-site-info {    position: absolute;    top: 90px;    padding: 0 10px;    width: 100%;}/* .pagination-post>.prev-post{    border-radius: 8px;} */.pagination-post>.prev-post ,.pull-left,.next-post .pull-right{    border-radius: 8px;}.framework-info{    display: none;}#footer-wrap {    padding: 0px 20px}#ghbdages{    margin: 0 auto;}]]></content>
       
     </entry>
     
@@ -275,22 +242,55 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/manifest.json"/>
+      <url>/manifest.json</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[{"name":"Roydon`Blog","short_name":"roydon","theme_color":"#49b1f5","background_color":"#49b1f5","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>原神</title>
-      <link href="/Gallery/genshin/index.html"/>
-      <url>/Gallery/genshin/index.html</url>
+      <title></title>
+      <link href="/css/changebg.css"/>
+      <url>/css/changebg.css</url>
       
-        <content type="html"><![CDATA[<div class="fj-gallery"><p><img src="https://images2.alphacoders.com/110/thumbbig-1109233.webp"><br><img src="https://images7.alphacoders.com/110/thumbbig-1107308.webp"><br><img src="https://images4.alphacoders.com/112/thumbbig-1129086.webp"><br><img src="https://images4.alphacoders.com/112/thumbbig-1129086.webp"></p>          </div>]]></content>
+        <content type="html"><![CDATA[.winbox {    border-radius: 12px;    overflow: hidden;}.wb-full {    display: none;}.wb-min {    background-position: center;}[data-theme='dark'] .wb-body,[data-theme='dark'] #changeBgBox {    background: #333 !important;}.bgbox {    display: flex;    flex-wrap: wrap;    justify-content: space-between;}.pimgbox,.imgbox,.box {    width: 166px;    margin: 10px;    background-size: cover}.pimgbox,.imgbox {    border-radius: 10px;    overflow: hidden;}.pimgbox {    height: 240px;}.imgbox {    height: 95px;}.box {    height: 100px;}/* 老用户如果不再使用页面版可删除下面代码 *//* #color {    border: none;    background: transparent;    width: 166px;    height: 110px;    margin: 5px 10px;    position: relative;    cursor: pointer;}#color::before {    position: absolute;    color: rgb(255, 255, 255);    left: 38px;    top: 44px;    content: '自定义颜色';} */@media screen and (max-width: 768px) {    /* 背景 */    .pimgbox,    .imgbox,    .box {        height: 73px;        width: 135px;    }    .pimgbox {        height: 205px;    }    /* 老用户如果不再使用页面版可删除下面代码 */    /* #color {        width: 141px;        height: 83px;        margin: 7px;    }    #color::before {        left: 33px;        top: 33px;    }     */    /* 2.0新增内容 */        .wb-min {        display: none;    }    #changeBgBox .wb-body::-webkit-scrollbar {        display: none;    }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>相册</title>
+      <link href="/Gallery/index.html"/>
+      <url>/Gallery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images7.alphacoders.com/108/thumbbig-1081742.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">电脑壁纸</div>  <p>皑如山上雪</p>  <a href='/Gallery/wallpaper'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images6.alphacoders.com/124/thumbbig-1245752.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">二刺螈</div>  <p>二刺螈</p>  <a href='/Gallery/twospace'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images3.alphacoders.com/118/thumbbig-1180467.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">手机壁纸</div>  <p>皎若云间月</p>  <a href='/Gallery/phone'></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://images6.alphacoders.com/117/thumbbig-1173817.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">原神</div>  <p>原神</p>  <a href='/Gallery/genshin'></a>  </figcaption>  </figure>  </div><div class="note pink icon-padding modern"><i class="note-icon fas fa-bullhorn"></i><p>2023快到了……</p></div><div class="tabs" id="$"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#$-1"><i class="fas fa-bomb"></i>描述</button></li><li class="tab"><button type="button" data-href="#$-2">友情链接</button></li><li class="tab"><button type="button" data-href="#$-3">关于</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="$-1"><p><strong><mark class="hl-label default">先帝</mark> 创业未半，而<mark class="hl-label blue">中道崩殂</mark> 。今天下三分，<mark class="hl-label pink">益州疲敝</mark> ，此诚<mark class="hl-label red">危急存亡之秋</mark> 也！然侍衞之臣，不懈于内；<mark class="hl-label purple">忠志之士</mark> ，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="$-2"><p><strong>This is 友情链接.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="$-3"><p><strong>This is 关于.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><p><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"><br><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"></p><div class="timeline red"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>8-21</p></div></div><div class='timeline-item-content'><img class="inline-img" src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg" style="height:100px"/><img class="inline-img" src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg" style="height:100px"/></div></div></div><div class="timeline pink"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2022</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>08-20</p></div></div><div class='timeline-item-content'><div class="fj-gallery"><p><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"><br><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"></p>          </div></div></div></div><div class="flink"><div class="flink-name">友情链接</div><div class="flink-desc">那些人，那些事</div> <div class="flink-list">          <div class="flink-list-item">            <a href="https://jerryc.me/" title="JerryC" target="_blank">              <div class="flink-item-icon">                <img class="no-lightbox" src="https://jerryc.me/img/avatar.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="JerryC" />              </div>              <div class="flink-item-name">JerryC</div>               <div class="flink-item-desc" title="今日事,今日毕">今日事,今日毕</div>            </a>          </div>          <div class="flink-list-item">            <a href="https://hexo.io/zh-tw/" title="Hexo" target="_blank">              <div class="flink-item-icon">                <img class="no-lightbox" src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="Hexo" />              </div>              <div class="flink-item-name">Hexo</div>               <div class="flink-item-desc" title="快速、简单且强大的网誌框架">快速、简单且强大的网誌框架</div>            </a>          </div></div></div><div class="btn-center"><a class="btn-beautify outline pink larger" href="https://github.com/roydonGuo/roydonGuo.github.io"   title="github"><i class="far fa-hand-point-right"></i><span>github</span></a></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/changebg.js"/>
+      <url>/js/changebg.js</url>
+      
+        <content type="html"><![CDATA[// 存数据// name：命名 data：数据function saveData(name, data) {    localStorage.setItem(name, JSON.stringify({ 'time': Date.now(), 'data': data }))}// 取数据// name：命名 time：过期时长,单位分钟,如传入30,即加载数据时如果超出30分钟返回0,否则返回数据function loadData(name, time) {    let data = JSON.parse(localStorage.getItem(name));    // 过期或有错误返回 0    let t = 0    if (data != null) t = Date.now() - data.time    if (t < time * 60 * 1000 && t > 0) return data.data;    // 没过期返回数据    return 0;}// 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用// 读取背景try {    let data = loadData('blogbg', 1440)    if (data) changeBg(data, 1)    else localStorage.removeItem('blogbg');} catch (error) { localStorage.removeItem('blogbg'); }// 切换背景函数// 此处的flag是为了每次读取时都重新存储一次,导致过期时间不稳定// 如果flag为0则存储,即设置背景. 为1则不存储,即每次加载自动读取背景.function changeBg(s, flag) {    let bg = document.getElementById('web_bg')    if (s.charAt(0) == '#') {        bg.style.backgroundColor = s        bg.style.backgroundImage = 'none'    } else bg.style.backgroundImage = s    if (!flag) { saveData('blogbg', s) }}// 以下为2.0新增内容// 创建窗口var winbox = ''function createWinbox() {    winbox = WinBox({        id: 'changeBgBox',        index: 999,        title: "切换背景",        x: "center",        y: "center",        minwidth: '300px',        height: "60%",        background: 'var(--leonus-blue)'    });    winResize();    window.addEventListener('resize', winResize)    // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义    winbox.body.innerHTML = `    <div id="article-container" style="padding:10px;">        <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>    <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>    </div>        <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_1920x1080.jpg)" class="imgbox" onclick="changeBg('url(https\://cn.bing.com/th?id=OHR.GBRTurtle_ZH-CN6069093254_1920x1080.jpg)')"></a>    </div>                <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>    </div>        <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>    <div class="bgbox">    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>     </div>`;}// 适应窗口大小function winResize() {    var offsetWid = document.documentElement.clientWidth;    if (offsetWid <= 768) {        winbox.resize(offsetWid * 0.95 + "px", "70%").move("center", "center");    } else {        winbox.resize(offsetWid * 0.6 + "px", "70%").move("center", "center");    }}// 切换状态，窗口已创建则控制窗口显示和隐藏，没窗口则创建窗口function toggleWinbox() {    if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');    else createWinbox();}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -313,6 +313,17 @@
       <url>/Gallery/wallpaper/index.html</url>
       
         <content type="html"><![CDATA[<div class="fj-gallery"><p><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"><br><img src="https://i.postimg.cc/7ZG40xjr/mc-bg-o1.jpg"></p>          </div><!-- 切换壁纸的js --><!-- <script>let time = ''let imgbox = document.querySelector('.fj-gallery')imgbox.addEventListener('contextmenu', e => e.preventDefault())imgbox.addEventListener('dragend', e => { changeBg('url(' + e.target.src + ')'); })imgbox.addEventListener('touchstart', e => { time = setTimeout(() => { changeBg('url(' + e.target.src + ')'); }, 500); })imgbox.addEventListener('touchend', clearTimeout(time))</script> -->]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>原神</title>
+      <link href="/Gallery/genshin/index.html"/>
+      <url>/Gallery/genshin/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="fj-gallery"><p><img src="https://images2.alphacoders.com/110/thumbbig-1109233.webp"><br><img src="https://images7.alphacoders.com/110/thumbbig-1107308.webp"><br><img src="https://images4.alphacoders.com/112/thumbbig-1129086.webp"><br><img src="https://images4.alphacoders.com/112/thumbbig-1129086.webp"></p>          </div>]]></content>
       
     </entry>
     
