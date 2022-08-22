@@ -12,6 +12,7 @@
 
 #page-header.post-bg {
     height: 250px;
+    background-image: ''
 }
 #page-header #post-info {
     position: absolute;
