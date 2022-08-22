@@ -7,8 +7,7 @@
     background-color: rgba(255, 255, 255, 0.8)
 } */
 :root {
-    --blockquote-color: #333;
-    --card-bg: rgba(250, 250, 250, .75);
+    --card-bg: rgba(250, 250, 250, .8);
 }
 
 #page-header.post-bg {
