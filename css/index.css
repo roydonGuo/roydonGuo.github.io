@@ -1337,7 +1337,7 @@ canvas:not(#ribbon-canvas),
 }
 :root {
   --global-font-size: 14px;
-  --global-bg: #fff;
+  --global-bg: #231a1a;
   --font-color: #4c4948;
   --hr-border: #80ffff;
   --hr-before-color: #4dffff;
@@ -1374,6 +1374,7 @@ canvas:not(#ribbon-canvas),
 body {
   position: relative;
   min-height: 100%;
+  background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto,  "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
@@ -3386,9 +3387,6 @@ h1.page-title + .tag-cloud-list {
 #page-header {
   position: relative;
   width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3399,6 +3397,7 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: rgba(0,0,0,0.3);
   content: '前面的区域以后再来探索吧';
   color: #000;
 }
@@ -3454,6 +3453,7 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header #site_social_icons .social-icon {
   margin: 0 10px;
+  color: var(--light-grey);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
   font-size: 1.43em;
 }
@@ -3466,6 +3466,7 @@ h1.page-title + .tag-cloud-list {
 #page-header #scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
+  color: var(--light-grey);
   font-size: 30px;
 }
 #page-header.not-home-page {
@@ -3524,13 +3525,13 @@ h1.page-title + .tag-cloud-list {
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
 #page-header.not-top-img #nav a {
+  color: var(--font-color);
   text-shadow: none;
 }
 #page-header.nav-fixed #nav {
   position: fixed;
   top: -60px;
   z-index: 91;
-  background: rgba(255,255,255,0.8);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -3693,6 +3694,9 @@ h1.page-title + .tag-cloud-list {
   display: none;
   padding: 2px 0 0 6px;
   vertical-align: top;
+}
+#nav #toggle-menu:hover {
+  color: var(--white);
 }
 #nav a {
   color: var(--light-grey);
