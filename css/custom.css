@@ -22,6 +22,10 @@
 #page-header.full_page #site-info {
   top: 38%;
 }
+.card-category-list,.card-tag-cloud{
+  border: 2px solid hotpink;
+  border-radius: 8px;
+}
 
 /* 上一篇 || 下一篇 */
 #pagination.pagination-post {
@@ -33,11 +37,43 @@
   color: hotpink;
   font-size: 19px;
 }
-
-.article-sort-item-img {
+.layout > div:not(.recent-posts) .pagination .page-number {
+  margin: 0 4px;
+  min-width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 600;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid hotpink;
+  border-radius: 8px;
+}
+/* 导航栏隐藏 */
+/* .menus_item_child{
+  color: white;
+} */
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover, #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
   border-radius: 8px;
 }
 
+.article-sort-item-img {
+  border-radius: 8px;
+  width: 180px;
+  margin-right: 10px;
+}
+.article-sort-item-info{
+  border-left: 4px solid black;
+  border-radius: 20px;
+}
+.article-sort-item-title{
+  font-weight: 900;
+  font-size: 20px;
+}
+.article-sort-item-title:hover{
+  color: hotpink;
+}
 /* 相关推荐 */
 .relatedPosts>.relatedPosts-list>div {
   border-radius: 8px;
@@ -53,7 +89,8 @@ div#post {
 }
 
 #aside-content #card-toc .toc-content .toc-link.active {
-  background: hotpink
+  background: hotpink;
+  border-radius: 8px;
 }
 
 div#menus {
@@ -152,39 +189,72 @@ svg.icon.faa-tada {
 #post>.post-content {
   font-weight: 600;
 }
+
+/* 最新文章图标 */
+.newPost-left,
+.newPost-right {
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 0 15px;
+  background-color: pink;
+  border-radius: 0 0 10px 10px;
+  border: 1px groove hotpink;
+}
+
+.newPost-left {
+  left: 15px;
+}
+
+.newPost-right {
+  right: 15px;
+}
+
+#recent-posts>.recent-post-item {
+  position: relative;
+}
+
 /* 魔改标签 */
-.tag-cloud-list{
+.tag-cloud-list {
   border-radius: 8px;
   border: 2px solid hotpink;
 }
-.tag-cloud-list a{
+
+.tag-cloud-list a {
   border-radius: 8px;
   margin: 5px 5px;
   border: 1px solid transparent;
 }
+
 #aside-content .card-info .author-info__name {
   font-weight: 900;
   font-size: 1.99em;
 }
+
 /* 公告栏 */
 .aside-content .item-headline:first-child {
   color: hotpink;
   font-weight: 800;
 }
-.announcement_content{
+
+.announcement_content {
   font-weight: 700;
 }
-.recent-posts .recent-post-item .content{
-  font-family: 'STXingkai','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.recent-posts .recent-post-item .content {
+  font-family: 'STXingkai', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .aplayer .aplayer-miniswitcher {
   background-color: pink;
 }
+
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-miniswitcher .aplayer-icon {
   background: pink;
   opacity: .5;
-  
+
 }
+
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 #page-header:not(.not-top-img):before {
   /* background-color: transparent !important; */
@@ -378,13 +448,15 @@ div#category {
   padding: 30px;
   margin: 30px 0px 30px 0px;
 }
-
+#article-container a:hover {
+  color: blue;
+}
 /* 设置评论框 */
 
 .twikoo {
   box-shadow: 2px 2px 5px #bbb;
   color: black;
-  background: rgba(221, 183, 215, 0.8);
+  background: rgba(4, 148, 209, 0.8);
   border-radius: 8px;
   padding: 30px;
   margin: 30px 0px 0px 0px;

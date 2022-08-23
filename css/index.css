@@ -4649,11 +4649,11 @@ h1.page-title + .tag-cloud-list {
 .post-reward .reward-main {
   position: absolute;
   bottom: 40px;
-  left: 0;
+  left: -25%;
   z-index: 100;
   display: none;
   padding: 0 0 15px;
-  width: 100%;
+  width: 150%;
 }
 .post-reward .reward-main .reward-all {
   display: inline-block;
