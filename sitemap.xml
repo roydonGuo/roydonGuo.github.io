@@ -218,13 +218,6 @@
 
   
   <url>
-    <loc>https://roydonguo.github.io/tags/CSS/</loc>
-    <lastmod>2022-08-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://roydonguo.github.io/tags/js/</loc>
     <lastmod>2022-08-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -232,7 +225,7 @@
   </url>
   
   <url>
-    <loc>https://roydonguo.github.io/tags/hexo/</loc>
+    <loc>https://roydonguo.github.io/tags/CSS/</loc>
     <lastmod>2022-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -260,7 +253,7 @@
   </url>
   
   <url>
-    <loc>https://roydonguo.github.io/tags/HTML/</loc>
+    <loc>https://roydonguo.github.io/tags/hexo/</loc>
     <lastmod>2022-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -289,6 +282,13 @@
   
   <url>
     <loc>https://roydonguo.github.io/tags/API/</loc>
+    <lastmod>2022-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/tags/HTML/</loc>
     <lastmod>2022-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -140,14 +140,41 @@ svg.icon.faa-tada {
   background-color: transparent;
 }
 body{
-  background: rgba(94, 7, 56, 0.716);
+  /* background: rgba(18, 13, 13, 0.5) ; */
+  /* background: url('https://img1.imgtp.com/2022/08/23/BZFyrPa2.jpeg') repeat left center; */
   /* background: url('https://img1.imgtp.com/2022/08/23/624er98D.png') no-repeat center; */
 }
 /* nav 设置透明 */
 #page-header.nav-fixed #nav {
-  background: rgba(60, 49, 57, 0.83)
+  background: rgba(60, 49, 57, 0.8)
 }
-
+#page-header.not-top-img #nav {
+  background: rgba(32, 30, 30, 0.8);
+}
+/* 文章总览修改 */
+.article-sort-title {
+  font-size: 2.33em;
+  font-weight: 900;
+}
+#post .tag_share .post-meta__tags {
+  font-size: 0.9em;
+  border: 1px solid blueviolet;
+  color: hotpink;
+}
+#post .post-copyright {
+  color: hotpink;
+  background-color: rgba(24, 240, 255, 0.8);
+  border-radius: 8px;
+}
+/* 文章下面标签 */
+#post .tag_share .post-meta__tags:hover {
+  background: #ffc0cb;
+  color: cyan;
+  border: 1px solid cyan;
+}
+#pagination .page-number.current {
+  border-radius: 5px;
+}
 /* 首页文章卡片 */
 #recent-posts>.recent-post-item {
   background: rgba(255, 255, 255, 0.8);
@@ -229,6 +256,9 @@ div#category {
 
 #rightside>div>button {
   border-radius: 5px;
+}
+#recent-posts > .recent-post-item{
+  height: 14.5em;
 }
 
 /* 滚动条 */
