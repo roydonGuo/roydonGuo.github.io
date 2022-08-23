@@ -136,12 +136,16 @@ svg.icon.faa-tada {
 
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 #page-header:not(.not-top-img):before {
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
+  background-color: transparent;
 }
-
+body{
+  background: rgba(94, 7, 56, 0.716);
+  /* background: url('https://img1.imgtp.com/2022/08/23/624er98D.png') no-repeat center; */
+}
 /* nav 设置透明 */
 #page-header.nav-fixed #nav {
-  background: rgba(162, 141, 156, 0.83)
+  background: rgba(60, 49, 57, 0.83)
 }
 
 /* 首页文章卡片 */

@@ -3390,17 +3390,18 @@ h1.page-title + .tag-cloud-list {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
 }
 #page-header:not(.not-top-img):before {
   position: absolute;
   width: 100%;
   height: 100%;
-  content: '';
+  content: '前面的区域以后再来探索吧';
+  color: #000;
 }
 #page-header.full_page {
   height: 100vh;
@@ -3420,7 +3421,7 @@ h1.page-title + .tag-cloud-list {
   line-height: 1.5;
 }
 #page-header #site-title {
-  margin: 0;
+  margin: 0 auto;
   color: var(--white);
   font-size: 1.85em;
 }
@@ -3430,6 +3431,7 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #page-header #site-subtitle {
+  color: var(--light-grey);
   font-size: 1.15em;
 }
 @media screen and (min-width: 768px) {
@@ -3437,8 +3439,11 @@ h1.page-title + .tag-cloud-list {
     font-size: 1.72em;
   }
 }
+#page-header #site-subtitle:before {
+  content: '前面的区域以后再来探索吧';
+}
 #page-header #site_social_icons {
-  display: none;
+  display: block;
   margin: 0 auto;
   width: 300px;
   text-align: center;
@@ -3521,7 +3526,6 @@ h1.page-title + .tag-cloud-list {
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
 #page-header.not-top-img #nav a {
-  color: var(--font-color);
   text-shadow: none;
 }
 #page-header.nav-fixed #nav {
@@ -3540,7 +3544,6 @@ h1.page-title + .tag-cloud-list {
 #page-header.nav-fixed #nav a,
 #page-header.nav-fixed #nav #site-name,
 #page-header.nav-fixed #nav #toggle-menu {
-  color: var(--font-color);
   text-shadow: none;
 }
 #page-header.nav-fixed #nav a:hover,
@@ -3581,10 +3584,6 @@ h1.page-title + .tag-cloud-list {
 }
 #post > #post-info .post-title .post-edit-link {
   float: right;
-}
-#post > #post-info #post-meta,
-#post > #post-info #post-meta a {
-  color: #78818a;
 }
 #post-info .post-title {
   margin-bottom: 8px;
@@ -3745,6 +3744,7 @@ h1.page-title + .tag-cloud-list {
   padding: 0;
   width: max-content;
   border-radius: 5px;
+  background-color: var(--sidebar-bg);
   -webkit-box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   -webkit-animation: sub_menus 0.3s 0.1s ease both;
