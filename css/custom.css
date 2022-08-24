@@ -138,9 +138,15 @@ h1.post-title {
   font-weight: 800;
   font-size: 16px;
 }
+
 #aside-content .card-webinfo .webinfo .webinfo-item {
   padding: 0 10px;
 }
+
+/* 首页磁贴卡片美化 */
+
+
+
 /* .iconfont {
     font-family: 'iconfont' !important;
     font-size: 3em;
@@ -148,6 +154,18 @@ h1.post-title {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   } */
+#recent-posts>.recent-post-item {
+  border: 2px solid black;
+}
+
+#recent-posts>.recent-post-item:hover {
+  border: 2px solid pink;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-title:hover {
+  color: pink;
+  font-size: 1.80em;
+}
 
 /* 时间轴生肖icon */
 svg.icon {
