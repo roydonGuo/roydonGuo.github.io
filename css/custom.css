@@ -142,9 +142,22 @@ h1.post-title {
 #aside-content .card-webinfo .webinfo .webinfo-item {
   padding: 0 10px;
 }
+/* reward */
+.post-reward .reward-button .tip-button__text::after{
+  content: '(一键三联)';
+}
+
+
+/* blog-slider__img */
+.blog-slider__pagination .swiper-pagination-bullet {
+  background: #6b0a1a;
+  background: #6b0a1a;
+}
+.blog-slider__pagination .swiper-pagination-bullet-active{
+  background: #33040b;
+}
 
 /* 首页磁贴卡片美化 */
-
 
 
 /* .iconfont {
