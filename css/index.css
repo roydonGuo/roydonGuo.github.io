@@ -3377,7 +3377,7 @@ li.categoryBar-list-item:nth-child(2) {
   background: url('https://img1.imgtp.com/2022/08/24/tSMdJ5gW.png');
 }
 li.categoryBar-list-item:nth-child(3) {
-  background: rgba(45,67,89,0.7);
+  background: url('https://img1.imgtp.com/2022/08/25/VHTG8hyX.png');
 }
 li.categoryBar-list-item:nth-child(4) {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
@@ -3399,7 +3399,7 @@ li.categoryBar-list-item:nth-child(2)>span::after {
   content: '自学前端的那段日子' !important;
 }
 li.categoryBar-list-item:nth-child(3)>span::after {
-  content: '玩转Win10' !important;
+  content: '计算机网络；谢希仁第八版' !important;
 }
 li.categoryBar-list-item:nth-child(4)>span::after {
   content: 'Ubuntu指南' !important;

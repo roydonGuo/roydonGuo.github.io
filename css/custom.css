@@ -149,13 +149,13 @@ h1.post-title {
 
 
 /* blog-slider__img */
-.blog-slider__pagination .swiper-pagination-bullet {
+/* .blog-slider__pagination .swiper-pagination-bullet {
   background: #6b0a1a;
   background: #6b0a1a;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active{
   background: #33040b;
-}
+} */
 
 /* 首页磁贴卡片美化 */
 
@@ -252,21 +252,25 @@ svg.icon.faa-tada {
 #post>.post-content {
   font-weight: 600;
 }
-
+.contrib-number:hover{
+  color: rgb(253, 82, 167);
+}
 /* 最新文章图标 */
 .newPost-left,
 .newPost-right {
   position: absolute;
   top: 0;
   color: white;
-  padding: 0 15px;
+  font-weight: 900;
+  padding: 0 10px;
   background-color: pink;
   border-radius: 0 0 10px 10px;
   border: 1px groove hotpink;
+  border-top: 0;
 }
 
 .newPost-left {
-  left: 15px;
+  left: 50.3%;
 }
 
 .newPost-right {
