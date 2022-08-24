@@ -22,7 +22,9 @@
 #page-header.full_page #site-info {
   top: 38%;
 }
-.card-category-list,.card-tag-cloud{
+
+.card-category-list,
+.card-tag-cloud {
   border: 2px solid hotpink;
   border-radius: 8px;
 }
@@ -37,7 +39,8 @@
   color: hotpink;
   font-size: 19px;
 }
-.layout > div:not(.recent-posts) .pagination .page-number {
+
+.layout>div:not(.recent-posts) .pagination .page-number {
   margin: 0 4px;
   min-width: 40px;
   height: 40px;
@@ -50,11 +53,13 @@
   border: 2px solid hotpink;
   border-radius: 8px;
 }
+
 /* 导航栏隐藏 */
 /* .menus_item_child{
   color: white;
 } */
-#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover, #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
   border-radius: 8px;
 }
 
@@ -63,17 +68,21 @@
   width: 180px;
   margin-right: 10px;
 }
-.article-sort-item-info{
+
+.article-sort-item-info {
   border-left: 4px solid black;
   border-radius: 20px;
 }
-.article-sort-item-title{
+
+.article-sort-item-title {
   font-weight: 900;
   font-size: 20px;
 }
-.article-sort-item-title:hover{
+
+.article-sort-item-title:hover {
   color: hotpink;
 }
+
 /* 相关推荐 */
 .relatedPosts>.relatedPosts-list>div {
   border-radius: 8px;
@@ -85,7 +94,12 @@
 }
 
 div#post {
+  border: 2px solid black;
+}
+
+div#post:hover {
   border: 2px solid pink;
+  box-sizing: border-box;
 }
 
 #aside-content #card-toc .toc-content .toc-link.active {
@@ -109,6 +123,24 @@ h1.post-title {
   font-family: ZhuZiAYuanJWD;
 }
 
+#aside-content .card-webinfo {
+  background: url('https://img1.imgtp.com/2022/08/24/tSMdJ5gW.png');
+}
+
+#aside-content .card-widget:last-child {
+  background: url('https://img1.imgtp.com/2022/08/24/tSMdJ5gW.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: hotpink;
+  font-weight: 800;
+  font-size: 16px;
+}
+#aside-content .card-webinfo .webinfo .webinfo-item {
+  padding: 0 10px;
+}
 /* .iconfont {
     font-family: 'iconfont' !important;
     font-size: 3em;
@@ -448,9 +480,11 @@ div#category {
   padding: 30px;
   margin: 30px 0px 30px 0px;
 }
+
 #article-container a:hover {
   color: blue;
 }
+
 /* 设置评论框 */
 
 .twikoo {
