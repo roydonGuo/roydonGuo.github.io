@@ -248,12 +248,22 @@ svg.icon.faa-tada {
   -webkit-background-clip: text;
   color: transparent;
 }
-
+#pagination.pagination-post {
+  border: 2px dashed pink;
+}
 #post>.post-content {
   font-weight: 600;
 }
 .contrib-number:hover{
   color: rgb(253, 82, 167);
+}
+/* 分类页面 */
+.category-list-item{
+  font-size: 22px;
+  font-weight: 900;
+}
+.relatedPosts > .relatedPosts-list > div {
+  height: 140px;
 }
 /* 最新文章图标 */
 .newPost-left,
@@ -261,20 +271,30 @@ svg.icon.faa-tada {
   position: absolute;
   top: 0;
   color: white;
-  font-weight: 900;
-  padding: 0 10px;
+  height: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.8em;
+  padding: 0 3px;
   background-color: pink;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
   border: 1px groove hotpink;
   border-top: 0;
 }
+.newPost-left:hover {
+  height: 1.5em;
+  color: black;
+  background-color: hotpink;
+  border-top: 1px solid hotpink;
+  line-height: 1.1em;
+}
 
 .newPost-left {
-  left: 50.3%;
+  left: 4px;
 }
 
 .newPost-right {
-  right: 15px;
+  right: 4px;
 }
 
 #recent-posts>.recent-post-item {
@@ -354,11 +374,11 @@ body {
   border: 1px solid blueviolet;
   color: hotpink;
 }
-
+/* 个人认证，文章版权 */
 #post .post-copyright {
   color: hotpink;
-  background-color: rgba(24, 240, 255, 0.8);
-  border-radius: 8px;
+  background-color: rgba(76, 67, 73, 0.8);
+  border-radius: 10px;
 }
 
 /* 文章下面标签 */
@@ -410,30 +430,37 @@ div#category {
 /*夜间模式伪类遮罩层透明*/
 [data-theme='dark'] #recent-posts>.recent-post-item {
   background: #121212;
+  opacity: .8;
 }
 
 [data-theme='dark'] .card-widget {
   background: #121212 !important;
+  opacity: .8;
 }
 
 [data-theme='dark'] div#post {
   background: #121212 !important;
+  opacity: .8;
 }
 
 [data-theme='dark'] div#tag {
   background: #121212 !important;
+  opacity: .8;
 }
 
 [data-theme='dark'] div#archive {
   background: #121212 !important;
+  opacity: .8;
 }
 
 [data-theme='dark'] div#page {
   background: #121212 !important;
+  opacity: .8;
 }
 
 [data-theme='dark'] div#category {
   background: #121212 !important;
+  opacity: .8;
 }
 
 [data-theme='dark'] div#category {

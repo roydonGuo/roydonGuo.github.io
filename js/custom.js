@@ -18,7 +18,7 @@ function newPost() {
     })
     // 单数在右，双数在左
     let className = index % 2 == 0 ? 'newPost-right' : 'newPost-left'
-    ls[index].innerHTML += '<span class="' + className + '">最 新</span>';
+    ls[index].innerHTML += '<span class="' + className + '">new</span>';
     // 如果你不想让其一左一右，可以注释上面的启用下面的，默认左，left改成right就是右
     // ls[index].innerHTML += '<span class="newPost-left">最 新</span>';
 }
@@ -162,6 +162,10 @@ var imgbox = document.querySelector('.fj-gallery')
 imgbox.addEventListener('click', e => {
     if (!e.target.src.charAt(0)==='h') return changeBg(nowBgImgUrl)
     nowBgImgUrl = 'url(' + e.target.src + ')'
-    changeBg(nowBgImgUrl);
+    changeBg(nowBgImgUrl)
 })
 
+var firstRecentPost = document.querySelectorAll('.recent-post-item')
+firstRecentPost[0].addEventListener('DOMMouseScroll',e=>{
+    e.preventDefault()
+})
