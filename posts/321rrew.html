@@ -1,0 +1,689 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>redis缓存穿透 | roydon</title><meta name="keywords" content="redis"><meta name="author" content="『roydon』,3133010060@qq.com"><meta name="copyright" content="『roydon』"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="ps:想只读有效信息，见红字 正常情况当在高并发，高性能，降低数据库压力的情况下，首先会选择redis作为缓存机制，当有大量请求需要查询数据库时，为了降低数据库的压力，并提高请求查询性能（redis基于内存，读取速度快），会将数据库的信息缓存到redis中，这样就形成了很好的分层结构，请求可以直接查询redis中缓存的信息，然后返回，就不需要经过数据库，减小了数据库的压力，同时，可以迅速查询到信息">
+<meta property="og:type" content="article">
+<meta property="og:title" content="redis缓存穿透">
+<meta property="og:url" content="https://roydonguo.github.io/posts/321rrew.html">
+<meta property="og:site_name" content="roydon">
+<meta property="og:description" content="ps:想只读有效信息，见红字 正常情况当在高并发，高性能，降低数据库压力的情况下，首先会选择redis作为缓存机制，当有大量请求需要查询数据库时，为了降低数据库的压力，并提高请求查询性能（redis基于内存，读取速度快），会将数据库的信息缓存到redis中，这样就形成了很好的分层结构，请求可以直接查询redis中缓存的信息，然后返回，就不需要经过数据库，减小了数据库的压力，同时，可以迅速查询到信息">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png">
+<meta property="article:published_time" content="2022-08-26T07:14:00.000Z">
+<meta property="article:modified_time" content="2022-08-26T07:14:00.000Z">
+<meta property="article:author" content="『roydon』">
+<meta property="article:tag" content="redis">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://roydonguo.github.io/posts/321rrew"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="pink"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/128.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/16.png"/><link rel="mask-icon" href="/img/siteicon/128.png" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 『roydon』","link":"链接: ","source":"来源: roydon","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"pink","bgDark":"pink","position":"top-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'redis缓存穿透',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-26 15:14:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/aplayer.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/ali_font.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/nav.css"><link rel="stylesheet" href="/css/opacity.css"><link rel="stylesheet" href="/css/loaded_style.css"><link rel="stylesheet" href="/css/postPage.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/rlink.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><script src="/live2d-widget/autoload.js"></script><link rel="stylesheet" href="/css/custom/twikoo_beautify.css"  media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/jquery@latest/dist/jquery.min.js"></script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="roydon" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img1.imgtp.com/2022/09/01/w4nMeVBG.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">41</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon--article"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-guidang"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-categories"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tags1"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yulezhongxin"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i><span> 追番</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw iconfont icon-xiangce"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw iconfont icon-yinle"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw iconfont icon-dianying"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yaoqinghaoyou"></i><span> 交友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw iconfont icon-pinglun"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-links"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw iconfont icon-yinliugongju"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/tools/"><i class="fa-fw iconfont icon-ziyuan"></i><span> 工具</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-kaixin"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><div class="back-home-button" tabindex="-1"><i class="back-home-button-icon fas fa-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">推荐✨</div><div class="back-menu-list"><a class="back-menu-item" href="/" title="前往博客主页" one-link-mark="yes"><img class="back-menu-item-icon" src="https://img2.woyaogexing.com/2022/08/17/21431d45e46393db!400x400.jpg"/><span class="back-menu-item-text">博客主页</span></a><a class="back-menu-item" href="https://github.com/roydonGuo" rel="external nofollow" title="Github" target="_blank" one-link-mark="yes"><img class="back-menu-item-icon" src="https://img1.imgtp.com/2022/09/18/eYuOffzz.png"/><span class="back-menu-item-text">Github</span></a><a class="back-menu-item" href="https://gitee.com/guo-yc" rel="external nofollow" title="Gitee" target="_blank" one-link-mark="yes"><img class="back-menu-item-icon" src="https://img1.imgtp.com/2022/09/18/IXZjEEK2.png"/><span class="back-menu-item-text">Gitee</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目🔅</div><div class="back-menu-list"><a class="back-menu-item" href="https://roydon.xyz" title="" target="_blank" rel="noopener nofollow" one-link-mark="yes"><img class="back-menu-item-icon entered exited" src="https://img2.woyaogexing.com/2022/08/17/21431d45e46393db!400x400.jpg"/><span class="back-menu-item-text">roydon</span></a></div></div></div></div><a id="site-name" href="/">roydon</a></span><div id="menus"><div id="search-button"><a class="site-page-to social-icon search" title="Search"><i class="iconfont icon-sousuowendang fa-fw"></i></a><a class="site-page-to social-icon search" href="javascript:;" onclick="randomBg()" title="开启随机背景自动切换"><i class="iconfont icon-a-tupianyihuifu-14 fa-fw"></i></a><a class="site-page-to social-icon search" href="javascript:;" onclick="switchNightMode()" title="切换主题"><i class="iconfont icon-yueliang fa-fw" id="dark-theme-coin"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon--article"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-guidang"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-categories"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tags1"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yulezhongxin"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i><span> 追番</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw iconfont icon-xiangce"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw iconfont icon-yinle"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw iconfont icon-dianying"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yaoqinghaoyou"></i><span> 交友</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw iconfont icon-pinglun"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-links"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw iconfont icon-yinliugongju"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/tools/"><i class="fa-fw iconfont icon-ziyuan"></i><span> 工具</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-kaixin"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">redis缓存穿透</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-26T07:14:00.000Z" title="发表于 2022-08-26 15:14:00">2022-08-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T07:14:00.000Z" title="更新于 2022-08-26 15:14:00">2022-08-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/redis/">redis</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="redis缓存穿透"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>ps:想只读有效信息，见<code>红字</code></p>
+<h2 id="正常情况"><a href="#正常情况" class="headerlink" title="正常情况"></a>正常情况</h2><p>当在高并发，高性能，降低数据库压力的情况下，首先会选择redis作为缓存机制，当有大量请求需要查询数据库时，为了降低数据库的压力，并提高请求查询性能（redis基于内存，读取速度快），会将数据库的信息缓存到redis中，这样就形成了很好的分层结构，请求可以直接查询redis中缓存的信息，然后返回，就不需要经过数据库，减小了数据库的压力，同时，可以迅速查询到信息，岂不美哉。<br><code>先从缓存取数据，娶不到从数据库取，取到了就返回并添加缓存或更新缓存，取不到就返回空。</code></p>
+<blockquote>
+<p>==正常请求操作==<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/4bd2df7706884e2283d71236e19440ac.png#pic_center" alt="common"></p>
+<blockquote>
+<p>第4步，当从数据库拿到数据时，一并添加到redis缓存，下次若是相同请求，直接访问redis并返回，大大提升了性能和可用性，持久性。</p>
+</blockquote>
+</blockquote>
+<h2 id="非正常情况"><a href="#非正常情况" class="headerlink" title="非正常情况"></a>非正常情况</h2><p>但有利就有弊，如果请求的数据是数据库中没有的，同样redis中也不会出现此数据缓存，这样当某短时间大量无效请求（数据库无对应数据）访问时，由于redis中没有此数据缓存，请求就给到了数据库，那么压力就来到了数据库这边，可想而知，其中会浪费掉多少性能，若是有心怀**之人故意为之，后果可想而知。所以，这就需要一个很好的解决方案，当大量无效请求（数据库并没有此数据）来访问时，就会导致缓存穿透。<br><code>缓存和数据库都娶不到数据，若大量无效请求发起，数据库负载压力过大</code></p>
+<blockquote>
+<p>==非正常操作（在大量无益请求的场景下）==<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/4feedc5528b843ca9e126e7a42bae330.png#pic_center" alt="unnormal"></p>
+<blockquote>
+<p>第4步变为直接返回null，那么请求一多，全都访问数据库，好嘛，要是网站被攻击了，那数据库就白想活着~</p>
+</blockquote>
+</blockquote>
+<h2 id="解决方案✍️✍️"><a href="#解决方案✍️✍️" class="headerlink" title="解决方案✍️✍️"></a>解决方案✍️✍️</h2><h3 id="1-redis缓存设空-“”"><a href="#1-redis缓存设空-“”" class="headerlink" title="1.redis缓存设空(“”)"></a>1.redis缓存设空(“”)</h3><p><code>redis设置key-null，TTL设置短时间</code><br>那么就又要考虑了，当一个请求访问时，我们两层都没有相应数据，数据库操作后接着对redis设一个空的键值，那么当我过了段时间又增加了一条数据，正好就是这个请求需要的，当第一步走到redis时直接就死掉了，那么可太不划算了。<br>所以在缓存设空时尽量TTL一个短时间，防住短时间大量请求即可，谁也不会闲的干这事。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/b78f9bd4a5084922b7378642f5f1063f.png#pic_center" alt="redis=null"><br>那么我们接下来模拟一下具体场景<br>下面是操作流程代码块</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> Result <span class="title function_">queryById</span><span class="params">(Long id)</span> &#123;</span><br><span class="line">    <span class="comment">//从redis查询商铺缓存</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">key</span> <span class="operator">=</span> <span class="string">&quot;cache:shop&quot;</span>+id;</span><br><span class="line">    <span class="comment">//根据key拿到数据json块</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">shopJson</span> <span class="operator">=</span> stringRedisTemplate.opsForValue().get(key);</span><br><span class="line">    <span class="keyword">if</span> (StrUtil.isNotBlank(shopJson)) &#123;</span><br><span class="line">        <span class="comment">//存在，转化为对应实体类直接返回</span></span><br><span class="line">        <span class="type">Shop</span> <span class="variable">shop</span> <span class="operator">=</span> JSONUtil.toBean(shopJson, Shop.class);</span><br><span class="line">        <span class="keyword">return</span> Result.ok(shop);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//判断命中的是否为空值，下下面代码存入的value为&quot;&quot;空</span></span><br><span class="line">    <span class="keyword">if</span> (shopJson!=<span class="literal">null</span>) &#123;<span class="comment">//等效于shopJson==&quot;&quot;</span></span><br><span class="line">        <span class="comment">//返回一个错误信息</span></span><br><span class="line">        <span class="keyword">return</span> Result.fail(<span class="string">&quot;店铺不存在&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//不存在根据id查数据库</span></span><br><span class="line">    <span class="type">Shop</span> <span class="variable">shop</span> <span class="operator">=</span> getById(id);</span><br><span class="line">    <span class="keyword">if</span> (shop == <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="comment">//数据库中不存在，将null写入redis，并设置TTL</span></span><br><span class="line">        stringRedisTemplate.opsForValue()</span><br><span class="line">        .set(key,<span class="string">&quot;&quot;</span>,<span class="number">2</span>, TimeUnit.MINUTES);</span><br><span class="line">        <span class="keyword">return</span> Result.fail(<span class="string">&quot;店铺不存在&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//存在，存入redis</span></span><br><span class="line">    stringRedisTemplate.opsForValue().set(key,JSONUtil.toJsonStr(shop),<span class="number">60</span>, TimeUnit.MINUTES);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Result.ok(shop);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一条请求，这里是根据id来查询，此时设置id为0，数据库并不存在这条数据。观察到，返回了不存在json信息<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/c2f58b31c7cf42529a4cf1865f1d67ec.png#pic_center" alt="在这里插入图片描述"><br>而且redis是没有缓存的，所以执行了相应数据库的sql操作，数据库并没有id为0的数据，所以下一步就是增加redis空缓存<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/24212e0790a64c12a529d90621ce679a.png#pic_center" alt="123">此时，redis增加了一个key表示店铺id为0的空缓存，右上角TTL还剩·114秒（设置的为2分钟）<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/1469247c024b4719877c49fd273623a3.png#pic_center" alt="在这里插入图片描述"><br>这样就能在短时间在缓存层面拦截大量无意义请求。</p>
+<h3 id="2-布隆过滤"><a href="#2-布隆过滤" class="headerlink" title="2.布隆过滤"></a>2.布隆过滤</h3><p>利用hash算法计算数据库数据得到byte数组，当请求来访问先经过布隆过滤器，根据此数组0和1判断数据是否存在，存在就放行到redis否则拒绝。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/roydonGuo">『roydon』</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://roydonguo.github.io/posts/321rrew.html">https://roydonguo.github.io/posts/321rrew.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://roydonguo.github.io" target="_blank">roydon</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/redis/">redis</a></div><div class="post_share"><div class="social-share" data-image="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">打赏</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></button></div><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/7165c5d8.html"><img class="prev-cover" src="https://img1.imgtp.com/2022/08/25/t6Rv7U4E.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">计算机网络（谢希仁第八版）第一章：概述</div></div></a></div><div class="next-post pull-right"><a href="/posts/2f323f.html"><img class="next-cover" src="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">redis缓存击穿</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/306dd2fe.html" title="Redis-安装与配置"><img class="cover" src="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-26</div><div class="title">Redis-安装与配置</div></div></a></div><div><a href="/posts/32fwef.html" title="redis通用命令和类型"><img class="cover" src="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-26</div><div class="title">redis通用命令和类型</div></div></a></div><div><a href="/posts/2f323f.html" title="redis缓存击穿"><img class="cover" src="https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01-768x530.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-26</div><div class="title">redis缓存击穿</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img1.imgtp.com/2022/09/01/w4nMeVBG.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">『roydon』</div><div class="author-info__description">励志做一名优秀的后端程序员，有问题可以follow我的github。比较擅长java，android，harmony，python，c，c#。爱好Minecraft开发的可以互相了解一下😊。喜好前端，并积极学习中。。。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">41</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/roydonGuo"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://img1.imgtp.com/2022/08/22/neNPi80n.jpg" target="_blank" title="QQ"><i class="iconfont icon-social-qq"></i></a><a class="social-icon" href="https://img1.imgtp.com/2022/08/22/8suIQ5pM.png" target="_blank" title="WeChat"><i class="iconfont icon-social-wechat"></i></a><a class="social-icon" href="https://github.com/roydonGuo" target="_blank" title="Github"><i class="iconfont icon-github"></i></a><a class="social-icon" href="https://blog.csdn.net/m0_51390535" target="_blank" title="csdn"><i class="iconfont icon-csdn"></i></a><a class="social-icon" href="https://mail.qq.com/" target="_blank" title="Email"><i class="iconfont icon-email"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">评论系统已恢复，可以使用twikoo正常评论了🥰😘。由于直接部署在github page上，可能加载会很慢，可F5强制刷新缓存查看最新内容。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5"><span class="toc-number">1.</span> <span class="toc-text">正常情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5"><span class="toc-number">2.</span> <span class="toc-text">非正常情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%9C%8D%EF%B8%8F%E2%9C%8D%EF%B8%8F"><span class="toc-number">3.</span> <span class="toc-text">解决方案✍️✍️</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-redis%E7%BC%93%E5%AD%98%E8%AE%BE%E7%A9%BA-%E2%80%9C%E2%80%9D"><span class="toc-number">3.1.</span> <span class="toc-text">1.redis缓存设空(“”)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4"><span class="toc-number">3.2.</span> <span class="toc-text">2.布隆过滤</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/34abbf19.html" title="spring-security遇到的问题"><img src="https://img1.imgtp.com/2022/10/02/awpBwJLA.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="spring-security遇到的问题"/></a><div class="content"><a class="title" href="/posts/34abbf19.html" title="spring-security遇到的问题">spring-security遇到的问题</a><time datetime="2022-10-09T14:51:29.000Z" title="发表于 2022-10-09 22:51:29">2022-10-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/harmony2.0.html" title="harmony2.0-基础"><img src="https://img1.imgtp.com/2022/09/24/gJGR4DrT.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="harmony2.0-基础"/></a><div class="content"><a class="title" href="/posts/harmony2.0.html" title="harmony2.0-基础">harmony2.0-基础</a><time datetime="2022-09-25T15:38:37.000Z" title="发表于 2022-09-25 23:38:37">2022-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Mybatis-Plus.html" title="Mybatis-Plus之mapper Crud"><img src="https://w.wallhaven.cc/full/zm/wallhaven-zm9zlv.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="Mybatis-Plus之mapper Crud"/></a><div class="content"><a class="title" href="/posts/Mybatis-Plus.html" title="Mybatis-Plus之mapper Crud">Mybatis-Plus之mapper Crud</a><time datetime="2022-09-24T16:00:17.000Z" title="发表于 2022-09-25 00:00:17">2022-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/26.html" title="26.删除有序数组中的重复项"><img src="https://w.wallhaven.cc/full/n6/wallhaven-n62d8q.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="26.删除有序数组中的重复项"/></a><div class="content"><a class="title" href="/posts/26.html" title="26.删除有序数组中的重复项">26.删除有序数组中的重复项</a><time datetime="2022-09-11T15:29:40.000Z" title="发表于 2022-09-11 23:29:40">2022-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/21.html" title="21.合并两个有序链表"><img src="https://w.wallhaven.cc/full/n6/wallhaven-n62d8q.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="21.合并两个有序链表"/></a><div class="content"><a class="title" href="/posts/21.html" title="21.合并两个有序链表">21.合并两个有序链表</a><time datetime="2022-09-08T08:02:17.000Z" title="发表于 2022-09-08 16:02:17">2022-09-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 『roydon』</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="https://npm.elemecdn.com/vue@2.6.11"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://guo.yicheng.plus',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://guo.yicheng.plus',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'n5bJDnhkFDPpUxlHphl01Fa6-gzGzoHsz',
+      appKey: 'N6dnp2zcXFvTon5Emp0cG3Nm',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>var gitcalendar = new Vue({
+  el: '#gitcalendar',
+  data: {
+    simplemode: false,
+    user: 'roydonGuo',
+    fixed: 'fixed',
+    px: 'px',
+    x: '',
+    y: '',
+    span1: '',
+    span2: '',
+    month: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+    monthchange: [],
+    oneyearbeforeday: '',
+    thisday: '',
+    amonthago: '',
+    aweekago: '',
+    weekdatacore: 0,
+    datacore: 0,
+    total: 0,
+    datadate: '',
+    data: [],
+    positionplusdata: [],
+    firstweek: [],
+    lastweek: [],
+    beforeweek: [],
+    thisweekdatacore: 0,
+    mounthbeforeday: 0,
+    mounthfirstindex: 0,
+    crispedges: 'crispedges',
+    thisdayindex: 0,
+    amonthagoindex: 0,
+    amonthagoweek: [],
+    firstdate: [],
+    first2date: [],
+    montharrbefore: [],
+    monthindex: 0,
+    color: ['#FCF4F9','#F3CFE7', '#F7C8E7',  '#F6B5E0', '#F5A8DC','#FFB6C1', '#F899D9', '#F88AD3', '#F673CA', '#FA82D2', '#F70EAA']
+  },
+  methods: {
+    selectStyle(data, event) {
+      document.querySelector('.angle-wrapper').style.display = 'block'
+      this.span1 = data.date;
+      this.span2 = data.count;
+      this.x = event.clientX - 100;
+      this.y = event.clientY - 60
+    },
+    outStyle() {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    },
+    thiscolor(x) {
+      if (x === 0) {
+        let i = parseInt(x / 2);
+        return this.color[0]
+      } else if (x < 2) {
+        return this.color[1]
+      } else if (x < 20) {
+        let i = parseInt(x / 2);
+        return this.color[i]
+      } else {
+        return this.color[9]
+      }
+    },
+  }
+});
+var apiurl = '' ? 'https:///api?' : 'https://githubapi.ryanchristian.dev/user/'
+var githubapiurl = apiurl + gitcalendar.user;
+//canvas绘图
+function responsiveChart() {
+  let c = document.querySelector("#gitcanvas");
+  if (c) {
+    let cmessage = document.querySelector("#gitmessage");
+    let ctx = c.getContext("2d");
+    c.width = document.querySelector("#gitcalendarcanvasbox").offsetWidth;
+    let linemaxwitdh = 0.96 * c.width / gitcalendar.data.length;
+    c.height = 9 * linemaxwitdh;
+    let lineminwitdh = 0.8 * linemaxwitdh;
+    let setposition = {
+      x: 0.02 * c.width,
+      y: 0.025 * c.width
+    };
+    for (let week in gitcalendar.data) {
+      weekdata = gitcalendar.data[week];
+      for (let day in weekdata) {
+        let dataitem = {
+          date: "",
+          count: "",
+          x: 0,
+          y: 0
+        };
+        gitcalendar.positionplusdata.push(dataitem);
+        ctx.fillStyle = gitcalendar.thiscolor(weekdata[day].count);
+        setposition.y = Math.round(setposition.y * 100) / 100;
+        dataitem.date = weekdata[day].date;
+        dataitem.count = weekdata[day].count;
+        dataitem.x = setposition.x;
+        dataitem.y = setposition.y;
+        ctx.fillRect(setposition.x, setposition.y, lineminwitdh, lineminwitdh);
+        setposition.y = setposition.y + linemaxwitdh
+      };
+      setposition.y = 0.025 * c.width;
+      setposition.x = setposition.x + linemaxwitdh
+    };
+    ctx.font = "600  Arial";
+    ctx.fillStyle = '#aaa';
+    ctx.fillText("日", 0, 1.9 * linemaxwitdh);
+    ctx.fillText("二", 0, 3.9 * linemaxwitdh);
+    ctx.fillText("四", 0, 5.9 * linemaxwitdh);
+    ctx.fillText("六", 0, 7.9 * linemaxwitdh);
+    let monthindexlist = c.width / 24;
+    for (let index in gitcalendar.monthchange) {
+      ctx.fillText(gitcalendar.monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
+      monthindexlist = monthindexlist + c.width / 12
+    };
+    cmessage.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+    };
+    c.onmousemove = function(event) {
+      document.querySelector('.angle-wrapper').style.display = 'none'
+      getMousePos(c, event);
+    };
+
+    function getMousePos(canvas, event) {
+      var rect = canvas.getBoundingClientRect();
+      var x = event.clientX - rect.left * (canvas.width / rect.width);
+      var y = event.clientY - rect.top * (canvas.height / rect.height);
+      //console.log("x:"+x+",y:"+y);
+      for (let item of gitcalendar.positionplusdata) {
+        let lenthx = x - item.x;
+        let lenthy = y - item.y;
+        //console.log(lenthx,lenthy);
+        if (0 < lenthx && lenthx < lineminwitdh) {
+          if (0 < lenthy && lenthy < lineminwitdh) {
+            //console.log(item.date,item.count)
+            document.querySelector('.angle-wrapper').style.display = 'block'
+            gitcalendar.span1 = item.date;
+            gitcalendar.span2 = item.count;
+            gitcalendar.x = event.clientX - 100;
+            gitcalendar.y = event.clientY - 60
+          }
+        }
+        //if(0< x - item.x <lineminwitdh&&0< y - item.y <lineminwitdh){
+        //console.log(item.count,item.date);
+        //}
+      }
+    }
+  }
+}
+//数据统计算法
+function addlastmonth() {
+  if (gitcalendar.thisdayindex === 0) {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweekcore(48);
+    gitcalendar.thisweekdatacore += gitcalendar.firstdate[6].count;
+    gitcalendar.amonthago = gitcalendar.firstdate[6].date
+  } else {
+    thisweekcore(52);
+    thisweekcore(51);
+    thisweekcore(50);
+    thisweekcore(49);
+    thisweek2core();
+    gitcalendar.amonthago = gitcalendar.first2date[gitcalendar.thisdayindex - 1].date
+  }
+};
+
+function thisweek2core() {
+  for (let i = gitcalendar.thisdayindex - 1; i < gitcalendar.first2date.length; i++) {
+    gitcalendar.thisweekdatacore += gitcalendar.first2date[i].count
+  }
+};
+
+function thisweekcore(index) {
+  for (let item of gitcalendar.data[index]) {
+    gitcalendar.thisweekdatacore += item.count
+  }
+};
+
+function addlastweek() {
+  for (let item of gitcalendar.lastweek) {
+    gitcalendar.weekdatacore += item.count
+  }
+};
+
+function addbeforeweek() {
+  for (let i = gitcalendar.thisdayindex; i < gitcalendar.beforeweek.length; i++) {
+    gitcalendar.weekdatacore += gitcalendar.beforeweek[i].count
+  }
+};
+
+function addweek(data) {
+  if (gitcalendar.thisdayindex === 6) {
+    gitcalendar.aweekago = gitcalendar.lastweek[0].date;
+    addlastweek()
+  } else {
+    lastweek = data.contributions[51];
+    gitcalendar.aweekago = lastweek[gitcalendar.thisdayindex + 1].date;
+    addlastweek();
+    addbeforeweek()
+  }
+}
+
+fetch(githubapiurl)
+  .then(data => data.json())
+  .then(data => {
+    gitcalendar.data = data.contributions;
+    gitcalendar.total = data.total;
+    gitcalendar.first2date = gitcalendar.data[48];
+    gitcalendar.firstdate = gitcalendar.data[47];
+    gitcalendar.firstweek = data.contributions[0];
+    gitcalendar.lastweek = data.contributions[52];
+    gitcalendar.beforeweek = data.contributions[51];
+    gitcalendar.thisdayindex = gitcalendar.lastweek.length - 1;
+    gitcalendar.thisday = gitcalendar.lastweek[gitcalendar.thisdayindex].date;
+    gitcalendar.oneyearbeforeday = gitcalendar.firstweek[0].date;
+    gitcalendar.monthindex = gitcalendar.thisday.substring(5, 7) * 1;
+    gitcalendar.montharrbefore = gitcalendar.month.splice(gitcalendar.monthindex, 12 - gitcalendar.monthindex);
+    gitcalendar.monthchange = gitcalendar.montharrbefore.concat(gitcalendar.month);
+    addweek(data);
+    addlastmonth();
+    responsiveChart();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+//手机版更换为svg绘制
+//- if (document.querySelector('#gitcalendarcanvasbox').offsetWidth < 500) {
+//-   gitcalendar.simplemode = false
+//- }
+
+//当改变窗口大小时重新绘制canvas
+window.onresize = function() {
+  if (gitcalendar.simplemode) responsiveChart()
+}
+
+//解决滚动滑轮时出现的标签显示
+window.onscroll = function() {
+  if (document.querySelector('.angle-wrapper')) {
+    document.querySelector('.angle-wrapper').style.display = 'none'
+  }
+};</script></div><div class="aplayer no-destroy" data-id="1708664797" data-server="tencent" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div><canvas id="universe"></canvas><script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script><script src="/js/specifypage.js"></script><script src="/js/catalog_list.js"></script><script src="/js/dark.js"></script><script src="/js/changebg.js"></script><script src="//at.alicdn.com/t/c/font_3603575_h6chb6mgsht.js"></script><script src="/js/custom.js"></script><script src="/js/wallhaven.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="14px" data-random="true" async="async"></script><script src="//code.tidio.co/z0lx6wwsfanr2xuagzl5gsszkidfuv2g.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker.controller) {
+navigator.serviceWorker.addEventListener('controllerchange', function() {
+showNotification()
+})
+}
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js')
+})
+}
+function showNotification() {
+if (GLOBAL_CONFIG.Snackbar) {
+var snackbarBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+GLOBAL_CONFIG.Snackbar.bgLight :
+GLOBAL_CONFIG.Snackbar.bgDark
+var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+Snackbar.show({
+text: '✨ 有新文章啦！ 👉',
+backgroundColor: snackbarBg,
+duration: 500000,
+pos: snackbarPos,
+actionText: '🍗点击食用🍔',
+actionTextColor: '#fff',
+onActionClick: function(e) {
+location.reload()
+},
+})
+} else {
+var showBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+'#49b1f5' :
+'#1f1f1f'
+var cssText = `top: 0; background: ${showBg};`
+document.getElementById('app-refresh').style.cssText = cssText
+}
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/001.html" alt=""><img width="48" height="48" src="https://w.wallhaven.cc/full/1k/wallhaven-1kq819.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-08-26</span><a class="blog-slider__title" href="posts/001.html" alt="">安卓天气预报app(一)——解析Json数据、数据类封装</a><div class="blog-slider__text">第一篇！获取json数据</div><a class="blog-slider__button" href="posts/001.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/002.html" alt=""><img width="48" height="48" src="https://w.wallhaven.cc/full/1k/wallhaven-1kq819.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-08-26</span><a class="blog-slider__title" href="posts/002.html" alt="">安卓天气预报app(二)——适配器、每小时数据展示</a><div class="blog-slider__text">第二篇！定义适配器</div><a class="blog-slider__button" href="posts/002.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/003.html" alt=""><img width="48" height="48" src="https://w.wallhaven.cc/full/1k/wallhaven-1kq819.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-08-26</span><a class="blog-slider__title" href="posts/003.html" alt="">安卓天气预报app(三)——城市管理、数据库操作</a><div class="blog-slider__text">第三篇！数据库SQLite</div><a class="blog-slider__button" href="posts/003.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/004.html" alt=""><img width="48" height="48" src="https://w.wallhaven.cc/full/1k/wallhaven-1kq819.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-08-26</span><a class="blog-slider__title" href="posts/004.html" alt="">安卓天气预报app(四)——搜索城市、完善页面</a><div class="blog-slider__text">第四篇！搜索城市</div><a class="blog-slider__button" href="posts/004.html" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '50ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.2" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用双线部署，默认线路托管于Vercel" title=""><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><!-- hexo injector body_end end --></body></html>

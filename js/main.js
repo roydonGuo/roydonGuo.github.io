@@ -464,12 +464,15 @@ document.addEventListener('DOMContentLoaded', function () {
       newEle.addEventListener('click', clickFn)
     },
     switchDarkMode: () => { // Switch Between Light And Dark Mode
+      const themeCoin = document.querySelector('#dark-theme-coin')
       const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
       if (nowMode === 'light') {
+        themeCoin.className = 'iconfont icon-yueliang fa-fw'
         activateDarkMode()
         saveToLocal.set('theme', 'dark', 2)
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
       } else {
+        themeCoin.className = 'iconfont icon-taiyang fa-fw'
         activateLightMode()
         saveToLocal.set('theme', 'light', 2)
         GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
