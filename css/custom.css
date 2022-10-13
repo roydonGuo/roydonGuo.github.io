@@ -655,13 +655,13 @@ span#subtitle:hover {
 }
 
 /* 相册页面原神卡片重设计 */
-#article-container p a {
+#article-container>p:nth-child(2)>a {
     width: 100%;
     display: block;
     border-radius: 10px;
 }
 
-#article-container p a img {
+#article-container>p:nth-child(2)>a>img {
     display: block;
     width: 100%;
     border-radius: 10px;
