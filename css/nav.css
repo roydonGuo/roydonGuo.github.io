@@ -151,7 +151,7 @@ div#menus {
     width: 100%;
     height: 100%;
     content: "\f015";
-    box-shadow: 5px 5px 5px rgb(31, 23, 25);
+    /* box-shadow: 5px 5px 5px rgb(31, 23, 25); */
     font-family: "Font Awesome 6 Free";
     text-align: center;
     color: rgb(65, 250, 250);
