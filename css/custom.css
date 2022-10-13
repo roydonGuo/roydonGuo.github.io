@@ -655,6 +655,7 @@ span#subtitle:hover {
 }
 
 /* 相册页面原神卡片重设计 */
+
 #article-container>p:nth-child(2)>a {
     width: 100%;
     display: block;
@@ -668,7 +669,7 @@ span#subtitle:hover {
 }
 
 #article-container>p:nth-child(2) {
-    background: pink;
+    background: linear-gradient(112.88411960494409deg, rgba(248, 198, 215, 1) 2.265625%, rgba(175, 233, 249, 1) 100.70312499999999%);
     padding: 1%;
     border-radius: 10px;
 }
