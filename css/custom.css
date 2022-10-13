@@ -649,13 +649,11 @@ span#subtitle:hover {
     background-image: url("/img/hutao.jpeg");
 }
 
-
 #article-container .flink .flink-list>.flink-list-item {
     margin: 5px 7px !important;
 }
 
 /* 相册页面原神卡片重设计 */
-
 #article-container>p:nth-child(2)>a {
     width: 100%;
     display: block;
