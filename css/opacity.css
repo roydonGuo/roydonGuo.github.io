@@ -11,13 +11,14 @@
     /* --page-bg: rgba(0, 0, 0, 0.8); */
 }
 
+/* 网页div的圆角 */
 .cardHover,
 .error404 #error-wrap .error-content,
 .layout>div:first-child:not(.recent-posts),
 #recent-posts>.recent-post-item,
 #aside-content .card-widget,
 .layout>.recent-posts .pagination> :not(.space) {
-    border-radius: 16px;
+    border-radius: 16px !important;
 }
 
 #page-header.post-bg {
