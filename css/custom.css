@@ -666,3 +666,9 @@ span#subtitle:hover {
     width: 100%;
     border-radius: 10px;
 }
+
+#article-container>p:nth-child(2) {
+    background: pink;
+    padding: 1%;
+    border-radius: 10px;
+}
