@@ -51,11 +51,11 @@
     top: 38%;
 }
 
-.card-category-list,
+/* .card-category-list,
 .card-tag-cloud {
     border: 2px solid hotpink;
     border-radius: 8px;
-}
+} */
 
 /* 两款主题同一透明度0.8 */
 #vpanel {
