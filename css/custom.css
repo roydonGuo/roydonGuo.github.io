@@ -25,10 +25,12 @@
 
 /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
 @font-face {
-    font-family: "阿里巴巴普惠体 2.0 105 Heavy";font-weight: 900;src: url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/H029AUwhXBHEMJYgO_mpQ.woff2") format("woff2"),
-    url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/uxCheG_HUTBHyqkAihfLM.woff") format("woff");
+    font-family: "阿里巴巴普惠体 2.0 105 Heavy";
+    font-weight: 900;
+    src: url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/H029AUwhXBHEMJYgO_mpQ.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/uxCheG_HUTBHyqkAihfLM.woff") format("woff");
     font-display: swap;
-  }
+}
 
 .bangumi-item .bangumi-picture img {
     border-radius: 6px;
@@ -650,4 +652,17 @@ span#subtitle:hover {
 
 #article-container .flink .flink-list>.flink-list-item {
     margin: 5px 7px !important;
+}
+
+/* 相册页面原神卡片重设计 */
+#article-container p a {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+#article-container p a img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
 }
