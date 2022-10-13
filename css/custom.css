@@ -681,3 +681,7 @@ span#subtitle:hover {
     padding: 1%;
     border-radius: 10px;
 }
+
+#article-container .btn-beautify.outline {
+    border-radius: 20px;
+}
