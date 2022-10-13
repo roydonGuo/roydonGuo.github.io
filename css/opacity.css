@@ -11,6 +11,14 @@
     /* --page-bg: rgba(0, 0, 0, 0.8); */
 }
 
+.cardHover,
+.error404 #error-wrap .error-content,
+.layout>div:first-child:not(.recent-posts),
+#recent-posts>.recent-post-item,
+#aside-content .card-widget,
+.layout>.recent-posts .pagination> :not(.space) {
+    border-radius: 16px;
+}
 
 #page-header.post-bg {
     height: 397px;
@@ -63,9 +71,6 @@
     border-radius: 8px;
 }
 
-/* #recent-posts > .recent-post-item {
-    height: 14.5em;
-} */
 #aside-content .aside-list>.aside-list-item .thumbnail>img {
     border-radius: 8px;
 }
@@ -76,6 +81,7 @@
     margin: 14px 0;
 
 }
+
 #aside-content .card-info #card-info-btn:hover {
     background: #450a4a;
     transition: .2s;
@@ -122,7 +128,7 @@
     background: linear-gradient(-45deg, rgb(99, 60, 67), #450a4a, #280a57, #520b3f);
     background-size: 400%;
     box-shadow: black;
-    animation: gradient 15s ease infinite;  
+    animation: gradient 15s ease infinite;
     position: relative;
     color: rgb(233, 239, 239);
 }
