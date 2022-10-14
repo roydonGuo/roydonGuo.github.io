@@ -688,6 +688,6 @@ span#subtitle:hover {
 }
 
 .genshin-card>a>img {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
 }
