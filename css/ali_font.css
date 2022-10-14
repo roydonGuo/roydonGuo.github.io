@@ -1,19 +1,17 @@
-
-
 /* .icon-bilibili:before {
   content: "\e609";
   color: blue;
   font-size: 24px;
 } */
 
-
 @font-face {
-  font-family: "iconfont"; /* Project id 3603575 */
+  font-family: "iconfont";
+  /* Project id 3603575 */
   /* Color fonts */
-  src: 
-       url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.woff2?t=1662089684855') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.woff?t=1662089684855') format('woff'),
-       url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.ttf?t=1662089684855') format('truetype');
+  src:
+    url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.woff2?t=1662089684855') format('woff2'),
+    url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.woff?t=1662089684855') format('woff'),
+    url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.ttf?t=1662089684855') format('truetype');
 }
 
 .iconfont {
@@ -171,4 +169,3 @@
 .icon-pinglun:before {
   content: "\e642";
 }
-
