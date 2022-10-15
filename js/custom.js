@@ -48,3 +48,38 @@
 //         flag = true
 //     }, 1e3)
 // })
+
+// $.ajax({
+//   type: 'GET',
+//   url: ' ',
+//   data: {},
+//   dataType: 'JSON',
+//   async: false, //请求是否异步，默认为异步
+//   headers: {
+//     'Authorization': localStorage.getItem('token')
+//   },
+//   success: function (res) {
+//     console.log(res);
+//   },
+//   error: function (e) {
+//     console.log(e);
+//   }
+// })
+
+// $.ajax({
+//   type: 'POST',
+//   url: '',
+//   data: {},
+//   dataType: "json",
+//   contentType: "application/json",
+//   headers: {
+//     // Accept: "application/json; charset=utf-8",
+//     token: localStorage.getItem('token')
+//   },
+//   success: function (res) {
+//     console.log(res);
+//   },
+//   error: function (e) {
+//     console.log(e);
+//   }
+// })
