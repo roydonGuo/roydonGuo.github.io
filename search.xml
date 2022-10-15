@@ -1070,6 +1070,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/barrage.css"/>
+      <url>/css/barrage.css</url>
+      
+        <content type="html"><![CDATA[#barrage-container {  width: 100%;  height: 400px;  /*background: url("https://markdown-img-1303371957.cos.ap-nanjing.myqcloud.com/dora/201704_C.png");*/  background: var(--blockquote-bg);  background-size: cover;  background-position: center;  border-radius: 8px;  position: relative;}#barrage-container .barrage {  min-width: 150px;  max-width: 300px;  min-height: 80px;  max-height: 300px;  position: absolute;  padding: 8px;  background: rgba(0, 0, 0, 0.9);  border-radius: 8px;  color: #fff;  animation: barrageIn 0.3s cubic-bezier(.25, .01, .5, 1.5);  transition: 1s;  display: flex;  flex-direction: column;  border: 1px solid rgba(255, 255, 255, 0.2);}#barrage-container .barrage.out {  opacity: 0;}@keyframes barrageIn {  0% {    transform: scale(0.1);  }  100% {    transform: scale(1.0);  }}#barrage-container .barrage .barrageHead {  height: 30px;  padding: 4px 0;  line-height: 22px;  font-size: 12px;  border-bottom: 1px solid rgba(255, 255, 255, 0.3);  display: flex;  justify-content: space-between;}#barrage-container .barrage .barrageAvatar {  width: 16px;  height: 16px;  margin: 0;  border-radius: 50%;}#barrage-container .barrage .barrageContent {  font-size: 14px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
       
@@ -1129,6 +1140,17 @@
       <url>/css/rlink.css</url>
       
         <content type="html"><![CDATA[/* 重新设置友链样式 *//* 头像微调 */.flink-item-icon {    margin-right: 0 !important;    transition: .5s !important;}.flink-item-name,.flink-item-desc {    padding-left: 10px !important;}/* 去掉原来自带的before */#article-container .flink .flink-list>.flink-list-item::before {    content: none;}/* 鼠标经过改变背景 */#article-container .flink .flink-list>.flink-list-item:hover {    background-color: rgba(56, 20, 38, .6);    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);}/* 鼠标经过改变文字颜色 */#article-container .flink .flink-list>.flink-list-item:hover a {    color: rgb(247, 209, 138) !important;}/* 鼠标经过头像滚动 */#article-container .flink .flink-list>.flink-list-item:hover .flink-item-icon {    width: 60px;    margin-left: -70px;    -webkit-transform: rotate(-180deg);    -moz-transform: rotate(-180deg);    -o-transform: rotate(-180deg);    -ms-transform: rotate(-180deg);    transform: rotate(-180deg);}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before {    font-family: "iconfont";    content: "\e6a4";}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/barrage.js"/>
+      <url>/js/barrage.js</url>
+      
+        <content type="html"><![CDATA[//这里可以定义弹幕的背景色与字体色const barrageColors = [  ['#386adecc', '#fffa'],  ['#9248f0cc', '#fffa'],  ['#2da55dcc', '#fffa'],  ['#ffc505cc', '#fffc'],  ['#d44e30cc', '#fffa']]//这两个是与随机位置的范围相关的const maxBarrageWidth = 150;const maxBarrageHeight = 100;//最多同时显示的弹幕个数const maxBarrage = 10;//每个弹幕的间隔时间const barrageTime = 1500;//我用的是Vercel部署，这里链接就是Vercel的链接，腾讯云的自己琢磨一下哈，应该也差不多const twikooUrl = "https://guo.yicheng.plus";//token要手动获取（反正我是开发者工具里获取的，教程在下面const accessToken = "04fdc390db1b4efd9ed7de5954e0e968";const pageUrl = "/barrage/"const barrageTimer = [];let barrageList = [];let barrageIndex = 0;const barrageDom = document.getElementById('barrage-container');window.addEventListener('load', () => {  var data = JSON.stringify({    "event": "COMMENT_GET",    "accessToken": accessToken,    "url": pageUrl  });  var xhr = new XMLHttpRequest();  xhr.withCredentials = true;  xhr.addEventListener("readystatechange", function () {    if (this.readyState === 4) {      barrageList = linkFilter(JSON.parse(this.responseText).data);      barrageDom.innerHTML = '';    }  });  xhr.open("POST", twikooUrl);  xhr.setRequestHeader("Content-Type", "application/json");  xhr.send(data);  setInterval(() => {    if (barrageList.length) {      popBarrage(barrageList[barrageIndex]);      barrageIndex += 1;      barrageIndex %= barrageList.length;    }    if (barrageTimer.length > (barrageList.length > maxBarrage ? maxBarrage : barrageList.length)) {      removeBarrage(barrageTimer.shift())    }  }, barrageTime)})function linkFilter(data) {  const newData = data.filter((comment) => {    return !comment.master;  })  return newData;}function popBarrage(data) {  let barrage = document.createElement('div');  let width = barrageDom.clientWidth;  let height = barrageDom.clientHeight;  barrage.className = 'barrage'  barrage.style.top = Math.floor(Math.random() * (height - maxBarrageHeight)) + 'px';  barrage.style.left = Math.floor(Math.random() * (width - maxBarrageWidth)) + 'px';  let ran = Math.floor(Math.random() * barrageColors.length)  barrage.style.background = barrageColors[ran][0];  barrage.style.color = barrageColors[ran][1];  barrage.innerHTML = `<div class="barrageHead"><img class="barrageAvatar" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cravatar.cn/avatar/${data.mailMd5}"/><div class="barrageNick">${data.nick}</div></div><div class="barrageContent">${data.comment}</div>`  barrageTimer.push(barrage);  barrageDom.append(barrage);  //防止溢出（这里防止随机位置产生的溢出，弹幕太大产生的溢出就要靠css了  if (barrage.clientWidth + parseInt(barrage.style.left) > width) {    barrage.style.left = (width - barrage.clientWidth) + 'px';  }  if (barrage.clientHeight + parseInt(barrage.style.top) > height) {    barrage.style.top = (height - barrage.clientHeight) + 'px';  }}function removeBarrage(barrage) {  barrage.className = 'barrage out';  setTimeout(() => {    barrageDom.removeChild(barrage);  }, 1000)}]]></content>
       
     </entry>
     
