@@ -687,7 +687,7 @@ span#subtitle:hover {
     border: 5px solid;
 }
 
-.genshin-card>a>img {
+#article-container>.genshin-card>a>img {
     width: 80%;
     border-radius: 10px;
 }
