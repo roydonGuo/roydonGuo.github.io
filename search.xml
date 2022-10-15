@@ -996,7 +996,7 @@
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<!-- <p style="text-align: center;font-size: 20px">文章发布统计</p> --><!-- <div id="categories-radar" class="js-pjax"></div> --><!-- ![](https://genshin-card.getloli.com/rand/76907318.png) --><p><div id="genshin-card" class="genshin-card"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://genshin-card.getloli.com/rand/76907318.png" alt="genshin-card" /></div></p><p><div id="posts-chart" class="js-pjax"></div><!-- <div id="posts-calendar" class="js-pjax"></div> —&gt;</p><h1>建设中</h1>]]></content>
+        <content type="html"><![CDATA[<!-- <p style="text-align: center;font-size: 20px">文章发布统计</p> --><!-- <div id="categories-radar" class="js-pjax"></div> --><!-- ![](https://genshin-card.getloli.com/rand/76907318.png) --><div id="genshin-card" class="genshin-card"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://genshin-card.getloli.com/rand/76907318.png" alt="genshin-card" /></div><div id="posts-chart" class="js-pjax"></div><div id="posts-calendar" class="js-pjax"></div><h1>建设中</h1>]]></content>
       
     </entry>
     
