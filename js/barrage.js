@@ -10,7 +10,7 @@ const barrageColors = [
 const maxBarrageWidth = 150;
 const maxBarrageHeight = 100;
 //最多同时显示的弹幕个数
-const maxBarrage = 10;
+const maxBarrage = 2;
 //每个弹幕的间隔时间
 const barrageTime = 1500;
 //我用的是Vercel部署，这里链接就是Vercel的链接，腾讯云的自己琢磨一下哈，应该也差不多
