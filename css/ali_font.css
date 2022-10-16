@@ -1,25 +1,26 @@
-/* .icon-bilibili:before {
-  content: "\e609";
-  color: blue;
-  font-size: 24px;
-} */
-
 @font-face {
-  font-family: "iconfont";
-  /* Project id 3603575 */
+  font-family: "iconfont"; /* Project id 3603575 */
   /* Color fonts */
-  src:
-    url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.woff2?t=1662089684855') format('woff2'),
-    url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.woff?t=1662089684855') format('woff'),
-    url('//at.alicdn.com/t/c/font_3603575_n3f5a4f0dwc.ttf?t=1662089684855') format('truetype');
+  src: 
+       url('//at.alicdn.com/t/c/font_3603575_sfhyjp7sx18.woff2?t=1665879881410') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3603575_sfhyjp7sx18.woff?t=1665879881410') format('woff'),
+       url('//at.alicdn.com/t/c/font_3603575_sfhyjp7sx18.ttf?t=1665879881410') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 19px !important;
+  font-size: 19px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-danmu:before {
+  content: "\e612";
+}
+
+.icon-danmu1:before {
+  content: "\e636";
 }
 
 .icon-aixin:before {
@@ -169,3 +170,4 @@
 .icon-pinglun:before {
   content: "\e642";
 }
+
