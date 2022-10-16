@@ -664,7 +664,7 @@ span#subtitle:hover {
 }
 
 /* 相册页面原神卡片重设计 */
-#article-container>p:nth-child(2)>a {
+/* #article-container>p:nth-child(2)>a {
     width: 100%;
     display: block;
     border-radius: 10px;
@@ -680,11 +680,17 @@ span#subtitle:hover {
     background: linear-gradient(112.88411960494409deg, rgba(248, 198, 215, 1) 2.265625%, rgba(175, 233, 249, 1) 100.70312499999999%);
     padding: 1%;
     border-radius: 10px;
-}
+} */
 
 #article-container .btn-beautify.outline {
     border-radius: 20px;
     border: 5px solid;
+}
+
+#article-container>.genshin-card {
+    background: linear-gradient(112.88411960494409deg, rgba(248, 198, 215, 1) 2.265625%, rgba(175, 233, 249, 1) 100.70312499999999%);
+    padding: 1%;
+    border-radius: 10px;
 }
 
 #article-container>.genshin-card>a>img {
