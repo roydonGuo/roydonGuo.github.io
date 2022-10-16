@@ -688,7 +688,7 @@ span#subtitle:hover {
 }
 
 #article-container>.genshin-card {
-    background: linear-gradient(112.88411960494409deg, rgba(248, 198, 215, 1) 2.265625%, rgba(175, 233, 249, 1) 100.70312499999999%);
+    /* background: linear-gradient(112.88411960494409deg, rgba(248, 198, 215, 1) 2.265625%, rgba(175, 233, 249, 1) 100.70312499999999%); */
     padding: 1%;
     border-radius: 10px;
 }
