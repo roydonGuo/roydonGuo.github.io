@@ -41,6 +41,7 @@ window.addEventListener('load', () => {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       barrageList = linkFilter(JSON.parse(this.responseText).data);
+      console.log(barrageList);
       barrageDom.innerHTML = '';
     }
   });
@@ -67,7 +68,7 @@ function linkFilter(data) {
   const newData = data.filter((comment) => {
     return !comment.master;
   })
-  console.log(newData);
+  // console.log(newData);
   return newData;
 }
 
@@ -81,6 +82,7 @@ function popBarrage(data) {
   let ran = Math.floor(Math.random() * barrageColors.length)
   barrage.style.background = barrageColors[ran][0];
   barrage.style.color = barrageColors[ran][1];
+
 
   barrage.innerHTML = `
 		<div class="barrageHead">
