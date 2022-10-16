@@ -67,6 +67,7 @@ function linkFilter(data) {
   const newData = data.filter((comment) => {
     return !comment.master;
   })
+  console.log(newData);
   return newData;
 }
 
