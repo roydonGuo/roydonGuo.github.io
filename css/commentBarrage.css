@@ -25,7 +25,7 @@
   margin: 3px 0;
   padding: 8px;
   background: rgba(0, 0, 0, 0.9);
-  border-radius: 8px;
+  border-radius: 10px;
   color: #fff;
   animation: barrageIn 0.3s cubic-bezier(.25, .01, .5, 1.5);
   transition: 1s;
