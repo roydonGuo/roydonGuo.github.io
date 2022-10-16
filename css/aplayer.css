@@ -82,7 +82,8 @@
 }
 
 .aplayer.aplayer-fixed .aplayer-info {
-    background: url(https://w.wallhaven.cc/full/28/wallhaven-28eqqx.jpg) no-repeat center;
+    /* background: url(https://w.wallhaven.cc/full/28/wallhaven-28eqqx.jpg) no-repeat center; */
+    background: rgba(105, 22, 114, 0.5);
     background-size: cover;
     font-weight: 700 !important;
     color: hotpink !important;
