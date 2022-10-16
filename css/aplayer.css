@@ -14,6 +14,7 @@
 .contact-info .option {
   cursor: pointer;
   position: relative;
+  margin: 2px 0px;
 }
 
 .contact-info .option i {
