@@ -1,7 +1,7 @@
 /* 左侧边栏伸缩音乐播放器 */
 .contact-info {
   position: fixed;
-  top: 22%;
+  bottom: 33%;
   z-index: 200;
   left: -51px;
   transition: 0.4s;
@@ -30,7 +30,7 @@
 }
 
 .contact-info .option:hover i {
-  color: #3498db;
+  color: #17f4ec;
 }
 
 .contact-info .text {
@@ -41,7 +41,7 @@
   background: rgba(255, 255, 255, .85);
   top: 0;
   z-index: -1;
-  left: -136px;
+  left: -135px;
   color: rgb(0, 0, 0);
   line-height: 60px;
   text-align: center;
@@ -57,7 +57,7 @@
 }
 
 .aplayer.aplayer-fixed .aplayer-body {
-  left: -300px;
+  left: 0;
   position: absolute !important;
   width: 370px !important;
   transition: none !important;
@@ -65,12 +65,12 @@
 }
 
 .aplayer.aplayer-fixed {
-  left: -300px;
+  left: -300px !important;
 }
 
 .contact-info .option:hover .aplayer.aplayer-fixed .aplayer-body,
 .contact-info .option:hover .aplayer.aplayer-fixed {
-  left: 0px;
+  left: 0px !important;
 }
 
 .contact-info .option:hover .text {
@@ -111,7 +111,7 @@
 }
 
 .contact-info .option:hover .aplayertext {
-  left: 60px !important;
+  left: 66px !important;
   width: 370px !important;
   background: transparent !important;
 }
@@ -254,5 +254,5 @@
 }
 
 [data-theme=dark] .contact-info .option:hover i {
-  color: #1196ef;
+  color: #ca0cef;
 }
