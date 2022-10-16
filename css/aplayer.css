@@ -263,3 +263,7 @@
   opacity: .8 !important;
   color: #d5b4fa;
 }
+
+.aplayer .aplayer-lrc .aplayer-lrc-contents>.aplayer-lrc-current {
+  color: #cf07f7;
+}
