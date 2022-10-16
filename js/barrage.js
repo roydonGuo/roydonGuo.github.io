@@ -28,6 +28,7 @@ let barrageIndex = 0;
 const barrageDom = document.getElementById('barrage-container');
 window.addEventListener('load', () => {
 
+  console.log('123456789twikootwikoo');
   var data = JSON.stringify({
     "event": "COMMENT_GET",
     "accessToken": accessToken,
@@ -103,4 +104,11 @@ function removeBarrage(barrage) {
   setTimeout(() => {
     barrageDom.removeChild(barrage);
   }, 1000)
+}
+
+function switchCommentBarrage() {
+  let commentBarrage = document.querySelector('.comment-barrage');
+  if (commentBarrage) {
+    $(commentBarrage).toggle()
+  }
 }
