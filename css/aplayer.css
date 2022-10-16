@@ -257,3 +257,9 @@
 [data-theme=dark] .contact-info .option:hover i {
   color: #ca0cef;
 }
+
+/* 歌词样式修改 */
+.aplayer .aplayer-lrc p {
+  opacity: .8 !important;
+  color: #d5b4fa;
+}
