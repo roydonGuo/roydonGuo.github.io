@@ -250,9 +250,9 @@
 }
 
 .aplayer .aplayer-miniswitcher .aplayer-icon:hover path {
-  fill: #3498db;
+  fill: #11eeea;
 }
 
 [data-theme=dark] .contact-info .option:hover i {
-  color: #3498db;
+  color: #1196ef;
 }
