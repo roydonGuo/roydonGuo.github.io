@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue2小视频demo</title>
+      <link href="/posts/videoDemo.html"/>
+      <url>/posts/videoDemo.html</url>
+      
+        <content type="html"><![CDATA[<p>关于我在酒店隔离闲来无事网上冲浪发现一个免费api后的一系列故事…<br>由于无聊，再加上发现了一个好东西，不能我自己一个人享受，得拿出来大家鉴赏鉴赏(doge)<br>就诞生了这个vue视频播放demo，没有使用组件，原生video元素。<br>不多说了，各位注意身体|</p><p>运行效果截图我就不放了，，</p><p>奉上源码：</p><blockquote><p><a href="https://github.com/roydonGuo/WebDemo/tree/dev/girl-video1">https://github.com/roydonGuo/WebDemo/tree/dev/girl-video1</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>spring-security遇到的问题</title>
       <link href="/posts/34abbf19.html"/>
       <url>/posts/34abbf19.html</url>

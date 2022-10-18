@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://roydonguo.github.io/posts/videoDemo.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydonguo.github.io/tags/index.html</loc>
     
     <lastmod>2022-10-18</lastmod>
@@ -48,6 +57,60 @@
   
   <url>
     <loc>https://roydonguo.github.io/music/index.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/posts/4b0178e0.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/about/index.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/barrage/index.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/changebg/index.html</loc>
+    
+    <lastmod>2022-10-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/comments/index.html</loc>
     
     <lastmod>2022-10-18</lastmod>
     
@@ -111,60 +174,6 @@
   
   <url>
     <loc>https://roydonguo.github.io/posts/harmony2.0.html</loc>
-    
-    <lastmod>2022-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/posts/4b0178e0.html</loc>
-    
-    <lastmod>2022-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/about/index.html</loc>
-    
-    <lastmod>2022-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/barrage/index.html</loc>
-    
-    <lastmod>2022-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/categories/index.html</loc>
-    
-    <lastmod>2022-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/changebg/index.html</loc>
-    
-    <lastmod>2022-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydonguo.github.io/comments/index.html</loc>
     
     <lastmod>2022-10-18</lastmod>
     
@@ -624,6 +633,13 @@
   </url>
   
   <url>
+    <loc>https://roydonguo.github.io/tags/Vue/</loc>
+    <lastmod>2022-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://roydonguo.github.io/tags/harmony2-0/</loc>
     <lastmod>2022-10-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -809,6 +825,13 @@
   
   <url>
     <loc>https://roydonguo.github.io/categories/redis/</loc>
+    <lastmod>2022-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/categories/Vue/</loc>
     <lastmod>2022-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
