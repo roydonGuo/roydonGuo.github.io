@@ -75,6 +75,7 @@ function switchNightMode() {
         activateLightMode()
         saveToLocal.set('theme', 'light', 2)
         document.querySelector('body').classList.add('DarkMode')
+        GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.night_to_day)
         document.getElementById('dark-theme-coin').setAttribute('xlink:href', '#icon-moon')
     }
     // handle some cases
