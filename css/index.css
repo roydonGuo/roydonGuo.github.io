@@ -2273,7 +2273,7 @@ figure.highlight pre .javascript .function {
 }
 @media screen and (max-width: 768px) {
   .layout {
-    padding: 20px 5px;
+    padding: 10px 5px;
   }
 }
 @media screen and (min-width: 2000px) {
