@@ -805,16 +805,23 @@ var cssText = `top: 0; background: ${showBg};`
 document.getElementById('app-refresh').style.cssText = cssText
 }
 }</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="contact-info"><div class="option"><i class="fas fa-rocket"></i><div class="bloktop"></div><div class="text">hello~<div class="strip"></div></div></div><div class="option"><i class="fas fa-cube"></i><div class="blok"></div><div class="text">world~<div class="strip"></div></div></div><div class="option"><i class="fas fa-music"></i><div class="blokbottom"></div><div class="text aplayertext"><div class="strip"></div><div class="aplayer no-destroy" mutex="true" listfolded="true" data-id="7691176505" data-preload="none" data-server="netease" data-volume="0.25" data-order="random" data-type="playlist" data-fixed="true" data-autoplay="false"></div></div></div></div><!-- hexo injector body_end start --><script data-pjax>
-  function butterfly_clock_injector_config(){
+  function butterfly_clock_anzhiyu_injector_config(){
     var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
     var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
-    console.log('已挂载butterfly_clock')
-    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
     }
+  }
   var elist = 'null'.split(',');
   var cpage = location.pathname;
   var epage = 'all';
+  var qweather_key = '57d5fafc170b445c830660953b29d80b';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
   var flag = 0;
+  var clock_rectangle = '112.6534116,27.96920845';
+  var clock_default_rectangle_enable = 'false';
 
   for (var i=0;i<elist.length;i++){
     if (cpage.includes(elist[i])){
@@ -823,10 +830,10 @@ document.getElementById('app-refresh').style.cssText = cssText
   }
 
   if ((epage ==='all')&&(flag == 0)){
-    butterfly_clock_injector_config();
+    butterfly_clock_anzhiyu_injector_config();
   }
   else if (epage === cpage){
-    butterfly_clock_injector_config();
+    butterfly_clock_anzhiyu_injector_config();
   }
   </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><script data-pjax>
   function butterfly_footer_beautify_injector_config(){
