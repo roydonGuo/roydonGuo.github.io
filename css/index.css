@@ -1491,7 +1491,7 @@ button {
   touch-action: manipulation;
 }
 a {
-  color: #99a9bf;
+  color: #006aff;
   text-decoration: none;
   word-wrap: break-word;
   -webkit-transition: all 0.2s;
@@ -5820,7 +5820,7 @@ blockquote.pullquote.right {
   position: relative;
   display: block;
   margin: 0 0 0 auto;
-  color: #99a9bf;
+  color: #9fbde8;
 }
 @-moz-keyframes tabshow {
   0% {
@@ -6205,7 +6205,7 @@ blockquote.pullquote.right {
   display: none !important;
 }
 .read-mode #article-container a {
-  color: #99a9bf;
+  color: #006aff;
 }
 .read-mode #article-container pre,
 .read-mode #article-container .highlight:not(.js-file-line-container) {

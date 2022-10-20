@@ -163,9 +163,6 @@ div#post:hover {
     margin: 30px 0px 30px 0px;
 }
 
-#article-container a:hover {
-    color: blue;
-}
 
 /* 设置文字内容 :nth-child(1)的作用是选择第几个 */
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
@@ -333,9 +330,13 @@ div#post:hover {
 .flink-name {
     color: pink;
 }
+#article-container a{
+    color: rgb(237, 0, 237);
+}
 
 /* md网站下划线 */
 #article-container a:hover {
+    color: #ff3456;
     text-decoration: none !important;
 }
 
