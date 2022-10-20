@@ -3978,15 +3978,26 @@ h2.f4.text-normal.mb-3 {
     height: 280px;
   }
 }
-.post-bg {
+#page-header #page-site-info {
+  position: absolute;
+  top: -100px;
+  padding: 0 10px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #page-header #page-site-info {
+    top: 140px;
+  }
+}
+#page-header.post-bg {
   height: 400px;
 }
 @media screen and (max-width: 768px) {
-  .post-bg {
+  #page-header.post-bg {
     height: 360px;
   }
 }
-#post-info {
+#page-header #post-info {
   position: absolute;
   bottom: 100px;
   padding: 0 8%;
@@ -3994,31 +4005,31 @@ h2.f4.text-normal.mb-3 {
   text-align: center;
 }
 @media screen and (max-width: 900px) {
-  #post-info {
+  #page-header #post-info {
     bottom: 30px;
     text-align: left;
   }
 }
 @media screen and (max-width: 768px) {
-  #post-info {
+  #page-header #post-info {
     bottom: 22px;
     padding: 0 22px;
   }
 }
-.not-top-img {
+#page-header.not-top-img {
   margin-bottom: 10px;
   height: 60px;
   background: 0;
 }
-.not-top-img #nav {
+#page-header.not-top-img #nav {
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
-.not-top-img #nav a {
+#page-header.not-top-img #nav a {
   color: var(--font-color);
   text-shadow: none;
 }
-.nav-fixed #nav {
+#page-header.nav-fixed #nav {
   position: fixed;
   top: -60px;
   z-index: 91;
@@ -4030,17 +4041,17 @@ h2.f4.text-normal.mb-3 {
   -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-.nav-fixed #nav a,
-.nav-fixed #nav #site-name,
-.nav-fixed #nav #toggle-menu {
+#page-header.nav-fixed #nav a,
+#page-header.nav-fixed #nav #site-name,
+#page-header.nav-fixed #nav #toggle-menu {
   text-shadow: none;
 }
-.nav-fixed #nav a:hover,
-.nav-fixed #nav #site-name:hover,
-.nav-fixed #nav #toggle-menu:hover {
+#page-header.nav-fixed #nav a:hover,
+#page-header.nav-fixed #nav #site-name:hover,
+#page-header.nav-fixed #nav #toggle-menu:hover {
   color: #ffc0cb;
 }
-.nav-visible #nav {
+#page-header.nav-visible #nav {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -4052,7 +4063,7 @@ h2.f4.text-normal.mb-3 {
   -ms-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
 }
-.nav-visible + .layout > .aside-content > .sticky_layout {
+#page-header.nav-visible + .layout > .aside-content > .sticky_layout {
   top: 70px;
   -webkit-transition: top 0.5s;
   -moz-transition: top 0.5s;
