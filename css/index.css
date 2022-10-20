@@ -3978,14 +3978,6 @@ h2.f4.text-normal.mb-3 {
     height: 280px;
   }
 }
-#page-header #page-site-info {
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  #page-header {
-    top: 140px;
-  }
-}
 .post-bg {
   height: 400px;
 }
