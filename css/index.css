@@ -3975,7 +3975,7 @@ h2.f4.text-normal.mb-3 {
 }
 @media screen and (max-width: 768px) {
   #page-header.not-home-page {
-    height: 280px;
+    height: 60px;
   }
 }
 #page-header #page-site-info {
@@ -3986,7 +3986,7 @@ h2.f4.text-normal.mb-3 {
 }
 @media screen and (max-width: 768px) {
   #page-header #page-site-info {
-    top: 140px;
+    top: -100px;
   }
 }
 #page-header.post-bg {

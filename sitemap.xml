@@ -556,13 +556,6 @@
   </url>
   
   <url>
-    <loc>https://roydonguo.github.io/tags/js/</loc>
-    <lastmod>2022-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://roydonguo.github.io/tags/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -599,6 +592,13 @@
   
   <url>
     <loc>https://roydonguo.github.io/tags/Forge/</loc>
+    <lastmod>2022-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydonguo.github.io/tags/js/</loc>
     <lastmod>2022-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
