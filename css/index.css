@@ -1554,12 +1554,12 @@ blockquote > :last-child {
   margin-bottom: 0 !important;
 }
 :root {
-  --hl-color: #eff;
+  --hl-color: #b6fafa;
   --hl-bg: #212121;
   --hltools-bg: #1c1c1c;
-  --hltools-color: rgba(238,255,255,0.8);
+  --hltools-color: rgba(182,250,250,0.8);
   --hlnumber-bg: #212121;
-  --hlnumber-color: rgba(238,255,255,0.5);
+  --hlnumber-color: rgba(182,250,250,0.5);
   --hlscrollbar-bg: #353535;
   --hlexpand-bg: linear-gradient(180deg, rgba(33,33,33,0.6), rgba(33,33,33,0.9));
 }
@@ -1579,7 +1579,7 @@ figure.highlight pre .meta {
   color: #c792ea;
 }
 figure.highlight pre .comment {
-  color: #969896;
+  color: #b5b6b5;
 }
 figure.highlight pre .variable,
 figure.highlight pre .attribute,
