@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/j
       envId: 'https://guo.yicheng.plus',
       region: '',
       onCommentLoaded: function () {
+        if (location.pathname == '/comments/') addDanmaku();
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
       }
     }, null))

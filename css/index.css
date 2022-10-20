@@ -1354,7 +1354,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff69b4;
+  --btn-hover-color: #ff3456;
   --btn-color: #fff;
   --btn-bg: #ffc0cb;
   --text-bg-hover: rgba(255,192,203,0.7);
@@ -1368,7 +1368,7 @@ canvas:not(#ribbon-canvas),
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #ff69b4;
+  --pseudo-hover: #ff3456;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
 }
@@ -1479,7 +1479,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #ff69b4;
+  background: #ff3456;
   color: #f7f7f7;
 }
 button {
@@ -2258,7 +2258,7 @@ figure.highlight pre .javascript .function {
   flex: 1 auto;
   margin: 0 auto;
   padding: 40px 15px;
-  max-width: 1200px;
+  max-width: 1450px;
   width: 100%;
 }
 @media screen and (max-width: 900px) {
@@ -4994,7 +4994,7 @@ h2.f4.text-normal.mb-3 {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #ffc0cb;
-  --waline-active-color: #ff69b4;
+  --waline-active-color: #ff3456;
 }
 #waline-wrap .vuser {
   -webkit-transition: all 0.5s;

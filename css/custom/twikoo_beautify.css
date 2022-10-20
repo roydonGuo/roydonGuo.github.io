@@ -16,7 +16,7 @@
 /* 深色模式颜色 */
 [data-theme=dark] {
   --cxl2020mc-border-color: #42444a;
-  --cxl2020mc-card-bg: #000000;
+  --cxl2020mc-card-bg: rgba(0, 0, 0, .5);
   --cxl2020mc-card-border: #42444a;
   --style-border-always: 1px solid var(--cxl2020mc-card-border);
   --cxl2020mc-blue: #0084FF;
@@ -117,7 +117,8 @@
   /* 背景颜色 */
   background-color: var(--cxl2020mc-blue);
 }
-[data-theme=dark] .twikoo{
+
+[data-theme=dark] .twikoo {
   color: white;
 }
 
