@@ -1,215 +1,132 @@
-/* 自定义twikoo评论输入框高度 */
-.tk-input[data-v-619b4c52] .el-textarea__inner {
-    height: 130px !important;
-  }
-  /* 输入评论时自动隐藏输入框背景图片 */
-  .tk-input[data-v-619b4c52] .el-textarea__inner:focus {
-    background-image: none !important;
-  }
-  /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
-  .tk-replies {
-    left: -70px;
-    width: calc(100% + 70px);
-  }
-  /* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
-  .tk-replies .tk-avatar {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
-  }
-  .tk-replies .tk-avatar img {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
-  }
-  /* 回复框左移，避免窄屏时出框 */
-  .tk-comments-container .tk-submit {
-    position: relative;
-    left: -70px;
-    width: 110%;
-  }
-  /* 评论块气泡化修改 */
-  .tk-content {
-    background: #00a6ff; /*默认模式访客气泡配色*/
-    padding: 10px;
-    color: #fff; /*默认模式访客气泡字体配色*/
-    border-radius: 10px;
-    font-size: 16px !important;
-    width: fit-content;
-    max-width: 100%;
-    position: relative !important;
-    overflow: visible !important;
-    max-height: none !important;
-  }
-  /* 修复图片出框 */
-  .tk-content img {
-    max-width: 100% !important;
-  }
-  /* 修复过长文本出框 */
-  .tk-content pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  .tk-content a {
-    color: #eeecaa; /*默认模式超链接配色*/
-  }
-  .tk-content::before {
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 20px;
-    left: -13px;
-    border-top: 2px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 15px solid #00a6ff; /*默认模式访客气泡小三角配色*/
-    border-left: 0px solid transparent;
-  }
-  .tk-master .tk-content {
-    background: #ff8080; /*默认模式博主气泡配色*/
-    color: #fff; /*默认模式博主气泡字体配色*/
-    width: fit-content;
-    max-width: 100%;
-  }
-  .tk-master .tk-content a {
-    color: #eeecaa;
-  }
-  .tk-master .tk-content::before {
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 20px;
-    left: -13px;
-    border-top: 2px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 15px solid #ff8080; /*默认模式博主气泡小三角配色*/
-    border-left: 0px solid transparent;
-  }
-  .tk-row[data-v-d82ce9a0] {
-    max-width: 100%;
-    width: fit-content;
-  }
-  .tk-avatar {
-    border-radius: 50%;
-    margin-top: 10px;
-  }
-  
-  /* 夜间模式配色，具体比照上方默认模式class */
-  [data-theme="dark"] .tk-content {
-    background: #000;
-    color: #fff;
-  }
-  [data-theme="dark"] .tk-content a {
-    color: #dfa036;
-  }
-  [data-theme="dark"] .tk-content::before {
-    border-right: 15px solid #000;
-  }
-  [data-theme="dark"] .tk-master .tk-content {
-    background: #000;
-    color: #fff;
-  }
-  [data-theme="dark"] .tk-master .tk-content a {
-    color: #dfa036;
-  }
-  [data-theme="dark"] .tk-master .tk-content::before {
-    border-top: 2px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 15px solid #000;
-    border-left: 0px solid transparent;
-  }
-  /* 自适应内容 */
-  @media screen and (min-width: 1024px) {
-    /* 设置宽度上限，避免挤压博主头像 */
-    .tk-content {
-      max-width: 75%;
-      width: fit-content;
-    }
-    .tk-master .tk-content {
-      width: 80%;
-    }
-    .tk-master .tk-content::before {
-      left: 100%;
-      border-left: 15px solid #ff8080;
-      border-right: 0px solid transparent;
-    }
-    .tk-master .tk-avatar {
-      position: relative;
-      left: calc(75% + 70px);
-    }
-    .tk-master .tk-row[data-v-d82ce9a0] {
-      position: relative;
-      top: 0px;
-      left: calc(75% - 230px);
-    }
-    [data-theme="dark"] .tk-master .tk-content::before {
-      border-left: 15px solid #000;
-      border-right: 0px solid transparent;
-    }
-  }
-  /* 设备名称常态隐藏，悬停评论时显示 */
-  .tk-extras {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-  }
-  .tk-content:hover + .tk-extras {
-    -webkit-animation: tk-extras-fadeIn 0.5s linear;
-    -moz-animation: tk-extras-fadeIn 0.5s linear;
-    -o-animation: tk-extras-fadeIn 0.5s linear;
-    -ms-animation: tk-extras-fadeIn 0.5s linear;
-    animation: tk-extras-fadeIn 0.5s linear;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  @-moz-keyframes tk-extras-fadeIn {
-    from {
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-    }
-    to {
-      opacity: 1;
-      -ms-filter: none;
-      filter: none;
-    }
-  }
-  @-webkit-keyframes tk-extras-fadeIn {
-    from {
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-    }
-    to {
-      opacity: 1;
-      -ms-filter: none;
-      filter: none;
-    }
-  }
-  @-o-keyframes tk-extras-fadeIn {
-    from {
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-    }
-    to {
-      opacity: 1;
-      -ms-filter: none;
-      filter: none;
-    }
-  }
-  @keyframes tk-extras-fadeIn {
-    from {
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-    }
-    to {
-      opacity: 1;
-      -ms-filter: none;
-      filter: none;
-    }
-  }
-  
+/* 声名部分变量 */
+:root {
+  --cxl2020mc-radius: 7px;
+  --cxl2020mc-card-border-width: 1px;
+}
+
+/* 浅色模式颜色 */
+[data-theme=light] {
+  --cxl2020mc-border-color: #e3e8f7;
+  --cxl2020mc-card-bg: #fff;
+  --cxl2020mc-card-border: #e3e8f7;
+  --style-border-always: 1px solid var(--cxl2020mc-card-border);
+  --cxl2020mc-blue: #425AEF;
+}
+
+/* 深色模式颜色 */
+[data-theme=dark] {
+  --cxl2020mc-border-color: #42444a;
+  --cxl2020mc-card-bg: #000000;
+  --cxl2020mc-card-border: #42444a;
+  --style-border-always: 1px solid var(--cxl2020mc-card-border);
+  --cxl2020mc-blue: #0084FF;
+}
+
+/* 评论区评论大框 */
+.twikoo .tk-comments-container>.tk-comment {
+  /* 内边距 */
+  padding: 1rem;
+  /* 圆角 */
+  border-radius: var(--cxl2020mc-radius);
+  /* 背景颜色 */
+  background: var(--cxl2020mc-card-bg);
+  /* 变动动画时长 */
+  transition: .3s;
+}
+
+/* 浅色模式评论区评论大框 */
+[data-theme=light] .twikoo .tk-comments-container>.tk-comment {
+  /* 阴影 */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* 浅色模式评论区评论大框阴影悬浮加深 */
+[data-theme=light] .twikoo .tk-comments-container>.tk-comment:hover {
+  /* 阴影（浅色模式突出层次感） */
+  box-shadow: var(--card-hover-box-shadow);
+}
+
+/* 黑暗模式评论区评论大框 */
+[data-theme=dark] .twikoo .tk-comments-container>.tk-comment {
+  /* 边框样式 */
+  border-style: solid;
+  /* 边框宽度 */
+  border-width: var(--cxl2020mc-card-border-width);
+  /* 边框颜色 */
+  border-color: var(--cxl2020mc-card-border);
+}
+
+/* 设备信息 */
+.twikoo .tk-extra {
+  /* 圆角 */
+  border-radius: var(--cxl2020mc-radius);
+  /* 背景颜色 */
+  background: var(--cxl2020mc-card-bg);
+  /* 内边距 */
+  padding: 0.4rem;
+  /* 底边距 */
+  margin-bottom: 1rem;
+  /* 变动动画时长 */
+  transition: .3s;
+}
+
+/* 浅色模式设备信息 */
+[data-theme=light] .twikoo .tk-extra {
+  /* 阴影 */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* 浅色模式设备信息阴影悬浮加深 */
+[data-theme=light] .twikoo .tk-extra:hover {
+  /* 阴影 */
+  box-shadow: var(--card-hover-box-shadow);
+}
+
+/* 黑暗模式设备信息 */
+[data-theme=dark] .twikoo .tk-extra {
+  /* 边框样式 */
+  border-style: solid;
+  /* 边框宽度 */
+  border-width: var(--cxl2020mc-card-border-width);
+  /* 边框颜色 */
+  border-color: var(--cxl2020mc-card-border);
+}
+
+/* 加载更多按钮 */
+.twikoo .tk-expand {
+  /* 圆角 */
+  border-radius: var(--cxl2020mc-radius);
+}
+
+/* 浅色模式加载更多按钮 */
+[data-theme=light] .twikoo .tk-expand {
+  /* 阴影 */
+  box-shadow: var(--card-box-shadow);
+}
+
+/* 浅色模式加载更多按钮（鼠标悬浮时） */
+[data-theme=light] .twikoo .tk-expand:hover {
+  /* 阴影 */
+  box-shadow: var(--card-hover-box-shadow);
+  /* 背景颜色 */
+  background-color: var(--btn-bg);
+}
+
+/* 黑暗模式加载更多按钮（鼠标悬浮时） */
+[data-theme=dark] .twikoo .tk-expand:hover {
+  /* 背景颜色 */
+  background-color: var(--cxl2020mc-blue);
+}
+[data-theme=dark] .twikoo{
+  color: white;
+}
+
+/* 黑暗模式加载更多按钮 */
+[data-theme=dark] .twikoo .tk-expand {
+  /* 边框样式 */
+  border-style: solid;
+  /* 边框宽度 */
+  border-width: var(--cxl2020mc-card-border-width);
+  /* 边框颜色 */
+  border-color: var(--cxl2020mc-card-border);
+}

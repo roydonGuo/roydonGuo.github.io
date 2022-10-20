@@ -244,7 +244,7 @@ div#post:hover {
 
 /* 设置评论框 */
 
-.twikoo {
+/* .twikoo {
     box-shadow: 2px 2px 5px #bbb;
     color: black;
     background: rgba(117, 222, 249, 0.8);
@@ -327,7 +327,7 @@ div#post:hover {
     padding: 10px 11px;
     background: rgb(255, 101, 152);
     margin-right: 50px;
-}
+} */
 
 /*  友情连接 */
 .flink-name {
