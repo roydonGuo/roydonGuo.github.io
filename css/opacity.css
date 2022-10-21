@@ -76,12 +76,11 @@
     border-radius: 8px;
 }
 
-#aside-content .card-info #card-info-btn {
+/* #aside-content .card-info #card-info-btn {
     background: rgb(200, 136, 146);
     border-radius: 8px;
-    margin: 14px 0;
-
-}
+    margin: 4px 0;
+} */
 
 #aside-content .card-info #card-info-btn:hover {
     background: #450a4a;

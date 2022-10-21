@@ -97,17 +97,11 @@
 
 /* 个人认证，文章版权 */
 #post .post-copyright {
-    color: hotpink;
+    color: pink;
     background-color: rgba(76, 67, 73, 0.8);
     border-radius: 10px;
 }
 
-/* 文章下面标签 */
-/* #post .tag_share .post-meta__tags:hover {
-    background: #ffc0cb;
-    color: cyan;
-    border: 1px solid cyan;
-} */
 
 /* 上一篇 || 下一篇 */
 #pagination.pagination-post {
@@ -166,11 +160,11 @@ div#post:hover {
 
 /* 设置文字内容 :nth-child(1)的作用是选择第几个 */
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
-    content: '输入你的昵称(自定义)🐧';
+    content: '输入昵称(自定义)🐧';
 }
 
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {
-    content: '输入你的邮箱自动获取头像📧';
+    content: '输入邮箱自动获取头像📧';
 }
 
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {
@@ -188,7 +182,7 @@ div#post:hover {
 }
 
 #post .post-copyright::before {
-    font-size: 3em;
+    font-size: 4.6em;
 }
 /* 查看更多背景色去除 */
 .v[data-class="v"] .vcards .vcard .vcontent.expand::before {

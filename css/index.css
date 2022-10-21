@@ -2666,7 +2666,8 @@ h1.page-title + .tag-cloud-list {
   margin-top: -0.42em;
 }
 #aside-content .card-info .card-info-data {
-  margin: 14px 0 4px;
+  margin: 4px 0 4px;
+  padding: 0 10%;
 }
 #aside-content .card-info .card-info-social-icons {
   margin: 6px 0 -6px;
@@ -2693,7 +2694,8 @@ h1.page-title + .tag-cloud-list {
 #aside-content .card-info #card-info-btn {
   display: block;
   margin-top: 14px;
-  background-color: var(--btn-bg);
+  border-radius: 10px;
+  background-color: #ffc0cb;
   color: var(--btn-color);
   text-align: center;
   line-height: 2.4;
