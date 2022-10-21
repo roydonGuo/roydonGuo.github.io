@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://roydon.xyz/tags/index.html</loc>
+    <loc>https://roydon.xyz/tools/index.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tools/index.html</loc>
+    <loc>https://roydon.xyz/tags/index.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -182,15 +182,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/Gallery/genshin/index.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/Gallery/phone/index.html</loc>
     
     <lastmod>2022-10-21</lastmod>
@@ -210,6 +201,15 @@
   
   <url>
     <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/genshin/index.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -362,7 +362,7 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/48c18324.html</loc>
+    <loc>https://roydon.xyz/posts/6f615cb.html</loc>
     
     <lastmod>2022-08-26</lastmod>
     
@@ -371,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/6f615cb.html</loc>
+    <loc>https://roydon.xyz/posts/48c18324.html</loc>
     
     <lastmod>2022-08-26</lastmod>
     
