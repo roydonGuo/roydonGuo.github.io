@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   right: 55px;
-  padding: 0 0 30px 10px;
+  padding: 0 0 20px 0;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -17,21 +17,21 @@
 }
 
 #post-comment .comment-barrage-item {
-  min-width: 100px;
-  max-width: 160px;
+  min-width: 120px;
+  max-width: 180px;
   width: fit-content;
   min-height: 80px;
   max-height: 120px;
-  margin: 3px 0;
-  padding: 8px;
+  margin: 2px 0;
+  padding: 0 8px;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   color: #fff;
   animation: barrageIn 0.3s cubic-bezier(.25, .01, .5, 1.5);
-  transition: 1s;
+  transition: .6s;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 #post-comment .comment-barrage-item.out {
@@ -75,7 +75,7 @@
 
 #post-comment .comment-barrage-item .barrageContent::-webkit-scrollbar {
   height: 0;
-  width: 4px;
+  width: 1px;
 }
 
 #post-comment .comment-barrage-item .barrageContent::-webkit-scrollbar-button {
