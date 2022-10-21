@@ -21,10 +21,10 @@
     border-radius: 16px !important;
 }
 
-#page-header.post-bg {
+/* #page-header.post-bg {
     height: 397px;
-    /* background-image: '' */
-}
+    background-image: ''
+} */
 
 #page-header #post-info {
     position: absolute;
