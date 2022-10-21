@@ -136,7 +136,7 @@ div#menus {
 #site-name::before {
     opacity: 0;
     background-color: pink !important;
-    border-radius: 15px;
+    border-radius: 12px;
     /* -webkit-border-radius: 8px; */
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
@@ -155,10 +155,10 @@ div#menus {
     /* box-shadow: 5px 5px 5px rgb(31, 23, 25); */
     font-family: "Font Awesome 6 Free";
     text-align: center;
-    color: rgb(65, 250, 250);
+    color: #ff3456;
     line-height: 30px;
     /*如果有溢出或者垂直不居中的现象微调一下这个参数*/
-    font-size: 18px;
+    font-size: 20px;
     /*根据个人喜好*/
 }
 
@@ -204,23 +204,22 @@ div#menus {
 
 .back-home-button:hover {
     background: pink;
-    color: purple !important;
+    color: #ff3456 !important;
 }
 
 .back-home-button {
     display: flex;
-    width: 43px;
+    width: 40px;
     height: 80%;
     padding: 0 !important;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 1.2em;
+    line-height: 1;
     margin-right: 4px;
     transition: 0.3s;
-    border-radius: 8px;
-    color: rgb(48, 252, 255);
+    border-radius: 10px;
 }
 
 .back-home-button:hover .back-menu-list-groups {
@@ -273,6 +272,10 @@ div#menus {
     transition: 0.3s;
 }
 
+.back-home-button-icon {
+    font-size: 1.3em;
+}
+
 .back-home-button .back-menu-list {
     display: flex;
     flex-direction: column;
@@ -298,11 +301,10 @@ div#menus {
 .back-home-button .back-menu-list .back-menu-item {
     display: flex;
     align-items: center;
-    margin: 4px 8px;
+    margin: 2px 8px;
     padding: 4px 8px !important;
     border-radius: 6px;
     transition: 0.3s;
-    border-radius: 8px;
 }
 
 .back-home-button .back-menu-list .back-menu-item:hover {
@@ -324,7 +326,7 @@ div#menus {
 }
 
 #page-header #nav .back-home-button {
-    color: rgb(250, 123, 195);
+    color: pink;
     cursor: pointer;
     position: relative;
 }
@@ -344,7 +346,8 @@ div#menus {
 }
 
 #site-name {
-    padding: 0 8px;
+    padding: 0 2px;
+    margin-left: 4px;
     position: relative;
 }
 
@@ -360,7 +363,7 @@ div#menus {
 #blog_name #site-name::after {
     opacity: 0;
     background-color: pink !important;
-    border-radius: 15px;
+    border-radius: 12px;
     /* -webkit-border-radius: 8px; */
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
