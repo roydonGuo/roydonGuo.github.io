@@ -8,7 +8,7 @@ const commentBarrageConfig = {
     ['rgba(212, 78, 48,0.93)', 'rgba(255,255,255,0.8)']
   ],
   //同时最多显示弹幕数
-  maxBarrage: 3,
+  maxBarrage: 2,
   //弹幕显示间隔时间ms
   barrageTime: 3000,
   //twikoo部署地址腾讯云的为环境ID

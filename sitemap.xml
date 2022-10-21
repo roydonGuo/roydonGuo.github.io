@@ -56,42 +56,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/14.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/20.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/21.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/26.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/posts/b0faee08.html</loc>
     
     <lastmod>2022-10-21</lastmod>
@@ -173,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/Gallery/twospace/index.html</loc>
+    <loc>https://roydon.xyz/posts/14.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -182,7 +146,25 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
+    <loc>https://roydon.xyz/posts/20.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/21.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/26.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -210,6 +192,24 @@
   
   <url>
     <loc>https://roydon.xyz/Gallery/phone/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/twospace/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -528,14 +528,14 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/HTML/</loc>
+    <loc>https://roydon.xyz/tags/CSS/</loc>
     <lastmod>2022-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/CSS/</loc>
+    <loc>https://roydon.xyz/tags/HTML/</loc>
     <lastmod>2022-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -633,6 +633,13 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/tags/Vue/</loc>
+    <lastmod>2022-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/tags/harmony2-0/</loc>
     <lastmod>2022-10-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -648,13 +655,6 @@
   
   <url>
     <loc>https://roydon.xyz/tags/jQuery/</loc>
-    <lastmod>2022-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/tags/Vue/</loc>
     <lastmod>2022-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -831,14 +831,14 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/harmony2-0/</loc>
+    <loc>https://roydon.xyz/categories/Vue/</loc>
     <lastmod>2022-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/Vue/</loc>
+    <loc>https://roydon.xyz/categories/harmony2-0/</loc>
     <lastmod>2022-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
