@@ -103,11 +103,11 @@
 }
 
 /* 文章下面标签 */
-#post .tag_share .post-meta__tags:hover {
+/* #post .tag_share .post-meta__tags:hover {
     background: #ffc0cb;
     color: cyan;
     border: 1px solid cyan;
-}
+} */
 
 /* 上一篇 || 下一篇 */
 #pagination.pagination-post {

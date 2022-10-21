@@ -379,12 +379,6 @@ svg.icon.faa-tada {
     font-weight: 900;
 }
 
-#post .tag_share .post-meta__tags {
-    font-size: 0.9em;
-    border: 1px solid blueviolet;
-    color: hotpink;
-}
-
 #pagination .page-number.current {
     border-radius: 5px;
 }
