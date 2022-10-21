@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/music/index.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/manifest.json</loc>
     
     <lastmod>2022-10-21</lastmod>
@@ -39,42 +48,6 @@
   
   <url>
     <loc>https://roydon.xyz/movies/index.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/music/index.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/b0faee08.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/Mybatis-Plus.html</loc>
-    
-    <lastmod>2022-10-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
@@ -165,6 +138,33 @@
   
   <url>
     <loc>https://roydon.xyz/posts/26.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/b0faee08.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/Mybatis-Plus.html</loc>
+    
+    <lastmod>2022-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
     
     <lastmod>2022-10-21</lastmod>
     
