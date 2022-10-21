@@ -2693,7 +2693,7 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .card-info #card-info-btn {
   display: block;
-  margin-top: 14px;
+  margin: 4px 10%;
   border-radius: 10px;
   background-color: #ffc0cb;
   color: var(--btn-color);
