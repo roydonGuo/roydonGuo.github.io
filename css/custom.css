@@ -323,17 +323,17 @@ svg.icon.faa-tada {
 }
 
 /* 魔改标签 */
-.tag-cloud-list {
+/* .tag-cloud-list {
     font-weight: 800;
     border-radius: 8px;
     border: 2px solid hotpink;
-}
+} */
 
-.tag-cloud-list a {
+/* .tag-cloud-list a {
     border-radius: 8px;
     margin: 5px 5px;
     border: 1px solid transparent;
-}
+} */
 
 #aside-content .card-info .author-info__name {
     font-weight: 900;
