@@ -300,8 +300,13 @@ div#menus {
     align-items: center;
     margin: 4px 8px;
     padding: 4px 8px !important;
+    border-radius: 6px;
     transition: 0.3s;
     border-radius: 8px;
+}
+
+.back-home-button .back-menu-list .back-menu-item:hover {
+    background: rgb(0, 0, 0);
 }
 
 .back-home-button .back-menu-list .back-menu-item .back-menu-item-text {
@@ -325,7 +330,7 @@ div#menus {
 }
 
 .back-home-button .back-menu-list .back-menu-item:hover .back-menu-item-text {
-    color: rgb(181, 17, 199);
+    color: #ff3456;
 }
 
 .back-menu-item-icon.loading img {
