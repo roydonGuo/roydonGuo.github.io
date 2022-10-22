@@ -56,6 +56,15 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/posts/b0faee08.html</loc>
+    
+    <lastmod>2022-10-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/posts/Mybatis-Plus.html</loc>
     
     <lastmod>2022-10-22</lastmod>
@@ -156,15 +165,6 @@
   
   <url>
     <loc>https://roydon.xyz/posts/26.html</loc>
-    
-    <lastmod>2022-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/b0faee08.html</loc>
     
     <lastmod>2022-10-22</lastmod>
     
@@ -535,6 +535,13 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/tags/HTML/</loc>
+    <lastmod>2022-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/tags/HUAWEI/</loc>
     <lastmod>2022-10-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -543,13 +550,6 @@
   
   <url>
     <loc>https://roydon.xyz/tags/%E9%B2%B2%E9%B9%8FHCIA/</loc>
-    <lastmod>2022-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/tags/HTML/</loc>
     <lastmod>2022-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -619,13 +619,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/Vue/</loc>
-    <lastmod>2022-10-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/tags/redis/</loc>
     <lastmod>2022-10-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -634,6 +627,13 @@
   
   <url>
     <loc>https://roydon.xyz/tags/%F0%9F%90%A7Linux/</loc>
+    <lastmod>2022-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/tags/Vue/</loc>
     <lastmod>2022-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -824,14 +824,14 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/Vue/</loc>
+    <loc>https://roydon.xyz/categories/redis/</loc>
     <lastmod>2022-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/redis/</loc>
+    <loc>https://roydon.xyz/categories/Vue/</loc>
     <lastmod>2022-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
