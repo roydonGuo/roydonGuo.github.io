@@ -4,25 +4,16 @@ var wallhaven = 'https://wallhaven.cc/w/'
 var backimg = []
 
 function getAnime() {
-    // 1. 创建 XHR 对象
     var xhr = new XMLHttpRequest()
-    // 2. 调用 open 函数
     xhr.open('GET', 'https://anime-1313439510.cos.ap-shanghai.myqcloud.com/anime/anime.json')
-    // 3. 调用 send 函数，发起 Ajax 请求
     xhr.send()
-    // 4. 监听 onreadystatechange 事件
     xhr.onreadystatechange = function () {
-        //监听 xhr 对象的请求状态 readyState ；与服务器响应的状态 status
-        // console.log(xhr.responseText)
-        console.log(xhr);
         if (xhr.readyState === 4 && xhr.status === 200) {
             backimg = (xhr.responseText).split(',')
-            console.log('getAnime success' + backimg);
+            // console.log('getAnime success' + backimg);
         }
     }
-
 }
-
 
 //  [
 //     "url(https://w.wallhaven.cc/full/3z/wallhaven-3zppld.jpg)",
