@@ -52,7 +52,7 @@ function randomChangeBg(flag) {
             //重设背景图片
             document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
             // console.log(document.querySelector("#web_bg").style.background);
-        }, 10000)
+        }, 20000)
 
         //随机banner数组,图片可以换成图床链接，注意最后一条后面不要有逗号
         // var bannerimg = [
@@ -86,7 +86,7 @@ function randomBg() {
             //重设背景图片
             document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
             // console.log(document.querySelector("#web_bg").style.background);
-        }, 10000)
+        }, 20000)
 
     }
     // timerFa = setTimeout(function () {
