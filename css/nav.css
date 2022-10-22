@@ -236,7 +236,7 @@ div#menus {
 #nav {
     padding: 0 calc((100% - 1420px) / 2);
     /* background: block; */
-    backdrop-filter: saturate(120%) blur(10px);
+    backdrop-filter: saturate(150%) blur(20px);
     transition: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
