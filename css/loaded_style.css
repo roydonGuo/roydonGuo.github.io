@@ -7,13 +7,13 @@
   z-index: 2000;
   position: fixed;
   margin: auto;
-  top: 8px;
+  top: 6px;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 12px;
   border-radius: 8px;
-  width: 6rem;
-  background: #bac5e7;
+  width: 8rem;
+  background: #c0cef8;
   border: 1px #f7eb09;
   overflow: hidden
 }
@@ -42,7 +42,7 @@
   right: 100%;
   height: 100%;
   width: 100%;
-  background: linear-gradient(-45deg, #f3a9ce, #ef7da9, #e144aa, #df06a1);
+  background: linear-gradient(-45deg, #edbed5, #f583ae, #e6169d, #e50076);
   animation: gradient 1.5s ease infinite;
   background-size: 200%
 }
