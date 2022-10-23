@@ -1,7 +1,3 @@
-/* :root {
-    --card-bg: rgba(250, 250, 250, .8);
-} */
-
 /* 网页div的圆角 */
 .cardHover,
 .error404 #error-wrap .error-content,
@@ -67,13 +63,13 @@
 #aside-content>.card-widget.card-info {
     background: linear-gradient(-45deg, rgb(176, 61, 82), #66116e, #380d7b, #8d0b6a);
     background-size: 400%;
-    box-shadow: black;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
     position: relative;
-    color: rgb(233, 239, 239);
+    color: white;
 }
 
 .site-data>a .headline,
 .site-data>a .length-num {
     color: rgb(126, 249, 249);
+    font-weight: 800;
 }
