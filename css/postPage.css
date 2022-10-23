@@ -115,7 +115,7 @@
     font-size: 19px;
 }
 
-.layout>div:not(.recent-posts) .pagination .page-number {
+/* .layout>div:not(.recent-posts) .pagination .page-number {
     margin: 0 4px;
     min-width: 40px;
     height: 40px;
@@ -127,7 +127,7 @@
     cursor: pointer;
     border: 2px solid hotpink;
     border-radius: 8px;
-}
+} */
 
 /* 相关推荐 */
 .relatedPosts>.relatedPosts-list>div {

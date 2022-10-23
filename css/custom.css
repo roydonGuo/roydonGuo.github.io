@@ -94,17 +94,13 @@
     /*-webkit-filter:grayscale(100%)*/
 }
 
-/* 导航栏隐藏 */
-/* .menus_item_child{
-    color: white;
-  } */
 #aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
 #aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
     border-radius: 8px;
 }
 
 .article-sort-item-img {
-    border-radius: 8px;
+    border-radius: 10px;
     width: 150px;
     margin-right: 10px;
 }
@@ -143,10 +139,6 @@ h1.post-title {
     font-family: "阿里巴巴普惠体 2.0 105 Heavy";
 }
 
-/* #aside-content .card-webinfo {
-    background: url('https://img1.imgtp.com/2022/08/24/tSMdJ5gW.png');
-} */
-
 #aside-content .card-widget:last-child {
     background: url('https://img1.imgtp.com/2022/08/24/tSMdJ5gW.png');
     background-repeat: no-repeat;
@@ -163,14 +155,6 @@ h1.post-title {
     padding: 0 10px;
 }
 
-/* blog-slider__img */
-/* .blog-slider__pagination .swiper-pagination-bullet {
-    background: #6b0a1a;
-    background: #6b0a1a;
-  }
-  .blog-slider__pagination .swiper-pagination-bullet-active{
-    background: #33040b;
-  } */
 
 /* 首页磁贴卡片美化 */
 #recent-posts>.recent-post-item {
@@ -184,17 +168,6 @@ h1.post-title {
 #recent-posts>.recent-post-item>.recent-post-info>.article-title:hover {
     color: rgb(251, 169, 183);
     font-size: 1.23em;
-}
-
-/* 时间轴生肖icon */
-svg.icon {
-    /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
-    width: 1em;
-    height: 1em;
-    /* width和height定义图标的默认宽度和高度*/
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
 }
 
 .icon-zhongbiao::before {
@@ -372,12 +345,11 @@ svg.icon.faa-tada {
 }
 
 
-
 /* 文章总览修改 */
-.article-sort-title {
+/* .article-sort-title {
     font-size: 2.33em;
     font-weight: 900;
-}
+} */
 
 #pagination .page-number.current {
     border-radius: 5px;
@@ -456,11 +428,6 @@ div#category {
 #rightside>div>button {
     border-radius: 5px;
 }
-
-/* #recent-posts>.recent-post-item {
-    height: 14.5em;
-} */
-
 
 /* 鼠标图标 */
 /* body {
@@ -623,25 +590,12 @@ button:not(:disabled) {
 
 .social-qq:before {
     content: "\e626";
-    /* 修改颜色 */
-    /* color: blue; */
-    /* 修改大小 */
     font-size: 24px;
 }
 
 span#subtitle:hover {
     color: pink;
     box-shadow: 2px 2px 1px black;
-}
-
-/* 文章总览页面 */
-.layout>div:first-child {
-    /* width: 100%; */
-}
-
-/* 去除aside */
-.page .aside-content {
-    /* display: none; */
 }
 
 /* 主题切换背景图片切换 */
@@ -656,25 +610,6 @@ span#subtitle:hover {
 #article-container .flink .flink-list>.flink-list-item {
     margin: 5px 7px !important;
 }
-
-/* 相册页面原神卡片重设计 */
-/* #article-container>p:nth-child(2)>a {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-#article-container>p:nth-child(2)>a>img {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-}
-
-#article-container>p:nth-child(2) {
-    background: linear-gradient(112.88411960494409deg, rgba(248, 198, 215, 1) 2.265625%, rgba(175, 233, 249, 1) 100.70312499999999%);
-    padding: 1%;
-    border-radius: 10px;
-} */
 
 #article-container .btn-beautify.outline {
     border-radius: 20px;
