@@ -85,47 +85,6 @@
     /*-webkit-filter:grayscale(100%)*/
 }
 
-/* archives */
-#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
-#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
-    border-radius: 8px;
-}
-
-@media screen and (min-width:900px) {
-    .article-sort-item:not(.year) {
-        background: rgba(255, 255, 255, 0.8);
-        float: left;
-        margin: 0 .5% 2%;
-        width: 49%;
-        height: 80px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-    
-
-}
-
-.article-sort-item-img {
-    border-radius: 10px;
-    width: 30%;
-    /* margin-right: 10px; */
-}
-
-.article-sort-item-info {
-    /* border-left: 4px solid black; */
-    width: 70%;
-    /* border-radius: 20px; */
-}
-
-.article-sort-item-title {
-    font-weight: 800;
-}
-
-.article-sort-item-title:hover {
-    color: #ff3456;
-}
-
 #aside-content #card-toc .toc-content .toc-link.active {
     background: hotpink;
     border-radius: 8px;

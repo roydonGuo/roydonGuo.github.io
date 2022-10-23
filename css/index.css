@@ -2131,6 +2131,9 @@ figure.highlight pre .javascript .function {
 .article-sort-item-time {
   color: #858585;
   font-size: 95%;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 .article-sort-item-time time {
   padding-left: 6px;
@@ -2159,7 +2162,7 @@ figure.highlight pre .javascript .function {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
   position: absolute;
-  bottom: 0.5rem;
+  top: 0.5rem;
   right: 0.5rem;
   color: #ff3456;
   font-style: italic;

@@ -1,3 +1,66 @@
+/* archives */
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
+  border-radius: 8px;
+}
+
+@media screen and (min-width:900px) {
+  .article-sort-item:not(.year) {
+    background: rgba(255, 255, 255, 0.7);
+    float: left;
+    box-shadow: 5px 5px 5px rgb(155, 156, 157);
+    margin: 0 .5% 2%;
+    padding: 6px;
+    /* border: 2px solid black; */
+    width: 49%;
+    /* height: 80px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  /* .article-sort-item:not(.year):hover {
+    border: 2px solid pink;
+  } */
+
+  [data-theme='dark'] .article-sort-item:not(.year) {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+
+}
+
+.article-meta-wrap span:not(.article-meta__link) {
+  display: block;
+}
+
+.article-sort-item-img {
+  border-radius: 10px;
+  width: 30%;
+  /* margin-right: 10px; */
+}
+
+.article-meta-wrap a:hover {
+  border-radius: 6px;
+  background: rgba(255, 192, 203, 0.7);
+  color: #ff3456;
+  /* transition: .3s; */
+}
+
+.article-sort-item-info {
+  /* border-left: 4px solid black; */
+  width: 70%;
+  /* border-radius: 20px; */
+}
+
+.article-sort-item-title {
+  font-weight: 800;
+}
+
+.article-sort-item-title:hover {
+  color: #ff3456;
+}
+
 /* 分类目录条、标签目录条 */
 #catalog-bar {
   padding: .4rem .8rem;
