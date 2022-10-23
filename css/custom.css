@@ -91,24 +91,31 @@
     border-radius: 8px;
 }
 
-@media screen and (min-width:901px) {
+@media screen and (min-width:900px) {
     .article-sort-item:not(.year) {
-        background: pink;
+        background: rgba(255, 255, 255, 0.8);
         float: left;
-        margin: 0 !important;
-        width: 50%;
+        margin: 0 .5% 2%;
+        width: 49%;
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
+    
+
 }
 
 .article-sort-item-img {
     border-radius: 10px;
-    width: 150px;
-    margin-right: 10px;
+    width: 30%;
+    /* margin-right: 10px; */
 }
 
 .article-sort-item-info {
-    border-left: 4px solid black;
-    border-radius: 20px;
+    /* border-left: 4px solid black; */
+    width: 70%;
+    /* border-radius: 20px; */
 }
 
 .article-sort-item-title {

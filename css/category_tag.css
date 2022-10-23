@@ -74,9 +74,9 @@ a.catalog-more:hover {
   position: relative;
   display: inline-block;
   padding: 0 1rem;
-  width: 48%;
+  width: 49%;
   font-weight: 700;
-  margin: 0 .5% 2% .5%;
+  margin: 0 .5% 2%;
   border-radius: 10px;
   box-shadow: rgb(135 32 32 / 30%) 50px 50px 50px 50px inset
 }

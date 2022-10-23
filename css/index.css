@@ -2097,13 +2097,13 @@ figure.highlight pre .javascript .function {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  border-radius: 10px;
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  margin: 0 0 20px 10px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -2117,7 +2117,7 @@ figure.highlight pre .javascript .function {
   height: 80px;
 }
 .article-sort-item.no-article-cover .article-sort-item-info {
-  padding: 0;
+  padding: 0 !important;
 }
 .article-sort-item.year {
   font-size: 1.43em;
@@ -2155,19 +2155,20 @@ figure.highlight pre .javascript .function {
   transform: translateX(10px);
 }
 .article-sort-item-index {
-  opacity: 0.5;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  filter: alpha(opacity=50);
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
   position: absolute;
-  top: 0.5rem;
+  bottom: 0.5rem;
   right: 0.5rem;
+  color: #ff3456;
   font-style: italic;
-  font-size: 2.5rem;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 .article-sort-item-img {
   overflow: hidden;
-  width: 80px;
+  width: 30%;
   height: 80px;
 }
 .article-sort-item-info {
