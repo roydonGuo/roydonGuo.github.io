@@ -80,11 +80,6 @@
     color: pink;
 }
 
-/* reward */
-.post-reward .reward-button .tip-button__text::after {
-    content: '(一键三联)';
-}
-
 /* 个人认证，文章版权 */
 #post .post-copyright {
     color: pink;
@@ -131,7 +126,6 @@ div#post:hover {
     padding: 30px;
     margin: 30px 0px 30px 0px;
 }
-
 
 /* 设置文字内容 :nth-child(1)的作用是选择第几个 */
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
@@ -180,21 +174,16 @@ div#post:hover {
 
 /* 主内容区 */
 .el-input.el-input--small.el-input-group.el-input-group--prepend::before {
-    /* 先隐藏起来 */
     display: none;
     /* 绝对定位 */
     position: absolute;
-    /* 向上移动60像素 */
     top: -60px;
     /* 文字强制不换行，防止left:50%导致的文字换行 */
     white-space: nowrap;
-    /* 圆角 */
     border-radius: 10px;
-    /* 距离左边50% */
     left: 50%;
     /* 然后再向左边挪动自身的一半，即可实现居中 */
     transform: translate(-50%);
-    /* 填充 */
     padding: 14px 18px;
     background: #444;
     color: #fff;
@@ -211,93 +200,6 @@ div#post:hover {
     border-top-color: #444;
     left: 50%;
     transform: translate(-50%, -48px);
-}
-
-/* 设置评论框 */
-
-/* .twikoo {
-    box-shadow: 2px 2px 5px #bbb;
-    color: black;
-    background: rgba(117, 222, 249, 0.8);
-    border-radius: 8px;
-    padding: 30px;
-    margin: 30px 0px 0px 0px;
-}
-
-.twikoo .el-input__inner:hover,
-.twikoo .el-textarea__inner:hover {
-    border-color: rgba(255, 0, 25, 0.5);
-}
-
-.twikoo input {
-    color: black;
-}
-
-.tk-content::before {
-    border-right: 15px solid hotpink;
-    top: 6px;
-}
-
-.tk-content {
-    background: hotpink;
-    padding: 1px 20px;
-}
-
-.tk-content p {
-    margin: 6px 6px;
-}
-
-/* vcomment评论 */
-#vcomment {
-    color: black !important;
-    background: pink;
-    border-radius: 10px;
-    opacity: .8;
-}
-
-.v[data-class="v"] .vcards .vcard .vquote {
-    border-left: 2px dashed rgba(149, 2, 194, 0.5) !important;
-}
-
-.v[data-class="v"] .vwrap .vheader .vinput {
-    width: 30% !important;
-    color: black;
-    border: 2px solid hotpink !important;
-    border-radius: 5px !important;
-    margin: 0 1.6%;
-    box-sizing: border-box;
-}
-
-.v[data-class="v"] .vwrap .vheader .vinput::placeholder {
-    color: red;
-}
-
-#vcomment textarea {
-    color: black;
-    font-weight: 700;
-}
-
-#vcomment textarea:focus {
-    border-radius: 8px;
-    border: 1px solid hotpink;
-}
-
-[data-theme="dark"] .v[data-class="v"] p {
-    display: inline-block;
-    color: black !important;
-    border-radius: 5px;
-    padding: 10px 11px;
-    background: rgb(255, 101, 152);
-    margin-right: 50px;
-}
-
-[data-theme="light"] .v[data-class="v"] p {
-    display: inline-block;
-    color: black !important;
-    border-radius: 5px;
-    padding: 10px 11px;
-    background: rgb(255, 101, 152);
-    margin-right: 50px;
 }
 
 /* md网站下划线 */
