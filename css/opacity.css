@@ -80,7 +80,7 @@
 }
 /* 侧边栏卡片渐变 */
 #aside-content>.card-widget.card-info {
-    background: linear-gradient(-45deg, rgb(99, 60, 67), #450a4a, #280a57, #520b3f);
+    background: linear-gradient(-45deg, rgb(176, 61, 82), #66116e, #380d7b, #8d0b6a);
     background-size: 400%;
     box-shadow: black;
     animation: gradient 15s ease infinite;
