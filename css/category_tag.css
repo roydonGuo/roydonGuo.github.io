@@ -8,7 +8,7 @@
   .article-sort-item:not(.year) {
     background: rgba(255, 255, 255, 0.7);
     float: left;
-    box-shadow: 5px 5px 5px rgb(155, 156, 157);
+    box-shadow: 5px 5px 5px rgba(99, 99, 99, 0.3);
     margin: 0 .5% 2%;
     padding: 6px;
     /* border: 2px solid black; */
@@ -41,7 +41,7 @@
 }
 
 .article-meta-wrap a:hover {
-  border-radius: 6px;
+  border-radius: 4px;
   background: rgba(255, 192, 203, 0.7);
   color: #ff3456;
   /* transition: .3s; */
@@ -70,7 +70,11 @@
   margin-bottom: 1rem;
   justify-content: space-between;
 }
-
+#catalog-bar .iconfont{
+  font-size: 14px;
+  padding-right: .8rem;
+  border-right: 2px solid pink;
+}
 #catalog-bar:hover {
   border: 3px solid #ff3456;
 }
@@ -119,6 +123,8 @@ a.catalog-more {
   min-width: fit-content;
   font-weight: bold;
   color: var(--font-color);
+  padding-left: .8rem;
+  border-l: 2px solid pink;
 }
 
 a.catalog-more:hover {
