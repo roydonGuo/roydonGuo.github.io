@@ -20,24 +20,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/movies/index.html</loc>
-    
-    <lastmod>2022-10-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/music/index.html</loc>
-    
-    <lastmod>2022-10-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/manifest.json</loc>
     
     <lastmod>2022-10-23</lastmod>
@@ -56,7 +38,16 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
+    <loc>https://roydon.xyz/movies/index.html</loc>
+    
+    <lastmod>2022-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/music/index.html</loc>
     
     <lastmod>2022-10-23</lastmod>
     
@@ -165,6 +156,15 @@
   
   <url>
     <loc>https://roydon.xyz/posts/Mybatis-Plus.html</loc>
+    
+    <lastmod>2022-10-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
     
     <lastmod>2022-10-23</lastmod>
     
@@ -528,14 +528,14 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/HTML/</loc>
+    <loc>https://roydon.xyz/tags/CSS/</loc>
     <lastmod>2022-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/CSS/</loc>
+    <loc>https://roydon.xyz/tags/HTML/</loc>
     <lastmod>2022-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -550,6 +550,13 @@
   
   <url>
     <loc>https://roydon.xyz/tags/%E9%B2%B2%E9%B9%8FHCIA/</loc>
+    <lastmod>2022-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/tags/js/</loc>
     <lastmod>2022-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -592,13 +599,6 @@
   
   <url>
     <loc>https://roydon.xyz/tags/Forge/</loc>
-    <lastmod>2022-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/tags/js/</loc>
     <lastmod>2022-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
