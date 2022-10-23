@@ -1,15 +1,6 @@
-/* .aside-card-widget {
-    background-color: rgba(255, 255, 255, 0.8)
-    
-}
-
-#recent-posts>.recent-post-item {
-    background-color: rgba(255, 255, 255, 0.8)
-} */
-:root {
+/* :root {
     --card-bg: rgba(250, 250, 250, .8);
-    /* --page-bg: rgba(0, 0, 0, 0.8); */
-}
+} */
 
 /* 网页div的圆角 */
 .cardHover,
@@ -20,11 +11,6 @@
 .layout>.recent-posts .pagination> :not(.space) {
     border-radius: 16px !important;
 }
-
-/* #page-header.post-bg {
-    height: 397px;
-    background-image: ''
-} */
 
 #page-header #post-info {
     position: absolute;
@@ -72,23 +58,10 @@
     border-radius: 8px;
 }
 
-#aside-content .aside-list>.aside-list-item .thumbnail>img {
-    border-radius: 8px;
-}
-
-/* #aside-content .card-info #card-info-btn {
-    background: rgb(200, 136, 146);
-    border-radius: 8px;
-    margin: 4px 0;
-} */
-
 #aside-content .card-info #card-info-btn:hover {
     background: #450a4a;
     transition: .2s;
     font-size: 15px;
-    /* border-radius: 8px; */
-    /* margin: 14px 30px; */
-
 }
 
 #universe {
@@ -105,24 +78,6 @@
     pointer-events: none;
     z-index: 1;
 }
-
-/* #web_bg {
-    position: fixed;
-    z-index: -999;
-    width: 100%;
-    height: 100%;
-    background: url(/img/mc-cao.jpg);
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: repeat;
-      background-attachment: scroll;
-      background-size: auto;
-    background-attachment: local;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  } */
-
 /* 侧边栏卡片渐变 */
 #aside-content>.card-widget.card-info {
     background: linear-gradient(-45deg, rgb(99, 60, 67), #450a4a, #280a57, #520b3f);

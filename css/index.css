@@ -2774,6 +2774,7 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
   overflow: hidden;
+  border-radius: 8px;
   width: 4.2em;
   height: 4.2em;
 }
