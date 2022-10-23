@@ -21,21 +21,6 @@
     margin-bottom: 90px;
 }
 
-/* #page-header.not-home-page {
-    height: 200px;
-} */
-
-/* #page-header #page-site-info {
-    position: absolute;
-    top: 90px;
-    padding: 0 10px;
-    width: 100%;
-} */
-
-/* .pagination-post>.prev-post{
-    border-radius: 8px;
-} */
-
 .pagination-post>.prev-post,
 .pull-left,
 .next-post .pull-right {
