@@ -74,16 +74,6 @@
     border-radius: 8px;
     min-height: 500px;
 }
-/*哔哩哔哩视频适配*/
-/* .aspect-ratio {position: relative;width: 100%;height: 0;padding-bottom: 75%;margin: 3% auto;text-align: center;}      
-.aspect-ratio iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-} */
-
 
 /* 代码块UI重设置 */
 #article-container .code-expand-btn i {
@@ -102,7 +92,6 @@
     border-radius: 10px;
 }
 
-
 /* 上一篇 || 下一篇 */
 #pagination.pagination-post {
     background: transparent;
@@ -114,20 +103,6 @@
     color: hotpink;
     font-size: 19px;
 }
-
-/* .layout>div:not(.recent-posts) .pagination .page-number {
-    margin: 0 4px;
-    min-width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 1.8;
-    font-size: 600;
-    color: black;
-    font-size: 20px;
-    cursor: pointer;
-    border: 2px solid hotpink;
-    border-radius: 8px;
-} */
 
 /* 相关推荐 */
 .relatedPosts>.relatedPosts-list>div {
@@ -184,20 +159,25 @@ div#post:hover {
 #post .post-copyright::before {
     font-size: 4.6em;
 }
+
 /* 查看更多背景色去除 */
 .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
     background: none !important;
 }
+
 .v[data-class="v"] .vcards .vcard .vcontent.expand::before {
     background: none !important;
 }
+
 .v[data-class=v] .vcards .vcard .vcontent.expand {
     max-height: 18em;
 }
+
 .v[data-class=v] .vcards .vcard .vcontent.expand::after {
     border-radius: 8px;
     color: #00fff6;
 }
+
 /* 主内容区 */
 .el-input.el-input--small.el-input-group.el-input-group--prepend::before {
     /* 先隐藏起来 */
@@ -318,14 +298,6 @@ div#post:hover {
     padding: 10px 11px;
     background: rgb(255, 101, 152);
     margin-right: 50px;
-} */
-
-/*  友情连接 */
-.flink-name {
-    color: pink;
-}
-#article-container a{
-    color: rgb(237, 0, 237);
 }
 
 /* md网站下划线 */
