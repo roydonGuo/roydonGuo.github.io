@@ -31,7 +31,7 @@
 }
 
 .article-meta-wrap span:not(.article-meta__link) {
-  display: block;
+  /* display: block; */
 }
 
 .article-sort-item-img {

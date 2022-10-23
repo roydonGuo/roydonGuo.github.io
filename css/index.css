@@ -2053,41 +2053,11 @@ figure.highlight pre .javascript .function {
 }
 .article-sort-title {
   position: relative;
-  margin-left: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
   font-size: 1.72em;
+  font-weight: 800;
 }
 .article-sort-title:hover:before {
   border-color: var(--pseudo-hover);
-}
-.article-sort-title:before {
-  position: absolute;
-  top: calc(((100% - 36px) / 2));
-  left: -9px;
-  z-index: 1;
-  width: 10px;
-  height: 10px;
-  border: 5px solid #ffc0cb;
-  border-radius: 10px;
-  background: var(--card-bg);
-  content: '';
-  line-height: 10px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.article-sort-title:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  width: 2px;
-  height: 1.5em;
-  background: #fff;
-  content: '';
 }
 .article-sort-item {
   position: relative;
