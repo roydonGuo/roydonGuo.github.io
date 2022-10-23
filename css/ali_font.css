@@ -2,14 +2,14 @@
   font-family: "iconfont"; /* Project id 3603575 */
   /* Color fonts */
   src: 
-       url('//at.alicdn.com/t/c/font_3603575_ctz5z5k1kc7.woff2?t=1666519811028') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3603575_ctz5z5k1kc7.woff?t=1666519811028') format('woff'),
-       url('//at.alicdn.com/t/c/font_3603575_ctz5z5k1kc7.ttf?t=1666519811028') format('truetype');
+       url('//at.alicdn.com/t/c/font_3603575_t0gw8m7jij.woff2?t=1666522996401') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3603575_t0gw8m7jij.woff?t=1666522996401') format('woff'),
+       url('//at.alicdn.com/t/c/font_3603575_t0gw8m7jij.ttf?t=1666522996401') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 19px;
+  font-size: 18px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -87,7 +87,7 @@
   content: "\e6c8";
 }
 
-.icon-tubiaozhizuomobanyihuifu-:before {
+.icon-erji:before {
   content: "\e6a3";
 }
 
