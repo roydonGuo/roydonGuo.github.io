@@ -40,9 +40,8 @@
 }
 
 #aside-content .card-info #card-info-btn:hover {
-    background: #450a4a;
-    transition: .2s;
-    font-size: 15px;
+    margin: 4px 12%;
+    transition: .3s;
 }
 
 #universe {

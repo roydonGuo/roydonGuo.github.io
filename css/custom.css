@@ -51,12 +51,6 @@
     top: 38%;
 }
 
-/* .card-category-list,
-.card-tag-cloud {
-    border: 2px solid hotpink;
-    border-radius: 8px;
-} */
-
 /* 两款主题同一透明度0.8 */
 #vpanel {
     opacity: .8;
@@ -77,9 +71,6 @@
     margin: 0 auto;
 }
 
-/* 宽屏模式 */
-
-
 /* 视频背景 */
 #video-bg {
     position: fixed;
@@ -94,9 +85,19 @@
     /*-webkit-filter:grayscale(100%)*/
 }
 
+/* archives */
 #aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
 #aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
     border-radius: 8px;
+}
+
+@media screen and (min-width:901px) {
+    .article-sort-item:not(.year) {
+        background: pink;
+        float: left;
+        margin: 0 !important;
+        width: 50%;
+    }
 }
 
 .article-sort-item-img {
@@ -111,21 +112,17 @@
 }
 
 .article-sort-item-title {
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 800;
 }
 
 .article-sort-item-title:hover {
-    color: hotpink;
-
+    color: #ff3456;
 }
-
 
 #aside-content #card-toc .toc-content .toc-link.active {
     background: hotpink;
     border-radius: 8px;
 }
-
 
 h1#site-title {
     font-family: "阿里妈妈数黑体 Bold";
@@ -616,4 +613,3 @@ span#subtitle:hover {
     width: 80%;
     border-radius: 10px;
 }
-

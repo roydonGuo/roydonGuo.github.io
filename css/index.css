@@ -2051,11 +2051,6 @@ figure.highlight pre .javascript .function {
 .error404 + #rightside {
   display: none;
 }
-.article-sort {
-  margin-left: 10px;
-  padding-left: 20px;
-  border-left: 2px solid #fff;
-}
 .article-sort-title {
   position: relative;
   margin-left: 10px;
@@ -2109,29 +2104,14 @@ figure.highlight pre .javascript .function {
   -webkit-align-items: center;
   align-items: center;
   margin: 0 0 20px 10px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .article-sort-item:hover:before {
   border-color: var(--pseudo-hover);
-}
-.article-sort-item:before {
-  position: absolute;
-  left: calc(-20px - 17px);
-  width: 6px;
-  height: 6px;
-  border: 3px solid #ffc0cb;
-  border-radius: 6px;
-  background: var(--card-bg);
-  content: '';
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 .article-sort-item.no-article-cover {
   height: 80px;

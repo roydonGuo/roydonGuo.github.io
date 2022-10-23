@@ -130,7 +130,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list .category-list-item .category-list-count::before {
-  content: '\e698';
+  content: '\e6a0';
   padding-right: .2em;
   font-family: 'iconfont'
 }
