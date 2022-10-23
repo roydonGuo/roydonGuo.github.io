@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 3603575 */
   /* Color fonts */
   src: 
-       url('//at.alicdn.com/t/c/font_3603575_sfhyjp7sx18.woff2?t=1665879881410') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3603575_sfhyjp7sx18.woff?t=1665879881410') format('woff'),
-       url('//at.alicdn.com/t/c/font_3603575_sfhyjp7sx18.ttf?t=1665879881410') format('truetype');
+       url('//at.alicdn.com/t/c/font_3603575_ctz5z5k1kc7.woff2?t=1666519811028') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3603575_ctz5z5k1kc7.woff?t=1666519811028') format('woff'),
+       url('//at.alicdn.com/t/c/font_3603575_ctz5z5k1kc7.ttf?t=1666519811028') format('truetype');
 }
 
 .iconfont {
@@ -15,16 +15,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-anzhuo:before {
+  content: "\e60c";
+}
+
+.icon-huawei1:before {
+  content: "\e610";
+}
+
+.icon-minecraft:before {
+  content: "\e7f9";
+}
+
+.icon-wangluo:before {
+  content: "\e628";
+}
+
+.icon-kaifa:before {
+  content: "\e6ae";
+}
+
+.icon-WEBqianduan:before {
+  content: "\e61d";
+}
+
+.icon-Vue:before {
+  content: "\e799";
+}
+
+.icon-java:before {
+  content: "\e639";
+}
+
+.icon-bigdata:before {
+  content: "\e854";
+}
+
+.icon-bxl-spring-boot:before {
+  content: "\e6fe";
+}
+
+.icon-Python:before {
+  content: "\e891";
+}
+
+.icon-leetcode:before {
+  content: "\e60d";
+}
+
 .icon-danmu:before {
   content: "\e612";
-}
-
-.icon-danmu1:before {
-  content: "\e636";
-}
-
-.icon-aixin:before {
-  content: "\f4cf";
 }
 
 .icon-a-tupianyihuifu-14:before {
@@ -55,24 +95,12 @@
   content: "\e606";
 }
 
-.icon-shanchu:before {
-  content: "\e641";
-}
-
-.icon-yinliugongju:before {
-  content: "\e601";
-}
-
 .icon-dianying:before {
   content: "\e6c6";
 }
 
 .icon-yinle:before {
   content: "\e627";
-}
-
-.icon-fenlei:before {
-  content: "\f7fd";
 }
 
 .icon-xiangce:before {
@@ -89,18 +117,6 @@
 
 .icon-guidang:before {
   content: "\e6b9";
-}
-
-.icon-fabu-:before {
-  content: "\e6ad";
-}
-
-.icon-pinglun2:before {
-  content: "\1007b";
-}
-
-.icon-wulitu_jisuanji:before {
-  content: "\e6b4";
 }
 
 .icon-redis:before {
@@ -127,20 +143,8 @@
   content: "\e6a1";
 }
 
-.icon-guest-list:before {
-  content: "\e920";
-}
-
-.icon-bingsha:before {
-  content: "\e698";
-}
-
 .icon-social-qq:before {
   content: "\e626";
-}
-
-.icon-icon_Cat:before {
-  content: "\e61c";
 }
 
 .icon-yulezhongxin:before {
@@ -170,4 +174,3 @@
 .icon-pinglun:before {
   content: "\e642";
 }
-

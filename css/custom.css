@@ -240,16 +240,6 @@ svg.icon.faa-tada {
     color: rgb(253, 82, 167);
 }
 
-/* 分类页面 */
-.category-list-item {
-    font-size: 20px;
-    font-weight: 900;
-}
-
-.relatedPosts>.relatedPosts-list>div {
-    height: 140px;
-}
-
 /* 最新文章图标 */
 .newPost-left,
 .newPost-right {
@@ -627,75 +617,3 @@ span#subtitle:hover {
     border-radius: 10px;
 }
 
-/*  */
-/* 分类目录条、标签目录条 */
-#catalog-bar {
-    padding: .4rem .8rem;
-    border-radius: 10px;
-    display: flex;
-    border: 3px solid pink;
-    margin-bottom: 1rem;
-    justify-content: space-between;
-}
-
-#catalog-bar:hover {
-    border: 3px solid #ff3456;
-}
-
-#catalog-bar i {
-    line-height: inherit;
-}
-
-#catalog-list {
-    /* 分类/标签较少时，可以选择不设置 width，居中显示 catalog-list-item */
-    /* width: 100%; */
-    margin: 0 .5rem;
-    display: flex;
-    white-space: nowrap;
-    overflow-x: scroll;
-}
-
-#catalog-list::-webkit-scrollbar {
-    display: none;
-}
-
-.catalog-list-item a {
-    margin: 0 .2em;
-    padding: 0.2em 0.3em 0.3em;
-    font-weight: bold;
-    border-radius: 8px;
-    color: var(--font-color);
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.catalog-list-item:hover a {
-    background: pink;
-    color: aqua;
-}
-
-.catalog-list-item.selected a {
-    background: rgb(244, 199, 207);
-    color: #ff3456;
-}
-
-a.catalog-more {
-    min-width: fit-content;
-    font-weight: bold;
-    color: var(--font-color);
-}
-
-a.catalog-more:hover {
-    color: #ff3456;
-}
-
-.article-meta__categories {
-    padding: 4px;
-}
-
-.article-meta__tags {
-    padding: 4px;
-}
