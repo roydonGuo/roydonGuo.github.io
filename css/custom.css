@@ -203,6 +203,11 @@ svg.icon.faa-tada {
     color: rgb(253, 82, 167);
 }
 
+/* #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {
+    content: "\A";
+    white-space: '' !important;
+} */
+
 /* 最新文章图标 */
 .newPost-left,
 .newPost-right {
