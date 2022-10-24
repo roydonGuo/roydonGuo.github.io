@@ -43,7 +43,7 @@
 .article-meta-wrap a:hover {
   border-radius: 4px;
   background: rgba(255, 192, 203, 0.7);
-  color: #ff3456;
+  color: #ff3456 !important;
   /* transition: .3s; */
 }
 
