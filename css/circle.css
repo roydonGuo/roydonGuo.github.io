@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.scrollbar {
+  overflow: overlay;
+  height: 100%;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+#friend-circle-page {
+  --side-bg: #1e2022;
+  --card-bg: #17181a;
+  --bg: #000;
+  --hover-bg: #2f3134;
+  --active-bg: #232527;
+  --bili-pink: #f69;
+  --font-color: #fff;
+  background: var(--card-bg);
+  color: var(--font-color);
+  display: flex;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  height: 80vh;
+}
+
+#friend-circle-page .friends {
+  width: 300px;
+  border-right: 1px solid var(--bg);
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: scroll;
+}
+
+#friend-circle-page .friends .friend {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#friend-circle-page .friends .friend .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin: 0;
+}
+
+#friend-circle-page .friends .friend .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#friend-circle-page .friends .friend:hover {
+  background-color: var(--hover-bg);
+}
+
+#friend-circle-page .friends .friend.active {
+  background: var(--active-bg);
+}
+
+#friend-circle-page .friends .friend.alive .avatar {
+  box-shadow: 0 0 0 3px var(--bili-pink);
+}
+
+#friend-circle-page .author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#friend-circle-page .posts .post {
+  /*margin-bottom: 1rem;
+  padding: 1rem;*/
+}
+
+#friend-circle-page .posts .post .meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem 0 0;
+}
+
+#friend-circle-page .posts .post .meta .avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+#friend-circle-page .posts .post .meta .author {
+  flex: 1;
+}
+
+#friend-circle-page .posts .post .info {
+  background: var(--side-bg);
+  padding: 1rem;
+  border-radius: 0 1rem 1rem 1rem;
+  margin: 0.5rem 0 1rem 2.5rem;
+}
+
+#friend-circle-page .posts .post .info .link:hover {
+  color: var(--bili-pink);
+}
+
+#friend-circle-page .author-info {
+  flex: 1;
+  padding: 1rem;
+}
+
+#friend-circle-page .author-info .author-card {
+  background: var(--bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#friend-circle-page .author-info .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+#friend-circle-page .author-info .center {
+  flex: 1;
+}
+
+#friend-circle-page .author-info .center .name {
+  line-height: 1.8rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+#friend-circle-page .author-info .center .desc {
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+#friend-circle-page .author-info .right .link {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  background: var(--bili-pink-op);
+  color: var(--bili-pink);
+  transition: 0.3s;
+}
+
+#friend-circle-page .author-info .right .link:hover {
+  background-color: var(--bili-pink);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #friend-circle-page {
+    flex-direction: column;
+  }
+
+  #friend-circle-page .friends {
+    height: 8rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid var(--bg);
+  }
+
+  #friend-circle-page .friends .friend {
+    width: 4rem;
+    height: 6rem;
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  #friend-circle-page .friends .friend .name {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
