@@ -126,19 +126,21 @@ a.catalog-more {
   font-weight: bold;
   color: var(--font-color);
   padding-left: .8rem;
-  border-l: 2px solid pink;
+  border-left: 2px solid pink;
 }
 
 a.catalog-more:hover {
   color: #ff3456;
 }
 
-.article-sort-item-info .article-meta__categories {
-  padding: 4px;
+.article-sort-item-info .article-sort-item-categories .article-meta__categories {
+  padding: 2px 4px;
+  margin: 0 2px;
 }
 
 .article-sort-item-info .article-sort-item-tags .article-meta__tags {
-  padding: 4px;
+  padding: 2px 4px;
+  margin: 0 2px;
 }
 
 #page .category-lists .category-list .category-list-item {
