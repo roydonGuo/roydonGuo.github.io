@@ -138,6 +138,14 @@ a.catalog-more:hover {
   margin: 0 2px;
 }
 
+.article-meta__categories .iconfont {
+  font-size: 16px;
+}
+
+.article-sort-item-tags .iconfont {
+  font-size: 16px;
+}
+
 .article-sort-item-info .article-sort-item-tags .article-meta__tags {
   padding: 2px 4px;
   margin: 0 2px;
