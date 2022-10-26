@@ -44,55 +44,15 @@ function getAnime() {
 // ];
 // 随机背景图片
 function randomChangeBg(flag) {
-    getAnime()
     if (flag) {
+        getAnime()
         setInterval(function () {
-            //获取背景图片总数，生成随机数
             var bgindex = Math.floor(Math.random() * backimg.length)
-            //重设背景图片
             document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
-            // console.log(document.querySelector("#web_bg").style.background);
         }, 20000)
-
-        //随机banner数组,图片可以换成图床链接，注意最后一条后面不要有逗号
-        // var bannerimg = [
-        //     "url(/img/bg1.JPG)",
-        //     "url(/img/bg2.jpg)",
-        //     "url(/img/bg3.jpg)",
-        //     "url(/img/bg4.jpg)"
-        // ];
-        // https://w.wallhaven.cc/full/g7/wallhaven-g7zzkl.jpg
-        // //获取banner图片总数，生成随机数
-        // var bannerindex = Math.floor(Math.random() * bannerimg.length);
-        // //重设banner图片
-        // document.getElementById("page-header").style.backgroundImage = bannerimg[bannerindex];
     }
 }
 
-var jieliuFlag = true
-var timerFa
-
-function randomBg() {
-    getAnime()
-    if (jieliuFlag) {
-        jieliuFlag = false
-        var bgindex = Math.floor(Math.random() * backimg.length)
-        //重设背景图片
-        document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
-        // console.log(document.querySelector("#web_bg").style.background);
-        setInterval(function () {
-            //获取背景图片总数，生成随机数
-            var bgindex = Math.floor(Math.random() * backimg.length)
-            //重设背景图片
-            document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
-            // console.log(document.querySelector("#web_bg").style.background);
-        }, 20000)
-
-    }
-    // timerFa = setTimeout(function () {
-    //     jieliuFlag = true;
-    //   }, 10000)
-}
 // 存数据
 // name：命名 data：数据
 function saveData(name, data) {
@@ -154,7 +114,37 @@ if (imgbox) {
 //     })
 // }
 
+// 点击一次，节流
+var jieliuFlag = true
+var randomBgOrNot = false
 
+function randomBg() {
+    var randomBgOrNot = !randomBgOrNot
+    saveData('randomBgOrNot', randomBgOrNot)
+    if (randomBgOrNot && jieliuFlag) {
+        jieliuFlag = false
+        getAnime()
+        var bgindex = Math.floor(Math.random() * backimg.length)
+        //重设背景图片
+        document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
+        // console.log(document.querySelector("#web_bg").style.background);
+        setInterval(function () {
+            //获取背景图片总数，生成随机数
+            var bgindex = Math.floor(Math.random() * backimg.length)
+            //重设背景图片
+            document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
+            // console.log(document.querySelector("#web_bg").style.background);
+        }, 20000)
+    }
+}
+
+try {
+    let data = loadData('randomBgOrNot', 1440)
+    if (data) randomBg()
+    else localStorage.removeItem('randomBgOrNot');
+} catch (error) {
+    localStorage.removeItem('randomBgOrNot');
+}
 
 /* 调节视频播放速度 */
 // var video= document.getElementById('video-bg');
