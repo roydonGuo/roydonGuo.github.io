@@ -138,12 +138,12 @@ a.catalog-more:hover {
   margin: 0 2px;
 }
 
-.article-meta__categories .iconfont {
-  font-size: 16px;
+.article-meta-wrap .article-sort-item-categories .iconfont {
+  font-size: 16px !important;
 }
 
-.article-sort-item-tags .iconfont {
-  font-size: 16px;
+.article-meta-wrap .article-sort-item-tags .iconfont {
+  font-size: 16px !important;
 }
 
 .article-sort-item-info .article-sort-item-tags .article-meta__tags {
