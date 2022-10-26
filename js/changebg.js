@@ -135,6 +135,8 @@ function randomBg() {
             document.querySelector("#web_bg").style.backgroundImage = 'url(' + backimg[bgindex] + ')'
             // console.log(document.querySelector("#web_bg").style.background);
         }, 20000)
+    } else {
+        localStorage.removeItem('randomBgOrNot')
     }
 }
 
