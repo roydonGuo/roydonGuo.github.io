@@ -230,14 +230,7 @@ function createWinbox() {
     winbox.body.innerHTML = `
     <div id="article-container" style="padding:10px;">
     
-    <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
-    <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
-    <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
-    </div>
+    <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:pink;display:block;width:100%;padding: 10px 0;border-radius:8px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
@@ -245,6 +238,14 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/e7/wallhaven-e7pwdw.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/e7/wallhaven-e7pwdw.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/yj/wallhaven-yjk6ml.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/yj/wallhaven-yjk6ml.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/mp/wallhaven-mprye8.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/mp/wallhaven-mprye8.jpg)')"></a>
+    </div>
+
+    <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
+    <div class="bgbox">
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
     </div>
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
@@ -261,6 +262,8 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #eecda3" onclick="changeBg('#eecda3')"></a>  
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>  
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #fff" onclick="changeBg('#fff')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #000" onclick="changeBg('#000')"></a>  
     </div>
 `;
 }
