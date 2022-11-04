@@ -231,7 +231,9 @@ function createWinbox() {
     <div id="article-container" style="padding:10px;">
     
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:pink;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
+    <p><button onclick="randomBg()" style="background: #ff3456;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="iconfont icon-a-tupianyihuifu-14"></i> 开启背景图片随机轮播</button></p>
     
+
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/l3/wallhaven-l3xq62.png)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/l3/wallhaven-l3xq62.png)')"></a>
