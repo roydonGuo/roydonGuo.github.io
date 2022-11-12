@@ -844,11 +844,11 @@ div#footer_deal {
 a.deal_link {
     display: flex;
     margin: 1rem 20px;
-    color: blue;
+    /* color: blue; */
     border-radius: 3rem;
     width: 40px;
     height: 40px;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     justify-content: center;
     align-items: center;
     transition: .5s
