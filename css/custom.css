@@ -558,7 +558,7 @@ span#subtitle:hover {
 
 /* 主题切换背景图片切换 */
 [data-theme='dark'] #web_bg {
-    background-image: url("/img/Ender_Dragon.png");
+    background-image: url("/img/ender_dragon.jpg");
 }
 
 [data-theme='light'] #web_bg {
@@ -698,25 +698,27 @@ span#subtitle:hover {
     margin: 0 3px;
     border-radius: 25px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .btn-on {
     cursor: pointer;
     position: relative;
     border: 1px solid white;
-    background-color: #12B090;
+    background-color: #ff3456;
 }
 
 .btn-on-circle {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 5px;
-    left: 5px;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 50%;
+    transform:  translateY(-50%);
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: 0 0 10px white;
-    transition: all .5s;
+    transition: all .6s;
 }
 
 .btn-on-text {
@@ -724,5 +726,5 @@ span#subtitle:hover {
     right: 10px;
     line-height: 25px;
     color: white;
-    transition: all .5s;
+    transition: all .6s;
 }

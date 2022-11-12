@@ -140,13 +140,6 @@ function randomBg() {
     }
 }
 
-try {
-    let data = loadData('randomBgOrNot', 1440)
-    if (data) randomBg()
-    else localStorage.removeItem('randomBgOrNot');
-} catch (error) {
-    localStorage.removeItem('randomBgOrNot');
-}
 
 /* 调节视频播放速度 */
 // var video= document.getElementById('video-bg');
@@ -201,6 +194,7 @@ function changeBg(s, flag) {
 
 // 以下为2.0新增内容
 
+
 // 创建窗口
 var winbox = ''
 
@@ -232,7 +226,7 @@ function createWinbox() {
     
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:pink;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     <p><button onclick="randomBg()" style="background: #ff3456;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="fa-solid iconfont icon-a-tupianyihuifu-14"></i> 开启背景图片随机轮播</button></p>
-    <p class="btn-on" onclick="on_off()"><span class="btn-on-circle"></span><span class="btn-on-text">ON</span></p>
+    <p class="btn-on" onclick=""><span class="btn-on-circle"></span><span class="btn-on-text">ON</span></p>
 
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
@@ -285,3 +279,46 @@ function toggleWinbox() {
     if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');
     else createWinbox();
 }
+
+// function btn_on_off(type) {
+//     var btn = document.getElementsByClassName("btn-on")[0];
+//     var circle = document.getElementsByClassName("btn-on-circle")[0];
+//     var text = document.getElementsByClassName("btn-on-text")[0];
+//     // let randomBgOrNot = loadData('randomBgOrNot', 1440)
+//     // if (randomBgOrNot) 
+//     if (!type) {
+//         btn.style = "background-color: #ccc;"
+//         circle.style = "left: 36px;background-color: #888;box-shadow: 0 0 10px #888;";
+//         text.style = "right: 26px;color: #888;";
+//         text.innerText = "OFF";
+//         // randomBgOrNot = false
+//         btn.setAttribute("onclick", "btn_on_off(" + type + ")"); // 修改状态
+//     } else {
+//         btn.style = ""
+//         circle.style = "";
+//         text.style = "";
+//         text.innerText = "ON";
+//         // randomBgOrNot = true
+//         randomBg()
+//         btn.setAttribute("onclick", "btn_on_off(" + !type + ")"); // 修改状态
+//     }
+
+// }
+// btn_on_off(false) // 关闭按钮
+try {
+    let data = loadData('randomBgOrNot', 1440)
+    if (data) {
+        // console.log("data" + data);
+        randomBg()
+        // btn_on_off(true)
+        console.log("btn_on_off(true)");
+    } else {
+        // btn_on_off(false)
+        console.log("btn_on_off(false)");
+        localStorage.removeItem('randomBgOrNot')
+    }
+} catch (error) {
+    // btn_on_off(false)
+    localStorage.removeItem('randomBgOrNot');
+}
+
