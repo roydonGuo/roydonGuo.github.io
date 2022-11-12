@@ -29,13 +29,13 @@ if (document.body.clientWidth > 992) {
     $.fn.nekoScroll = function (option) {
       var defaultSetting = {
         top: '30',
-        scroWidth: 4 + 'px',
+        scroWidth: 2 + 'px',
         z_index: 9999,
         zoom: 0.9,
         borderRadius: 5 + 'px',
         right: 30 + 'px',
         nekoImg: "https://s1.ax1x.com/2022/11/12/ziJNdI.png",
-        hoverMsg: "喵喵喵~",
+        hoverMsg: "小猫咪来喽~",
         color: "#6f42c1",
         during: 500,
         blog_body: "body",
