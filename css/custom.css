@@ -714,7 +714,7 @@ span#subtitle:hover {
     height: 20px;
     left: 2px;
     top: 50%;
-    transform:  translateY(-50%);
+    transform: translateY(-50%);
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: 0 0 10px white;
@@ -727,4 +727,82 @@ span#subtitle:hover {
     line-height: 25px;
     color: white;
     transition: all .6s;
+}
+
+/* 猫咪滑动 */
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.neko {
+    width: 32px;
+    height: 32px;
+    background-image: url("https://s1.ax1x.com/2022/11/12/ziJNdI.png");
+    position: absolute;
+    right: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(50%);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 8px;
+    color: #6f42c1;
+    display: none;
+}
+
+.neko::after {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");
+    background-size: contain;
+    z-index: 9999;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    line-height: 50px;
+    top: -115%;
+
+}
+
+.neko.showMsg::after {
+    content: attr(data-msg);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.neko:hover::after {
+    content: attr(data-msg);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.neko.fontColor::after {
+    color: #333;
+}
+
+/**
+ * @description: 滚动条样式  跟猫二选一
+ */
+@media screen and (max-width:992px) {
+    ::-webkit-scrollbar {
+        width: 4px !important;
+        height: 4px !important
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 2em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(255 255 255 / .3);
+        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+        border-radius: 2em
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: transparent
+    }
 }
