@@ -264,7 +264,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+2) a.category-list-link::before {
-  content: '\e610';
+  content: '\e6ae';
   padding: .22em;
   font-family: 'iconfont'
 }
@@ -274,7 +274,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+3) a.category-list-link::before {
-  content: '\e639';
+  content: '\e610';
   padding: .22em;
   font-family: 'iconfont'
 }
@@ -284,7 +284,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+4) a.category-list-link::before {
-  content: '\e60d';
+  content: '\e639';
   padding: .22em;
   font-family: 'iconfont'
 }
@@ -294,7 +294,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+5) a.category-list-link::before {
-  content: '\e7f9';
+  content: '\e60d';
   padding: .22em;
   font-family: 'iconfont'
 }
@@ -304,7 +304,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+6) a.category-list-link::before {
-  content: '\e891';
+  content: '\e7f9';
   padding: .22em;
   font-family: 'iconfont'
 }
@@ -314,7 +314,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+7) a.category-list-link::before {
-  content: '\e6fe';
+  content: '\e891';
   padding: .22em;
   font-family: 'iconfont';
 }
@@ -324,7 +324,7 @@ a.catalog-more:hover {
 }
 
 #page .category-lists .category-list li.category-list-item:nth-child(8n+8) a.category-list-link::before {
-  content: '\e799';
+  content: '\e61d';
   padding: .22em;
   font-family: 'iconfont'
 }
