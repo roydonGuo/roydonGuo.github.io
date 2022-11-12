@@ -33,7 +33,7 @@ if (document.body.clientWidth > 992) {
         z_index: 9999,
         zoom: 0.9,
         borderRadius: 5 + 'px',
-        right: 30 + 'px',
+        right: 57 + 'px',
         nekoImg: "https://s1.ax1x.com/2022/11/12/ziJNdI.png",
         hoverMsg: "小猫咪来喽~",
         color: "#6f42c1",

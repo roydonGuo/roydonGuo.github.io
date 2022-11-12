@@ -739,7 +739,7 @@ body::-webkit-scrollbar {
     height: 32px;
     background-image: url("https://s1.ax1x.com/2022/11/12/ziJNdI.png");
     position: absolute;
-    right: 32px;
+    right: 57px;
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(50%);
@@ -864,11 +864,12 @@ img.footer_mini_logo {
     height: 50px;
     margin: 0 1rem;
     cursor: pointer;
-    /*filter: drop-shadow(0 12px 12px #ee7d7936);*/
+    
     transition: cubic-bezier(0, 0, 0, 1.29) .5s
 }
 
 img.footer_mini_logo:hover {
+    filter: drop-shadow(0 2px 2px pink);
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d
 }
@@ -904,7 +905,7 @@ img.footer_mini_logo:hover {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    z-index: 1002
+    /* z-index: 1002 */
 }
 
 @media screen and (max-width: 768px) {
@@ -948,7 +949,7 @@ img.footer_mini_logo:hover {
     justify-content: space-around;
     padding: 20px 50px 0 50px;
     text-align: left !important;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto
 }
 
@@ -1020,16 +1021,15 @@ img.footer_mini_logo:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1200px;
-    margin: 1rem auto;
+    max-width: 1000px;
+    margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
-    padding: 0 1rem
+    padding: 1rem 1rem
 }
 
 #Jay-footer .footer-item {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: .8rem;
     margin: .38rem 0;
     color: white;
@@ -1040,10 +1040,6 @@ img.footer_mini_logo:hover {
     color: #ff3456
 }
 
-#Jay-footer .footer-group {
-    min-width: 120px
-}
-
 #Jay-footer .footer-title {
     color: pink;
     font-size: 1.6rem
@@ -1052,11 +1048,12 @@ img.footer_mini_logo:hover {
 #footer-banner {
     padding: 1rem;
     color: white;
-    margin-top: 1rem;
-    background: black;
+    /* margin-top: 1rem; */
+    backdrop-filter: saturate(150%) blur(20px);
+    background: transparent;
     display: flex;
     /* overflow: hidden; */
-    z-index: 1002;
+    z-index: -1;
     transition: .5s;
     /*border-top: var(--style-border)*/
 }
@@ -1078,7 +1075,8 @@ img.footer_mini_logo:hover {
 #footer-banner .footer-banner-left {
     display: flex;
     flex-wrap: wrap;
-    min-height: 32px
+    color: plum;
+    margin: 0 auto;
 }
 
 #footer-banner .footer-banner-link {
