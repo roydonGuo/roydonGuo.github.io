@@ -901,16 +901,17 @@ img.footer_mini_logo:hover {
 }
 
 #footer {
-    background: linear-gradient(180deg, blue 0, yellow 25%);
+    /* background: linear-gradient(180deg, blue 0, yellow 25%); */
     margin-top: 1rem;
     display: flex;
+    /* backdrop-filter: saturate(150%) blur(20px); */
     flex-direction: column;
     /* z-index: 1002 */
 }
 
 @media screen and (max-width: 768px) {
     #footer {
-        background: linear-gradient(180deg, blue 0, yellow 25%);
+        /* background: linear-gradient(180deg, blue 0, yellow 25%); */
         margin-top: 0;
         z-index: 999
     }
@@ -1023,6 +1024,7 @@ img.footer_mini_logo:hover {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    /* border-radius: 50px; */
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 1rem
@@ -1030,8 +1032,8 @@ img.footer_mini_logo:hover {
 
 #Jay-footer .footer-item {
     font-size: 1.2rem;
-    line-height: .8rem;
-    margin: .38rem 0;
+    line-height: 1rem;
+    margin: .7rem 0;
     color: white;
     /*margin-right: auto*/
 }
