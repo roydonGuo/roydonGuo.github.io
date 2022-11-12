@@ -99,7 +99,7 @@ function changeBg(s, flag) {
         saveData('blogbg', s)
     }
 }
-var nowBgImgUrl = 'url(/img/hutao.jpeg)'
+var nowBgImgUrl = 'url(/img/hutao.jpg)'
 var imgbox = document.querySelector('.fj-gallery')
 if (imgbox) {
     imgbox.addEventListener('click', e => {
@@ -110,7 +110,7 @@ if (imgbox) {
 // var toHutao = document.querySelector('.to-hutao')
 // if (toHutao) {
 //     toHutao.addEventListener('click', e => {
-//         if(e) changeBg('url(/img/hutao.jpeg)')
+//         if(e) changeBg('url(/img/hutao.jpg)')
 //     })
 // }
 
@@ -140,6 +140,16 @@ function randomBg() {
     }
 }
 
+try {
+    let data = loadData('randomBgOrNot', 1440)
+    if (data) {
+        randomBg()
+    } else {
+        localStorage.removeItem('randomBgOrNot')
+    }
+} catch (error) {
+    localStorage.removeItem('randomBgOrNot');
+}
 
 /* 调节视频播放速度 */
 // var video= document.getElementById('video-bg');
@@ -305,20 +315,20 @@ function toggleWinbox() {
 
 // }
 // btn_on_off(false) // 关闭按钮
-try {
-    let data = loadData('randomBgOrNot', 1440)
-    if (data) {
-        // console.log("data" + data);
-        randomBg()
-        // btn_on_off(true)
-        console.log("btn_on_off(true)");
-    } else {
-        // btn_on_off(false)
-        console.log("btn_on_off(false)");
-        localStorage.removeItem('randomBgOrNot')
-    }
-} catch (error) {
-    // btn_on_off(false)
-    localStorage.removeItem('randomBgOrNot');
-}
+// try {
+//     let data = loadData('randomBgOrNot', 1440)
+//     if (data) {
+//         // console.log("data" + data);
+//         randomBg()
+//         // btn_on_off(true)
+//         console.log("btn_on_off(true)");
+//     } else {
+//         // btn_on_off(false)
+//         console.log("btn_on_off(false)");
+//         localStorage.removeItem('randomBgOrNot')
+//     }
+// } catch (error) {
+//     // btn_on_off(false)
+//     localStorage.removeItem('randomBgOrNot');
+// }
 
