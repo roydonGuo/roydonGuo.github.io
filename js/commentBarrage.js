@@ -114,6 +114,6 @@ initCommentBarrage()
 function switchCommentBarrage() {
   let commentBarrage = document.querySelector('.comment-barrage');
   if (commentBarrage) {
-    $(commentBarrage).slideToggle("normal","linear")
+    $(commentBarrage).slideToggle("normal", "linear")
   }
 }
