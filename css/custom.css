@@ -128,11 +128,6 @@ h1.post-title {
     border: 2px solid pink;
 }
 
-#recent-posts>.recent-post-item>.recent-post-info>.article-title:hover {
-    color: rgb(251, 169, 183);
-    font-size: 1.23em;
-}
-
 .icon-zhongbiao::before {
     color: #f7c768;
 }
@@ -199,54 +194,27 @@ svg.icon.faa-tada {
     font-weight: 600;
 }
 
-.contrib-number:hover {
-    color: rgb(253, 82, 167);
-}
-
-/* #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {
-    content: "\A";
-    white-space: '' !important;
-} */
-
 /* 最新文章图标 */
 .newPost-left,
 .newPost-right {
     position: absolute;
     top: 0;
     color: black;
-    height: 1.2em;
+    height: 1.8em;
     font-weight: 700;
     text-align: center;
-    line-height: 0.8em;
-    padding: 0 3px;
+    line-height: 1.5em;
+    padding: 0 10px;
     background-color: pink;
     border-radius: 0 0 5px 5px;
-    border: 1px groove hotpink;
-    border-top: 0;
-}
-
-.newPost-left:hover {
-    height: 1.25em;
-    color: black;
-    background-color: hotpink;
-    border-top: 1px solid hotpink;
-    line-height: 0.9em;
 }
 
 .newPost-left {
-    left: 4px;
+    left: 16px;
 }
 
 .newPost-right {
-    left: 4px;
-}
-
-.newPost-right:hover {
-    height: 1.25em;
-    color: black;
-    background-color: hotpink;
-    border-top: 1px solid hotpink;
-    line-height: 0.9em;
+    left: 16px;
 }
 
 #recent-posts>.recent-post-item {
@@ -695,7 +663,7 @@ span#subtitle:hover {
 .btn-on {
     width: 60px;
     height: 25px;
-    margin: 0 3px;
+    margin: 0 auto !important;
     border-radius: 25px;
     font-size: 14px;
     text-align: center;
@@ -705,7 +673,7 @@ span#subtitle:hover {
 .btn-on {
     cursor: pointer;
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background-color: #ff3456;
 }
 
@@ -865,7 +833,7 @@ img.footer_mini_logo {
     height: 64px;
     margin: 0 1rem;
     cursor: pointer;
-    
+
     transition: cubic-bezier(0, 0, 0, 1.29) .5s
 }
 
