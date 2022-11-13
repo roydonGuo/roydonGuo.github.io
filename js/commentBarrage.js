@@ -12,7 +12,7 @@ const commentBarrageConfig = {
     ['rgba(190,10,210,.8)', 'rgba(255,255,255,0.8)']
   ],
   //同时最多显示弹幕数
-  maxBarrage: 2,
+  maxBarrage: 1,
   //弹幕显示间隔时间ms
   barrageTime: 3000,
   //twikoo部署地址腾讯云的为环境ID
@@ -28,7 +28,7 @@ const commentBarrageConfig = {
 }
 
 function initCommentBarrage() {
-  console.log('123123')
+  // console.log('123123')
   var data = JSON.stringify({
     "event": "COMMENT_GET",
     "commentBarrageConfig.accessToken": commentBarrageConfig.accessToken,
@@ -90,7 +90,7 @@ function popCommentBarrage(data) {
   let ran = Math.floor(Math.random() * commentBarrageConfig.colors.length)
   barrage.style.background = commentBarrageConfig.colors[ran][0];
   barrage.style.color = commentBarrageConfig.colors[ran][1];
-
+  console.log(data);
   barrage.innerHTML = `
 		<div class="barrageHead">
 			<div class="barrageNick">${data.nick}</div>
@@ -106,7 +106,7 @@ function removeCommentBarrage(barrage) {
   barrage.className = 'comment-barrage-item out';
   setTimeout(() => {
     commentBarrageConfig.dom.removeChild(barrage);
-  }, 1000)
+  }, 3000)
 }
 
 

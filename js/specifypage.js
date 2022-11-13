@@ -1,10 +1,10 @@
 if (location.pathname == '/') newPost()
 // if (location.pathname !== '/') forbidSwiperMousewheel()
-if (location.pathname !== '/') removeCardSecond()
-if (location.pathname.substring(0, 9) === '/archives' || '/tags' === location.pathname.substring(0, 5) || '/bangumis' === location.pathname.substring(0, 9)) changeAsideCard()
-if (location.pathname.substring(0, 8) === '/Gallery' && location.pathname.substring(9, 11) !== '') hls()
+// if (location.pathname !== '/') removeCardSecond()
+// if (location.pathname.substring(0, 9) === '/archives' || '/tags' === location.pathname.substring(0, 5) || '/bangumis' === location.pathname.substring(0, 9)) changeAsideCard()
+// if (location.pathname.substring(0, 8) === '/Gallery' && location.pathname.substring(9, 11) !== '') hls()
 if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.length > 11) imgDetails()
-if (location.pathname.substring(0, 8) === '/Gallery' && location.pathname.length <= 9) removeBgToDefault()
+// if (location.pathname.substring(0, 8) === '/Gallery' && location.pathname.length <= 9) removeBgToDefault()
 
 // 最新文章函数
 function newPost() {
@@ -28,48 +28,48 @@ function newPost() {
     // ls[index].innerHTML += '<span class="newPost-left">最 新</span>';
 }
 
-function removeCardSecond() {
-    var asideCards = document.querySelectorAll('.card-widget') // 2,5留着
-    asideCards[1].style.display = 'none'
-}
+// function removeCardSecond() {
+//     var asideCards = document.querySelectorAll('.card-widget') // 2,5留着
+//     asideCards[1].style.display = 'none'
+// }
 
-function changeAsideCard() {
-    var asideCards = document.querySelectorAll('.card-widget') // 2,5留着
-    asideCards[1].style.display = 'none'
-    asideCards[3].style.display = 'none'
-    asideCards[4].style.display = 'none'
-    asideCards[5].style.display = 'none'
-    // asideCards[6].style.display = 'none'
+// function changeAsideCard() {
+//     var asideCards = document.querySelectorAll('.card-widget') // 2,5留着
+//     asideCards[1].style.display = 'none'
+//     asideCards[3].style.display = 'none'
+//     asideCards[4].style.display = 'none'
+//     asideCards[5].style.display = 'none'
+//     // asideCards[6].style.display = 'none'
 
-}
+// }
 
 function hls() {
     var aside = document.querySelector('.aside-content')
     aside.style.display = 'none'
-    var content = document.querySelector('#page')
-    content.style.width = '100%'
-    content.style.background = 'none'
-    var layout = document.querySelector("main")
-    layout.classList.remove('layout')
-    var gallaryComment = document.querySelector('#post-comment')
-    gallaryComment.style.display = 'none'
-
+    
 
 }
 
 function imgDetails() {
     var head = document.querySelector('.not-home-page')
     head.style.display = 'none'
+    var content = document.querySelector('#page')
+    content.style.width = '100%'
+    content.style.background = 'none'
+    var layout = document.querySelector("main")
+    layout.classList.remove('layout')
+    // var gallaryComment = document.querySelector('#post-comment')
+    // gallaryComment.style.display = 'none'
     // var layout = document.querySelector('#page')
     // layout.style.background = 'transparent !important'
 }
 
-function removeBgToDefault() {
-    var removeBg = document.querySelector('.to-default-bg')
-    removeBg.addEventListener('click', function () {
-        localStorage.removeItem('blogbg');
-    })
-}
+// function removeBgToDefault() {
+//     var removeBg = document.querySelector('.to-default-bg')
+//     removeBg.addEventListener('click', function () {
+//         localStorage.removeItem('blogbg');
+//     })
+// }
 
 // function forbidSwiperMousewheel() {
 //     var swiper = document.querySelector('#swiper_container')

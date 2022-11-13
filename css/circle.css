@@ -10,12 +10,12 @@ html {
 }
 
 a {
-  color: var(--font-color);
+  color: blueviolet;
   text-decoration: none;
 }
 
 .scrollbar {
-  overflow: overlay;
+  overflow: auto;
   height: 100%;
 }
 
