@@ -90,7 +90,7 @@ function popCommentBarrage(data) {
   let ran = Math.floor(Math.random() * commentBarrageConfig.colors.length)
   barrage.style.background = commentBarrageConfig.colors[ran][0];
   barrage.style.color = commentBarrageConfig.colors[ran][1];
-  console.log(data);
+  // console.log(data);
   barrage.innerHTML = `
 		<div class="barrageHead">
 			<div class="barrageNick">${data.nick}</div>
