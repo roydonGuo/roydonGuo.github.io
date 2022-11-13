@@ -28,7 +28,6 @@ const commentBarrageConfig = {
 }
 
 function initCommentBarrage() {
-  // console.log('123123')
   var data = JSON.stringify({
     "event": "COMMENT_GET",
     "commentBarrageConfig.accessToken": commentBarrageConfig.accessToken,
@@ -115,6 +114,6 @@ initCommentBarrage()
 function switchCommentBarrage() {
   let commentBarrage = document.querySelector('.comment-barrage');
   if (commentBarrage) {
-    $(commentBarrage).toggle()
+    $(commentBarrage).slideToggle("normal","linear")
   }
 }
