@@ -1,6 +1,7 @@
 if (location.pathname == '/') newPost()
-// if (location.pathname !== '/') forbidSwiperMousewheel()
+
 if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.length > 11) imgDetails()
+
 // if (location.pathname.substring(0, 8) === '/Gallery' && location.pathname.length <= 9) removeBgToDefault()
 
 // 最新文章函数
@@ -25,13 +26,6 @@ function newPost() {
     // ls[index].innerHTML += '<span class="newPost-left">最 新</span>';
 }
 
-
-
-function hls() {
-    var aside = document.querySelector('.aside-content')
-    aside.style.display = 'none'
-}
-
 function imgDetails() {
     var head = document.querySelector('.not-home-page')
     head.style.display = 'none'
@@ -46,12 +40,5 @@ function imgDetails() {
 //     var removeBg = document.querySelector('.to-default-bg')
 //     removeBg.addEventListener('click', function () {
 //         localStorage.removeItem('blogbg');
-//     })
-// }
-
-// function forbidSwiperMousewheel() {
-//     var swiper = document.querySelector('#swiper_container')
-//     swiper.addEventListener('mousewheel', function (e) {
-//         e.preventDefault
 //     })
 // }

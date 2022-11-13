@@ -103,7 +103,7 @@ h1.post-title {
 }
 
 #aside-content .card-widget:last-child {
-    background: url('https://img1.imgtp.com/2022/08/24/tSMdJ5gW.png');
+    background: url('https://s1.ax1x.com/2022/11/13/zk1Muj.png');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -192,6 +192,17 @@ svg.icon.faa-tada {
 
 #post>.post-content {
     font-weight: 600;
+}
+/* 公告 */
+.announcement-detail{
+    height: 250px;
+    background: url(https://s1.ax1x.com/2022/11/13/zk1Muj.png);
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size: cover;
+    /* background-origin: padding-box;
+    background-clip: border-box; */
+
 }
 
 /* 最新文章图标 */
