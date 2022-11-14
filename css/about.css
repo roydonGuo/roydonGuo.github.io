@@ -41,7 +41,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* color: var(--anzhiyu-white); */
   background: linear-gradient(120deg, #3e01fd 40%, #00d4ff 60%);
   background-size: 200%;
   animation: gradient 15s ease infinite;
@@ -51,9 +50,8 @@
 .author-content-item {
   width: 49%;
   border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
-  border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
+  /* border: 1px solid rgba(255, 192, 203, 0.2); */
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.8);
   position: relative;
   padding: 1rem 2rem;
   overflow: hidden;
@@ -95,7 +93,6 @@
   font-family: Helvetica;
   line-height: 1.06;
   letter-spacing: -0.02em;
-  color: var(--font-color);
   margin-top: 0;
 }
 
@@ -111,9 +108,6 @@
   box-sizing: border-box;
   position: absolute;
   top: 36px;
-  padding-bottom: var(--offset);
-  background-size: 100% 100%;
-  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
@@ -138,11 +132,11 @@
 }
 
 .aboutsiteTips .mask span:nth-child(3) {
-  background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+  background-image: linear-gradient(45deg, #9b8efc 50%, #3e0d89);
 }
 
 .aboutsiteTips .mask span:nth-child(4) {
-  background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+  background-image: linear-gradient(45deg, #f49794 50%, #fc3d66);
 }
 
 @media screen and (max-width: 768px) {
@@ -156,11 +150,10 @@
   width: 39%;
   background: url(https://image.anzhiy.cn/adminuploads/1/2022/09/23/632d634f8376d.jpg) no-repeat top;
   background-size: cover;
-  color: var(--anzhiyu-white);
   overflow: hidden;
 }
 
-#about-page .about-statistic::after {
+/* #about-page .about-statistic::after {
   box-shadow: 0 -159px 173px 71px #0c1c2c inset;
   position: absolute;
   content: "";
@@ -168,7 +161,7 @@
   height: 100%;
   top: 0;
   left: 0;
-}
+} */
 
 .author-content-item .card-content {
   position: absolute;
@@ -196,7 +189,6 @@
   font-size: 16px;
   border-radius: 15px;
   width: 100%;
-  color: var(--anzhiyu-white);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -226,28 +218,26 @@
 }
 
 .post-tips {
-  color: var(--anzhiyu-gray);
-  font-size: 14px;
   position: absolute;
   bottom: 1rem;
   left: 2rem;
 }
 
 .post-tips a {
-  color: var(--anzhiyu-gray) !important;
+  color: blueviolet;
   border: none !important;
 }
 
 .author-content-item .card-content .banner-button-group {
   position: absolute;
-  bottom: 1.5rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .author-content-item .card-content .banner-button-group .banner-button {
-  height: 40px;
-  width: 124px;
-  border-radius: 20px;
+  height: 36px;
+  width: 100px;
+  border-radius: 16px;
   justify-content: center;
   background: pink;
   color: var(--font-color);
@@ -256,11 +246,10 @@
   z-index: 1;
   transition: 0.3s;
   cursor: pointer;
-  border-bottom: 0 !important;
 }
 
 .author-content-item .card-content .banner-button-group .banner-button i {
-  margin-right: 8px;
+  margin-right: 6px;
   font-size: 1rem;
 }
 
@@ -270,7 +259,7 @@
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
   background: #ff3456;
-  border-radius: 20px !important;
+  border-radius: 18px !important;
 }
 
 .author-content-item.personalities {
@@ -281,14 +270,14 @@
 .author-content-item.personalities .image {
   position: absolute;
   right: 30px;
-  top: 10px;
-  width: 220px;
-  transition: transform 2s cubic-bezier(0.13, 0.45, 0.21, 1.02);
+  bottom: 1rem;
+  width: 250px;
+  transition: transform 1s cubic-bezier(0.13, 0.45, 0.21, 1.02);
 }
 
 .author-content-item.personalities .image img {
   display: block;
-  margin: 0 auto 20px;
+  /* margin: 0 auto 20px; */
   max-width: 100%;
   transition: filter 375ms ease-in 0.2s;
 }
@@ -1113,9 +1102,9 @@
 .hello-about {
   margin: 20px auto;
   border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
-  border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
+  background: rgba(0, 255, 255, 0.8);
+  border: 1px solid pink;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   user-select: none;
