@@ -240,7 +240,7 @@
   border-radius: 16px;
   justify-content: center;
   background: pink;
-  color: var(--font-color);
+  /* color: var(--font-color); */
   display: flex;
   align-items: center;
   z-index: 1;
@@ -249,7 +249,7 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button i {
-  margin-right: 6px;
+  /* margin-right: 6px; */
   font-size: 1rem;
 }
 
@@ -821,23 +821,25 @@
   }
 
   .author-content-item .card-content .banner-button-group .banner-button {
-    background: 0 0;
-    padding: 0;
+    /* background: 0 0;
+    padding: 0; */
+    width: 3rem;
+    height: 3rem !important;
   }
 
-  .author-content-item .card-content .banner-button-group .banner-button i {
+  /* .author-content-item .card-content .banner-button-group .banner-button i {
     margin-right: 0;
     font-size: 1.5rem;
     background: white;
     border-radius: 50%;
     padding: 6px;
     margin-left: 80px;
-  }
+  } */
 
-  .author-content-item .card-content .banner-button-group .banner-button:hover i {
+  /* .author-content-item .card-content .banner-button-group .banner-button:hover i {
     background: var(--anzhiyu-background) !important;
     color: var(--anzhiyu-theme);
-  }
+  } */
 
   #selfInfo-content-year {
     width: 90px;
@@ -851,7 +853,6 @@
 }
 
 /* 赞赏的css */
-
 .reward-list-all {
   display: flex;
   flex-wrap: wrap;
