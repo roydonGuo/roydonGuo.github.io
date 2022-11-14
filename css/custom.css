@@ -194,16 +194,12 @@ svg.icon.faa-tada {
     font-weight: 600;
 }
 /* 公告 */
-.announcement-detail{
+/* .announcement-detail{
     height: 250px;
     background: url(https://s1.ax1x.com/2022/11/13/zk1Muj.png);
     background-repeat: no-repeat;
-    /* background-position: left; */
     background-size: cover;
-    /* background-origin: padding-box;
-    background-clip: border-box; */
-
-}
+} */
 
 /* 最新文章图标 */
 .newPost-left,
