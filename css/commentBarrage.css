@@ -27,7 +27,7 @@
   font-weight: 600;
   line-height: 1;
   border-radius: 10px;
-  backdrop-filter: saturate(150%) blur(20px);
+  backdrop-filter: saturate(180%) blur(30px);
   color: rgb(0, 0, 0);
   animation: barrageIn 0.3s cubic-bezier(.25, .01, .5, 1.5);
   transition: .6s;
@@ -44,7 +44,7 @@
   line-height: 1;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: saturate(150%) blur(20px);
+  backdrop-filter: saturate(180%) blur(30px);
   color: rgb(0, 0, 0);
   animation: barrageIn 0.3s cubic-bezier(.25, .01, .5, 1.5);
   transition: .6s;
