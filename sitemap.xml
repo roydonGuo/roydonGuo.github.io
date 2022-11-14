@@ -65,24 +65,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/14.html</loc>
-    
-    <lastmod>2022-11-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/20.html</loc>
-    
-    <lastmod>2022-11-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/posts/21.html</loc>
     
     <lastmod>2022-11-14</lastmod>
@@ -137,15 +119,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/Gallery/index.html</loc>
-    
-    <lastmod>2022-11-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/about/index.html</loc>
     
     <lastmod>2022-11-14</lastmod>
@@ -183,6 +156,33 @@
   
   <url>
     <loc>https://roydon.xyz/comments/index.html</loc>
+    
+    <lastmod>2022-11-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/14.html</loc>
+    
+    <lastmod>2022-11-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/20.html</loc>
+    
+    <lastmod>2022-11-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/index.html</loc>
     
     <lastmod>2022-11-14</lastmod>
     
