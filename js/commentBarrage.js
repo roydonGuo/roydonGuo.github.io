@@ -108,7 +108,6 @@ function removeCommentBarrage(barrage) {
   }, 3000)
 }
 
-
 initCommentBarrage()
 
 function switchCommentBarrage() {
