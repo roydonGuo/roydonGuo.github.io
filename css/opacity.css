@@ -35,10 +35,6 @@
     margin: 0 auto;
 }
 
-#recent-posts>.recent-post-item .post_cover {
-    border-radius: 8px;
-}
-
 #aside-content .card-info #card-info-btn:hover {
     margin: 4px 12%;
     transition: .3s;
