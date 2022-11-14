@@ -590,8 +590,11 @@
 
 .author-content-item.maxim {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.1;
+  background: linear-gradient(140deg, #06e6ff 0, #f91a73 100%);
+  background-size: 200%;
+  animation: gradient 15s ease infinite;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -613,14 +616,13 @@
 .author-content-item.buff {
   height: 200px;
   font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 900;
+  line-height: 1.2;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(120deg, #ff27e8 0, #ff8000 100%);
-  color: var(--anzhiyu-white);
   background-size: 200%;
   animation: gradient 15s ease infinite;
   min-height: 200px;
@@ -640,22 +642,22 @@
 }
 
 .card-background-icon {
-  font-size: 12rem;
-  opacity: 0.2;
+  font-size: 18rem;
+  opacity: 0.6;
   position: absolute;
-  right: 0;
-  bottom: -40%;
-  transform: rotate(30deg);
-  transition: 2s ease-in-out;
+  right: 2%;
+  bottom: -10%;
+  transform: rotate(100deg);
+  transition: 1s ease-in-out;
 }
 
 .author-content-item.game-yuanshen {
-  background: url(https://image.anzhiy.cn/adminuploads/1/2022/09/05/6315e14a2f639.webp) no-repeat top;
+  background: url(https://i.imgtg.com/2022/11/14/tKNdt.jpg) no-repeat top;
   background-size: cover;
   min-height: 400px;
+  color: white;
   overflow: hidden;
-  /* color: var(--anzhiyu-white); */
-  width: 59%;
+  width: 66%;
 }
 
 .author-content-item .content-bottom {
@@ -670,19 +672,19 @@
   position: relative;
 }
 
-.author-content-item .content-bottom .icon-group i {
+/* .author-content-item .content-bottom .icon-group i {
   display: inline-block;
   width: 143px;
   height: 18px;
   margin-right: 0.5rem;
-}
+} */
 
 .icon-pos-mid {
-  background: url(https://image.anzhiy.cn/adminuploads/1/2022/09/25/632fb9cecfc8c.png);
+  background: url(https://i.imgtg.com/2022/11/14/tKKEp.webp);
 }
 
 .author-content-item.game-yuanshen::after {
-  box-shadow: 0 -69px 203px 11px #575d8b inset;
+  box-shadow: 0 -39px 60px 20px #a089079a inset;
   position: absolute;
   content: "";
   width: 100%;
@@ -692,10 +694,10 @@
 }
 
 .author-content-item.historical-drama {
-  width: 39%;
+  width: 32%;
   background: url(https://i.imgtg.com/2022/11/14/tK1Ui.jpg) no-repeat top;
   background-size: cover;
-  min-height: 300px;
+  min-height: 400px;
   overflow: hidden;
   color: violet;
 }
@@ -711,17 +713,17 @@
 }
 
 .author-content-item.like-technology {
-  background: url(https://image.anzhiy.cn/adminuploads/1/2022/09/24/632f0dd8f33c6.webp) no-repeat;
+  background: url(https://s1.ax1x.com/2022/11/12/zi3xSg.jpg) no-repeat;
   background-size: cover;
-  min-height: 230px;
-  color: var(--anzhiyu-white);
+  color: wheat;
+  min-height: 300px;
 }
 
 .author-content-item.like-music {
-  background: url(https://p2.music.126.net/Mrg1i7DwcwjWBvQPIMt_Mg==/79164837213438.jpg) no-repeat top;
+  background: url(https://i.imgtg.com/2022/11/14/tKyFY.jpg) no-repeat top;
   background-size: cover;
-  min-height: 400px;
-  color: var(--anzhiyu-white);
+  color: wheat;
+  min-height: 300px;
   overflow: hidden;
 }
 
@@ -971,7 +973,7 @@
   transform: translate(-25%, -50%) scale(0.5);
   transition: all 0.5s;
   user-select: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .loading-bar img {
