@@ -17,6 +17,8 @@ if (location.pathname == '/') {
     ls[index].innerHTML += '<span class="' + className + '">new</span>';
     // 如果你不想让其一左一右，可以注释上面的启用下面的，默认左，left改成right就是右
     // ls[index].innerHTML += '<span class="newPost-left">最 新</span>';
+}else{
+    console.log('hello world');
 }
 
 if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.length > 11) {
@@ -27,19 +29,6 @@ if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.lengt
     content.style.background = 'none'
     var layout = document.querySelector("main")
     layout.classList.remove('layout')
+}else{
+    console.log('hello world');
 }
-
-
-// function removeBgToDefault() {
-//     var removeBg = document.querySelector('.to-default-bg')
-//     removeBg.addEventListener('click', function () {
-//         localStorage.removeItem('blogbg');
-//     })
-// }
-
-// function forbidSwiperMousewheel() {
-//     var swiper = document.querySelector('#swiper_container')
-//     swiper.addEventListener('mousewheel', function (e) {
-//         e.preventDefault
-//     })
-// }
