@@ -1,38 +1,3 @@
-/* about */
-#gitcalendar {
-  margin: 0 auto;
-  border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
-  border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
-  position: relative;
-  padding: 1rem 2rem;
-  overflow: hidden;
-}
-
-#page:has(#about-page) {
-  border: 0;
-  box-shadow: none !important;
-  padding: 0 !important;
-  background: transparent !important;
-}
-
-#page:has(#about-page) .page-title {
-  display: none;
-}
-
-.page:has(#about-page) #footer-wrap {
-  opacity: 1;
-  overflow: visible;
-  height: auto !important;
-  min-height: 16px;
-  color: #666;
-}
-
-#web_bg~.page:has(#about-page) {
-  background: var(--anzhiyu-background);
-}
-
 #about-page .author-box {
   position: relative;
 }
@@ -41,24 +6,24 @@
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
 }
 
 #about-page .author-box .author-img img {
   border-radius: 50%;
   overflow: hidden;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
 }
 
 #about-page .author-box .image-dot {
-  width: 45px;
-  height: 45px;
-  background: #6bdf8f;
+  width: 32px;
+  height: 32px;
+  background: #77ec9c;
   position: absolute;
   border-radius: 50%;
-  border: 6px solid var(--anzhiyu-background);
+  border: 4px solid white;
   top: 50%;
   left: 50%;
   transform: translate(35px, 45px);
@@ -76,8 +41,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--anzhiyu-white);
-  background: linear-gradient(120deg, #5b27ff 0, #00d4ff 100%);
+  /* color: var(--anzhiyu-white); */
+  background: linear-gradient(120deg, #3e01fd 40%, #00d4ff 60%);
   background-size: 200%;
   animation: gradient 15s ease infinite;
   width: 59%;
@@ -284,7 +249,7 @@
   width: 124px;
   border-radius: 20px;
   justify-content: center;
-  background: var(--anzhiyu-card-bg);
+  background: pink;
   color: var(--font-color);
   display: flex;
   align-items: center;
@@ -304,8 +269,7 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
-  background: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background: #ff3456;
   border-radius: 20px !important;
 }
 
@@ -368,7 +332,7 @@
 }
 
 .author-content-item.map {
-  background: url(https://image.anzhiy.cn/adminuploads/1/2022/09/24/632e6f48981d8.jpg) no-repeat center;
+  background: url(https://i.imgtg.com/2022/11/14/tAlzv.jpg) no-repeat center;
   min-height: 160px;
   max-height: 400px;
   position: relative;
