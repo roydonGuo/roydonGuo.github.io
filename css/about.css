@@ -715,26 +715,20 @@
 .author-content-item.like-technology {
   background: url(https://s1.ax1x.com/2022/11/12/zi3xSg.jpg) no-repeat;
   background-size: cover;
-  color: wheat;
-  min-height: 300px;
+  color: rgb(14, 159, 16);
+  min-height: 340px;
 }
 
 .author-content-item.like-music {
   background: url(https://i.imgtg.com/2022/11/14/tKyFY.jpg) no-repeat top;
   background-size: cover;
   color: wheat;
-  min-height: 300px;
+  min-height: 340px;
   overflow: hidden;
 }
 
-.author-content-item .card-content .banner-button-group {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 2rem;
-}
-
 .author-content-item.like-music::after {
-  box-shadow: 0 -69px 203px 11px #453e38 inset;
+  box-shadow: 0 -10px 100px 10px #18a5e26a inset;
   position: absolute;
   content: "";
   width: 100%;
@@ -744,17 +738,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  #gitcalendar {
+  /* #gitcalendar {
     display: none;
-  }
+  } */
 
-  [data-theme="dark"] .author-content-item .card-content .banner-button-group .banner-button {
-    color: var(--anzhiyu-black) !important;
-  }
+  /* [data-theme="dark"] .author-content-item .card-content .banner-button-group .banner-button {
+    color: black
+  } */
 
-  .author-content-item .card-content .banner-button-group .banner-button:hover {
+  /* .author-content-item .card-content .banner-button-group .banner-button:hover {
     background: none !important;
-  }
+  } */
 
   .author-content-item.game-yuanshen .content-bottom {
     padding-bottom: 10px;
@@ -1097,8 +1091,6 @@
 .hello-about {
   margin: 20px auto;
   border-radius: 24px;
-  background: rgba(0, 255, 255, 0.8);
-  border: 1px solid pink;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
@@ -1109,7 +1101,7 @@
   position: relative;
   height: 200px;
   width: 100%;
-  background: #3dfcff;
+  background: #3dfcffad;
   overflow: hidden;
 }
 
