@@ -1,7 +1,4 @@
 if (location.pathname == '/') newPost()
-
-if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.length > 11) imgDetails()
-
 // if (location.pathname.substring(0, 8) === '/Gallery' && location.pathname.length <= 9) removeBgToDefault()
 
 // 最新文章函数
@@ -26,15 +23,6 @@ function newPost() {
     // ls[index].innerHTML += '<span class="newPost-left">最 新</span>';
 }
 
-function imgDetails() {
-    var head = document.querySelector('.not-home-page')
-    head.style.display = 'none'
-    var content = document.querySelector('#page')
-    content.style.width = '100%'
-    content.style.background = 'none'
-    var layout = document.querySelector("main")
-    layout.classList.remove('layout')
-}
 
 // function removeBgToDefault() {
 //     var removeBg = document.querySelector('.to-default-bg')
