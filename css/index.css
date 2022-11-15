@@ -2280,11 +2280,11 @@ figure.highlight pre .javascript .function {
   }
 }
 .layout.hide-aside {
-  max-width: 1200px;
+  max-width: 1400px;
 }
 @media screen and (min-width: 2000px) {
   .layout.hide-aside {
-    max-width: 1300px;
+    max-width: 1400px;
   }
 }
 .layout.hide-aside > div {
