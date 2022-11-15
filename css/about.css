@@ -148,7 +148,8 @@
 #about-page .about-statistic {
   min-height: 380px;
   width: 39%;
-  background: url(https://image.anzhiy.cn/adminuploads/1/2022/09/23/632d634f8376d.jpg) no-repeat top;
+  color: white;
+  background: url(https://i.imgtg.com/2022/11/15/tv5ws.png) no-repeat top;
   background-size: cover;
   overflow: hidden;
 }
