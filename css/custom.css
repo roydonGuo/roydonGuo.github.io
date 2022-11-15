@@ -541,10 +541,6 @@ span#subtitle:hover {
     background-image: url("/img/hutao.jpg");
 }
 
-#article-container .flink .flink-list>.flink-list-item {
-    margin: 5px 7px !important;
-}
-
 #article-container .btn-beautify.outline {
     border-radius: 20px;
     border: 5px solid;

@@ -2314,11 +2314,13 @@ figure.highlight pre .javascript .function {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 15px 7px;
-  width: calc(100% / 3 - 15px);
-  height: 90px;
-  border-radius: 8px;
-  line-height: 17px;
+  margin: 6px 7px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.412);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.412);
+  width: calc(100% / 5 - 15px);
+  height: 70px;
+  border-radius: 16px;
+  line-height: 16px;
   -webkit-transform: translateZ(0);
 }
 @media screen and (max-width: 1024px) {
@@ -2371,10 +2373,10 @@ figure.highlight pre .javascript .function {
 #article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
   float: left;
   overflow: hidden;
-  margin: 15px 10px;
-  width: 60px;
-  height: 60px;
-  border-radius: 35px;
+  margin: 12px 0 0 5px;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
   -webkit-transition: width 0.3s ease-out;
   -moz-transition: width 0.3s ease-out;
   -o-transition: width 0.3s ease-out;
@@ -2395,15 +2397,15 @@ figure.highlight pre .javascript .function {
   display: none;
 }
 #article-container .flink .flink-item-name {
-  padding: 16px 10px 0 0;
+  padding: 16px 0 6px;
   height: 40px;
-  font-weight: bold;
-  font-size: 1.43em;
+  font-weight: 800;
+  font-size: 1em;
 }
 #article-container .flink .flink-item-desc {
-  padding: 16px 10px 16px 0;
+  padding: 2px 0;
   height: 50px;
-  font-size: 0.93em;
+  font-size: 0.8em;
 }
 #article-container .flink .flink-name {
   margin-bottom: 5px;
