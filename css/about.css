@@ -236,12 +236,11 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button {
-  height: 36px;
-  width: 100px;
-  border-radius: 16px;
+  height: 2.6rem;
+  width: 6rem;
+  border-radius: 1rem;
   justify-content: center;
   background: pink;
-  /* color: var(--font-color); */
   display: flex;
   align-items: center;
   z-index: 1;
