@@ -1352,7 +1352,7 @@ img.footer_mini_logo:hover {
 }
 
 #bber .timeline ul li.bber-item:hover {
-    border: var(--style-border-hover);
+    border: 1px solid #ff3456;
 }
 
 #bber .bber-content-link {
@@ -1449,7 +1449,11 @@ img.footer_mini_logo:hover {
 }
 
 /* 顶部样式 */
-.author-content.author-content-item.essayPage {
+#essay_page .author-content{
+    min-height: 25rem;
+}
+
+#essay_page .author-content .author-content-item.essayPage {
     height: 26rem;
     width: 66%;
     margin-right: 2%;
@@ -1459,7 +1463,7 @@ img.footer_mini_logo:hover {
     margin-top: 0px;
 }
 
-.author-content.author-content-item.essayPage-right .card-content-right{
+#essay_page .author-content .author-content-item.essayPage-right{
     width: 32%;
     height: 26rem;
     background: url(https://img1.imgtp.com/2022/11/15/6ouOrrHN.png) left 28% / cover no-repeat;
