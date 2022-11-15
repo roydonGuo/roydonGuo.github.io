@@ -655,7 +655,6 @@ document.addEventListener('pjax:send', function () {
 
 document.addEventListener('pjax:complete', function () {
   window.refreshFn()
-
   document.querySelectorAll('script[data-pjax]').forEach(item => {
     const newScript = document.createElement('script')
     const content = item.text || item.textContent || item.innerHTML || ""
