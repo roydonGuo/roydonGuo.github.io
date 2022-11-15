@@ -1352,7 +1352,7 @@ img.footer_mini_logo:hover {
 }
 
 #bber .timeline ul li.bber-item:hover {
-    border: 1px solid #ff3456;
+    border: 1px solid pink;
 }
 
 #bber .bber-content-link {
@@ -1457,19 +1457,19 @@ img.footer_mini_logo:hover {
     height: 26rem;
     width: 66%;
     margin-right: 2%;
-    background: url(https://img1.imgtp.com/2022/11/15/6ouOrrHN.png) left 28% / cover no-repeat;
+    background: url(https://img1.imgtp.com/2022/11/15/6ouOrrHN.png) left center / cover no-repeat;
     color: wheat;
     overflow: hidden;
-    margin-top: 0px;
+    /* margin-top: 0px; */
 }
 
 #essay_page .author-content .author-content-item.essayPage-right{
     width: 32%;
     height: 26rem;
-    background: url(https://img1.imgtp.com/2022/11/15/6ouOrrHN.png) left 28% / cover no-repeat;
+    background: url(https://img1.imgtp.com/2022/11/15/OuHebCmm.gif) left center / cover no-repeat;
     color: blueviolet;
     overflow: hidden;
-    margin-top: 0px;
+    /* margin-top: 0px; */
 }
 
 
@@ -1483,6 +1483,15 @@ img.footer_mini_logo:hover {
 }
 
 @media screen and (max-width: 768px) {
+    #essay_page .author-content{
+        margin: 1rem 0;
+    }
+    #essay_page .author-content .author-content-item{
+        margin: 1rem 0;
+    }
+    #essay_page .author-content .author-content-item.essayPage {
+        margin-right: 0 !important;
+    }
     #bber .timeline ul li.bber-item {
         width: 100%;
         margin-right: 0px;
