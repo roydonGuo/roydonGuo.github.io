@@ -93,7 +93,7 @@ var anzhiyu = {
       setTimeout(function () {
         waterfall("#waterfall");
         document.getElementById("waterfall").classList.add("show");
-      }, 500);
+      }, 200);
   },
   commentText: function (e) {
     if (e == "undefined" || e == "null") e = "好棒！";

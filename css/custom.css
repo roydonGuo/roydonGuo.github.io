@@ -1455,7 +1455,7 @@ img.footer_mini_logo:hover {
 
 #essay_page .author-content .author-content-item.essayPage {
     height: 26rem;
-    width: 66%;
+    width: 82%;
     margin-right: 2%;
     background: url(https://img1.imgtp.com/2022/11/15/6ouOrrHN.png) left center / cover no-repeat;
     color: wheat;
@@ -1464,7 +1464,7 @@ img.footer_mini_logo:hover {
 }
 
 #essay_page .author-content .author-content-item.essayPage-right{
-    width: 32%;
+    width: 16%;
     height: 26rem;
     background: url(https://img1.imgtp.com/2022/11/15/OuHebCmm.gif) left center / cover no-repeat;
     color: blueviolet;
