@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 3603575 */
   /* Color fonts */
   src: 
-       url('//at.alicdn.com/t/c/font_3603575_t0gw8m7jij.woff2?t=1666522996401') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3603575_t0gw8m7jij.woff?t=1666522996401') format('woff'),
-       url('//at.alicdn.com/t/c/font_3603575_t0gw8m7jij.ttf?t=1666522996401') format('truetype');
+       url('//at.alicdn.com/t/c/font_3603575_khtb9uijf5.woff2?t=1668593744492') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3603575_khtb9uijf5.woff?t=1668593744492') format('woff'),
+       url('//at.alicdn.com/t/c/font_3603575_khtb9uijf5.ttf?t=1668593744492') format('truetype');
 }
 
 .iconfont {
@@ -15,11 +15,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-shenghuo:before {
+  content: "\e633";
+}
+
+.icon-bibi:before {
+  content: "\e629";
+}
+
 .icon-anzhuo:before {
   content: "\e60c";
 }
 
-.icon-huawei1:before {
+.icon-huawei:before {
   content: "\e610";
 }
 
@@ -39,20 +47,12 @@
   content: "\e61d";
 }
 
-.icon-Vue:before {
-  content: "\e799";
-}
-
 .icon-java:before {
   content: "\e639";
 }
 
 .icon-bigdata:before {
   content: "\e854";
-}
-
-.icon-bxl-spring-boot:before {
-  content: "\e6fe";
 }
 
 .icon-Python:before {
@@ -99,10 +99,6 @@
   content: "\e6c6";
 }
 
-.icon-yinle:before {
-  content: "\e627";
-}
-
 .icon-xiangce:before {
   content: "\ffc4";
 }
@@ -117,10 +113,6 @@
 
 .icon-guidang:before {
   content: "\e6b9";
-}
-
-.icon-redis:before {
-  content: "\e669";
 }
 
 .icon-tags1:before {
@@ -174,3 +166,4 @@
 .icon-pinglun:before {
   content: "\e642";
 }
+
