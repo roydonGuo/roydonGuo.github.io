@@ -1,44 +1,9 @@
-/* @font-face {
-  font-family: Candyhome;
-  src: url(https://cdn.cbd.int/anzhiyu-blog@latest/fonts/Candyhome.ttf);
-  font-display: swap;
-  font-weight: lighter;
-} */
-
-/* @import "//at.alicdn.com/t/c/font_3603575_86n1rki3ukk.css"; */
-
-/* @font-face {
-    font-family: ZhuZiAYuanJWD;
-    src: url(https://cdn.cbd.int/anzhiyu-blog@latest/fonts/ZhuZiAWan.woff2);
-    font-display: swap;
-    font-weight: lighter;
-} */
-
-/* 总体布局 */
-/* .layout {
-    max-width: 1450px;
-} */
-
-/* body {
-    zoom: 90% !important;
-} */
-
-
 /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
 @font-face {
-    font-family: "阿里妈妈数黑体 Bold";
+    font-family: "ali-black";
     font-weight: 700;
-    src: url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/UcHLIMn7LM0lPSz8d5U7n.woff2") format("woff2"),
-        url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/r47k1bk_QB8W0K3Pog6Kb.woff") format("woff");
-    font-display: swap;
-}
-
-/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
-@font-face {
-    font-family: "阿里巴巴普惠体 2.0 105 Heavy";
-    font-weight: 900;
-    src: url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/H029AUwhXBHEMJYgO_mpQ.woff2") format("woff2"),
-        url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/uxCheG_HUTBHyqkAihfLM.woff") format("woff");
+    src: url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/ngx4Rto7QDaF0wjwWujj1.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/A5DV5XIJJ9_XT5C2t2NRE.woff") format("woff");
     font-display: swap;
 }
 
@@ -91,7 +56,7 @@
 }
 
 h1#site-title {
-    font-family: "阿里妈妈数黑体 Bold";
+    font-family: "ali-black";
     font-size: 3em !important;
 }
 
@@ -99,7 +64,7 @@ a.article-title,
 a.blog-slider__title,
 a.categoryBar-list-link,
 h1.post-title {
-    font-family: "阿里巴巴普惠体 2.0 105 Heavy";
+    font-family: "ali-black";
 }
 
 #aside-content .card-widget:last-child {
@@ -1581,6 +1546,9 @@ img.footer_mini_logo:hover {
 
 #bbTimeList:hover {
     border: 2px solid pink;
+    font-size: 1.2rem;
+    color: #ff3456;
+    transition: all 0.3s ease-out 0s;
 }
 
 /* 文章页H1-H6图标样式效果 */
