@@ -93,6 +93,8 @@ function removeCommentBarrage(barrage) {
   }, 3000)
 } 
 
+initCommentBarrage()
+
 function switchCommentBarrage() {
   let commentBarrage = document.querySelector('.comment-barrage');
   if (commentBarrage) {
