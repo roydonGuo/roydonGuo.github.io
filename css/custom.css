@@ -1423,6 +1423,9 @@ img.footer_mini_logo:hover {
 /* #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
     padding: 0;
 } */
+.bber-info>.bber-content-link>.iconfont{
+    font-size: 0.88rem;
+}
 
 #bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {
     position: initial;
