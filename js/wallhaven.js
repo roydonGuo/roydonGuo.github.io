@@ -1,5 +1,4 @@
 // $(function () {
-
 //     $.ajax({
 //         type: 'GET', // 请求的方式 GET 或 POST
 //         url: 'https://wallhaven.cc/search?q=id%3A1&categories=110&purity=100&sorting=favorites&order=desc&pag=1&page=10', // 请求的URL

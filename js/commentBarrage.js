@@ -1,16 +1,4 @@
 const commentBarrageConfig = {
-  //颜色
-  // colors: [
-  //   ['rgba(56,106,178,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(146,72,240,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(45,165,93 ,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(255,197,5 ,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(212,78, 48,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(212,78, 48,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(44,192, 24,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(21,209,209,.8)', 'rgba(255,255,255,0.8)'],
-  //   ['rgba(190,10,210,.8)', 'rgba(255,255,255,0.8)']
-  // ],
   //同时最多显示弹幕数
   maxBarrage: 1,
   //弹幕显示间隔时间ms
@@ -24,7 +12,6 @@ const commentBarrageConfig = {
   barrageList: [],
   barrageIndex: 0,
   dom: document.querySelector('.comment-barrage'),
-
 }
 
 function initCommentBarrage() {
@@ -44,7 +31,6 @@ function initCommentBarrage() {
   xhr.open("POST", commentBarrageConfig.twikooUrl);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(data);
-
   setInterval(() => {
     if (commentBarrageConfig.barrageList.length) {
       popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
@@ -55,7 +41,6 @@ function initCommentBarrage() {
       removeCommentBarrage(commentBarrageConfig.barrageTimer.shift())
     }
   }, commentBarrageConfig.barrageTime)
-
 }
 
 function commentLinkFilter(data) {
@@ -106,13 +91,12 @@ function removeCommentBarrage(barrage) {
   setTimeout(() => {
     commentBarrageConfig.dom.removeChild(barrage);
   }, 3000)
-}
-
-initCommentBarrage()
+} 
 
 function switchCommentBarrage() {
   let commentBarrage = document.querySelector('.comment-barrage');
   if (commentBarrage) {
     $(commentBarrage).slideToggle("normal", "linear")
+
   }
 }
