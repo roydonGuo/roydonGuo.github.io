@@ -609,14 +609,14 @@
   background: url(https://s1.ax1x.com/2022/11/12/zi3xSg.jpg) no-repeat;
   background-size: cover;
   color: rgb(14, 159, 16);
-  min-height: 340px;
+  min-height: 400px;
 }
 
 .author-content-item.like-music {
   background: url(https://i.imgtg.com/2022/11/14/tKyFY.jpg) no-repeat top;
   background-size: cover;
   color: wheat;
-  min-height: 340px;
+  min-height: 400px;
   overflow: hidden;
 }
 
