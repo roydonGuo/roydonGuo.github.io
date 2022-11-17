@@ -34,7 +34,7 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + 'px',
         right: 57 + 'px',
-        nekoImg: "https://s1.ax1x.com/2022/11/12/ziJNdI.png",
+        nekoImg: "https://bu.dusays.com/2022/11/17/6375f7ca6945f.png",
         hoverMsg: "小猫咪来喽~",
         color: "#6f42c1",
         during: 500,
@@ -130,7 +130,7 @@ if (document.body.clientWidth > 992) {
 
     $("#myscoll").nekoScroll({
       nekoname: 'neko1', //nekoname，相当于id
-      nekoImg: 'https://s1.ax1x.com/2022/11/12/ziJNdI.png', //neko的背景图片
+      nekoImg: 'https://bu.dusays.com/2022/11/17/6375f7ca6945f.png', //neko的背景图片
       scImg: "img/绳1.png", //绳子的背景图片
       bgcolor: '#1e90ff', //背景颜色，没有绳子背景图片时有效
       zoom: 0.9, //绳子长度的缩放值
