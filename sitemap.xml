@@ -630,13 +630,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/JavaScirpt/</loc>
-    <lastmod>2022-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/tags/jQuery/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -645,6 +638,13 @@
   
   <url>
     <loc>https://roydon.xyz/tags/ajax/</loc>
+    <lastmod>2022-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/tags/JavaScirpt/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
