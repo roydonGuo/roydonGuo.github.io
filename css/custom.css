@@ -1058,13 +1058,11 @@ img.footer_mini_logo:hover {
 
 /* 颜色 */
 [data-theme="light"] {
-    --anzhiyu-secondbg: #f1f3f8dd;
-    --anzhiyu-card-bg: rgba(255, 255, 255, .9);
+    --roydon-card-bg: rgba(255, 255, 255, .9);
 }
 
 [data-theme="dark"] {
-    --anzhiyu-secondbg: #1b1f27dd;
-    --anzhiyu-card-bg: rgba(0, 0, 0, .9);
+    --roydon-card-bg: rgba(0, 0, 0, .9);
 }
 
 /* essay_page.css */
@@ -1151,7 +1149,7 @@ img.footer_mini_logo:hover {
     justify-content: space-between;
     align-items: flex-start;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background: var(--anzhiyu-card-bg);
+    background: var(--roydon-card-bg);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     margin-right: 2%;
 }
@@ -1265,7 +1263,7 @@ img.footer_mini_logo:hover {
     overflow: hidden;
     position: relative;
     border: 1px solid #d6def5;
-    background: var(--anzhiyu-secondbg);
+    background: #0000ff2e;
 }
 
 #bber .aplayer {
@@ -1392,7 +1390,7 @@ img.footer_mini_logo:hover {
 
 /* index_bbtimebar */
 #bbTimeList {
-    background: var(--anzhiyu-card-bg);
+    background: var(--roydon-card-bg);
     padding: 0.5rem 1rem;
     border-radius: 16px;
     box-sizing: border-box;
