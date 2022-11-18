@@ -15,33 +15,6 @@ function getAnime() {
     }
 }
 
-//  [
-//     "url(https://w.wallhaven.cc/full/3z/wallhaven-3zppld.jpg)",
-//     "url(http://cdn-ali-img-shstaticbz.shanhutech.cn/bizhi/staticwp/202206/96add8f773bcefc346d1c6fe028da943--1508333962.jpg)",
-//     "url(http://cdn-ali-img-shstaticbz.shanhutech.cn/bizhi/staticwp/202201/aa6954709fb2b1f2ef25ff73fae3d1e7--4186920932.jpg)",
-//     "url(http://cdn-ali-img-shstaticbz.shanhutech.cn/bizhi/staticwp/202201/aa6954709fb2b1f2ef25ff73fae3d1e7--4186920932.jpg)",
-//     "url(https://w.wallhaven.cc/full/l3/wallhaven-l3xq62.png)",
-//     "url(https://w.wallhaven.cc/full/e7/wallhaven-e7pwdw.jpg)",
-//     "url(https://w.wallhaven.cc/full/yj/wallhaven-yjk6ml.jpg)",
-//     "url(https://w.wallhaven.cc/full/mp/wallhaven-mprye8.jpg)",
-//     "url(https://w.wallhaven.cc/full/q2/wallhaven-q28x3l.jpg)",
-//     "url(https://w.wallhaven.cc/full/y8/wallhaven-y8wozk.jpg)",
-//     "url(https://w.wallhaven.cc/full/1k/wallhaven-1kzdg1.png)",
-//     "url(https://w.wallhaven.cc/full/wy/wallhaven-wyzxvr.jpg)",
-//     "url(https://w.wallhaven.cc/full/rd/wallhaven-rdolrq.jpg)",
-//     "url(https://w.wallhaven.cc/full/rd/wallhaven-rddgwm.jpg)",
-//     "url(https://w.wallhaven.cc/full/ym/wallhaven-ymz61d.jpg)",
-//     "url(https://w.wallhaven.cc/full/9m/wallhaven-9mjoy1.png)",
-//     "url(https://w.wallhaven.cc/full/z8/wallhaven-z8dp1v.jpg)",
-//     "url(https://w.wallhaven.cc/full/v9/wallhaven-v96m6p.jpg)",
-//     "url(https://w.wallhaven.cc/full/z8/wallhaven-z8e8qy.jpg)",
-//     "url(https://w.wallhaven.cc/full/x8/wallhaven-x8gkpo.jpg)",
-//     "url(https://w.wallhaven.cc/full/k7/wallhaven-k7wor1.jpg)",
-//     "url(https://w.wallhaven.cc/full/2e/wallhaven-2eroxm.jpg)",
-//     "url(https://w.wallhaven.cc/full/e7/wallhaven-e7g71w.jpg)",
-//     "url(https://w.wallhaven.cc/full/83/wallhaven-8396gk.jpg)"
-
-// ];
 // 随机背景图片
 function randomChangeBg(flag) {
     if (flag) {
@@ -236,14 +209,14 @@ function createWinbox() {
     
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:pink;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
     <p><button onclick="randomBg()" style="background: #ff3456;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="fa-solid iconfont icon-a-tupianyihuifu-14"></i> 开启背景图片随机轮播</button></p>
-    <p class="btn-on" onclick=""><span class="btn-on-circle"></span><span class="btn-on-text">ON</span></p>
+    <p class="btn-on" onclick="false"><span class="btn-on-circle"></span><span class="btn-on-text">ON</span></p>
 
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/l3/wallhaven-l3xq62.png)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/l3/wallhaven-l3xq62.png)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/e7/wallhaven-e7pwdw.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/e7/wallhaven-e7pwdw.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/yj/wallhaven-yjk6ml.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/yj/wallhaven-yjk6ml.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/mp/wallhaven-mprye8.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/mp/wallhaven-mprye8.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637615a3af26b.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637615a3af26b.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ff5177f.jpg)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ff5177f.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
     </div>
 
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
