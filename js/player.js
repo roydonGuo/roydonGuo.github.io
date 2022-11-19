@@ -23,38 +23,38 @@ class Musics {
     constructor() {
         this.songs = [{
                 id: 1,
-                title: '不是因为寂寞才想你-T.R.Y',
+                title: '不是因为寂寞才想你——T.R.Y',
                 singer: 'T.R.Y',
                 songUrl: './songs/T.R.Y - 不是因为寂寞才想你.mp3',
-                imageUrl: 'https://img1.imgtp.com/2022/09/17/RugtgtSi.jpg'
+                imageUrl: 'https://bu.dusays.com/2022/11/17/6375f5d268ffd.jpg'
             },
             {
                 id: 2,
-                title: '大海-张雨生',
+                title: '大海——张雨生',
                 singer: '张雨生',
                 songUrl: './songs/张雨生 - 大海.mp3',
-                imageUrl: 'https://img1.imgtp.com/2022/09/17/l9dDkcnW.png'
+                imageUrl: 'https://bu.dusays.com/2022/11/19/63787b676451d.jpg'
             },
 			{
                 id: 3,
-                title: '就忘了吧-1K',
+                title: '就忘了吧——1K',
                 singer: '1K',
                 songUrl: './songs/1K - 就忘了吧.mp3',
-                imageUrl: 'https://img1.imgtp.com/2022/09/17/Cu7BYIkS.png'
+                imageUrl: 'https://bu.dusays.com/2022/11/19/63787c0ea721b.jpg'
             },
             {
                 id: 4,
-                title: 'Free Loop-Daniel Powter',
+                title: 'Free Loop——Daniel Powter',
                 singer: 'Daniel Powter',
                 songUrl: './songs/Daniel Powter - Free Loop.mp3',
-                imageUrl: 'https://img1.imgtp.com/2022/09/17/ETFUcTeh.png'
+                imageUrl: 'https://bu.dusays.com/2022/11/19/63787c0ea6172.jpg'
             },
 			{
                 id: 5,
-                title: 'Shape of You-Ed Sheeran',
+                title: 'Shape of You——Ed Sheeran',
                 singer: 'Ed Sheeran',
                 songUrl: './songs/Ed Sheeran - Shape of You.mp3',
-                imageUrl: 'https://img1.imgtp.com/2022/09/17/xp8HTDDw.png'
+                imageUrl: 'https://bu.dusays.com/2022/11/19/63787c0ea6120.jpg'
             },
         ]
     }
