@@ -802,7 +802,6 @@ img.footer_mini_logo {
     height: 64px;
     margin: 0 1rem;
     cursor: pointer;
-
     transition: cubic-bezier(0, 0, 0, 1.29) .5s
 }
 
