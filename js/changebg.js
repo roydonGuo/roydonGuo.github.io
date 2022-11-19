@@ -240,9 +240,7 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #eecda3" onclick="changeBg('#eecda3')"></a>  
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>  
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #fff" onclick="changeBg('#fff')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #000" onclick="changeBg('#000')"></a>  
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>   
     </div>
 `;
 }
