@@ -18,12 +18,12 @@
 
 #post-comment .comment-barrage-item {
   /* min-width: 120px; */
-  max-width: 200px;
+  max-width: 220px;
   width: fit-content;
   /* min-height: 80px; */
-  max-height: 100px;
+  max-height: 110px;
   margin: 2px 0;
-  padding: 0 8px;
+  padding: 10px 16px;
   font-weight: 600;
   line-height: 1;
   border-radius: 10px;
@@ -35,11 +35,11 @@
   flex-direction: column;
 }
 [data-theme='dark'] #post-comment .comment-barrage-item {
-  max-width: 200px;
+  max-width: 220px;
   width: fit-content;
-  max-height: 100px;
+  max-height: 110px;
   margin: 2px 0;
-  padding: 0 8px;
+  padding: 10px 16px;
   font-weight: 600;
   line-height: 1;
   border-radius: 10px;
@@ -69,21 +69,21 @@
 
 #post-comment .comment-barrage-item .barrageHead {
   height: 23px;
-  padding: 0;
-  line-height: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 4px 0;
+  line-height: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #post-comment .comment-barrage-item .barrageHead .barrageNick{
-  background-color: rgba(250, 235, 215, 0.3);
+  /* background-color: rgba(207, 128, 25, 0.3); */
   color: black;
   font-weight: 800;
-  border-radius: 8px;
-  padding: 0 4px;
+  border-radius: 4px;
+  padding: 2px 4px;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.8); */
-  font-size: 13px;
+  font-size: 16px;
 }
 
 
@@ -95,7 +95,8 @@
 }
 
 #post-comment .comment-barrage-item .barrageContent {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.1;
   /* height: calc(100% - 30px); */
   overflow: scroll;
 }
