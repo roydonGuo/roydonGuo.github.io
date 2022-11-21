@@ -14,8 +14,6 @@ const commentBarrageConfig = {
   dom: document.querySelector('.comment-barrage'),
 }
 
-var timer;
-
 function initCommentBarrage() {
   var data = JSON.stringify({
     "event": "COMMENT_GET",
@@ -33,8 +31,7 @@ function initCommentBarrage() {
   xhr.open("POST", commentBarrageConfig.twikooUrl);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(data);
-  clearInterval(timer)
-  timer = setInterval(() => {
+  setInterval(() => {
     if (commentBarrageConfig.barrageList.length) {
       popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
       commentBarrageConfig.barrageIndex += 1;
