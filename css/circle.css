@@ -91,11 +91,6 @@ a {
   box-shadow: 0 0 0 3px var(--bili-pink);
 }
 
-#friend-circle-page .author-info {
-  display: flex;
-  flex-direction: column;
-}
-
 #friend-circle-page .posts .post {
   /*margin-bottom: 1rem;
   padding: 1rem;*/
@@ -130,6 +125,7 @@ a {
 }
 
 #friend-circle-page .author-info {
+  overflow: hidden;
   flex: 1;
   padding: 1rem;
 }
