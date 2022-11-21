@@ -38,6 +38,7 @@
 [data-theme=light] .twikoo .tk-comments-container>.tk-comment {
   /* 阴影 */
   box-shadow: var(--card-box-shadow);
+  border: 1px solid #0000001f;
 }
 
 /* 浅色模式评论区评论大框阴影悬浮加深 */
@@ -48,12 +49,7 @@
 
 /* 黑暗模式评论区评论大框 */
 [data-theme=dark] .twikoo .tk-comments-container>.tk-comment {
-  /* 边框样式 */
-  border-style: solid;
-  /* 边框宽度 */
-  border-width: var(--cxl2020mc-card-border-width);
-  /* 边框颜色 */
-  border-color: var(--cxl2020mc-card-border);
+  border: 1px solid #9e5ef059;
 }
 
 /* 设备信息 */
@@ -74,6 +70,7 @@
 [data-theme=light] .twikoo .tk-extra {
   /* 阴影 */
   box-shadow: var(--card-box-shadow);
+  border: 1px solid wheat;
 }
 
 /* 浅色模式设备信息阴影悬浮加深 */
