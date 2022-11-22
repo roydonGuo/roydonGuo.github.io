@@ -103,6 +103,7 @@
 
 #friend-circle-page .posts .post .info .link:hover {
   color: var(--bili-pink);
+  transition: 0.5s;
 }
 
 #friend-circle-page .author-info {
