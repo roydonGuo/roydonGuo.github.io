@@ -844,7 +844,7 @@ img.footer_mini_logo:hover {
     background-size: cover;
     border-radius: 16px;
     border: 2px solid black;
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: relative;
 }
 
@@ -871,8 +871,9 @@ img.footer_mini_logo:hover {
 
 #random-hover {
     position: absolute;
-    right: 0%;
-    height: 100% !important;
+    bottom: 0%;
+    /* right: 0%; */
+    /* height: 100% !important; */
     border-radius: 16px;
 }
 
