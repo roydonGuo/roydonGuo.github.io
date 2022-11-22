@@ -60,6 +60,7 @@
 .aplayer.aplayer-fixed .aplayer-body {
   left: 0;
   position: absolute !important;
+  backdrop-filter: saturate(150%) blur(20px) !important;
   width: 370px !important;
   transition: none !important;
   border-radius: 10px !important;
@@ -200,6 +201,7 @@
 
 [data-theme=dark] .aplayer.aplayer-fixed .aplayer-body {
   background: rgb(22, 22, 22) !important;
+  backdrop-filter: saturate(150%) blur(20px);
   color: rgb(255, 255, 255);
 }
 

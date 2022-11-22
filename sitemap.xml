@@ -200,33 +200,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/Gallery/index.html</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/genshin/index.html</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/minecraft/index.html</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/Gallery/phone/index.html</loc>
     
     <lastmod>2022-11-22</lastmod>
@@ -255,6 +228,33 @@
   
   <url>
     <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
+    
+    <lastmod>2022-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/index.html</loc>
+    
+    <lastmod>2022-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/genshin/index.html</loc>
+    
+    <lastmod>2022-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/minecraft/index.html</loc>
     
     <lastmod>2022-11-22</lastmod>
     
