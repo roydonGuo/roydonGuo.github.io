@@ -24,6 +24,12 @@
   height: 70vh;
 }
 
+@media screen and (max-width: 768px) {
+  #friend-circle-page {
+    height: 80vh;
+  }
+}
+
 #friend-circle-page .friends {
   width: 300px;
   border-right: 2px solid black;

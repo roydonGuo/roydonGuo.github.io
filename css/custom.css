@@ -830,6 +830,52 @@ img.footer_mini_logo:hover {
 .Jayblog_footerlogo_img:hover {
     transform: scale(1.03)
 }
+.blog-slider__content{
+    padding-left: 0 !important;
+}
+/* banner_index */
+#random {
+    width: 39% !important;
+    border-radius: 16px;
+    margin-top: 1rem;
+    background: url(https://bu.dusays.com/2022/11/17/637615a3af26b.png) left center / cover no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    font-size: 4.4rem;
+    position: relative;
+}
+
+#random-banner {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 16px;
+}
+
+#random-hover {
+    position: absolute;
+    right: 0%;
+    height: 100% !important;
+    border-radius: 16px;
+}
+
+#random-hover:hover {
+    background: pink;
+    backdrop-filter: blur(20px) saturate(180%);
+    /* -webkit-backdrop-filter: blur(10px) saturate(180%); */
+}
+
+.recent-posts>.recent-post-item:first-child{
+    width: 59% !important;
+}
+@media screen and (max-width: 1050px) {
+    #random {
+        display: none !important;
+    }
+
+    .recent-posts>.recent-post-item:first-child {
+        width: 100% !important;
+    }
+}
 
 #footer {
     /* background: linear-gradient(180deg, blue 0, yellow 25%); */
