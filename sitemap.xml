@@ -20,24 +20,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/manifest.json</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/link/index.html</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/movies/index.html</loc>
     
     <lastmod>2022-11-22</lastmod>
@@ -48,6 +30,24 @@
   
   <url>
     <loc>https://roydon.xyz/music/index.html</loc>
+    
+    <lastmod>2022-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/manifest.json</loc>
+    
+    <lastmod>2022-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/link/index.html</loc>
     
     <lastmod>2022-11-22</lastmod>
     
@@ -425,15 +425,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/001.html</loc>
-    
-    <lastmod>2022-08-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/posts/003.html</loc>
     
     <lastmod>2022-08-26</lastmod>
@@ -453,6 +444,15 @@
   
   <url>
     <loc>https://roydon.xyz/posts/004.html</loc>
+    
+    <lastmod>2022-08-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/001.html</loc>
     
     <lastmod>2022-08-26</lastmod>
     
@@ -559,13 +559,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/CSS/</loc>
-    <lastmod>2022-11-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/tags/HTML/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -574,6 +567,13 @@
   
   <url>
     <loc>https://roydon.xyz/tags/%E9%B2%B2%E9%B9%8FHCIA/</loc>
+    <lastmod>2022-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/tags/CSS/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -608,13 +608,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/tags/Mybatis-Plus/</loc>
-    <lastmod>2022-11-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/tags/Python/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -630,6 +623,13 @@
   
   <url>
     <loc>https://roydon.xyz/tags/Linux/</loc>
+    <lastmod>2022-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/tags/Mybatis-Plus/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -764,14 +764,14 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/Java/</loc>
+    <loc>https://roydon.xyz/categories/Python/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/Python/</loc>
+    <loc>https://roydon.xyz/categories/Java/</loc>
     <lastmod>2022-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
