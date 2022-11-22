@@ -848,7 +848,7 @@ img.footer_mini_logo:hover {
     position: relative;
 }
 
-#random-banner{
+#random-banner {
     display: none;
 }
 
@@ -880,8 +880,14 @@ img.footer_mini_logo:hover {
 #random-hover:hover {
     background: transparent;
     backdrop-filter: blur(10px) saturate(120%);
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s;
 }
+
+/* #random-hover:hover .fa-paper-plane {
+    position: absolute;
+    right: 2%;
+    transition: all 3s;
+} */
 
 /* #random-hover:hover {
     -webkit-backdrop-filter: blur(20px) saturate(150%);
