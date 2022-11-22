@@ -1,7 +1,7 @@
 body,
 html {
     height: 100%;
-    background-color: #fff
+    /* background-color: #fff */
 }
 
 body {
@@ -14,5 +14,5 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none
+    display: none !important
 }

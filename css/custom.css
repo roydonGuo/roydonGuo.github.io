@@ -850,7 +850,10 @@ img.footer_mini_logo:hover {
     height: 100% !important;
     border-radius: 16px;
 }
-
+#random-banner:hover{
+    background: transparent;
+    backdrop-filter: blur(10px) saturate(120%);
+}
 #random-hover {
     position: absolute;
     right: 0%;
@@ -858,11 +861,10 @@ img.footer_mini_logo:hover {
     border-radius: 16px;
 }
 
-#random-hover:hover {
-    background: pink;
-    backdrop-filter: blur(20px) saturate(180%);
-    /* -webkit-backdrop-filter: blur(10px) saturate(180%); */
-}
+/* #random-hover:hover {
+    
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+} */
 
 .recent-posts>.recent-post-item:first-child{
     width: 59% !important;
