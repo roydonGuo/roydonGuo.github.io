@@ -2959,7 +2959,8 @@ h1.page-title + .tag-cloud-list {
   color: #ffc0cb;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
-  background: #00c4b6;
+  background: #ffc0cb;
+  border-radius: 1rem;
   color: #fff;
 }
 #aside-content :only-child > .card-widget {

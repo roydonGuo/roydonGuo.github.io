@@ -59,10 +59,10 @@
     /*-webkit-filter:grayscale(100%)*/
 }
 
-#aside-content #card-toc .toc-content .toc-link.active {
+/* #aside-content #card-toc .toc-content .toc-link.active {
     background: hotpink;
     border-radius: 8px;
-}
+} */
 
 h1#site-title {
     font-family: "ali-black";
