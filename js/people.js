@@ -133,7 +133,7 @@ function init() {
 
 function createPeeps() {
     for (var e = config.rows, r = config.cols, t = e * r, a = img.naturalWidth / e, n = img.naturalHeight / r, o = 0; o < t; o++) allPeeps.push(new Peep({
-        image: img,
+        /image: img,
         rect: [o % e * a, (o / e | 0) * n, a, n]
     }))
 }
