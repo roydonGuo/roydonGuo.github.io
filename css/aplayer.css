@@ -149,6 +149,7 @@
 
 .aplayer.aplayer-fixed .aplayer-info {
   transition: none !important;
+  backdrop-filter: saturate(150%) blur(20px);
 }
 
 .aplayer.aplayer-narrow .aplayer-body {
