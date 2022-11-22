@@ -844,13 +844,17 @@ img.footer_mini_logo:hover {
     background-size: cover;
     border-radius: 16px;
     border: 2px solid black;
-    font-size: 4.4rem;
+    font-size: 2rem;
     position: relative;
+}
+
+#random-banner{
+    display: none;
 }
 
 #random:hover {
     border: 2px solid pink;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s;
 }
 
 #random-banner {
@@ -862,7 +866,7 @@ img.footer_mini_logo:hover {
 #random-banner:hover {
     background: transparent;
     backdrop-filter: blur(10px) saturate(120%);
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s;
 }
 
 #random-hover {
