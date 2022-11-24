@@ -87,8 +87,28 @@ h1.post-title {
     padding: 0 10px;
 }
 
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.tags::before {
+    content: "\A";
+    white-space: nowrap !important;
+}
+
+/* 首页文章显示三栏 */
+#recent-posts>.recent-post-item:nth-child(n+2) {
+    width: 32.3%;
+}
+@media screen and (max-width: 768px) {
+    #recent-posts>.recent-post-item:nth-child(n+2) {
+        width: 100%;
+    }
+}
+
+#recent-posts>.recent-post-item .post_cover {
+    height: 12rem !important;
+}
+
 /* 首页磁贴卡片美化 */
 #recent-posts>.recent-post-item {
+    position: relative;
     border: 2px solid black;
 }
 
@@ -193,10 +213,6 @@ svg.icon.faa-tada {
     left: 16px;
 }
 
-#recent-posts>.recent-post-item {
-    position: relative;
-}
-
 /* 魔改标签 */
 /* .tag-cloud-list {
     font-weight: 800;
@@ -210,25 +226,21 @@ svg.icon.faa-tada {
     border: 1px solid transparent;
 } */
 
-#aside-content .card-info .author-info__name {
+/* #aside-content .card-info .author-info__name {
     font-weight: 900;
     font-size: 1.99em;
-}
+} */
 
 /* 公告栏 */
 .aside-content .item-headline:first-child {
-    color: hotpink;
-    font-weight: 800;
+    color: #9a37c5;
+    font-weight: 900;
 }
 
-.announcement_content {
-    font-weight: 700;
-}
-
+/* 
 .recent-posts .recent-post-item .content {
     font-family: 'STXingkai', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+} */
 
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 #page-header:not(.not-top-img):before {
@@ -831,7 +843,7 @@ img.footer_mini_logo:hover {
 }
 
 /* card-announcement */
-.aside-content>.card-announcement{
+.aside-content>.card-announcement {
     background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat !important;
     background-size: cover !important;
     box-shadow: 2px -4px 10px 10px inset !important;
