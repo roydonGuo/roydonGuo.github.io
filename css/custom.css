@@ -262,11 +262,6 @@ svg.icon.faa-tada {
     background: rgba(255, 255, 255, 0.9);
 }
 
-/* 首页侧栏卡片 */
-#aside-content .card-widget {
-    background: rgba(255, 255, 255, 0.9);
-}
-
 /* 文章页面正文背景 */
 div#post {
     background: rgba(255, 255, 255, 0.9);
@@ -833,6 +828,13 @@ img.footer_mini_logo:hover {
 
 .blog-slider__content {
     padding-left: 0 !important;
+}
+
+/* card-announcement */
+.aside-content>.card-announcement{
+    background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat !important;
+    background-size: cover !important;
+    box-shadow: 2px -4px 10px 10px inset !important;
 }
 
 /* banner_index */
