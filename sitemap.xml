@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/music/index.html</loc>
-    
-    <lastmod>2022-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/manifest.json</loc>
     
     <lastmod>2022-11-24</lastmod>
@@ -48,6 +39,15 @@
   
   <url>
     <loc>https://roydon.xyz/movies/index.html</loc>
+    
+    <lastmod>2022-11-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/music/index.html</loc>
     
     <lastmod>2022-11-24</lastmod>
     

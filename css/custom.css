@@ -847,7 +847,7 @@ img.footer_mini_logo:hover {
     position: absolute;
     top: .4rem;
     right: 1rem;
-    background: #6239ae2d;
+    /* background: #6239ae2d; */
     backdrop-filter: saturate(180%) blur(50px);
     border-radius: .4rem;
     color: rgb(252, 206, 120) !important;
@@ -857,7 +857,8 @@ img.footer_mini_logo:hover {
 }
 .recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories:hover{
     text-decoration: none !important;
-    background: rgba(140, 140, 255, 0.69);
+    /* background: transparent !important; */
+    backdrop-filter: saturate(220%) blur(100px)
 }
 #recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap{
     margin-bottom: 0 !important;
