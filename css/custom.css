@@ -842,11 +842,33 @@ img.footer_mini_logo:hover {
     padding-left: 0 !important;
 }
 
+/* 文章post-item修改分类 */
+.recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories{
+    position: absolute;
+    top: .4rem;
+    right: 1rem;
+    background: #6239ae2d;
+    backdrop-filter: saturate(180%) blur(50px);
+    border-radius: .4rem;
+    color: rgb(252, 206, 120) !important;
+    font-weight: 600 !important;
+    font-size: 90% !important;
+    padding: .2rem .8rem;
+}
+.recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories:hover{
+    text-decoration: none !important;
+    background: rgba(140, 140, 255, 0.69);
+}
+/* .recent-post-item .recent-post-info .article-meta-wrap .article-meta:nth-child(2):hover a{
+    text-decoration: none !important;
+    background: none !important;
+} */
+
 /* card-announcement */
 .aside-content>.card-announcement {
     background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat !important;
     background-size: cover !important;
-    box-shadow: 2px -4px 10px 10px inset !important;
+    box-shadow: 2px -4px 10px 10px #ff90906b inset !important;
 }
 
 /* banner_index */
