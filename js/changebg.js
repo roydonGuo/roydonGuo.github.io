@@ -37,9 +37,10 @@ var mcBgGif = [
     "https://bu.dusays.com/2022/11/24/637f507fd3bc7.gif",
     "https://bu.dusays.com/2022/11/24/637f507be15b0.gif"
 ]
-
+var mctime 
 function randoMcBgGif() {
-    setInterval(function () {
+    clearInterval(mctime)
+    mctime = setInterval(function () {
         var bgindex = Math.floor(Math.random() * mcBgGif.length)
         document.querySelector("#random").style.backgroundImage = 'url(' + mcBgGif[bgindex] + ')'
     }, 5000)
