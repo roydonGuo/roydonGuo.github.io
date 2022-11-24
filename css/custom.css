@@ -859,6 +859,13 @@ img.footer_mini_logo:hover {
     text-decoration: none !important;
     background: rgba(140, 140, 255, 0.69);
 }
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap{
+    margin-bottom: 0 !important;
+}
+
+.article-meta-wrap .iconfont{
+    font-size: 110%;
+}
 /* .recent-post-item .recent-post-info .article-meta-wrap .article-meta:nth-child(2):hover a{
     text-decoration: none !important;
     background: none !important;
