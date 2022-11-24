@@ -96,6 +96,7 @@ h1.post-title {
 #recent-posts>.recent-post-item:nth-child(n+2) {
     width: 32.3%;
 }
+
 @media screen and (max-width: 768px) {
     #recent-posts>.recent-post-item:nth-child(n+2) {
         width: 100%;
@@ -843,7 +844,7 @@ img.footer_mini_logo:hover {
 }
 
 /* 文章post-item修改分类 */
-.recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories{
+.recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories {
     position: absolute;
     top: .4rem;
     right: 1rem;
@@ -855,18 +856,21 @@ img.footer_mini_logo:hover {
     font-size: 90% !important;
     padding: .2rem .8rem;
 }
-.recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories:hover{
+
+.recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories:hover {
     text-decoration: none !important;
     /* background: transparent !important; */
     backdrop-filter: saturate(220%) blur(100px)
 }
-#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap{
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
     margin-bottom: 0 !important;
 }
 
-.article-meta-wrap .iconfont{
+.article-meta-wrap .iconfont {
     font-size: 110%;
 }
+
 /* .recent-post-item .recent-post-info .article-meta-wrap .article-meta:nth-child(2):hover a{
     text-decoration: none !important;
     background: none !important;
@@ -899,6 +903,10 @@ img.footer_mini_logo:hover {
 #random:hover {
     border: 2px solid pink;
     transition: all 0.3s;
+}
+
+#random:hover #random-hover {
+    display: block !important;
 }
 
 #random-banner {
