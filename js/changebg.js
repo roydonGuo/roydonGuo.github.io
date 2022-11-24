@@ -25,7 +25,26 @@ function randomChangeBg(flag) {
         }, 20000)
     }
 }
+var mcBgGif = [
+    "https://bu.dusays.com/2022/11/24/637f50838e27c.gif",
+    "https://bu.dusays.com/2022/11/24/637f50815b2b3.gif",
+    "https://bu.dusays.com/2022/11/24/637f50813ef9c.gif",
+    "https://bu.dusays.com/2022/11/24/637f50869b81d.gif",
+    "https://bu.dusays.com/2022/11/24/637f5086361fa.gif",
+    "https://bu.dusays.com/2022/11/24/637f50860c8c2.gif",
+    "https://bu.dusays.com/2022/11/24/637f5084dc583.gif",
+    "https://bu.dusays.com/2022/11/24/637f507ff3d86.gif",
+    "https://bu.dusays.com/2022/11/24/637f507fd3bc7.gif",
+    "https://bu.dusays.com/2022/11/24/637f507be15b0.gif"
+]
 
+function randoMcBgGif() {
+    setInterval(function () {
+        var bgindex = Math.floor(Math.random() * mcBgGif.length)
+        document.querySelector("#random").style.backgroundImage = 'url(' + mcBgGif[bgindex] + ')'
+    }, 5000)
+}
+randoMcBgGif()
 // 存数据
 // name：命名 data：数据
 function saveData(name, data) {
@@ -302,4 +321,3 @@ function toggleWinbox() {
 //     // btn_on_off(false)
 //     localStorage.removeItem('randomBgOrNot');
 // }
-
