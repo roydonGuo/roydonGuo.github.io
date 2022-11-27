@@ -20,6 +20,24 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/movies/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/music/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/manifest.json</loc>
     
     <lastmod>2022-11-27</lastmod>
@@ -38,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/movies/index.html</loc>
+    <loc>https://roydon.xyz/essay/index.html</loc>
     
     <lastmod>2022-11-27</lastmod>
     
@@ -47,7 +65,34 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/music/index.html</loc>
+    <loc>https://roydon.xyz/fcircle/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/1b88f555.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/21.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/26.html</loc>
     
     <lastmod>2022-11-27</lastmod>
     
@@ -146,24 +191,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/essay/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/fcircle/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/posts/14.html</loc>
     
     <lastmod>2022-11-27</lastmod>
@@ -174,33 +201,6 @@
   
   <url>
     <loc>https://roydon.xyz/posts/20.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/1b88f555.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/21.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/26.html</loc>
     
     <lastmod>2022-11-27</lastmod>
     

@@ -1540,8 +1540,8 @@ img.footer_mini_logo:hover {
 }
 
 .bber-logo {
-    font-size: 1.8rem;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 2rem;
     margin-right: 2rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -1577,7 +1577,7 @@ img.footer_mini_logo:hover {
 
 /* 文章页H1-H6图标样式效果 */
 .bbTimeList .bber-logo {
-    animation: rotate 3s linear infinite;
+    animation: rotate 2s linear infinite;
 }
 
 @-webkit-keyframes rotate {
