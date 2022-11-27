@@ -38,6 +38,15 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/movies/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/music/index.html</loc>
     
     <lastmod>2022-11-27</lastmod>
@@ -47,7 +56,16 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/movies/index.html</loc>
+    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/4b0178e0.html</loc>
     
     <lastmod>2022-11-27</lastmod>
     
@@ -191,60 +209,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/4b0178e0.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/phone/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/scenery/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/twospace/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
-    
-    <lastmod>2022-11-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/Gallery/index.html</loc>
     
     <lastmod>2022-11-27</lastmod>
@@ -264,6 +228,42 @@
   
   <url>
     <loc>https://roydon.xyz/Gallery/minecraft/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/scenery/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/phone/index.html</loc>
+    
+    <lastmod>2022-11-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/Gallery/twospace/index.html</loc>
     
     <lastmod>2022-11-27</lastmod>
     
