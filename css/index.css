@@ -1362,7 +1362,7 @@ canvas:not(#ribbon-canvas),
   --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
-  --blockquote-bg: rgba(73,177,245,0.1);
+  --blockquote-bg: rgba(161,194,250,0.6);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
@@ -1539,11 +1539,11 @@ img:not([src]) {
   text-decoration: none !important;
 }
 blockquote {
-  margin: 0 0 20px;
-  padding: 12px 15px;
-  border-left: 3px solid #49b1f5;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-left: 3px solid #ffc0cb;
   background-color: var(--blockquote-bg);
-  color: var(--blockquote-color);
+  border-radius: 10px;
 }
 blockquote footer cite:before {
   padding: 0 5px;
@@ -4093,7 +4093,7 @@ h2.f4.text-normal.mb-3 {
   transition: filter 375ms ease-in 0.2s;
 }
 #article-container p {
-  margin: 0 0 16px;
+  margin: 0 0 0px;
 }
 #article-container iframe {
   margin: 0 0 20px;
