@@ -1603,3 +1603,7 @@ img.footer_mini_logo:hover {
         transform: rotate(-1turn);
     }
 }
+
+/* div{
+    backdrop-filter: saturate(150%) blur(20px);
+} */
