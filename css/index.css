@@ -1545,6 +1545,9 @@ blockquote {
   background-color: var(--blockquote-bg);
   border-radius: 10px;
 }
+blockquote p {
+  margin: 0 !important;
+}
 blockquote footer cite:before {
   padding: 0 5px;
   content: '—';
@@ -4093,7 +4096,7 @@ h2.f4.text-normal.mb-3 {
   transition: filter 375ms ease-in 0.2s;
 }
 #article-container p {
-  margin: 0 0 0px;
+  margin: 0 0 10px;
 }
 #article-container iframe {
   margin: 0 0 20px;
