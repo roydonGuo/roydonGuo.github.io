@@ -1545,9 +1545,6 @@ blockquote {
   background-color: var(--blockquote-bg);
   border-radius: 10px;
 }
-blockquote p {
-  margin: 0 !important;
-}
 blockquote footer cite:before {
   padding: 0 5px;
   content: '—';
