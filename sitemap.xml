@@ -56,33 +56,6 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/categories/index.html</loc>
-    
-    <lastmod>2022-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/changebg/index.html</loc>
-    
-    <lastmod>2022-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/comments/index.html</loc>
-    
-    <lastmod>2022-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://roydon.xyz/essay/index.html</loc>
     
     <lastmod>2022-11-30</lastmod>
@@ -191,6 +164,42 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/about/index.html</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/categories/index.html</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/changebg/index.html</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/comments/index.html</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/Gallery/index.html</loc>
     
     <lastmod>2022-11-30</lastmod>
@@ -200,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://roydon.xyz/about/index.html</loc>
+    <loc>https://roydon.xyz/Gallery/genshin/index.html</loc>
     
     <lastmod>2022-11-30</lastmod>
     
@@ -246,15 +255,6 @@
   
   <url>
     <loc>https://roydon.xyz/Gallery/wallpaper/index.html</loc>
-    
-    <lastmod>2022-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/Gallery/genshin/index.html</loc>
     
     <lastmod>2022-11-30</lastmod>
     
