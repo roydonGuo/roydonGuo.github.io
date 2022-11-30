@@ -566,7 +566,7 @@ span#subtitle:hover {
 .pimgbox,
 .imgbox,
 .box {
-    width: 166px;
+    width: 160px;
     margin: 10px;
     background-size: cover
 }
@@ -582,7 +582,7 @@ span#subtitle:hover {
 }
 
 .imgbox {
-    height: 95px;
+    height: 90px;
 }
 
 .box {

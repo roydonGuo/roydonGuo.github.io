@@ -103,8 +103,6 @@
 //   }
 // }
 
-//CommentBarrage 2.0 By Ariasaka
-//因为C++的原因码风越来越奇怪了
 const commentBarrageConfig = {
   //浅色模式和深色模式颜色，务必保持一致长度，前面是背景颜色，后面是字体，随机选择，默认这个颜色还好
   lightColors: [

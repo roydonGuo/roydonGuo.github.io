@@ -241,6 +241,7 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ff5177f.jpg)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ff5177f.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/28/wallhaven-28rr8m.jpg)" class="imgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/28/wallhaven-28rr8m.jpg)')"></a>
     </div>
 
     <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
@@ -249,6 +250,7 @@ function createWinbox() {
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/7p/wallhaven-7p6619.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/7p/wallhaven-7p6619.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
     </div>
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>

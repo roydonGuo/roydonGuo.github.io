@@ -4133,11 +4133,12 @@ h2.f4.text-normal.mb-3 {
 #article-container h4,
 #article-container h5,
 #article-container h6 {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 #article-container h1:before,
 #article-container h2:before,
@@ -4226,7 +4227,7 @@ h2.f4.text-normal.mb-3 {
 }
 #article-container ol p,
 #article-container ul p {
-  margin: 0 0 8px;
+  margin: 0 0 5px;
 }
 #article-container li::marker {
   color: #ffc0cb;
