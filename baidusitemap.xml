@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
-    <lastmod>2022-11-30</lastmod>
-  </url>
-  <url>
     <loc>https://roydon.xyz/posts/4b0178e0.html</loc>
     <lastmod>2022-11-30</lastmod>
   </url>
@@ -41,16 +37,16 @@
     <lastmod>2022-11-30</lastmod>
   </url>
   <url>
+    <loc>https://roydon.xyz/posts/harmony2.0.html</loc>
+    <lastmod>2022-11-30</lastmod>
+  </url>
+  <url>
     <loc>https://roydon.xyz/posts/videoDemo.html</loc>
     <lastmod>2022-10-18</lastmod>
   </url>
   <url>
     <loc>https://roydon.xyz/posts/34abbf19.html</loc>
     <lastmod>2022-10-09</lastmod>
-  </url>
-  <url>
-    <loc>https://roydon.xyz/posts/5380d66.html</loc>
-    <lastmod>2022-09-03</lastmod>
   </url>
   <url>
     <loc>https://roydon.xyz/posts/d9ef328.html</loc>
