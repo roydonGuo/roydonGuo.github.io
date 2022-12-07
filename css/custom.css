@@ -234,12 +234,6 @@ svg.icon.faa-tada {
     content: '';
 }
 
-/* 文章总览修改 */
-/* .article-sort-title {
-    font-size: 2.33em;
-    font-weight: 900;
-} */
-
 #pagination .page-number.current {
     border-radius: 5px;
 }

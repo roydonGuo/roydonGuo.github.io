@@ -83,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-color: pink;
   flex-direction: column;
   width: 39%;
 }
@@ -256,6 +257,8 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
+  color: white;
+  background-color: pink;
   backdrop-filter: saturate(180%) blur(50px);
 }
 
@@ -1044,11 +1047,8 @@
 }
 
 .hello-about h1 {
-  font-size: 200px;
-  color: #000;
   margin: 0;
   text-align: center;
-  font: inherit;
   vertical-align: baseline;
   line-height: 1;
   font-size: calc((0.0389119683 * 100vw + (10px)));
@@ -1089,7 +1089,7 @@
   align-items: flex-start;
   flex-direction: column;
   width: 50%;
-  min-height: 450px;
+  min-height: 400px;
 }
 
 .author-content-item.skills .skills-style-group {

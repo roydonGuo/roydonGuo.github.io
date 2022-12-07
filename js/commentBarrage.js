@@ -1,13 +1,15 @@
 // twikooUrl: "https://guo.yicheng.plus",
 // accessToken: "04fdc390db1b4efd9ed7de5954e0e968",
 
+
+
 const commentBarrageConfig = {
 	//浅色模式和深色模式颜色，务必保持一致长度，前面是背景颜色，后面是字体，随机选择，默认这个颜色还好
-	lightColors:[
-		['var(--lyx-white-acrylic2)','var(--lyx-black)'],
+	lightColors: [
+		['#fff !important', 'var(--lyx-black)'],
 	],
-	darkColors:[
-		['var(--lyx-black-acrylic2)','var(--lyx-white)'],
+	darkColors: [
+		['#000 !important', 'var(--lyx-white)'],
 	],
 	//同时最多显示弹幕数
 	maxBarrage: 1,
@@ -30,79 +32,82 @@ const commentBarrageConfig = {
 	avatarCDN: "cravatar.cn",
 }
 
-function isInViewPortOfOne (el) {
-    const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight 
-    const offsetTop = el.offsetTop
-    const scrollTop = document.documentElement.scrollTop
-    const top = offsetTop - scrollTop
-    return top <= viewPortHeight
+function isInViewPortOfOne(el) {
+	const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+	const offsetTop = el.offsetTop
+	const scrollTop = document.documentElement.scrollTop
+	const top = offsetTop - scrollTop
+	return top <= viewPortHeight
 }
-document.onscroll = function() {
-	if(commentBarrageConfig.displayBarrage){
-	if(isInViewPortOfOne(document.getElementById("post-comment"))){
-		document.getElementsByClassName("comment-barrage")[0].setAttribute("style",`display:none;`)
-	}
-	else{
-		document.getElementsByClassName("comment-barrage")[0].setAttribute("style","")
+document.onscroll = function () {
+	if (commentBarrageConfig.displayBarrage) {
+		if (isInViewPortOfOne(document.getElementById("post-comment"))) {
+			document.getElementsByClassName("comment-barrage")[0].setAttribute("style", `display:none;`)
+		} else {
+			document.getElementsByClassName("comment-barrage")[0].setAttribute("style", "")
+		}
 	}
 }
-  }
-function initCommentBarrage(){
-		var data = JSON.stringify({
-		  "event": "COMMENT_GET",
-		  "commentBarrageConfig.accessToken": commentBarrageConfig.accessToken,
-		  "url": commentBarrageConfig.pageUrl
-		});
-		var xhr = new XMLHttpRequest();
-		xhr.withCredentials = true;
-		xhr.addEventListener("readystatechange", function() {
-		  if(this.readyState === 4) {
+
+function initCommentBarrage() {
+	var data = JSON.stringify({
+		"event": "COMMENT_GET",
+		"commentBarrageConfig.accessToken": commentBarrageConfig.accessToken,
+		"url": commentBarrageConfig.pageUrl
+	});
+	var xhr = new XMLHttpRequest();
+	xhr.withCredentials = true;
+	xhr.addEventListener("readystatechange", function () {
+		if (this.readyState === 4) {
 			commentBarrageConfig.barrageList = commentLinkFilter(JSON.parse(this.responseText).data);
 			commentBarrageConfig.dom.innerHTML = '';
-		  }
-		});
-		xhr.open("POST", commentBarrageConfig.twikooUrl);
-		xhr.setRequestHeader("Content-Type", "application/json");
-		xhr.send(data);
-		setInterval(()=>{
-			if(commentBarrageConfig.barrageList.length){
-				popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
-				commentBarrageConfig.barrageIndex += 1;
-				commentBarrageConfig.barrageIndex %= commentBarrageConfig.barrageList.length;
-			}
-			if(commentBarrageConfig.barrageTimer.length > (commentBarrageConfig.barrageList.length > commentBarrageConfig.maxBarrage?commentBarrageConfig.maxBarrage:commentBarrageConfig.barrageList.length)){
-				removeCommentBarrage(commentBarrageConfig.barrageTimer.shift())
-			}
-		},commentBarrageConfig.barrageTime)
+		}
+	});
+	xhr.open("POST", commentBarrageConfig.twikooUrl);
+	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.send(data);
+	setInterval(() => {
+		if (commentBarrageConfig.barrageList.length) {
+			popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
+			commentBarrageConfig.barrageIndex += 1;
+			commentBarrageConfig.barrageIndex %= commentBarrageConfig.barrageList.length;
+		}
+		if (commentBarrageConfig.barrageTimer.length > (commentBarrageConfig.barrageList.length > commentBarrageConfig.maxBarrage ? commentBarrageConfig.maxBarrage : commentBarrageConfig.barrageList.length)) {
+			removeCommentBarrage(commentBarrageConfig.barrageTimer.shift())
+		}
+	}, commentBarrageConfig.barrageTime)
 
 }
-function commentLinkFilter(data){
-	data.sort((a,b)=>{
+
+function commentLinkFilter(data) {
+	data.sort((a, b) => {
 		return a.created - b.created;
 	})
 	let newData = [];
-	data.forEach(item=>{
+	data.forEach(item => {
 		newData.push(...getCommentReplies(item));
 	});
 	return newData;
 }
-function getCommentReplies(item){
-	if(item.replies){
+
+function getCommentReplies(item) {
+	if (item.replies) {
 		let replies = [item];
-		item.replies.forEach(item=>{
+		item.replies.forEach(item => {
 			replies.push(...getCommentReplies(item));
 		})
 		return replies;
-	}else{
+	} else {
 		return [];
 	}
 }
-function popCommentBarrage(data){
+
+function popCommentBarrage(data) {
 	let barrage = document.createElement('div');
 	let width = commentBarrageConfig.dom.clientWidth;
 	let height = commentBarrageConfig.dom.clientHeight;
 	barrage.className = 'comment-barrage-item'
-	let ran = Math.floor(Math.random()*commentBarrageConfig.lightColors.length)
+	let ran = Math.floor(Math.random() * commentBarrageConfig.lightColors.length)
 	// document.getElementById("barragesColor").innerHTML=`[data-theme='light'] .comment-barrage-item { background-color:${commentBarrageConfig.lightColors[ran][0]};color:${commentBarrageConfig.lightColors[ran][1]}}[data-theme='dark'] .comment-barrage-item{ background-color:${commentBarrageConfig.darkColors[ran][0]};color:${commentBarrageConfig.darkColors[ran][1]}}`;
 
 	barrage.innerHTML = `
@@ -116,46 +121,61 @@ function popCommentBarrage(data){
 	commentBarrageConfig.barrageTimer.push(barrage);
 	commentBarrageConfig.dom.append(barrage);
 }
-function removeCommentBarrage(barrage){
+
+function removeCommentBarrage(barrage) {
 	barrage.className = 'comment-barrage-item out';
 
-	if(commentBarrageConfig.maxBarrage!=1){
-		setTimeout(()=>{
+	if (commentBarrageConfig.maxBarrage != 1) {
+		setTimeout(() => {
 			commentBarrageConfig.dom.removeChild(barrage);
-		},1000)
-	}else{
+		}, 1000)
+	} else {
 		commentBarrageConfig.dom.removeChild(barrage);
 	}
 }
 switchCommentBarrage = function () {
-	localStorage.setItem("isBarrageToggle",Number(!Number(localStorage.getItem("isBarrageToggle"))))
-	if(!isInViewPortOfOne(document.getElementById("post-comment"))){
-	commentBarrageConfig.displayBarrage=!(commentBarrageConfig.displayBarrage);
-    let commentBarrage = document.querySelector('.comment-barrage');
-    if (commentBarrage) {
-        $(commentBarrage).fadeToggle()
-    }
+	localStorage.setItem("isBarrageToggle", Number(!Number(localStorage.getItem("isBarrageToggle"))))
+	if (!isInViewPortOfOne(document.getElementById("post-comment"))) {
+		commentBarrageConfig.displayBarrage = !(commentBarrageConfig.displayBarrage);
+		let commentBarrage = document.querySelector('.comment-barrage');
+		if (commentBarrage) {
+			$(commentBarrage).fadeToggle()
+		}
+	}
 }
-}
-$(".comment-barrage").hover(function(){
+$(".comment-barrage").hover(function () {
 	clearInterval(timer);
-},function () {
-	timer=setInterval(()=>{
-		if(commentBarrageConfig.barrageList.length){
+}, function () {
+	timer = setInterval(() => {
+		if (commentBarrageConfig.barrageList.length) {
 			popCommentBarrage(commentBarrageConfig.barrageList[commentBarrageConfig.barrageIndex]);
 			commentBarrageConfig.barrageIndex += 1;
 			commentBarrageConfig.barrageIndex %= commentBarrageConfig.barrageList.length;
 		}
-		if(commentBarrageConfig.barrageTimer.length > (commentBarrageConfig.barrageList.length > commentBarrageConfig.maxBarrage?commentBarrageConfig.maxBarrage:commentBarrageConfig.barrageList.length)){
+		if (commentBarrageConfig.barrageTimer.length > (commentBarrageConfig.barrageList.length > commentBarrageConfig.maxBarrage ? commentBarrageConfig.maxBarrage : commentBarrageConfig.barrageList.length)) {
 			removeCommentBarrage(commentBarrageConfig.barrageTimer.shift())
 		}
-	},commentBarrageConfig.barrageTime)
+	}, commentBarrageConfig.barrageTime)
 })
-if(localStorage.getItem("isBarrageToggle")==undefined){
-	localStorage.setItem("isBarrageToggle","0");
-}else if(localStorage.getItem("isBarrageToggle")=="1"){
-	localStorage.setItem("isBarrageToggle","0");
+if (localStorage.getItem("isBarrageToggle") == undefined) {
+	localStorage.setItem("isBarrageToggle", "0");
+} else if (localStorage.getItem("isBarrageToggle") == "1") {
+	localStorage.setItem("isBarrageToggle", "0");
 	switchCommentBarrage()
 }
 initCommentBarrage()
 
+window.addEventListener("pjax:complete", clear); //后面几次，pjax加载
+window.addEventListener("DOMContentLoaded", load); //第一次加载
+function clear() {
+	clearInternal(timer);
+	document.querySelector(".comment-barrage").innerHtml = "";
+	load();
+}
+
+function load() {
+	//init
+	timer = setInteral(() => {
+		popCommentBarrage();
+	}, 3000)
+}
