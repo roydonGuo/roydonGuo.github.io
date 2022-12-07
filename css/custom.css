@@ -544,25 +544,6 @@ span#subtitle:hover {
     height: 100px;
 }
 
-/* 老用户如果不再使用页面版可删除下面代码 */
-/* #color {
-    border: none;
-    background: transparent;
-    width: 166px;
-    height: 110px;
-    margin: 5px 10px;
-    position: relative;
-    cursor: pointer;
-}
-
-#color::before {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    left: 38px;
-    top: 44px;
-    content: '自定义颜色';
-} */
-
 @media screen and (max-width: 768px) {
 
     /* 背景 */
@@ -576,17 +557,6 @@ span#subtitle:hover {
     .pimgbox {
         height: 205px;
     }
-
-    /* 老用户如果不再使用页面版可删除下面代码 */
-    /* #color {
-        width: 141px;
-        height: 83px;
-        margin: 7px;
-    }
-    #color::before {
-        left: 33px;
-        top: 33px;
-    }     */
 
     /* 2.0新增内容 */
     .wb-min {
@@ -670,7 +640,6 @@ body::-webkit-scrollbar {
     text-align: center;
     line-height: 60px;
     top: -115%;
-
 }
 
 .neko.showMsg::after {
@@ -706,7 +675,6 @@ body::-webkit-scrollbar {
 
     ::-webkit-scrollbar-thumb {
         background-color: transparent;
-        /* background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent); */
         border-radius: 2em
     }
 
