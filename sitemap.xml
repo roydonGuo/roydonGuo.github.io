@@ -74,6 +74,33 @@
   </url>
   
   <url>
+    <loc>https://roydon.xyz/posts/1b88f555.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/b0faee08.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://roydon.xyz/posts/LeetCode.html</loc>
+    
+    <lastmod>2022-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://roydon.xyz/posts/Mybatis-Plus.html</loc>
     
     <lastmod>2022-12-07</lastmod>
@@ -147,33 +174,6 @@
   
   <url>
     <loc>https://roydon.xyz/comments/index.html</loc>
-    
-    <lastmod>2022-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/1b88f555.html</loc>
-    
-    <lastmod>2022-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/b0faee08.html</loc>
-    
-    <lastmod>2022-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://roydon.xyz/posts/LeetCode.html</loc>
     
     <lastmod>2022-12-07</lastmod>
     

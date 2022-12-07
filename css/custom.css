@@ -245,7 +245,7 @@ svg.icon.faa-tada {
 }
 
 /* 首页文章卡片 */
-#recent-posts>.recent-post-item {
+/* #recent-posts>.recent-post-item {
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -272,10 +272,10 @@ div#tag {
 /* 分类页面 */
 div#category {
     background: rgba(255, 255, 255, 0.8);
-}
+} */
 
 /*夜间模式伪类遮罩层透明*/
-[data-theme='dark'] #recent-posts>.recent-post-item {
+/* [data-theme='dark'] #recent-posts>.recent-post-item {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
@@ -301,7 +301,7 @@ div#category {
 
 [data-theme='dark'] div#category {
     background: rgba(0, 0, 0, 0.8) !important;
-}
+} */
 
 /* 头图透明 */
 #page-header {
