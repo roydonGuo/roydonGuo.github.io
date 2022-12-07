@@ -243,7 +243,9 @@ svg.icon.faa-tada {
 #pagination .page-number.current {
     border-radius: 5px;
 }
-
+.announcement-detail .site-new-link{
+    
+}
 /* 首页文章卡片 */
 /* #recent-posts>.recent-post-item {
     background: rgba(255, 255, 255, 0.8);
