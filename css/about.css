@@ -236,15 +236,13 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button {
-  height: 2.3rem;
-  width: 4.6rem;
-  border-radius: 1rem;
-  justify-content: center;
-  background: pink;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 1.2rem;
+  backdrop-filter: saturate(150%) blur(30px);
   display: flex;
   align-items: center;
-  z-index: 1;
-  transition: 0.3s;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -258,8 +256,7 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
-  background: #ff3456;
-  border-radius: 18px !important;
+  backdrop-filter: saturate(180%) blur(50px);
 }
 
 .author-content-item.personalities {
