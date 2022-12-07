@@ -214,41 +214,16 @@ svg.icon.faa-tada {
     left: 16px;
 }
 
-/* 魔改标签 */
-/* .tag-cloud-list {
-    font-weight: 800;
-    border-radius: 8px;
-    border: 2px solid hotpink;
-} */
-
-/* .tag-cloud-list a {
-    border-radius: 8px;
-    margin: 5px 5px;
-    border: 1px solid transparent;
-} */
-
-/* #aside-content .card-info .author-info__name {
-    font-weight: 900;
-    font-size: 1.99em;
-} */
-
 /* 公告栏 */
 .aside-content .item-headline:first-child {
     color: #9a37c5;
     font-weight: 900;
 }
 
-/* 
-.recent-posts .recent-post-item .content {
-    font-family: 'STXingkai', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
-
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 #page-header:not(.not-top-img):before {
-    /* background-color: transparent !important; */
     background-color: transparent;
 }
-
 
 [data-theme='dark'] #web_bg:before,
 [data-theme='dark'] #page-header:before {
@@ -258,7 +233,6 @@ svg.icon.faa-tada {
     background-color: transparent !important;
     content: '';
 }
-
 
 /* 文章总览修改 */
 /* .article-sort-title {
@@ -328,7 +302,6 @@ div#category {
 [data-theme='dark'] div#category {
     background: rgba(0, 0, 0, 0.8) !important;
 }
-
 
 /* 头图透明 */
 #page-header {
@@ -470,11 +443,6 @@ button:not(:disabled) {
     display: none;
 }
 
-/* 首页文章卡片高度增加1em */
-/* #recent-posts>.recent-post-item {
-
-    height: 19em;
-} */
 .contrib-column {
     line-height: 1.2;
 }
