@@ -244,7 +244,7 @@ svg.icon.faa-tada {
     border-radius: 5px;
 }
 .announcement-detail .site-new-link{
-    
+    font-weight: 900;
 }
 /* 首页文章卡片 */
 /* #recent-posts>.recent-post-item {
@@ -455,7 +455,6 @@ button:not(:disabled) {
 }
 
 #aside-content .card-widget {
-    background: rgba(255, 255, 255, 0.9);
     border: 2px solid black !important;
 }
 
