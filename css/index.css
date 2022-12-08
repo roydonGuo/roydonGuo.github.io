@@ -295,9 +295,9 @@ hr:before,
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
   -webkit-transition: all 0.6s, filter 375ms ease-in 0.2s;
   -moz-transition: all 0.6s, filter 375ms ease-in 0.2s;
   -o-transition: all 0.6s, filter 375ms ease-in 0.2s;
@@ -4827,9 +4827,9 @@ mjx-container[display],
   }
 }
 #article-container figure.gallery-group:hover img {
-  opacity: 0.4;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
