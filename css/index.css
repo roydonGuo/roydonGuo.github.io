@@ -4254,10 +4254,10 @@ h2.f4.text-normal.mb-3 {
 #post .tag_share .post-meta__tags {
   display: inline-block;
   margin: 8px 8px 8px 0;
-  padding: 0 12px;
+  padding: 0 10px;
   width: fit-content;
-  border: 1px solid #ffc0cb;
-  border-radius: 12px;
+  border: 2px solid #ffc0cb;
+  border-radius: 16px;
   color: #ffc0cb;
   font-size: 0.85em;
   -webkit-transition: all 0.2s ease-in-out;
@@ -4288,9 +4288,10 @@ h2.f4.text-normal.mb-3 {
 }
 #post .post-copyright {
   position: relative;
-  margin: 40px 0 10px;
-  padding: 10px 16px;
-  border: 1px solid var(--light-grey);
+  padding: 10px 10px;
+  background-color: rgba(140,140,140,0.1);
+  border-radius: 16px;
+  border: 2px solid var(--light-grey);
   -webkit-transition: box-shadow 0.3s ease-in-out;
   -moz-transition: box-shadow 0.3s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in-out;
@@ -4361,8 +4362,9 @@ h2.f4.text-normal.mb-3 {
   display: inline-block;
   overflow: hidden;
   margin: 3px;
+  border-radius: 20px;
   width: calc(33.333% - 6px);
-  height: 200px;
+  height: 160px;
   background: #000;
   vertical-align: bottom;
 }

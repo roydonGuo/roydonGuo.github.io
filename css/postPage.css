@@ -80,13 +80,6 @@
     color: pink;
 }
 
-/* 个人认证，文章版权 */
-#post .post-copyright {
-    color: pink;
-    background-color: rgba(76, 67, 73, 0.8);
-    border-radius: 10px;
-}
-
 /* 上一篇 || 下一篇 */
 #pagination.pagination-post {
     background: transparent;
@@ -101,7 +94,10 @@
 
 /* 相关推荐 */
 .relatedPosts>.relatedPosts-list>div {
-    border-radius: 8px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.relatedPosts>.relatedPosts-list>div:hover {
     border: 2px solid pink;
 }
 
