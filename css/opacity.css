@@ -17,12 +17,6 @@
     margin-bottom: 90px;
 }
 
-.pagination-post>.prev-post,
-.pull-left,
-.next-post .pull-right {
-    border-radius: 8px;
-}
-
 .framework-info {
     display: none;
 }

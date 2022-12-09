@@ -3252,22 +3252,18 @@ h1.page-title + .tag-cloud-list {
     transform: scale(0.7);
   }
 }
-#post-comment .comment-head {
-  margin-bottom: 20px;
-}
 #post-comment .comment-head .comment-headline {
   display: inline-block;
   vertical-align: middle;
-  font-weight: 700;
-  font-size: 1.43em;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 #post-comment .comment-head #comment-switch {
   display: inline-block;
   float: right;
-  margin: 2px auto 0;
-  padding: 4px 16px;
+  padding: 4px 10px;
   width: max-content;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #f6f8fa;
 }
 #post-comment .comment-head #comment-switch .first-comment {
@@ -4044,12 +4040,13 @@ h2.f4.text-normal.mb-3 {
   position: relative;
   display: block;
   overflow: hidden;
-  height: 150px;
+  height: 100px;
 }
 #pagination.pagination-post {
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 10px;
   width: 100%;
+  border-radius: 16px;
   background: #000;
 }
 .layout > .recent-posts .pagination > * {
@@ -4075,6 +4072,7 @@ h2.f4.text-normal.mb-3 {
 #article-container {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  font-weight: 600;
 }
 #article-container a {
   color: #006aff;
@@ -4288,6 +4286,7 @@ h2.f4.text-normal.mb-3 {
 }
 #post .post-copyright {
   position: relative;
+  margin: 10px auto 0;
   padding: 10px 10px;
   background-color: rgba(140,140,140,0.1);
   border-radius: 16px;
@@ -4301,10 +4300,10 @@ h2.f4.text-normal.mb-3 {
 #post .post-copyright:before {
   position: absolute;
   top: 2px;
-  right: 12px;
+  right: 10px;
   color: #ffc0cb;
   content: '\f1f9';
-  font-size: 1.3em;
+  font-size: 3em;
 }
 #post .post-copyright:hover {
   -webkit-box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
@@ -4350,12 +4349,11 @@ h2.f4.text-normal.mb-3 {
   margin: 40px 0;
 }
 .relatedPosts {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .relatedPosts > .headline {
-  margin-bottom: 5px;
-  font-weight: 700;
-  font-size: 1.43em;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 .relatedPosts > .relatedPosts-list > div {
   position: relative;

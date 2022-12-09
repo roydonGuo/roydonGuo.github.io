@@ -175,10 +175,6 @@ svg.icon.faa-tada {
     color: transparent;
 }
 
-#pagination.pagination-post {
-    border: 2px dashed pink;
-}
-
 #post>.post-content {
     font-weight: 600;
 }

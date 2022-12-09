@@ -80,31 +80,6 @@
     color: pink;
 }
 
-/* 上一篇 || 下一篇 */
-#pagination.pagination-post {
-    background: transparent;
-    border-radius: 10px;
-
-}
-
-#pagination.pagination-post a:hover {
-    color: hotpink;
-    font-size: 19px;
-}
-
-/* 相关推荐 */
-.relatedPosts>.relatedPosts-list>div {
-    border-radius: 20px;
-    border: 2px solid black;
-}
-.relatedPosts>.relatedPosts-list>div:hover {
-    border: 2px solid pink;
-}
-
-.relatedPosts>.relatedPosts-list>div a:hover {
-    font-size: 16px;
-}
-
 div#post {
     border: 2px solid black;
 }
@@ -144,10 +119,6 @@ div#post:hover {
 
 .v[data-class="v"] .vcards {
     padding: 0 20px;
-}
-
-#post .post-copyright::before {
-    font-size: 4.6em;
 }
 
 /* 查看更多背景色去除 */
