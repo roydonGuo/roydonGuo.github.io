@@ -15,12 +15,15 @@
     transform: translate3d(-50%, -50%, 0);
 } */
 
-#body-wrap .post-bg #video-hutao {
+/* #body-wrap .post-bg #video-hutao {
     display: none !important;
 }
 
 #body-wrap .not-home-page #video-hutao {
     display: none !important;
+} */
+#body-wrap .full_page .index-video {
+    display: block !important;
 }
 
 .recent-posts .recent-post-item.firstpost-item {
