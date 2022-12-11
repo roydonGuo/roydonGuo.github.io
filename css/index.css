@@ -2490,7 +2490,8 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item >.recent-post-info {
   padding: 0 2rem !important;
-  width: 57%;
+  margin: auto !important;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item >.recent-post-info {
