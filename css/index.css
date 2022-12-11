@@ -2538,7 +2538,7 @@ figure.highlight pre .javascript .function {
   color: #ff7242;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap i {
-  margin: 0 4px 0 0;
+  margin: 0 2px 0 0;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .fa-spinner {
   margin: 0;
@@ -2547,16 +2547,18 @@ figure.highlight pre .javascript .function {
   padding-right: 4px;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-separator {
-  margin: 0 6px;
+  margin: 0 4px;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-link {
-  margin: 0 4px;
+  margin: 0;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap time {
   display: none;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
   color: #858585;
+  padding: 3px;
+  border-radius: 4px;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
   color: #ffc0cb;
