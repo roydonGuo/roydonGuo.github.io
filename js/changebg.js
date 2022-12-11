@@ -3,6 +3,24 @@ if (location.pathname.substring(0, 6) === '/posts') randomChangeBg(true);
 var wallhaven = 'https://wallhaven.cc/w/'
 var backimg = []
 
+const videoCDN = ["https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao.mp4",
+    "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao2.mp4",
+    "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/nahida.mp4",
+    "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4"
+]
+
+/* 主页视频背景随机 */
+function randomIndexVideo() {
+    window.onload = function () {
+        var indexVideo = document.querySelector("#index-video");
+        var videoIndex = Math.floor(Math.random() * videoCDN.length)
+        if (indexVideo) {
+            indexVideo.src = videoCDN[videoIndex]
+        }
+    }
+}
+randomIndexVideo()
+
 function getAnime() {
     var xhr = new XMLHttpRequest()
     xhr.open('GET', 'https://anime-1313439510.cos.ap-shanghai.myqcloud.com/anime/anime.json')

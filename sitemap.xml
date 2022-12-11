@@ -513,6 +513,13 @@
   </url>
   
   <url>
+    <loc>https://www.roydon.top/tags/CSS/</loc>
+    <lastmod>2022-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.roydon.top/tags/HTML/</loc>
     <lastmod>2022-12-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -541,13 +548,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/CSS/</loc>
-    <lastmod>2022-12-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/tags/Forge/</loc>
     <lastmod>2022-12-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -555,14 +555,14 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/Python/</loc>
+    <loc>https://www.roydon.top/tags/Mybatis-Plus/</loc>
     <lastmod>2022-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/Mybatis-Plus/</loc>
+    <loc>https://www.roydon.top/tags/Python/</loc>
     <lastmod>2022-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
