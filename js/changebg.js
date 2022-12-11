@@ -19,7 +19,7 @@ function randomIndexVideo() {
         }
     }
 }
-randomIndexVideo()
+// randomIndexVideo()
 
 function getAnime() {
     var xhr = new XMLHttpRequest()
