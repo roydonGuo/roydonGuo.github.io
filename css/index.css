@@ -2557,8 +2557,7 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
   color: #858585;
-  padding: 3px;
-  border-radius: 4px;
+  font-weight: 600;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
   color: #ffc0cb;

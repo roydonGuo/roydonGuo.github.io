@@ -15,15 +15,21 @@
     transform: translate3d(-50%, -50%, 0);
 } */
 
-#body-wrap .post-bg #video-hutao{
-    display: none !important;
-}
-#body-wrap .not-home-page #video-hutao{
+#body-wrap .post-bg #video-hutao {
     display: none !important;
 }
 
-.recent-posts .recent-post-item.firstpost-item{
+#body-wrap .not-home-page #video-hutao {
+    display: none !important;
+}
+
+.recent-posts .recent-post-item.firstpost-item {
     width: 100% !important;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
+    padding: 3px;
+    border-radius: 4px
 }
 
 /* 主题切换背景图片切换 */
