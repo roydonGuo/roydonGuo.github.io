@@ -7,6 +7,16 @@
     font-display: swap;
 }
 
+/* 胡桃video */
+.video-hutao {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
 /* 主题切换背景图片切换 */
 [data-theme='dark'] #web_bg {
     background-image: url("/img/ender_dragon.jpg");
@@ -229,9 +239,11 @@ svg.icon.faa-tada {
 #pagination .page-number.current {
     border-radius: 5px;
 }
-.announcement-detail{
+
+.announcement-detail {
     font-weight: 900;
 }
+
 /* 首页文章卡片 */
 /* #recent-posts>.recent-post-item {
     background: rgba(255, 255, 255, 0.8);
