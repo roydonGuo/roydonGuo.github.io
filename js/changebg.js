@@ -13,8 +13,8 @@ const videoCDN = ["https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao.mp4"
 function randomIndexVideo() {
     window.onload = function () {
         var indexVideo = document.querySelector("#index-video");
-        var videoIndex = Math.floor(Math.random() * videoCDN.length)
         if (indexVideo) {
+            var videoIndex = Math.floor(Math.random() * videoCDN.length)
             indexVideo.src = videoCDN[videoIndex]
         }
     }
