@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/posts/ec1f7005.html</loc>
-    
-    <lastmod>2022-12-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/about/index.html</loc>
     
     <lastmod>2022-12-25</lastmod>
@@ -555,6 +546,13 @@
   </url>
   
   <url>
+    <loc>https://www.roydon.top/tags/Mybatis-Plus/</loc>
+    <lastmod>2022-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.roydon.top/tags/Python/</loc>
     <lastmod>2022-12-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -570,13 +568,6 @@
   
   <url>
     <loc>https://www.roydon.top/tags/Linux/</loc>
-    <lastmod>2022-12-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/tags/Mybatis-Plus/</loc>
     <lastmod>2022-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -668,13 +659,6 @@
   
   <url>
     <loc>https://www.roydon.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2022-12-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/tags/%E9%B2%B2%E9%B9%8FHCIA/</loc>
     <lastmod>2022-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
