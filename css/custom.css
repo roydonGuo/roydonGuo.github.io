@@ -19,9 +19,9 @@
     display: block !important;
 }
 
-.recent-posts .recent-post-item.firstpost-item {
+/* .recent-posts .recent-post-item.firstpost-item {
     width: 100% !important;
-}
+} */
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
     padding: 3px;
