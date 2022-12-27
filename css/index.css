@@ -2257,7 +2257,7 @@ figure.highlight pre .javascript .function {
   }
 }
 .layout > div:first-child {
-  width: 74%;
+  width: 80%;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2600,7 +2600,7 @@ h1.page-title + .tag-cloud-list {
   text-align: left;
 }
 #aside-content {
-  width: 26%;
+  width: 20%;
 }
 @media screen and (min-width: 900px) {
   #aside-content {
@@ -2624,7 +2624,7 @@ h1.page-title + .tag-cloud-list {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
-  padding: 20px 24px;
+  padding: 10px;
 }
 #aside-content .card-info .author-info__name {
   font-weight: 500;
@@ -2723,17 +2723,14 @@ h1.page-title + .tag-cloud-list {
 #aside-content .aside-list > .aside-list-item:first-child {
   padding-top: 0;
 }
-#aside-content .aside-list > .aside-list-item:not(:last-child) {
-  border-bottom: 1px dashed #f5f5f5;
-}
 #aside-content .aside-list > .aside-list-item:last-child {
   padding-bottom: 0;
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
   overflow: hidden;
-  border-radius: 8px;
-  width: 4.2em;
-  height: 4.2em;
+  border-radius: 10px;
+  width: 4em;
+  height: 4em;
 }
 #aside-content .aside-list > .aside-list-item .content {
   -webkit-box-flex: 1;
@@ -2760,7 +2757,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--font-color);
   font-size: 95%;
   line-height: 1.5;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
 }
 #aside-content .aside-list > .aside-list-item .content > .title:hover,
 #aside-content .aside-list > .aside-list-item .content > .comment:hover {

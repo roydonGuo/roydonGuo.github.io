@@ -22,6 +22,11 @@
 /* .recent-posts .recent-post-item.firstpost-item {
     width: 100% !important;
 } */
+/* aside */
+.aside-list .aside-list-item:hover {
+    border-radius: 10px;
+    background-color: #49b0f577;
+}
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
     padding: 3px;
