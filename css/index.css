@@ -3623,7 +3623,7 @@ h2.f4.text-normal.mb-3 {
 #page-header #site_social_icons .social-icon {
   margin: 0 10px;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.15);
   font-size: 1.43em;
 }
 #page-header #scroll-down {
@@ -3635,8 +3635,8 @@ h2.f4.text-normal.mb-3 {
 #page-header #scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
-  color: var(--light-grey);
-  font-size: 30px;
+  color: #5d6fc9;
+  font-size: 3rem;
 }
 #page-header.not-home-page {
   height: 60px;
