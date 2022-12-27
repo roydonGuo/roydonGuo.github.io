@@ -3628,7 +3628,7 @@ h2.f4.text-normal.mb-3 {
 }
 #page-header #scroll-down {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
   cursor: pointer;
 }
