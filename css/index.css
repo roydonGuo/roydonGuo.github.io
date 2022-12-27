@@ -4815,7 +4815,7 @@ mjx-container[display],
   overflow: hidden;
   margin: 6px 4px;
   width: calc(50% - 8px);
-  height: 250px;
+  height: 320px;
   border-radius: 16px;
   background: #000;
   -webkit-transform: translate3d(0, 0, 0);
@@ -4856,8 +4856,8 @@ mjx-container[display],
   position: relative;
   margin: 0;
   max-width: none;
-  width: calc(100% + 20px);
-  height: 250px;
+  width: calc(100% + 10px);
+  height: 100%;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
