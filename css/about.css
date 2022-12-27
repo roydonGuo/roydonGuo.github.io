@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(120deg, #6ea7fd 40%, #54e2ff 60%);
+  background: linear-gradient(100deg, #4da6ff 40%, #b2f2ff  60%);
   background-size: 200%;
   animation: gradient 15s ease infinite;
   width: 59%;
