@@ -828,10 +828,13 @@ img.footer_mini_logo:hover {
 } */
 
 /* card-announcement */
-.aside-content>.card-announcement {
+/* .aside-content>.card-announcement {
     background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat !important;
     background-size: cover !important;
     box-shadow: 2px -4px 10px 10px #ff90906b inset !important;
+} */
+.aside-content .card-announcement .genshin-card {
+    width: 100%;
 }
 
 /* banner_index */
