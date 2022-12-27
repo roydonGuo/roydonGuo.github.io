@@ -835,6 +835,7 @@ img.footer_mini_logo:hover {
 } */
 .aside-content .card-announcement .genshin-card {
     width: 100%;
+    border-radius: 10px;
 }
 
 /* banner_index */
