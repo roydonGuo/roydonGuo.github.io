@@ -13,24 +13,24 @@
       
       <categories>
           
-          <category> SpringBoot </category>
-          
-          <category> SpringSecurity </category>
-          
-          <category> Mybatis-Plus </category>
-          
-          <category> Redis </category>
-          
-          <category> Vue </category>
-          
-          <category> Axios </category>
+          <category> Java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Java </tag>
+            <tag> Mybatis-Plus </tag>
+            
+            <tag> Redis </tag>
+            
+            <tag> SpringSecurity </tag>
+            
+            <tag> Vue </tag>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> Axios </tag>
             
         </tags>
       
