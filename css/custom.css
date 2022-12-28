@@ -830,11 +830,13 @@ img.footer_mini_logo:hover {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-weight: 600 !important;
 }
+
 .card-background {
     height: 100px !important;
     margin: 10px !important;
     border-radius: 16px !important;
 }
+
 .card-clock-time {
     flex: 1;
     font-family: UnidreamLED !important;
@@ -1143,6 +1145,10 @@ img.footer_mini_logo:hover {
     transition: .8s;
     line-height: 1.3rem;
     height: 1.3rem
+}
+
+.announcement_content {
+    line-height: 1;
 }
 
 /* 颜色 */
