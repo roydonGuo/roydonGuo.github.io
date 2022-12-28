@@ -19,6 +19,10 @@
     display: block !important;
 }
 
+#body-wrap .full_page .waves-area {
+    display: block !important;
+}
+
 /* .recent-posts .recent-post-item.firstpost-item {
     width: 100% !important;
 } */
