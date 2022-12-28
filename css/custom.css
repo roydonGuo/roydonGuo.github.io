@@ -188,19 +188,6 @@ svg.icon.faa-tada {
     height: 1.5em;
 }
 
-/* 侧边时钟样式修改 */
-#hexo_electric_clock .clock-row {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-}
-
-.card-clock-time {
-    font-family: DS-Digital;
-    background: linear-gradient(to right, #79fff4, #005eff);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 /* 公告 */
 /* .announcement-detail{
     height: 250px;
@@ -836,6 +823,32 @@ img.footer_mini_logo:hover {
 .aside-content .card-announcement .genshin-card {
     width: 100%;
     border-radius: 10px;
+}
+
+/* aside-clock */
+#hexo_electric_clock .clock-row {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 600 !important;
+}
+.card-background {
+    height: 100px !important;
+    margin: 10px !important;
+    border-radius: 16px !important;
+}
+.card-clock-time {
+    flex: 1;
+    font-family: UnidreamLED !important;
+    font-size: 3rem !important;
+    text-align: center;
+    /* font-family: DS-Digital; */
+    background: linear-gradient(to right, #91e8f4, #4a8cfe);
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1 !important;
+}
+
+#hexo_electric_clock {
+    padding: 4px !important;
 }
 
 /* banner_index */
