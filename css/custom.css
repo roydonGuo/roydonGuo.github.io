@@ -1153,11 +1153,11 @@ img.footer_mini_logo:hover {
 
 /* 颜色 */
 [data-theme="light"] {
-    --roydon-card-bg: rgba(255, 255, 255, .9);
+    --roydon-card-bg: #fff;
 }
 
 [data-theme="dark"] {
-    --roydon-card-bg: rgba(0, 0, 0, .9);
+    --roydon-card-bg: #000;
 }
 
 /* essay_page.css */
