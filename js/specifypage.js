@@ -21,14 +21,14 @@ if (location.pathname == '/') {
     console.log('hello world');
 }
 
-if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.length > 11) {
-    var head = document.querySelector('.not-home-page')
-    head.style.display = 'none'
-    var content = document.querySelector('#page')
-    content.style.width = '100%'
-    content.style.background = 'none'
-    var layout = document.querySelector("main")
-    layout.classList.remove('layout')
-}else{
-    console.log('hello world');
-}
+// if (location.pathname.substring(0, 9) === '/Gallery/' && location.pathname.length > 11) {
+//     var head = document.querySelector('.not-home-page')
+//     head.style.display = 'none'
+//     var content = document.querySelector('#page')
+//     content.style.width = '100%'
+//     content.style.background = 'none'
+//     var layout = document.querySelector("main")
+//     layout.classList.remove('layout')
+// }else{
+//     console.log('hello world');
+// }
