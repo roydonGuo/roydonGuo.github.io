@@ -2627,8 +2627,8 @@ h1.page-title + .tag-cloud-list {
   padding: 10px;
 }
 #aside-content .card-info .author-info__name {
-  font-weight: 500;
-  font-size: 1.57em;
+  font-weight: 900;
+  font-size: 1.6em;
 }
 #aside-content .card-info .author-info__description {
   margin-top: -0.42em;
