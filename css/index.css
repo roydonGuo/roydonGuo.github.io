@@ -3846,6 +3846,7 @@ h2.f4.text-normal.mb-3 {
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  font-weight: 900;
 }
 #nav #blog_name {
   -webkit-box-flex: 1;
