@@ -61,7 +61,7 @@ function dark() {
 dark()
 
 function switchNightMode() {
-    
+
     var themeCoin = document.querySelector('#dark-theme-coin')
     const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
     if (nowMode === 'light') {
@@ -79,5 +79,5 @@ function switchNightMode() {
         document.getElementById('dark-theme-coin').setAttribute('xlink:href', '#icon-moon')
     }
     // handle some cases
-    
+
 }
