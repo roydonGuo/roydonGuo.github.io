@@ -3708,12 +3708,10 @@ h2.f4.text-normal.mb-3 {
   -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-#page-header.nav-fixed #nav a,
 #page-header.nav-fixed #nav #site-name,
 #page-header.nav-fixed #nav #toggle-menu {
   text-shadow: none;
 }
-#page-header.nav-fixed #nav a:hover,
 #page-header.nav-fixed #nav #site-name:hover,
 #page-header.nav-fixed #nav #toggle-menu:hover {
   color: #ffc0cb;
@@ -3889,7 +3887,7 @@ h2.f4.text-normal.mb-3 {
   border-radius: 10px;
 }
 #nav .menus_items .menus_item:hover {
-  background: var(--text-bg-hover);
+  background: #ffc0cb;
 }
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
