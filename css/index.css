@@ -2660,12 +2660,12 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .card-info #card-info-btn {
   display: block;
-  margin: 4px 10%;
+  margin: 0 20%;
   border-radius: 10px;
   background-color: #ffc0cb;
   color: var(--btn-color);
   text-align: center;
-  line-height: 2.4;
+  line-height: 2;
 }
 #aside-content .card-info #card-info-btn:hover {
   background-color: var(--btn-hover-color);
