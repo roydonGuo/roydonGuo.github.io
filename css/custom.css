@@ -1633,10 +1633,8 @@ img.footer_mini_logo:hover {
 }
 
 #bbTimeList:hover {
-    /* border: 2px solid pink; */
-    font-size: 1.1rem;
-    color: #ff3456;
-    transition: all 0.3s ease-out 0s;
+    color: gold;
+    transition: all 0.2s ease-out 0s;
 }
 
 /* 文章页H1-H6图标样式效果 */
