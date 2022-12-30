@@ -3884,7 +3884,7 @@ h2.f4.text-normal.mb-3 {
 #nav .menus_items .menus_item {
   position: relative;
   display: inline-block;
-  padding: 0 0 0 14px;
+  padding: 0 0 0 16px;
 }
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
@@ -3906,10 +3906,10 @@ h2.f4.text-normal.mb-3 {
 }
 #nav .menus_items .menus_item .menus_item_child {
   position: absolute;
-  right: 0;
+  right: -150%;
   display: none;
   margin-top: 8px;
-  padding: 0;
+  padding: 4px;
   width: max-content;
   border-radius: 10px;
   background-color: var(--sidebar-bg);
@@ -3931,6 +3931,13 @@ h2.f4.text-normal.mb-3 {
 }
 #nav .menus_items .menus_item .menus_item_child li {
   list-style: none;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  border-radius: 10px;
 }
 #nav .menus_items .menus_item .menus_item_child li:hover {
   background: var(--text-bg-hover);

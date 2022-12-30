@@ -77,14 +77,13 @@ div#menus {
 }
 
 /* 导航子菜单透明度 */
-[data-theme='dark'] #nav .menus_items .menus_item .menus_item_child {
+/* [data-theme='dark'] #nav .menus_items .menus_item .menus_item_child {
     background-color: rgba(50, 47, 48, 0.7) !important;
 }
 
 [data-theme='light'] #nav .menus_items .menus_item .menus_item_child {
     background-color: rgba(253, 243, 245, .7) !important;
-}
-
+} */
 
 /* 滚动条 */
 ::-webkit-scrollbar {
