@@ -2637,7 +2637,7 @@ h1.page-title + .tag-cloud-list {
   padding: 0 20%;
 }
 #aside-content .card-info .card-info-social-icons {
-  margin: 6px 0 -6px;
+  margin: 0;
 }
 #aside-content .card-info .card-info-social-icons .social-icon {
   margin: 0 10px;
@@ -3022,12 +3022,14 @@ h1.page-title + .tag-cloud-list {
   color: #ffc0cb !important;
 }
 .site-data > a .headline {
-  color: var(--font-color);
+  color: #ffd700;
+  font-weight: 600;
 }
 .site-data > a .length-num {
-  margin-top: -0.32em;
-  color: var(--text-highlight-color);
-  font-size: 1.4em;
+  margin-top: -1rem;
+  color: #ffd700;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 @media screen and (min-width: 900px) {
   html.hide-aside .layout {

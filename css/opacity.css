@@ -48,6 +48,7 @@
     pointer-events: none;
     z-index: 1;
 }
+
 /* 侧边栏卡片渐变 */
 #aside-content>.card-widget.card-info {
     background: linear-gradient(-45deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
@@ -57,8 +58,3 @@
     color: white;
 }
 
-.site-data>a .headline,
-.site-data>a .length-num {
-    color: rgb(126, 249, 249);
-    font-weight: 800;
-}
