@@ -51,12 +51,12 @@
 
 /* 标签外挂之tabs */
 #post .post-content .tabs {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     border-radius: 0 0 12px 12px;
 }
 
 [data-theme="light"] #post .post-content .tabs {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #article-container .tabs>.tab-contents .tab-item-content {
@@ -81,11 +81,11 @@
 }
 
 div#post {
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 div#post:hover {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     box-sizing: border-box;
 }
 

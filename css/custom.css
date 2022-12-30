@@ -140,11 +140,11 @@ h1.post-title {
 /* 首页磁贴卡片美化 */
 #recent-posts>.recent-post-item {
     position: relative;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #recent-posts>.recent-post-item:hover {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 
 .icon-zhongbiao::before {
@@ -460,11 +460,11 @@ button:not(:disabled) {
 }
 
 #aside-content .card-widget {
-    border: 2px solid black !important;
+    /* border: 2px solid black !important; */
 }
 
 #aside-content .card-widget:hover {
-    border: 2px solid pink !important;
+    /* border: 2px solid pink !important; */
 }
 
 .gitcalendar-graph {
@@ -865,7 +865,7 @@ img.footer_mini_logo:hover {
     background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat;
     background-size: cover;
     border-radius: 16px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     font-size: 1.4rem;
     position: relative;
 }
@@ -875,7 +875,7 @@ img.footer_mini_logo:hover {
 }
 
 #random:hover {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     transition: all 0.3s;
 }
 
@@ -1579,7 +1579,7 @@ img.footer_mini_logo:hover {
     padding: 0.5rem 1rem;
     border-radius: 16px;
     box-sizing: border-box;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     transition: all 0.6s ease 0s;
     margin: 20px auto 0;
@@ -1633,7 +1633,7 @@ img.footer_mini_logo:hover {
 }
 
 #bbTimeList:hover {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     font-size: 1.1rem;
     color: #ff3456;
     transition: all 0.3s ease-out 0s;
