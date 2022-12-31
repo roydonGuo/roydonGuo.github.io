@@ -23,8 +23,8 @@
   text-align: center;
   height: 60px;
   line-height: 60px;
-  background: #fff;
-  color: #ffffff;
+  background: rgb(255, 255, 255);
+  color: pink;
   font-size: 20px;
   transition: 0.4s;
   border-radius: 0 10px 10px 0;
@@ -39,7 +39,7 @@
   position: absolute;
   height: 60px;
   width: 200px;
-  background: #fff;
+  background: rgba(255, 255, 255, .85);
   top: 0;
   z-index: -1;
   left: -135px;
@@ -173,7 +173,7 @@
 
 [data-theme=dark] .contact-info .option i {
   background: rgb(22, 22, 22);
-  color: #ffffff;
+  color: pink;
 }
 
 [data-theme=dark] .contact-info .text {
@@ -187,18 +187,17 @@
   }
 }
 
-.aplayer {
+/* .aplayer {
   opacity: .8 !important;
-}
+} */
 
 [data-theme=dark] .aplayer {
-  background: rgb(22, 22, 22) !important;
+  background: #000 !important;
   color: rgb(255, 255, 255);
 }
 
 [data-theme=dark] .aplayer.aplayer-fixed .aplayer-body {
-  background: rgb(22, 22, 22) !important;
-  backdrop-filter: saturate(150%) blur(20px);
+  background: #000 !important;
   color: rgb(255, 255, 255);
 }
 
