@@ -60,7 +60,6 @@
 .aplayer.aplayer-fixed .aplayer-body {
   left: 0;
   position: absolute !important;
-  backdrop-filter: saturate(180%) blur(40px) !important;
   width: 370px !important;
   transition: none !important;
   border-radius: 10px !important;
@@ -165,7 +164,6 @@
 
 .aplayer.aplayer-fixed .aplayer-info {
   transition: none !important;
-  backdrop-filter: saturate(180%) blur(40px);
 }
 
 .aplayer.aplayer-narrow .aplayer-body {
@@ -201,12 +199,12 @@
   }
 }
 
-/* .aplayer {
-  opacity: .8 !important;
-} */
+.aplayer {
+  background: var(--card-bg) !important;
+  /* backdrop-filter: saturate(120%) blur(20px) !important; */
+}
 
 [data-theme=dark] .aplayer {
-  background: #000 !important;
   color: #fff;
 }
 
