@@ -152,10 +152,15 @@
 }
 
 .aplayer.aplayer-fixed .aplayer-list {
+  max-height: 130px !important;
   margin-bottom: 60px !important;
   max-height: 130px !important;
   border-radius: 10px 10px 0 0 !important;
   border: none !important;
+}
+
+.aplayer .aplayer-list ol {
+  max-height: 130px !important;
 }
 
 .aplayer.aplayer-fixed .aplayer-info {
