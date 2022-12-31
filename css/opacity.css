@@ -6,7 +6,7 @@
 #aside-content .card-widget,
 .layout>.recent-posts .pagination> :not(.space) {
     border-radius: 16px !important;
-    backdrop-filter: saturate(120%) blur(20px);
+    /* backdrop-filter: saturate(120%) blur(20px); */
 }
 
 #page-header #post-info {
