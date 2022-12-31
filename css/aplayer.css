@@ -1,10 +1,10 @@
 /* 左侧边栏伸缩音乐播放器 */
 .contact-info {
   position: fixed;
-  bottom: 33%;
+  bottom: 40%;
   z-index: 200;
-  left: -51px;
-  transition: 0.4s;
+  left: -50px;
+  transition: .3s;
 }
 
 .contact-info:hover {
@@ -14,7 +14,7 @@
 .contact-info .option {
   cursor: pointer;
   position: relative;
-  margin: 2px 0px;
+  margin: 5px 0;
 }
 
 .contact-info .option i {
@@ -25,8 +25,8 @@
   line-height: 60px;
   background: rgb(255, 255, 255);
   color: pink;
-  font-size: 20px;
-  transition: 0.4s;
+  font-size: 23px;
+  transition: .3s;
   border-radius: 0 10px 10px 0;
 }
 
@@ -35,18 +35,18 @@
 }
 
 .contact-info .text {
-  border-radius: 15px;
+  border-radius: 16px;
   position: absolute;
   height: 60px;
   width: 200px;
-  background: rgba(255, 255, 255, .85);
+  background: rgba(255, 255, 255, 0.8);
   top: 0;
   z-index: -1;
   left: -135px;
-  color: rgb(0, 0, 0);
+  color: #000;
   line-height: 60px;
   text-align: center;
-  transition: 0.4s;
+  transition: .3s;
 }
 
 .contact-info .aplayertext {
@@ -60,7 +60,7 @@
 .aplayer.aplayer-fixed .aplayer-body {
   left: 0;
   position: absolute !important;
-  backdrop-filter: saturate(150%) blur(20px) !important;
+  backdrop-filter: saturate(180%) blur(40px) !important;
   width: 370px !important;
   transition: none !important;
   border-radius: 10px !important;
@@ -139,19 +139,28 @@
   height: 60px;
 }
 
+/* .aplayer.aplayer-fixed .aplayer-list {
+  display: none !important;
+}
+
+.aplayer-icon-menu:hover .aplayer.aplayer-fixed .aplayer-list {
+  display: block !important;
+} */
+
 .aplayer .aplayer-list.aplayer-list-hide {
   margin-bottom: 59px !important;
 }
 
 .aplayer.aplayer-fixed .aplayer-list {
-  margin-bottom: 62px !important;
-  max-height: 240px !important;
+  margin-bottom: 60px !important;
+  max-height: 130px !important;
   border-radius: 10px 10px 0 0 !important;
+  border: none !important;
 }
 
 .aplayer.aplayer-fixed .aplayer-info {
   transition: none !important;
-  backdrop-filter: saturate(150%) blur(20px);
+  backdrop-filter: saturate(180%) blur(40px);
 }
 
 .aplayer.aplayer-narrow .aplayer-body {
