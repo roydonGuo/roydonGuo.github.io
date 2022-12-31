@@ -23,8 +23,8 @@
   text-align: center;
   height: 60px;
   line-height: 60px;
-  background: rgb(255, 255, 255);
-  color: #b9b9b9;
+  background: #fff;
+  color: #ffffff;
   font-size: 20px;
   transition: 0.4s;
   border-radius: 0 10px 10px 0;
@@ -39,7 +39,7 @@
   position: absolute;
   height: 60px;
   width: 200px;
-  background: rgba(255, 255, 255, .85);
+  background: #fff;
   top: 0;
   z-index: -1;
   left: -135px;
@@ -146,6 +146,7 @@
 .aplayer.aplayer-fixed .aplayer-list {
   margin-bottom: 62px !important;
   max-height: 240px !important;
+  border-radius: 10px 10px 0 0 !important;
 }
 
 .aplayer.aplayer-fixed .aplayer-info {
@@ -170,13 +171,9 @@
   border-radius: 0 0 0 10px !important;
 }
 
-.aplayer.aplayer-fixed .aplayer-list {
-  border-radius: 10px 10px 0 0 !important;
-}
-
 [data-theme=dark] .contact-info .option i {
   background: rgb(22, 22, 22);
-  color: #b9b9b9;
+  color: #ffffff;
 }
 
 [data-theme=dark] .contact-info .text {
