@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(100deg, #4da6ff 40%, #b2f2ff  60%);
+  background: linear-gradient(100deg, #4da6ff 40%, #b2f2ff 60%);
   background-size: 200%;
   animation: gradient 15s ease infinite;
   width: 59%;
@@ -50,7 +50,7 @@
 .author-content-item {
   width: 49%;
   border-radius: 20px;
-  box-shadow: --roydon-box-shadow;
+  box-shadow: var(--roydon-box-shadow);
   position: relative;
   padding: 1rem 2rem;
   overflow: hidden;
@@ -983,7 +983,7 @@
 .hello-about {
   margin: 20px auto;
   border-radius: 24px;
-  box-shadow: --roydon-box-shadow;
+  box-shadow: var(--roydon-box-shadow);
   position: relative;
   overflow: hidden;
   user-select: none;
