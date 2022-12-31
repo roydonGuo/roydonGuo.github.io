@@ -608,14 +608,14 @@
   background: url(https://bu.dusays.com/2022/11/17/637617ff5177f.jpg) no-repeat;
   background-size: cover;
   color: rgb(14, 159, 16);
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .author-content-item.like-music {
   background: url(https://bu.dusays.com/2022/11/17/6375f558667f1.jpg) no-repeat top;
   background-size: cover;
   color: wheat;
-  min-height: 400px;
+  min-height: 500px;
   overflow: hidden;
 }
 
