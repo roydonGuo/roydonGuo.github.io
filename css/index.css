@@ -1370,6 +1370,7 @@ canvas:not(#ribbon-canvas),
   --pseudo-hover: #ff3456;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
+  --roydon-box-shadow: 1px 1px 1px 1px #808080;
 }
 body {
   position: relative;
