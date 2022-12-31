@@ -1576,7 +1576,7 @@ img.footer_mini_logo:hover {
 
 /* index_bbtimebar */
 #bbTimeList {
-    background: var(--roydon-card-bg);
+    background: var(--card-bg);
     padding: 0.5rem 1rem;
     border-radius: 16px;
     box-sizing: border-box;
