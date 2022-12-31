@@ -1212,19 +1212,19 @@ img.footer_mini_logo:hover {
 .parallax>use:nth-child(1) {
     animation-delay: -2s;
     animation-duration: 7s;
-    fill: #4677f3a6;
+    fill: #5782f0a6;
 }
 
 .parallax>use:nth-child(2) {
     animation-delay: -3s;
     animation-duration: 10s;
-    fill: #f7f9fe82;
+    fill: #8faaedab;
 }
 
 .parallax>use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 13s;
-    fill: #f7f9fe36;
+    fill: #9eb4e868;
 }
 
 .parallax>use:nth-child(4) {
