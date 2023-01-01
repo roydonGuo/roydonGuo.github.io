@@ -8,8 +8,8 @@
   .article-sort .article-sort-item:not(.year) {
     /* background: rgba(255, 255, 255, 0.7); */
     float: left;
-    box-shadow: 0px 0px 10px #888;
-    margin: 0 .5% 2%;
+    box-shadow: var(--roydon-box-shadow);
+    margin: 0 .5% 1%;
     padding: 6px;
     /* border: 2px solid black; */
     width: 49%;
