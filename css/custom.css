@@ -1549,7 +1549,7 @@ img.footer_mini_logo:hover {
     height: 26rem;
     background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
     background-size: contain;
-    color: blueviolet;
+    color: rgb(122, 49, 6);
     overflow: hidden;
     /* margin-top: 0px; */
 }
