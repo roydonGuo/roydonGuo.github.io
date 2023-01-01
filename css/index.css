@@ -2316,8 +2316,8 @@ figure.highlight pre .javascript .function {
   float: left;
   overflow: hidden;
   margin: 6px 7px;
-  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.412);
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.412);
+  -webkit-box-shadow: var(--roydon-box-shadow);
+  box-shadow: var(--roydon-box-shadow);
   width: calc(100% / 5 - 15px);
   height: 70px;
   border-radius: 16px;
