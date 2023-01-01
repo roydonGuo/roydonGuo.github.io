@@ -365,6 +365,7 @@
   align-items: center;
   flex-wrap: wrap;
   height: 40%;
+  background: gold;
 }
 
 .author-content-item.selfInfo div {
