@@ -57,7 +57,7 @@
     transform: translateX(-50%);
     background: black;
     border-radius: 20px;
-    transition: 0.5s ease-in-out;
+    transition: .6s ease-in-out;
     cursor: default;
     user-select: none;
 }
@@ -66,11 +66,11 @@
     margin: 40px 0 0;
 }
 
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover i {
+.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline i {
     display: none;
 }
 
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover span {
+.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline span {
     display: none;
 }
 
@@ -79,7 +79,7 @@
     border-radius: 48px;
     width: 200px;
     height: 200px;
-    transition: 0.5s ease-in-out;
+    transition: .6s ease-in-out;
     background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu4.png);
     background-size: cover;
 }
