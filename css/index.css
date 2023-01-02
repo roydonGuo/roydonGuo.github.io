@@ -2415,7 +2415,7 @@ figure.highlight pre .javascript .function {
   font-size: 1.5em;
 }
 #recent-posts > .recent-post-item:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 1em;
 }
 #recent-posts > .recent-post-item {
   display: -webkit-box;
@@ -2619,13 +2619,13 @@ h1.page-title + .tag-cloud-list {
 }
 @media screen and (max-width: 900px) {
   #aside-content > .card-widget:first-child {
-    margin-top: 20px;
+    margin-top: 1em;
   }
 }
 #aside-content .card-widget {
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 1em;
   padding: 10px;
 }
 #aside-content .card-info .author-info__name {
@@ -4001,7 +4001,7 @@ h2.f4.text-normal.mb-3 {
   width: 100%;
 }
 #pagination .pagination {
-  margin-top: 20px;
+  margin-top: 1em;
   text-align: center;
 }
 #pagination .page-number.current {

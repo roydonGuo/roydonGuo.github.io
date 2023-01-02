@@ -1649,7 +1649,7 @@ img.footer_mini_logo:hover {
     display: flex;
     transition: all 0.6s ease 0s;
     backdrop-filter: blur(20px);
-    margin: 20px auto 0;
+    margin: 1em auto 0;
     align-items: center;
     height: 3rem;
     width: 100%;
