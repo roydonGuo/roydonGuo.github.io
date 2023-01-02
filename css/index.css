@@ -2469,10 +2469,8 @@ figure.highlight pre .javascript .function {
   transition: transform 0.5s ease-out !important;
 }
 .flexcard-flink-list .flink-list-card:hover {
-  border-color: var(--anzhiyu-main) !important;
-  background-color: var(--anzhiyu-main) !important;
-  -webkit-box-shadow: var(--anzhiyu-shadow-theme) !important;
-  box-shadow: var(--anzhiyu-shadow-theme) !important;
+  -webkit-box-shadow: var(--roydon-box-shadow) !important;
+  box-shadow: var(--roydon-box-shadow) !important;
 }
 .flexcard-flink-list > a {
   width: calc(100% / 5 - 0.5rem);
@@ -2483,7 +2481,7 @@ figure.highlight pre .javascript .function {
   float: left;
   overflow: hidden;
   padding: 0;
-  border-radius: 8px;
+  border-radius: 16px;
   -webkit-transition: all 0.3s ease 0s, -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   -moz-transition: all 0.3s ease 0s, -moz-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   -o-transition: all 0.3s ease 0s, -o-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
@@ -2491,7 +2489,6 @@ figure.highlight pre .javascript .function {
   transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: var(--style-border) !important;
 }
 .flexcard-flink-list > a:hover .info {
   -webkit-transform: translateY(-100%);
