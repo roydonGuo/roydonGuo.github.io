@@ -29,7 +29,7 @@
   /* 圆角 */
   border-radius: var(--cxl2020mc-radius);
   /* 背景颜色 */
-  background: var(--cxl2020mc-card-bg);
+  background: var(--roydon-comments-bg);
   /* 变动动画时长 */
   transition: .3s;
 }
