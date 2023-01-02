@@ -40,6 +40,54 @@
     background-size: cover;
 }
 
+#aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline {
+    /* width: 60%;
+    background: #000;
+    border-radius: 20px;
+    margin: 0 20%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 50%;
+    top: 20px;
+    padding: 0 10px;
+    transform: translateX(-50%);
+    background: black;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: default;
+    user-select: none;
+}
+
+#aside-content .sticky_layout .card-widget:nth-child(2)>.aside-list {
+    margin: 50px 0 0;
+}
+
+#aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover i {
+    display: none;
+}
+
+#aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover span {
+    display: none;
+}
+
+#aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 48px;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s ease-in-out;
+    background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu4.png);
+    background-size: cover;
+}
+
+/* width: 60%;
+    background: #000;
+    border-radius: 20px;
+    margin: 0 20%; */
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
     padding: 3px;
     border-radius: 4px

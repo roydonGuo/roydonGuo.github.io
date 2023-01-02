@@ -2676,7 +2676,6 @@ h1.page-title + .tag-cloud-list {
   padding-left: 10px;
 }
 #aside-content .item-headline {
-  padding-bottom: 6px;
   font-size: 1.2em;
   text-align: center;
   color: #9a37c5;
@@ -2743,6 +2742,7 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .aside-list > .aside-list-item .content > .name {
   -webkit-line-clamp: 1;
+  max-height: 20px;
 }
 #aside-content .aside-list > .aside-list-item .content > time,
 #aside-content .aside-list > .aside-list-item .content > .name {
