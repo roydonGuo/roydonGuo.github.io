@@ -5316,7 +5316,7 @@ blockquote.pullquote.right {
   position: relative;
   margin: 0 0 20px;
   padding: 15px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .note.icon-padding {
   padding-left: 3em;
