@@ -527,7 +527,7 @@ span#subtitle:hover {
 .pimgbox,
 .imgbox,
 .box {
-    width: 18%;
+    width: 23%;
     margin: 1%;
     background-size: cover
 }
@@ -539,11 +539,11 @@ span#subtitle:hover {
 }
 
 .pimgbox {
-    height: 240px;
+    height: 300px;
 }
 
 .imgbox {
-    height: 90px;
+    height: 100px;
 }
 
 .box {
@@ -1601,6 +1601,7 @@ img.footer_mini_logo:hover {
     /* border: 2px solid black; */
     display: flex;
     transition: all 0.6s ease 0s;
+    backdrop-filter: blur(20px);
     margin: 20px auto 0;
     align-items: center;
     height: 3rem;
