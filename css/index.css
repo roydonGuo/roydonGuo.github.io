@@ -231,7 +231,7 @@ hr:before,
 #recent-posts > .recent-post-item,
 #aside-content .card-widget,
 .layout > .recent-posts .pagination > *:not(.space) {
-  border-radius: 10px;
+  border-radius: 16px;
   background: var(--card-bg);
   -webkit-box-shadow: var(--card-box-shadow);
   box-shadow: var(--card-box-shadow);
@@ -6031,7 +6031,7 @@ blockquote.pullquote.right {
     margin: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 16px;
   }
 }
 .search-dialog hr {

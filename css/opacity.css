@@ -5,7 +5,7 @@
 #recent-posts>.recent-post-item,
 #aside-content .card-widget,
 .layout>.recent-posts .pagination> :not(.space) {
-    border-radius: 16px !important;
+    /* border-radius: 16px !important; */
     /* backdrop-filter: blur(20px); */
     /* backdrop-filter: saturate(120%) blur(20px); */
 }

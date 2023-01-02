@@ -29,7 +29,8 @@
 /* aside */
 .aside-list .aside-list-item:hover {
     border-radius: 10px;
-    background-color: #49b0f577;
+    background-color: #be57e3;
+    transition: filter 500ms ease-in 1s, transform 1s;
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
@@ -461,6 +462,17 @@ button:not(:disabled) {
 
 #aside-content .card-widget {
     /* border: 2px solid black !important; */
+}
+
+#aside-content .card-recent-post {
+    border-radius: 40px;
+    border: 8px solid #000;
+    background: url(https://bu.dusays.com/2023/01/02/63b2e761872df.webp);
+    background-size: cover;
+}
+#aside-content .aside-list > .aside-list-item .content > .title{
+    color: #fff;
+    font-weight: bold;
 }
 
 #aside-content .card-widget:hover {

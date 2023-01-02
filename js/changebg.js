@@ -1,13 +1,12 @@
 if (location.pathname.substring(0, 6) === '/posts') randomChangeBg(true);
 
 // 主页视频背景随机 -----------------------------------------------------------------
-const videoCDN = ["https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao.mp4",
-    "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao2.mp4",
-    "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/nahida.mp4",
-    "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4"
-]
-
 function randomIndexVideo() {
+    const videoCDN = ["https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao.mp4",
+        "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao2.mp4",
+        "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/nahida.mp4",
+        "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4"
+    ]
     window.onload = function () {
         var indexVideo = document.querySelector("#index-video");
         if (indexVideo) {
@@ -18,29 +17,6 @@ function randomIndexVideo() {
 }
 // randomIndexVideo()
 //----------------------------------------------------------------
-let cdnSiteBg = []
-
-function getCDNSiteBg() {
-    $.ajax({
-        type: 'GET',
-        url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN@1.1.7/bgJSON.txt',
-        success: function (res) {
-            cdnSiteBg = res.split(',')
-            // console.log(cdnSiteBg);
-        }
-    })
-}
-
-// 随机背景图片
-function randomChangeBg(flag) {
-    if (flag) {
-        getCDNSiteBg()
-        setInterval(function () {
-            var bgindex = Math.floor(Math.random() * cdnSiteBg.length)
-            document.querySelector("#web_bg").style.backgroundImage = 'url(' + cdnSiteBg[bgindex] + ')'
-        }, 30 * 1000)
-    }
-}
 // 首页随机mc背景图片-------------------------------------------------------------------
 function randoMcBgGif() {
     var mcBgGif = [
@@ -67,6 +43,31 @@ function randoMcBgGif() {
 }
 randoMcBgGif()
 //---------------------------------------------------------------------------------------
+let cdnSiteBg = []
+
+function getCDNSiteBg() {
+    $.ajax({
+        type: 'GET',
+        url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN@1.1.7/bgJSON.txt',
+        success: function (res) {
+            cdnSiteBg = res.split(',')
+            // console.log(cdnSiteBg);
+        }
+    })
+}
+
+// 文章页随机背景图片------------------------------------------------------------
+function randomChangeBg(flag) {
+    if (flag) {
+        getCDNSiteBg()
+        setInterval(function () {
+            var bgindex = Math.floor(Math.random() * cdnSiteBg.length)
+            document.querySelector("#web_bg").style.backgroundImage = 'url(' + cdnSiteBg[bgindex] + ')'
+        }, 30 * 1000)
+    }
+}
+//----------------------------------------------------------------
+
 // 存数据
 // name：命名 data：数据
 function saveData(name, data) {
@@ -112,14 +113,14 @@ function changeBg(s, flag) {
     }
 }
 
-var nowBgImgUrl = 'url(/img/hutao.jpg)'
-var imgbox = document.querySelector('.fj-gallery')
-if (imgbox) {
-    imgbox.addEventListener('click', e => {
-        if (e) nowBgImgUrl = 'url(' + e.target.src + ')'
-        changeBg(nowBgImgUrl)
-    })
-}
+// var nowBgImgUrl = 'url(/img/hutao.jpg)'
+// var imgbox = document.querySelector('.fj-gallery')
+// if (imgbox) {
+//     imgbox.addEventListener('click', e => {
+//         if (e) nowBgImgUrl = 'url(' + e.target.src + ')'
+//         changeBg(nowBgImgUrl)
+//     })
+// }
 
 // 点击一次，节流
 var jieliuFlag = true
