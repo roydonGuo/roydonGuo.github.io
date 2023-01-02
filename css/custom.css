@@ -63,7 +63,7 @@
 }
 
 .page #aside-content .sticky_layout .card-widget:nth-child(2)>.aside-list {
-    margin: 50px 0 0;
+    margin: 40px 0 0;
 }
 
 .page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover i {
@@ -84,10 +84,6 @@
     background-size: cover;
 }
 
-/* width: 60%;
-    background: #000;
-    border-radius: 20px;
-    margin: 0 20%; */
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
     padding: 3px;
     border-radius: 4px

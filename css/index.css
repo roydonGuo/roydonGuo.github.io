@@ -2903,7 +2903,7 @@ h1.page-title + .tag-cloud-list {
 #aside-content #card-toc .toc-content {
   overflow-y: scroll;
   overflow-y: overlay;
-  margin: 0 -24px;
+  width: 100%;
   max-height: calc(100vh - 120px);
 }
 @media screen and (max-width: 900px) {
@@ -2912,7 +2912,7 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #aside-content #card-toc .toc-content > * {
-  margin: 0 20px !important;
+  margin: 0 !important;
 }
 #aside-content #card-toc .toc-content > * > .toc-item > .toc-child {
   margin-left: 10px;
