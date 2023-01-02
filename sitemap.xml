@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/categories/index.html</loc>
-    
-    <lastmod>2023-01-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/about/index.html</loc>
     
     <lastmod>2023-01-02</lastmod>
@@ -110,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/fcircle/index.html</loc>
+    <loc>https://www.roydon.top/categories/index.html</loc>
     
     <lastmod>2023-01-02</lastmod>
     
@@ -120,6 +111,15 @@
   
   <url>
     <loc>https://www.roydon.top/essay/index.html</loc>
+    
+    <lastmod>2023-01-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/fcircle/index.html</loc>
     
     <lastmod>2023-01-02</lastmod>
     
@@ -155,6 +155,15 @@
   </url>
   
   <url>
+    <loc>https://www.roydon.top/posts/7d2eec83.html</loc>
+    
+    <lastmod>2023-01-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.roydon.top/posts/Mybatis-Plus.html</loc>
     
     <lastmod>2023-01-02</lastmod>
@@ -165,15 +174,6 @@
   
   <url>
     <loc>https://www.roydon.top/posts/harmony2.0.html</loc>
-    
-    <lastmod>2023-01-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/posts/7d2eec83.html</loc>
     
     <lastmod>2023-01-02</lastmod>
     
@@ -504,13 +504,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/CSS/</loc>
-    <lastmod>2023-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/tags/HTML/</loc>
     <lastmod>2023-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -546,7 +539,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/Mybatis-Plus/</loc>
+    <loc>https://www.roydon.top/tags/CSS/</loc>
     <lastmod>2023-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -582,6 +575,13 @@
   
   <url>
     <loc>https://www.roydon.top/tags/Vue/</loc>
+    <lastmod>2023-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/tags/Mybatis-Plus/</loc>
     <lastmod>2023-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
