@@ -2678,6 +2678,9 @@ h1.page-title + .tag-cloud-list {
 #aside-content .item-headline {
   padding-bottom: 6px;
   font-size: 1.2em;
+  text-align: center;
+  color: #9a37c5;
+  font-weight: 900;
 }
 #aside-content .item-headline span {
   margin-left: 6px;
@@ -2719,13 +2722,7 @@ h1.page-title + .tag-cloud-list {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding: 6px 0;
-}
-#aside-content .aside-list > .aside-list-item:first-child {
-  padding-top: 0;
-}
-#aside-content .aside-list > .aside-list-item:last-child {
-  padding-bottom: 0;
+  padding: 5px;
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
   overflow: hidden;

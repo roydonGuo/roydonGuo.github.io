@@ -30,7 +30,14 @@
 .aside-list .aside-list-item:hover {
     border-radius: 10px;
     background-color: #fdb2f7;
-    transition: 1s ease-in-out;
+    transition: .6s ease-in-out;
+}
+
+#aside-content .card-recent-post {
+    border-radius: 40px;
+    border: 8px solid #000;
+    background: url(https://bu.dusays.com/2023/01/02/63b2e761872df.webp);
+    background-size: cover;
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
@@ -222,12 +229,6 @@ svg.icon.faa-tada {
 
 .newPost-right {
     left: 16px;
-}
-
-/* 公告栏 */
-.aside-content .item-headline:first-child {
-    color: #9a37c5;
-    font-weight: 900;
 }
 
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
@@ -462,13 +463,6 @@ button:not(:disabled) {
 
 #aside-content .card-widget {
     /* border: 2px solid black !important; */
-}
-
-#aside-content .card-recent-post {
-    border-radius: 40px;
-    border: 8px solid #000;
-    background: url(https://bu.dusays.com/2023/01/02/63b2e761872df.webp);
-    background-size: cover;
 }
 
 #aside-content .aside-list>.aside-list-item .content>.title {
