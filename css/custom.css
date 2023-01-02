@@ -28,7 +28,7 @@
 } */
 /* aside */
 .aside-list .aside-list-item:hover {
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: #fdb2f7;
     transition: .6s ease-in-out;
 }
@@ -41,10 +41,6 @@
 }
 
 .page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline {
-    /* width: 60%;
-    background: #000;
-    border-radius: 20px;
-    margin: 0 20%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -901,7 +897,7 @@ img.footer_mini_logo:hover {
 #hexo_electric_clock .clock-row {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-weight: 600 !important;
-    font-size: 1rem;
+    font-size: .9em;
 }
 
 .card-background {
@@ -913,7 +909,7 @@ img.footer_mini_logo:hover {
 .card-clock-time {
     flex: 1;
     font-family: UnidreamLED !important;
-    font-size: 3rem !important;
+    font-size: 3em !important;
     text-align: center;
     /* font-family: DS-Digital; */
     background: linear-gradient(to right, #91e8f4, #4a8cfe);
