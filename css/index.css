@@ -2952,6 +2952,7 @@ h1.page-title + .tag-cloud-list {
   -webkit-align-items: center;
   align-items: center;
   padding: 5px;
+  border-radius: 10px;
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
   overflow: hidden;
