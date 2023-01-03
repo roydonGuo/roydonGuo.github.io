@@ -142,7 +142,7 @@ function randomBg() {
             //重设背景图片
             document.querySelector("#web_bg").style.backgroundImage = 'url(' + cdnSiteBg[bgindex] + ')'
             // console.log(document.querySelector("#web_bg").style.background);
-        }, 20000)
+        }, 60000)
     } else {
         localStorage.removeItem('randomBgOrNot')
     }
