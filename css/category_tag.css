@@ -6,7 +6,7 @@
 
 @media screen and (min-width:900px) {
   .article-sort .article-sort-item:not(.year) {
-    /* background: rgba(255, 255, 255, 0.7); */
+    background: rgba(255, 255, 255, 0.6);
     float: left;
     box-shadow: var(--roydon-box-shadow);
     margin: 0 .5% 1%;
@@ -25,7 +25,7 @@
   } */
 
   [data-theme='dark'] .article-sort .article-sort-item:not(.year) {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
   }
 
 }
