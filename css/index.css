@@ -1372,6 +1372,7 @@ canvas:not(#ribbon-canvas),
   --scrollbar-color: #49b1f5;
   --roydon-box-shadow: 1px 1px 1px 1px #808080;
   --roydon-comments-bg: transparent;
+  --roydon-small-card-bg: rgba(255,255,255,0.8);
 }
 body {
   position: relative;
@@ -2328,7 +2329,7 @@ figure.highlight pre .javascript .function {
   border-radius: 16px;
   -webkit-box-shadow: var(--roydon-box-shadow);
   box-shadow: var(--roydon-box-shadow);
-  background-color: var(--roydon-card-bg);
+  background-color: var(--roydon-small-card-bg);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -5920,6 +5921,7 @@ blockquote.pullquote.right {
   --hlexpand-bg: linear-gradient(180deg, rgba(23,23,23,0.6), rgba(23,23,23,0.9));
   --scrollbar-color: #1f1f1f;
   --timeline-bg: #1f1f1f;
+  --roydon-small-card-bg: rgba(0,0,0,0.5);
 }
 [data-theme='dark'] #web_bg:before,
 [data-theme='dark'] #footer:before,

@@ -1,25 +1,26 @@
 /* 声名部分变量 */
 :root {
-  --cxl2020mc-radius: 7px;
+  --cxl2020mc-radius: 8px;
   --cxl2020mc-card-border-width: 1px;
 }
 
 /* 浅色模式颜色 */
 [data-theme=light] {
-  --cxl2020mc-border-color: #e3e8f7;
-  --cxl2020mc-card-bg: #fff;
   --cxl2020mc-card-border: #e3e8f7;
-  --style-border-always: 1px solid var(--cxl2020mc-card-border);
   --cxl2020mc-blue: #425AEF;
 }
 
 /* 深色模式颜色 */
 [data-theme=dark] {
-  --cxl2020mc-border-color: #42444a;
-  --cxl2020mc-card-bg: rgba(0, 0, 0, .5);
   --cxl2020mc-card-border: #42444a;
-  --style-border-always: 1px solid var(--cxl2020mc-card-border);
   --cxl2020mc-blue: #0084FF;
+}
+
+.twikoo .tk-comments .tk-submit {
+  margin-top: 1em;
+  background: var(--roydon-small-card-bg);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 /* 评论区评论大框 */
@@ -29,7 +30,7 @@
   /* 圆角 */
   border-radius: var(--cxl2020mc-radius);
   /* 背景颜色 */
-  background: var(--roydon-comments-bg);
+  background: var(--roydon-small-card-bg);
   /* 变动动画时长 */
   transition: .3s;
 }
@@ -57,7 +58,7 @@
   /* 圆角 */
   border-radius: var(--cxl2020mc-radius);
   /* 背景颜色 */
-  background: var(--cxl2020mc-card-bg);
+  background: var(--roydon-small-cart-bg);
   /* 内边距 */
   padding: 0.4rem;
   /* 底边距 */

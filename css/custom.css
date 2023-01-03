@@ -1220,15 +1220,6 @@ img.footer_mini_logo:hover {
     line-height: 1;
 }
 
-/* 颜色 */
-[data-theme="light"] {
-    --roydon-card-bg: #fff;
-}
-
-[data-theme="dark"] {
-    --roydon-card-bg: #000;
-}
-
 /* essay_page.css */
 #page:has(#essay_page) {
     /* border: 0; */
@@ -1399,7 +1390,7 @@ img.footer_mini_logo:hover {
     justify-content: space-between;
     align-items: flex-start;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    background: var(--roydon-card-bg);
+    background: var(--roydon-small-card-bg);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     margin-right: 2%;
 }

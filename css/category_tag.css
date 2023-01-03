@@ -6,7 +6,7 @@
 
 @media screen and (min-width:900px) {
   .article-sort .article-sort-item:not(.year) {
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--roydon-small-card-bg);
     float: left;
     box-shadow: var(--roydon-box-shadow);
     margin: 0 .5% 1%;
@@ -18,14 +18,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     box-sizing: border-box;
-  }
-
-  /* .article-sort-item:not(.year):hover {
-    border: 2px solid pink;
-  } */
-
-  [data-theme='dark'] .article-sort .article-sort-item:not(.year) {
-    background: rgba(0, 0, 0, 0.6) !important;
   }
 
 }
