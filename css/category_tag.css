@@ -4,13 +4,17 @@
   border-radius: 8px;
 }
 
+.article-sort .article-sort-item:not(.year) {
+  background: var(--roydon-small-card-bg);
+  margin: 0.5%;
+}
+
 @media screen and (min-width:900px) {
   .article-sort .article-sort-item:not(.year) {
-    background: var(--roydon-small-card-bg);
     float: left;
     box-shadow: var(--roydon-box-shadow);
-    margin: 0 .5% 1%;
-    padding: 6px;
+    
+    padding: 5px;
     /* border: 2px solid black; */
     width: 49%;
     /* height: 80px; */
@@ -28,7 +32,7 @@
 
 .article-sort-item-img {
   border-radius: 10px;
-  width: 30%;
+  /* width: 30%; */
   /* margin-right: 10px; */
 }
 
