@@ -53,15 +53,20 @@
   padding: 0;
   line-height: 30px;
   font-size: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid #F69;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.comment-barrage-item .barrageAvatar {
-  width: 16px;
-  height: 16px;
+.comment-barrage-item .barrageHead .barrageNick {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-barrage-item .barrageHead .barrageAvatar {
+  width: 24px;
+  height: 24px;
   margin: 0;
   border-radius: 50%;
 }
@@ -79,11 +84,4 @@
 
 .comment-barrage-item .barrageContent::-webkit-scrollbar-button {
   display: none;
-}
-
-:root {
-  --lyx-black: black;
-  --lyx-white: white;
-  --lyx-white-acrylic2: #fffa;
-  --lyx-black-acrylic2: #000a;
 }

@@ -1,3 +1,9 @@
+#content-inner {
+  filter: none !important;
+  transform: none !important;
+  perspective: none !important;
+}
+
 .flink-card-content {
   display: flex;
   flex-wrap: wrap;
