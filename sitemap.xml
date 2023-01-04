@@ -623,13 +623,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/Mybatis/</loc>
-    <lastmod>2023-01-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/tags/Node-js/</loc>
     <lastmod>2023-01-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -638,6 +631,13 @@
   
   <url>
     <loc>https://www.roydon.top/tags/JWT/</loc>
+    <lastmod>2023-01-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/tags/Mybatis/</loc>
     <lastmod>2023-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

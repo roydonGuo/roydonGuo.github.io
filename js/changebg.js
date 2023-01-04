@@ -131,6 +131,22 @@ function changeBg(s, flag) {
     }
 }
 
+function sm() {
+    new Vue({
+        data: function () {
+            this.$notify({
+                title: "切换背景成功😜",
+                message: "您可以继续操作：)",
+                position: 'top-left',
+                offset: 50,
+                showClose: true,
+                type: "success", //success/warning/info/error
+                duration: 3000
+            });
+        }
+    })
+}
+
 // var nowBgImgUrl = 'url(/img/hutao.jpg)'
 // var imgbox = document.querySelector('.fj-gallery')
 // if (imgbox) {

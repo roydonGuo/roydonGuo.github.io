@@ -5,22 +5,25 @@
     justify-content: end;
     align-items: flex-end;
 } */
-.barrageswiper{
+.barrageswiper {
   position: fixed;
   margin: 0 0 30px 10px;
   z-index: 100;
   bottom: 10px;
   right: 55px;
 }
+
 @media screen and (max-width: 768px) {
   .comment-barrage {
-      display: none;
+    display: none;
   }
 }
-.comment-barrage .swiper-slide{
+
+.comment-barrage .swiper-slide {
   position: relative;
   width: 250px;
 }
+
 .comment-barrage-item {
   position: absolute;
   bottom: 5px;
@@ -99,13 +102,17 @@
 .comment-barrage-item .barrageContent::-webkit-scrollbar-button {
   display: none;
 }
-.barrageContent:not(.barrageContent:hover),.barrageNick:not(.barrageNick:hover){
-  color:var(--global-font-color)!important;
+
+.barrageContent:not(.barrageContent:hover),
+.barrageNick:not(.barrageNick:hover) {
+  color: var(--global-font-color) !important;
 }
-.barrageswiper{
+
+.barrageswiper {
   height: 150px;
 }
-.comment-barrage-item p{
+
+.comment-barrage-item p {
   line-height: 1.2;
-  
+
 }

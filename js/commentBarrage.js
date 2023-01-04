@@ -1,11 +1,9 @@
 // twikooUrl: "https://guo.yicheng.plus",
 // accessToken: "04fdc390db1b4efd9ed7de5954e0e968",
-
-
 //commentBarrage v3.0 By Ariasaka
 //for swiper and both(pjax or nopjax)
 //ainb?!!!! qwq
-document.addEventListener('pjax:complete', startbarrage); //不用pjax请注释掉这一行
+document.addEventListener('pjax:complete', startbarrage); // 不用pjax请注释掉这一行
 document.addEventListener('DOMContentLoaded', startbarrage);
 
 function startbarrage() {
@@ -17,10 +15,10 @@ function startbarrage() {
 	const commentBarrageConfig = {
 		//浅色模式和深色模式颜色，务必保持一致长度，前面是背景颜色，后面是字体，随机选择，默认这个颜色还好
 		lightColors: [
-			['var(--lyx-white-acrylic2)', 'var(--lyx-black)'],
+			['var(--roydon-white-acrylic2)', 'var(--roydon-black)'],
 		],
 		darkColors: [
-			['var(--lyx-black-acrylic2)', 'var(--lyx-white)'],
+			['var(--roydon-black-acrylic2)', 'var(--roydon-white)'],
 		],
 		//v3仅支持一个弹幕
 		//弹幕显示间隔时间，单位ms
