@@ -131,12 +131,12 @@ function changeBg(s, flag) {
     }
 }
 
-function sm() {
+function sm(title,msg) {
     new Vue({
         data: function () {
             this.$notify({
-                title: "切换背景成功😜",
-                message: "您可以继续操作：)",
+                title: title,
+                message: msg,
                 position: 'top-left',
                 offset: 50,
                 showClose: true,

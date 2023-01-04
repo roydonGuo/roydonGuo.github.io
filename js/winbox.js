@@ -2,6 +2,7 @@
 var winbox = ''
 
 function createWinbox() {
+  sm("点击图片切换背景","您可以选择操作：)")
   let div = document.createElement('div')
   document.body.appendChild(div)
   winbox = WinBox({
@@ -31,38 +32,38 @@ function createWinbox() {
 
     <h2 id="电脑壁纸"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637615a3af26b.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637615a3af26b.png)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ff5177f.jpg)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ff5177f.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637615a3af26b.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637615a3af26b.png)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637617ff5177f.jpg)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ff5177f.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
     </div>
 
     <h2 id="手机壁纸"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
     </div>
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="changeBg('linear-gradient(to right, pink, #ff3456)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="changeBg('linear-gradient(to right, pink, #ff3456)')"></a>
+    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="changeBg('linear-gradient(to right, pink, #ff3456)')"></a>
+    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="changeBg('linear-gradient(to right, pink, #ff3456)')"></a>
     </div>
     
     <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #eecda3" onclick="changeBg('#eecda3')"></a>  
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>   
+    <a href="javascript:;"  class="box" style="background: #7D9D9C" onclick="changeBg('#7D9D9C')"></a>
+    <a href="javascript:;"  class="box" style="background: #eecda3" onclick="changeBg('#eecda3')"></a>  
+    <a href="javascript:;"  class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>
+    <a href="javascript:;"  class="box" style="background: #ff3456" onclick="changeBg('#ff3456')"></a>   
     
     </div>
 `;
@@ -84,3 +85,45 @@ function toggleWinbox() {
   else createWinbox();
 }
 
+// onload是等所有的资源文件加载完毕以后再绑定事件
+// window.onload = function () {
+//   // 获取图片列表，即img标签列表
+//   var imgs = document.querySelectorAll('img');
+//   // 获取浏览器顶部的距离
+//   function getTop(e) {
+//     return e.offsetTop;
+//   }
+
+//   // 懒加载实现
+//   function lazyload(imgs) {
+//     // 可视区域高度
+//     var h = window.innerHeight;
+//     //滚动区域高度
+//     var s = document.documentElement.scrollTop || document.body.scrollTop;
+//     for (var i = 0; i < imgs.length; i++) {
+//       //图片距离顶部的距离大于可视区域和滚动区域之和时懒加载
+//       if ((h + s) > getTop(imgs[i])) {
+//         // 真实情况是页面开始有2秒空白，所以使用setTimeout定时2s
+//         (function (i) {
+//           setTimeout(function () {
+//             // 不加立即执行函数i会等于9
+//             // 隐形加载图片或其他资源，
+//             //创建一个临时图片，这个图片在内存中不会到页面上去。实现隐形加载
+//             var temp = new Image();
+//             temp.src = imgs[i].getAttribute('data-lazy-src'); //只会请求一次
+//             // onload判断图片加载完毕，真是图片加载完毕，再赋值给dom节点
+//             temp.onload = function () {
+//               // 获取自定义属性data-src，用真图片替换假图片
+//               imgs[i].src = imgs[i].getAttribute('data-lazy-src')
+//             }
+//           }, 2000)
+//         })(i)
+//       }
+//     }
+//   }
+//   lazyload(imgs);
+//   // 滚屏函数
+//   window.onscroll = function () {
+//     lazyload(imgs);
+//   }
+// }
