@@ -171,7 +171,7 @@ div#menus {
 
 /* 导航栏模糊透视 */
 #nav {
-    padding: 0 calc((100% - 1420px) / 2);
+    padding: 0 calc((100% - 1450px) / 2);
     /* background: block; */
     backdrop-filter: saturate(150%) blur(20px);
     transition: none !important;

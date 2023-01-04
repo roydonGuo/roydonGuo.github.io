@@ -208,6 +208,8 @@ if (location.pathname.substring(0, 5) === '/page') removeRandomBanner()
 // paimeng()
 /* 设置body缩放比例 */
 
+
+
 // /* 右上角切换主题按钮 */
 // /* icon-taiyang | icon-yueliang */
 // function darkToLight() {
