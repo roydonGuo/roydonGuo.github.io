@@ -1106,7 +1106,7 @@
   margin-top: 40px;
   display: flex;
   flex-wrap: nowrap;
-  animation: rowup 73s linear infinite;
+  animation: rowup 30s linear infinite;
 }
 
 .tags-group-icon-pair {
@@ -1184,7 +1184,7 @@
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-70%);
   }
 }
 
