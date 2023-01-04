@@ -112,19 +112,19 @@ function changeBg(s, flag) {
         bg.style.backgroundImage = 'none'
     } else {
         bg.style.backgroundImage = s
-        new Vue({
-            data: function () {
-                this.$notify({
-                    title: "切换背景成功😜",
-                    message: "您可以继续操作：)",
-                    position: 'top-left',
-                    offset: 50,
-                    showClose: true,
-                    type: "success", //success/warning/info/error
-                    duration: 5000
-                });
-            }
-        })
+        // new Vue({
+        //     data: function () {
+        //         this.$notify({
+        //             title: "切换背景成功😜",
+        //             message: "您可以继续操作：)",
+        //             position: 'top-left',
+        //             offset: 50,
+        //             showClose: true,
+        //             type: "success", //success/warning/info/error
+        //             duration: 3000
+        //         });
+        //     }
+        // })
     }
     if (!flag) {
         saveData('blogbg', s)
