@@ -621,45 +621,6 @@ span#subtitle:hover {
     }
 }
 
-/* 开关按钮 */
-.btn-on {
-    width: 60px;
-    height: 25px;
-    margin: 0 auto !important;
-    border-radius: 25px;
-    font-size: 14px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.btn-on {
-    cursor: pointer;
-    position: relative;
-    /* border: 1px solid white; */
-    background-color: #ff3456;
-}
-
-.btn-on-circle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 2px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    box-shadow: 0 0 10px white;
-    transition: all .6s;
-}
-
-.btn-on-text {
-    position: absolute;
-    right: 10px;
-    line-height: 25px;
-    color: white;
-    transition: all .6s;
-}
-
 /* cat猫咪滑动 */
 body::-webkit-scrollbar {
     width: 0;

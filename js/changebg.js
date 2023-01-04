@@ -91,14 +91,16 @@ function loadData(name, time) {
 // 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用
 
 // 读取背景
-try {
-    let data = loadData('blogbg', 1440)
-    if (data) changeBg(data, 1)
-    else localStorage.removeItem('blogbg');
-} catch (error) {
-    localStorage.removeItem('blogbg');
+function loadbg() {
+    try {
+        let data = loadData('blogbg', 1440)
+        if (data) changeBg(data, 1)
+        else localStorage.removeItem('blogbg');
+    } catch (error) {
+        localStorage.removeItem('blogbg');
+    }
 }
-
+loadbg()
 // // 切换背景函数
 // // 此处的flag是为了每次读取时都重新存储一次,导致过期时间不稳定
 // // 如果flag为0则存储,即设置背景. 为1则不存储,即每次加载自动读取背景.
@@ -109,19 +111,19 @@ function changeBg(s, flag) {
         bg.style.backgroundImage = 'none'
     } else {
         bg.style.backgroundImage = s
-        new Vue({
-            data: function () {
-                this.$notify({
-                    title: "切换背景成功😜",
-                    message: "您可以继续操作：)",
-                    position: 'top-left',
-                    offset: 50,
-                    showClose: true,
-                    type: "success", //success/warning/info/error
-                    duration: 5000
-                });
-            }
-        })
+        // new Vue({
+        //     data: function () {
+        //         this.$notify({
+        //             title: "切换背景成功😜",
+        //             message: "您可以继续操作：)",
+        //             position: 'top-left',
+        //             offset: 50,
+        //             showClose: true,
+        //             type: "success", //success/warning/info/error
+        //             duration: 5000
+        //         });
+        //     }
+        // })
     }
     if (!flag) {
         saveData('blogbg', s)
