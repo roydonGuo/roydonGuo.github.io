@@ -107,7 +107,22 @@ function changeBg(s, flag) {
     if (s.charAt(0) === '#') {
         bg.style.backgroundColor = s
         bg.style.backgroundImage = 'none'
-    } else bg.style.backgroundImage = s
+    } else {
+        bg.style.backgroundImage = s
+        new Vue({
+            data: function () {
+                this.$notify({
+                    title: "切换背景成功😜",
+                    message: "您可以继续操作：)",
+                    position: 'top-left',
+                    offset: 50,
+                    showClose: true,
+                    type: "success", //success/warning/info/error
+                    duration: 5000
+                });
+            }
+        })
+    }
     if (!flag) {
         saveData('blogbg', s)
     }
