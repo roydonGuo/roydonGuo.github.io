@@ -104,6 +104,7 @@ loadbg()
 // // 切换背景函数
 // // 此处的flag是为了每次读取时都重新存储一次,导致过期时间不稳定
 // // 如果flag为0则存储,即设置背景. 为1则不存储,即每次加载自动读取背景.
+
 function changeBg(s, flag) {
     var bg = document.querySelector('#web_bg')
     if (s.charAt(0) === '#') {
