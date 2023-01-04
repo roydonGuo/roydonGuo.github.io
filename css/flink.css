@@ -48,8 +48,8 @@
 .flink-card-content-item.everyone .tags-everyone-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  /* animation: rowup 30s linear infinite; */
-  animation: myScroll 30s linear infinite;
+  /* animation: rowup 50s linear infinite; */
+  animation: myScroll 50s linear infinite;
 }
 
 @keyframes myScroll {
