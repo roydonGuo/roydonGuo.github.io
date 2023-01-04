@@ -29,15 +29,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/movies/index.html</loc>
-    
-    <lastmod>2023-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/link/index.html</loc>
     
     <lastmod>2023-01-04</lastmod>
@@ -47,7 +38,25 @@
   </url>
   
   <url>
+    <loc>https://www.roydon.top/movies/index.html</loc>
+    
+    <lastmod>2023-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.roydon.top/music/index.html</loc>
+    
+    <lastmod>2023-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/posts/4b0178e0.html</loc>
     
     <lastmod>2023-01-04</lastmod>
     
@@ -165,15 +174,6 @@
   
   <url>
     <loc>https://www.roydon.top/posts/harmony2.0.html</loc>
-    
-    <lastmod>2023-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/posts/4b0178e0.html</loc>
     
     <lastmod>2023-01-04</lastmod>
     
