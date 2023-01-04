@@ -16,10 +16,6 @@
   overflow: hidden;
 }
 
-.flink-card-content-item .link-card-content .flink-card-content-item-title {
-  margin-bottom: 0.5rem;
-}
-
 .flink-card-content-item .flink-card-content-item-title {
   font-size: 36px;
   font-weight: 700;
@@ -62,13 +58,6 @@
   }
 }
 
-
-.flink-card-content-item .flink-card-content-item-tips {
-  opacity: 0.8;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
 .tags-everyone-iconfont-pair {
   margin-left: 1rem;
 }
@@ -77,8 +66,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 120px;
+  width: 64px;
+  height: 64px;
 }
 
 .tags-everyone-iconfont-pair .tags-everyone-iconfont img {
