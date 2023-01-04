@@ -1,0 +1,75 @@
+/* winbox */
+/* 由于全屏会出bug，所以直接给他隐藏 */
+.winbox {
+  border-radius: 24px;
+  overflow: hidden;
+  /* width: 1200px !important; */
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+.wb-min {
+  background-position: center;
+}
+
+.winbox,
+.wb-body {
+  background: var(--roydon-card-mask);
+  backdrop-filter: blur(10px);
+}
+
+
+.bgbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pimgbox,
+.imgbox,
+.box {
+  width: 15.66%;
+  margin: 0.5%;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pimgbox {
+  height: 300px;
+}
+
+.imgbox,
+.box {
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* 背景 */
+  .pimgbox,
+  .imgbox,
+  .box {
+    height: 1%;
+    width: 48%;
+  }
+
+  .pimgbox {
+    height: 250px;
+  }
+
+  .imgbox,
+  .box {
+    height: 100px;
+  }
+
+  /* 2.0新增内容 */
+  .wb-min {
+    display: none;
+  }
+
+  #changeBgBox .wb-body::-webkit-scrollbar {
+    display: none;
+  }
+}
