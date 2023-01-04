@@ -916,17 +916,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/manifest.json"/>
-      <url>/manifest.json</url>
-      
-        <content type="html"><![CDATA[{"name":"roydon`blog","short_name":"roydon","theme_color":"#49b1f5","background_color":"#49b1f5","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>相册</title>
       <link href="/Gallery/index.html"/>
       <url>/Gallery/index.html</url>
@@ -943,6 +932,17 @@
       <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<!-- <p style="text-align: center;font-size: 20px">文章发布统计</p> --><!-- <div id="categories-radar" class="js-pjax"></div> --><!-- ![](https://genshin-card.getloli.com/rand/76907318.png) --><!-- <div id="genshin-card" class="genshin-card"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://genshin-card.getloli.com/rand/76907318.png" alt="genshin-card" /></div><div id="posts-chart" class="js-pjax"></div><div id="posts-calendar" class="js-pjax"></div> --><!-- <h1>建设中</h1> -->]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/manifest.json"/>
+      <url>/manifest.json</url>
+      
+        <content type="html"><![CDATA[{"name":"roydon`blog","short_name":"roydon","theme_color":"#49b1f5","background_color":"#49b1f5","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
@@ -1082,6 +1082,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/loaded_style.css"/>
+      <url>/css/loaded_style.css</url>
+      
+        <content type="html"><![CDATA[.pace {  -webkit-pointer-events: none;  pointer-events: none;  -webkit-user-select: none;  -moz-user-select: none;  user-select: none;  z-index: 2000;  position: fixed;  margin: auto;  top: 6px;  left: 0;  right: 0;  height: 10px;  border-radius: 5px;  width: 6rem;  background: #c0cef8;  border: 1px #f7eb09;  overflow: hidden}.pace-inactive .pace-progress {  opacity: 0;  transition: .3s ease-in}.pace .pace-progress {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  -ms-box-sizing: border-box;  -o-box-sizing: border-box;  box-sizing: border-box;  -webkit-transform: translate3d(0, 0, 0);  -moz-transform: translate3d(0, 0, 0);  -ms-transform: translate3d(0, 0, 0);  -o-transform: translate3d(0, 0, 0);  transform: translate3d(0, 0, 0);  max-width: 200px;  position: absolute;  z-index: 2000;  display: block;  top: 0;  right: 100%;  height: 100%;  width: 100%;  background: linear-gradient(-45deg, #edbed5, #f583ae, #e6169d, #e50076);  animation: gradient 1.5s ease infinite;  background-size: 200%}.pace.pace-inactive {  opacity: 0;  transition: .3s;  top: -8px}@keyframes gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/nav.css"/>
       <url>/css/nav.css</url>
       
@@ -1108,17 +1119,6 @@
       <url>/css/postPage.css</url>
       
         <content type="html"><![CDATA[#post .post-content h1 {    color: rgb(255, 0, 128);}#post .post-content h1::after {    content: 'H1🔽';    color: #5bfef0;    position: absolute;    right: 0%;}#post .post-content h2 {    color: rgb(255, 68, 161);}#post .post-content h2::after {    content: 'H2🔽';    color: #5bfef0;    position: absolute;    right: 0%;}#post .post-content h3 {    color: rgb(255, 120, 188);}#post .post-content h3::after {    content: 'H3🔽';    color: #5bfef0;    position: absolute;    right: 0%;}#post .post-content h4 {    color: rgb(255, 177, 216);}#post .post-content h4::after {    content: 'H4🔽';    color: #5bfef0;    position: absolute;    right: 0%;}/* 博客页面所有图片圆角 */.post-content img {    border-radius: 6px;}/* 标签外挂之tabs */#post .post-content .tabs {    /* border: 2px solid pink; */    border-radius: 0 0 12px 12px;}[data-theme="light"] #post .post-content .tabs {    /* border: 2px solid black; */}#article-container .tabs>.tab-contents .tab-item-content {    padding: 3px 3px;}#article-container .tab-contents i {    font-size: 20px;    color: blue;}/* bilibili视频块区域 */#article-container iframe {    width: 100%;    border-radius: 8px;    min-height: 500px;}/* 代码块UI重设置 */#article-container .code-expand-btn i {    color: pink;}div#post {    /* border: 2px solid black; */}div#post:hover {    /* border: 2px solid pink; */    box-sizing: border-box;}/* 评论框  */.vwrap {    box-shadow: 2px 2px 5px #bbb;    background: rgba(255, 255, 255, 0.5);    border-radius: 8px;    padding: 30px;    margin: 30px 0px 30px 0px;}/* 设置文字内容 :nth-child(1)的作用是选择第几个 */.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {    content: '输入昵称(自定义)🐧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(2):before {    content: '输入邮箱自动获取头像📧';}.el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(3):before {    content: '可以通过昵称访问您的网站🔗';}/* 当用户点击输入框时显示 */.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::before,.el-input.el-input--small.el-input-group.el-input-group--prepend:focus-within::after {    display: block;}.v[data-class="v"] .vcards {    padding: 0 20px;}/* 查看更多背景色去除 */.v[data-class="v"] .vcards .vcard .vcontent.expand::before {    background: none !important;}.v[data-class="v"] .vcards .vcard .vcontent.expand::before {    background: none !important;}.v[data-class=v] .vcards .vcard .vcontent.expand {    max-height: 18em;}.v[data-class=v] .vcards .vcard .vcontent.expand::after {    border-radius: 8px;    color: #00fff6;}/* 主内容区 */.el-input.el-input--small.el-input-group.el-input-group--prepend::before {    display: none;    /* 绝对定位 */    position: absolute;    top: -60px;    /* 文字强制不换行，防止left:50%导致的文字换行 */    white-space: nowrap;    border-radius: 10px;    left: 50%;    /* 然后再向左边挪动自身的一半，即可实现居中 */    transform: translate(-50%);    padding: 14px 18px;    background: #444;    color: #fff;}/* 小角标 */.el-input.el-input--small.el-input-group.el-input-group--prepend::after {    display: none;    content: '';    position: absolute;    /* 内容大小（宽高）为0且边框大小不为0的情况下，每一条边（4个边）都是一个三角形，组成一个正方形。    我们先将所有边框透明，再给其中的一条边添加颜色就可以实现小三角图标 */    border: 12px solid transparent;    border-top-color: #444;    left: 50%;    transform: translate(-50%, -48px);}/* md网站下划线 */#article-container a:hover {    color: #ff3456;    text-decoration: none !important;}#article-container #hpp_talk p img {    display: inline;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/loaded_style.css"/>
-      <url>/css/loaded_style.css</url>
-      
-        <content type="html"><![CDATA[.pace {  -webkit-pointer-events: none;  pointer-events: none;  -webkit-user-select: none;  -moz-user-select: none;  user-select: none;  z-index: 2000;  position: fixed;  margin: auto;  top: 6px;  left: 0;  right: 0;  height: 10px;  border-radius: 5px;  width: 6rem;  background: #c0cef8;  border: 1px #f7eb09;  overflow: hidden}.pace-inactive .pace-progress {  opacity: 0;  transition: .3s ease-in}.pace .pace-progress {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  -ms-box-sizing: border-box;  -o-box-sizing: border-box;  box-sizing: border-box;  -webkit-transform: translate3d(0, 0, 0);  -moz-transform: translate3d(0, 0, 0);  -ms-transform: translate3d(0, 0, 0);  -o-transform: translate3d(0, 0, 0);  transform: translate3d(0, 0, 0);  max-width: 200px;  position: absolute;  z-index: 2000;  display: block;  top: 0;  right: 100%;  height: 100%;  width: 100%;  background: linear-gradient(-45deg, #edbed5, #f583ae, #e6169d, #e50076);  animation: gradient 1.5s ease infinite;  background-size: 200%}.pace.pace-inactive {  opacity: 0;  transition: .3s;  top: -8px}@keyframes gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}]]></content>
       
     </entry>
     
