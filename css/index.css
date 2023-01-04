@@ -1373,6 +1373,7 @@ canvas:not(#ribbon-canvas),
   --roydon-box-shadow: 1px 1px 1px 1px #808080;
   --roydon-comments-bg: transparent;
   --roydon-small-card-bg: rgba(255,255,255,0.8);
+  --roydon-card-mask: rgba(234,234,234,0.8);
 }
 body {
   position: relative;
@@ -2283,11 +2284,11 @@ figure.highlight pre .javascript .function {
   }
 }
 .layout.hide-aside {
-  max-width: 1400px;
+  max-width: 1450px;
 }
 @media screen and (min-width: 2000px) {
   .layout.hide-aside {
-    max-width: 1400px;
+    max-width: 1450px;
   }
 }
 .layout.hide-aside > div {
@@ -2355,7 +2356,7 @@ figure.highlight pre .javascript .function {
   margin: auto;
   left: 0;
   right: 0;
-  top: 3%;
+  top: 30%;
   border-radius: 10px;
   text-align: center;
   z-index: 100;
@@ -6093,6 +6094,7 @@ blockquote.pullquote.right {
   --scrollbar-color: #1f1f1f;
   --timeline-bg: #1f1f1f;
   --roydon-small-card-bg: rgba(0,0,0,0.5);
+  --roydon-card-mask: rgba(22,22,22,0.8);
 }
 [data-theme='dark'] #web_bg:before,
 [data-theme='dark'] #footer:before,

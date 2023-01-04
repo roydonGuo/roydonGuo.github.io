@@ -8,8 +8,7 @@
 .flink-card-content-item {
   width: 100%;
   border-radius: 16px;
-  background: rgba(234, 234, 234, 0.8);
-  /* box-shadow: var(--roydon-box-shadow); */
+  background: var(--roydon-card-mask);
   position: relative;
   padding: 1rem 2rem;
   overflow: hidden;
