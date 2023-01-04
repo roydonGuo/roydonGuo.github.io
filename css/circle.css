@@ -1,1 +1,203 @@
-/*  */
+.scrollbar {
+  overflow: auto;
+  height: 100%;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+#friend-circle-page {
+  --bg: #000;
+  --bili-pink: #f69;
+  background: #17181a;
+  color: white;
+  display: flex;
+  border-radius: 1rem;
+  height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  #friend-circle-page {
+    height: 80vh;
+  }
+}
+
+#friend-circle-page .friends {
+  width: 300px;
+  border-right: 2px solid black;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: scroll;
+}
+
+#friend-circle-page .friends .friend {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#friend-circle-page .friends .friend .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin: 0;
+}
+
+#friend-circle-page .friends .friend .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#friend-circle-page .friends .friend:hover {
+  background-color: var(--bili-pink);
+}
+
+#friend-circle-page .friends .friend.active {
+  background: var(--bili-pink);
+}
+
+#friend-circle-page .friends .friend.alive .avatar {
+  box-shadow: 0 0 0 3px var(--bili-pink);
+}
+
+#friend-circle-page .posts .post {
+  /* margin-bottom: 1rem; */
+  padding: 0.5rem;
+}
+
+#friend-circle-page .posts .post .meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem 0 0;
+}
+
+#friend-circle-page .posts .post .meta .avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+#friend-circle-page .posts .post .meta .author {
+  flex: 1;
+}
+
+#friend-circle-page .posts .post .info {
+  background: #46208b7d;
+  padding: 0.5rem;
+  border-radius: 0 1rem 1rem 1rem;
+  margin: 0 0 0.5rem 2.5rem;
+}
+
+#friend-circle-page .posts .post .info:hover {
+  background: #45208be3;
+}
+
+#friend-circle-page .posts .post .info .link:hover {
+  color: var(--bili-pink);
+  transition: 0.5s;
+}
+
+#friend-circle-page .author-info {
+  overflow: hidden;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+#friend-circle-page .author-info .author-card {
+  background: #f9c445;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#friend-circle-page .author-info .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+#friend-circle-page .author-info .center {
+  /* flex: 1; */
+  /* font-size: 1.4rem; */
+}
+
+#friend-circle-page .author-info .center .name {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+#friend-circle-page .author-info .center .desc {
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+#friend-circle-page .author-info .right .link {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 1rem;
+  background: blanchedalmond;
+  color: var(--bili-pink);
+  transition: 0.5s;
+}
+
+#friend-circle-page .author-info .right .link:hover {
+  background-color: var(--bili-pink);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #friend-circle-page {
+    flex-direction: column;
+  }
+
+  #friend-circle-page .friends {
+    height: 7rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid var(--bg);
+  }
+
+  #friend-circle-page .friends .friend {
+    width: 5rem;
+    height: 6rem;
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  #friend-circle-page .friends .friend .name {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
