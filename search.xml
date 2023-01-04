@@ -1181,8 +1181,8 @@
     
     <entry>
       <title></title>
-      <link href="/js/circle.js"/>
-      <url>/js/circle.js</url>
+      <link href="/js/circle-module.js"/>
+      <url>/js/circle-module.js</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1192,8 +1192,8 @@
     
     <entry>
       <title></title>
-      <link href="/js/circle-module.js"/>
-      <url>/js/circle-module.js</url>
+      <link href="/js/circle.js"/>
+      <url>/js/circle.js</url>
       
         <content type="html"><![CDATA[]]></content>
       
