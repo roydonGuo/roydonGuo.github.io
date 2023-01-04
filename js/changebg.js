@@ -165,16 +165,19 @@ function randomBg() {
     }
 }
 
-try {
-    let data = loadData('randomBgOrNot', 1440)
-    if (data) {
-        randomBg()
-    } else {
-        localStorage.removeItem('randomBgOrNot')
+function loadRandomBg() {
+    try {
+        let data = loadData('randomBgOrNot', 1440)
+        if (data) {
+            randomBg()
+        } else {
+            localStorage.removeItem('randomBgOrNot')
+        }
+    } catch (error) {
+        localStorage.removeItem('randomBgOrNot');
     }
-} catch (error) {
-    localStorage.removeItem('randomBgOrNot');
 }
+loadRandomBg()
 
 /* winbox */
 var winbox = ''
