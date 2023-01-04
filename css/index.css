@@ -1373,10 +1373,6 @@ canvas:not(#ribbon-canvas),
   --roydon-box-shadow: 1px 1px 1px 1px #808080;
   --roydon-comments-bg: transparent;
   --roydon-small-card-bg: rgba(255,255,255,0.8);
-  --roydon-white-acrylic2: #fff;
-  --roydon-black: #000;
-  --roydon-black-acrylic2: #000;
-  --roydon-white: #fff;
 }
 body {
   position: relative;
