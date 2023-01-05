@@ -48,7 +48,7 @@ let cdnSiteBg = []
 function getCDNSiteBg() {
     $.ajax({
         type: 'GET',
-        url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN@1.1.7/bgJSON.txt',
+        url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/bgJSON.txt',
         success: function (res) {
             cdnSiteBg = res.split(',')
             // console.log(cdnSiteBg);
