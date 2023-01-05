@@ -11,7 +11,8 @@
 
 #content-inner>#archive,
 #content-inner>#page {
-    background: transparent;
+    /* background: transparent; */
+    background: var(--roydon-small-card-bg);
     /* backdrop-filter: blur(20px); */
 }
 
