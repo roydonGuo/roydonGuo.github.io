@@ -79,17 +79,20 @@
   display: flex;
   flex-wrap: nowrap;
   /* animation: rowup 50s linear infinite; */
-  animation: 12s linear 0s infinite normal none running linkScroll;
+  animation: 50s linear 0s infinite normal none running linkScroll;
+  -webkit-animation: 50s linear 0s infinite normal none running linkScroll;
 }
 
 
 @keyframes linkScroll {
   0% {
     transform: translateX(0px);
+    -webkit-transform: translateX(0px);
   }
 
   100% {
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
   }
 }
 

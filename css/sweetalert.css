@@ -9,28 +9,22 @@ body.stop-scrolling {
   overflow: hidden
 }
 
-.sweet-overlay {
-  background-color: #000;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  background-color: rgba(0, 0, 0, .4);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+/* .sweet-overlay {
+  background: var(--roydon-card-mask);
   z-index: 10000
-}
+} */
 
 .sweet-alert {
-  background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  width: 478px;
-  padding: 17px;
-  border-radius: 5px;
+  background: var(--roydon-card-mask);
+  backdrop-filter: blur(10px);
+  width: 400px;
+  padding: 15px;
+  border-radius: 16px;
   text-align: center;
-  left: 50%;
-  top: 50%;
-  margin-left: -256px;
-  margin-top: -200px;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin: 200px auto;
   overflow: hidden;
   z-index: 99999
 }
@@ -40,8 +34,8 @@ body.stop-scrolling {
     width: auto;
     margin-left: 0;
     margin-right: 0;
-    left: 15px;
-    right: 15px
+    left: 10%;
+    right: 10%;
   }
 }
 
