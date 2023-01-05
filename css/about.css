@@ -239,7 +239,7 @@
   height: 2.5rem;
   width: 5rem;
   border-radius: 1.2rem;
-  backdrop-filter: saturate(150%) blur(30px);
+  backdrop-filter: blur(30px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,7 +258,7 @@
 .author-content-item .card-content .banner-button-group .banner-button:hover {
   color: white;
   background-color: pink;
-  backdrop-filter: saturate(180%) blur(50px);
+  backdrop-filter: blur(50px);
 }
 
 .author-content-item.personalities {
@@ -347,7 +347,7 @@
   left: 0;
   width: 100%;
   padding: 0.5rem 2rem;
-  backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: blur(20px);
   transition: 2s ease-in-out;
   font-size: 20px;
 }

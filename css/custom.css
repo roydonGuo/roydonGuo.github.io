@@ -647,7 +647,7 @@ img.footer_mini_logo:hover {
     top: .4rem;
     right: 1rem;
     /* background: #6239ae2d; */
-    backdrop-filter: saturate(180%) blur(50px);
+    backdrop-filter: blur(50px);
     border-radius: .4rem;
     color: rgb(252, 206, 120) !important;
     font-weight: 600 !important;
@@ -658,7 +658,7 @@ img.footer_mini_logo:hover {
 .recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories:hover {
     text-decoration: none !important;
     /* background: transparent !important; */
-    backdrop-filter: saturate(220%) blur(100px)
+    backdrop-filter: blur(30px)
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
@@ -764,7 +764,7 @@ img.footer_mini_logo:hover {
 
 #random-banner:hover {
     background: transparent;
-    backdrop-filter: blur(10px) saturate(120%);
+    backdrop-filter: blur(10px);
     transition: all 0.3s;
 }
 
@@ -778,7 +778,7 @@ img.footer_mini_logo:hover {
 
 #random-hover:hover {
     background: transparent;
-    backdrop-filter: blur(10px) saturate(120%);
+    backdrop-filter: blur(10px);
     transition: all 0.3s;
 }
 
@@ -959,7 +959,7 @@ img.footer_mini_logo:hover {
     padding: 1rem;
     color: white;
     /* margin-top: 1rem; */
-    backdrop-filter: saturate(150%) blur(20px);
+    backdrop-filter: blur(20px);
     background: transparent;
     display: flex;
     /* overflow: hidden; */

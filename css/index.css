@@ -1538,7 +1538,7 @@ img:not([src]) {
 }
 .img-alt {
   margin: -10px 0 10px;
-  color: #858585;
+  color: #9f9e9e;
 }
 .img-alt:hover {
   text-decoration: none !important;
