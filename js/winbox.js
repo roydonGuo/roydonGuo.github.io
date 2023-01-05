@@ -33,22 +33,22 @@ function createWinbox() {
 
     <h2 id="电脑壁纸"><a href="#电脑壁纸" class="headerlink" title="电脑壁纸"></a>电脑壁纸</h2>
     <div class="bgbox">
-    <a href="javascript:;"  style="background-image:url(${CDN}dplo2m.jpg)" class="imgbox" onclick="changeBg('url(${CDN}dplo2m.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(${CDN}wq215x.jpg)" class="imgbox" onclick="changeBg('url(${CDN}wq215x.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(${CDN}e7g71w.jpg)" class="imgbox" onclick="changeBg('url(${CDN}e7g71w.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(${CDN}72dvlv.jpg)" class="imgbox" onclick="changeBg('url(${CDN}72dvlv.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(${CDN}k7wor1.jpg)" class="imgbox" onclick="changeBg('url(${CDN}k7wor1.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(${CDN}1k2kp9.jpg)" class="imgbox" onclick="changeBg('url(${CDN}1k2kp9.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}dplo2m.jpg)" class="imgbox" onclick="changeBg('url(${CDN}dplo2m.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}wq215x.jpg)" class="imgbox" onclick="changeBg('url(${CDN}wq215x.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}e7g71w.jpg)" class="imgbox" onclick="changeBg('url(${CDN}e7g71w.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}72dvlv.jpg)" class="imgbox" onclick="changeBg('url(${CDN}72dvlv.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}k7wor1.jpg)" class="imgbox" onclick="changeBg('url(${CDN}k7wor1.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}1k2kp9.jpg)" class="imgbox" onclick="changeBg('url(${CDN}1k2kp9.jpg)')"></a>
     </div>
 
     <h2 id="手机壁纸"><a href="#手机壁纸" class="headerlink" title="手机壁纸"></a>手机壁纸</h2>
     <div class="bgbox">
-    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}57od15.jpg)" class="pimgbox" onclick="changeBg('url(${CDN}57od15.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${CDN}mp8zp8.jpg)" class="pimgbox" onclick="changeBg('url(${CDN}mp8zp8.jpg)')"></a>
     </div>
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>

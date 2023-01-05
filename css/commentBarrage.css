@@ -72,8 +72,9 @@
 }
 
 .comment-barrage-item .barrageContent {
-  font-size: 14px;
-  height: calc(100% - 30px);
+  font-size: 12px;
+  line-height: 1.2;
+  height: calc(100% - 20px);
   overflow: scroll;
 }
 

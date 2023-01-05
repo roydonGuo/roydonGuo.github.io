@@ -58,7 +58,9 @@ function initCommentBarrage() {
 	xhr.addEventListener("readystatechange", function () {
 		if (this.readyState === 4) {
 			commentBarrageConfig.barrageList = commentLinkFilter(JSON.parse(this.responseText).data);
-			commentBarrageConfig.dom.innerHTML = '';
+			if (commentBarrageConfig.dom) {
+				commentBarrageConfig.dom.innerHTML = '';
+			}
 		}
 	});
 	xhr.open("POST", commentBarrageConfig.twikooUrl);
@@ -133,11 +135,13 @@ function removeCommentBarrage(barrage) {
 }
 switchCommentBarrage = function () {
 	localStorage.setItem("isBarrageToggle", Number(!Number(localStorage.getItem("isBarrageToggle"))))
-	if (!isInViewPortOfOne(document.getElementById("post-comment"))) {
-		commentBarrageConfig.displayBarrage = !(commentBarrageConfig.displayBarrage);
-		let commentBarrage = document.querySelector('.comment-barrage');
-		if (commentBarrage) {
-			$(commentBarrage).fadeToggle()
+	if (document.getElementById("post-comment")) {
+		if (!isInViewPortOfOne(document.getElementById("post-comment"))) {
+			commentBarrageConfig.displayBarrage = !(commentBarrageConfig.displayBarrage);
+			let commentBarrage = document.querySelector('.comment-barrage');
+			if (commentBarrage) {
+				$(commentBarrage).fadeToggle()
+			}
 		}
 	}
 }
