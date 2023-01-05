@@ -8,7 +8,54 @@
   overflow: hidden;
   width: 150px;
   height: 150px;
+  border: 5px solid gold
 }
+
+#about-page .author-box .author-img::after,
+#about-page .author-box .author-img::before {
+  /* 固定在div下 */
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* 撑开一点大小 */
+  margin: -5%;
+  box-shadow: inset 0px 0px 2px #fff;
+  animation: clipMe 8s linear infinite;
+}
+
+#about-page .author-box .author-img::before {
+  content: "";
+}
+
+#about-page .author-box .author-img::after {
+  content: "";
+  /* 提前运动4s */
+  animation-delay: -4s;
+}
+
+@keyframes clipMe {
+
+  0%,
+  100% {
+    clip: rect(0px, 220.0px, 2px, 0px);
+  }
+
+  25% {
+    clip: rect(0px, 2px, 220.0px, 0px);
+  }
+
+  50% {
+    clip: rect(218.0px, 220.0px, 220.0px, 0px);
+  }
+
+  75% {
+    clip: rect(0px, 220.0px, 220.0px, 218.0px);
+  }
+}
+
 
 #about-page .author-box .author-img img {
   border-radius: 50%;
@@ -23,7 +70,7 @@
   background: #77ec9c;
   position: absolute;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 5px solid white;
   top: 50%;
   left: 50%;
   transform: translate(35px, 45px);

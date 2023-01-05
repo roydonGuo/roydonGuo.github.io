@@ -611,13 +611,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/JavaScirpt/</loc>
-    <lastmod>2023-01-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/tags/JQuery/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -626,6 +619,13 @@
   
   <url>
     <loc>https://www.roydon.top/tags/Ajax/</loc>
+    <lastmod>2023-01-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/tags/JavaScirpt/</loc>
     <lastmod>2023-01-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
