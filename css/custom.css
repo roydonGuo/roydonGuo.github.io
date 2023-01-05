@@ -1377,7 +1377,7 @@ img.footer_mini_logo:hover {
 
 /* 顶部样式 */
 #essay_page .author-content {
-    min-height: 25rem;
+    /* min-height: 25rem; */
 }
 
 #essay_page .author-content .author-content-item.essayPage {
@@ -1427,6 +1427,10 @@ img.footer_mini_logo:hover {
     #bber .timeline ul li.bber-item {
         width: 100%;
         margin-right: 0px;
+    }
+
+    #essay_page .author-content .author-content-item.essayPage-right {
+        display: none;
     }
 }
 

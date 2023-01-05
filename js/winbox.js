@@ -1,8 +1,9 @@
 /* winbox */
 var winbox = ''
+var CDN = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBg/'
 
 function createWinbox() {
-  sm("点击图片切换背景","您可以选择操作：)")
+  sm("点击图片切换背景", "您可以选择操作：)")
   let div = document.createElement('div')
   document.body.appendChild(div)
   winbox = WinBox({
@@ -32,12 +33,12 @@ function createWinbox() {
 
     <h2 id="电脑壁纸"><a href="#电脑壁纸" class="headerlink" title="电脑壁纸"></a>电脑壁纸</h2>
     <div class="bgbox">
-    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637615a3af26b.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637615a3af26b.png)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637617ff5177f.jpg)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ff5177f.jpg)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/17/637617ffa49de.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/17/637617ffa49de.png)')"></a>
-    <a href="javascript:;"  style="background-image:url(https://bu.dusays.com/2022/11/18/63765daee75d6.png)" class="imgbox" onclick="changeBg('url(https:\//bu.dusays.com/2022/11/18/63765daee75d6.png)')"></a>
+    <a href="javascript:;"  style="background-image:url(${CDN}dplo2m.jpg)" class="imgbox" onclick="changeBg('url(${CDN}dplo2m.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(${CDN}wq215x.jpg)" class="imgbox" onclick="changeBg('url(${CDN}wq215x.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(${CDN}e7g71w.jpg)" class="imgbox" onclick="changeBg('url(${CDN}e7g71w.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(${CDN}72dvlv.jpg)" class="imgbox" onclick="changeBg('url(${CDN}72dvlv.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(${CDN}k7wor1.jpg)" class="imgbox" onclick="changeBg('url(${CDN}k7wor1.jpg)')"></a>
+    <a href="javascript:;"  style="background-image:url(${CDN}1k2kp9.jpg)" class="imgbox" onclick="changeBg('url(${CDN}1k2kp9.jpg)')"></a>
     </div>
 
     <h2 id="手机壁纸"><a href="#手机壁纸" class="headerlink" title="手机壁纸"></a>手机壁纸</h2>
