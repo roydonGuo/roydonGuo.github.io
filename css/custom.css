@@ -644,21 +644,21 @@ img.footer_mini_logo:hover {
 /* 文章post-item修改分类 */
 .recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories {
     position: absolute;
-    top: .4rem;
+    top: .5rem;
     right: 1rem;
-    /* background: #6239ae2d; */
-    backdrop-filter: blur(50px);
+    background: #7026f877;
+    /* backdrop-filter: blur(50px); */
     border-radius: .4rem;
-    color: rgb(252, 206, 120) !important;
+    color: gold !important;
     font-weight: 600 !important;
-    font-size: 90% !important;
+    font-size: 99% !important;
     padding: .2rem .8rem;
 }
 
 .recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories:hover {
     text-decoration: none !important;
-    /* background: transparent !important; */
-    backdrop-filter: blur(30px)
+    background: #185fff;
+    /* backdrop-filter: blur(30px) */
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
@@ -667,6 +667,15 @@ img.footer_mini_logo:hover {
 
 .article-meta-wrap .iconfont {
     font-size: 110%;
+}
+
+.card-recent-post .home-indicator {
+    position: relative;
+    width: 100px;
+    margin: 5px auto;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
 }
 
 /* .recent-post-item .recent-post-info .article-meta-wrap .article-meta:nth-child(2):hover a{
