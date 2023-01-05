@@ -735,7 +735,6 @@ img.footer_mini_logo:hover {
 #random {
     width: 24% !important;
     border-radius: 16px;
-    margin-top: 1rem;
     background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat;
     background-size: cover;
     border-radius: 16px;
@@ -1544,7 +1543,7 @@ img.footer_mini_logo:hover {
 }
 
 #recent-posts>.recent-post-item {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     display: inline-block;
     height: auto;
 }
