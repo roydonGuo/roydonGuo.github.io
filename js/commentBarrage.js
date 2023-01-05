@@ -2,17 +2,10 @@
 // accessToken: "04fdc390db1b4efd9ed7de5954e0e968",
 
 const commentBarrageConfig = {
-	//浅色模式和深色模式颜色，务必保持一致长度，前面是背景颜色，后面是字体，随机选择，默认这个颜色还好
-	// lightColors: [
-	// 	['var(--lyx-white-acrylic2)', 'var(--lyx-black)'],
-	// ],
-	// darkColors: [
-	// 	['var(--lyx-black-acrylic2)', 'var(--lyx-white)'],
-	// ],
 	//同时最多显示弹幕数
 	maxBarrage: 1,
 	//弹幕显示间隔时间，单位ms
-	barrageTime: 3000,
+	barrageTime: 5000,
 	//twikoo部署地址（Vercel、私有部署），腾讯云的为环境ID
 	twikooUrl: "https://guo.yicheng.plus",
 	//token获取见前文

@@ -1572,3 +1572,81 @@ img.footer_mini_logo:hover {
 }
 
 /*# sourceMappingURL=/sm/e91ff0653b41f1a04bad468b2ce1ff01d74e03c84bcb9d3f61b29394112373c4.map */
+
+/* twikoo评论美化 */
+/* 自定义twikoo评论输入框高度 */
+#twikoo .el-textarea textarea {
+    min-height: 120px !important;
+    background-size: 90px;
+}
+
+/* 自定义表情优化 */
+#twikoo .OwO-body {
+    max-width: 100% !important;
+    border-radius: 16px;
+}
+
+/* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */
+#twikoo .OwO .OwO-body .OwO-items {
+    max-height: 250px !important;
+}
+
+.OwO .OwO-body .OwO-items-image .OwO-item {
+    max-width: calc(9% - 10px);
+    box-sizing: content-box;
+}
+
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Genshin"],
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="tom_jerry"],
+.OwO .OwO-body .OwO-items-image .OwO-item[title|="Snow-Miku"] {
+    max-width: calc(8% - 5px) !important;
+    box-sizing: content-box;
+}
+
+#twikoo .OwO-items li img {
+    width: 100% !important;
+}
+
+.tk-comment .vemoji[alt|="Genshin"],
+.tk-comment .tk-owo-emotion[alt*="Genshin"],
+.tk-comment .vemoji[alt|="Snow"],
+.tk-comment .tk-owo-emotion[alt*="Snow"],
+.tk-comment .vemoji[alt|="tom_jerry"],
+.tk-comment .tk-owo-emotion[alt*="tom_jerry"] {
+    max-width: 100px !important;
+    max-height: 100px !important;
+    width: 100px;
+    margin: 4px;
+    display: inline-block !important;
+}
+
+/* 手机端适配 */
+@media screen and (max-width: 768px) {
+
+    .tk-comment .vemoji[alt|="Genshin"],
+    .tk-comment .tk-owo-emotion[alt*="Genshin"],
+    .tk-comment .vemoji[alt|="Snow"],
+    .tk-comment .tk-owo-emotion[alt*="Snow"],
+    .tk-comment .vemoji[alt|="tom_jerry"],
+    .tk-comment .tk-owo-emotion[alt*="tom_jerry"] {
+        max-width: calc(100% - 30px) !important;
+        max-height: calc(100% - 30px) !important;
+    }
+
+    .OwO .OwO-body .OwO-items-image .OwO-item[title|="Genshin"],
+    .OwO .OwO-body .OwO-items-image .OwO-item[title|="tom_jerry"],
+    .OwO .OwO-body .OwO-items-image .OwO-item[title|="Snow-Miku"] {
+        max-width: calc(28% - 10px) !important;
+        box-sizing: content-box;
+    }
+}
+
+/* 右下角闭眼 */
+.el-textarea__inner {
+    background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;
+}
+
+.el-textarea__inner:focus {
+    background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;
+}
+

@@ -78,9 +78,14 @@
   overflow: scroll;
 }
 
+.comment-barrage-item .barrageContent img {
+  max-width:  48px;
+  max-height: 48px;
+}
+
 .comment-barrage-item .barrageContent::-webkit-scrollbar {
   height: 0;
-  width: 4px;
+  width: 3px;
 }
 
 .comment-barrage-item .barrageContent::-webkit-scrollbar-button {
