@@ -13,6 +13,7 @@ function createWinbox() {
     title: "控制面板",
     width: "80%",
     height: "80%",
+    background: "pink",
     x: "center",
     y: "center",
     onmaximize: () => {
