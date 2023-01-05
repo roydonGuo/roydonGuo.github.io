@@ -107,7 +107,7 @@ function popCommentBarrage(data) {
 
 	barrage.innerHTML = `
 			<div class="barrageHead">
-					<img class="barrageAvatar" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://${commentBarrageConfig.avatarCDN}/avatar/${data.mailMd5}?d=${commentBarrageConfig.noAvatarType}"/>
+					<img class="barrageAvatar" src="https://${commentBarrageConfig.avatarCDN}/avatar/${data.mailMd5}?d=${commentBarrageConfig.noAvatarType}"/>
 					<div class="barrageNick">${data.nick}</div>
 					<a href="javascript:switchCommentBarrage()" style="font-size:20px">×</a>
 			</div>
