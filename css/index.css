@@ -4245,11 +4245,11 @@ h1.page-title + .tag-cloud-list {
   border: 5px solid #fff;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(18px, 24px);
-  -moz-transform: translate(18px, 24px);
-  -o-transform: translate(18px, 24px);
-  -ms-transform: translate(18px, 24px);
-  transform: translate(18px, 24px);
+  -webkit-transform: translate(32px, 32px);
+  -moz-transform: translate(32px, 32px);
+  -o-transform: translate(32px, 32px);
+  -ms-transform: translate(32px, 32px);
+  transform: translate(32px, 32px);
 }
 #loading-box.loaded .loading-bg {
   opacity: 0;
