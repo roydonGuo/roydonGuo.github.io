@@ -39,10 +39,12 @@ function isInViewPortOfOne(el) {
 }
 document.onscroll = function () {
 	if (commentBarrageConfig.displayBarrage) {
-		if (isInViewPortOfOne(document.getElementById("post-comment"))) {
-			document.getElementsByClassName("comment-barrage")[0].setAttribute("style", `display:none;`)
-		} else {
-			document.getElementsByClassName("comment-barrage")[0].setAttribute("style", "")
+		if (document.getElementById("post-comment")) {
+			if (isInViewPortOfOne(document.getElementById("post-comment"))) {
+				document.getElementsByClassName("comment-barrage")[0].setAttribute("style", `display:none;`)
+			} else {
+				document.getElementsByClassName("comment-barrage")[0].setAttribute("style", "")
+			}
 		}
 	}
 }
