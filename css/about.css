@@ -698,10 +698,7 @@
   }
 
   .layout>div:first-child:not(.recent-posts) {
-    /* border-radius: 0; */
-    padding: 0 1rem !important;
-    box-shadow: none !important;
-    /* background: var(--anzhiyu-background); */
+    padding: 1rem !important;
   }
 
   .author-content-item .card-content .banner-button-group .banner-button-text {
@@ -714,8 +711,6 @@
   }
 
   .author-content-item .card-content .banner-button-group .banner-button {
-    /* background: 0 0;
-    padding: 0; */
     width: 3rem;
     height: 3rem !important;
   }

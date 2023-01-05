@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.flink-card-content-item .flink-card-content-item-title {
+.flink-card-content-item .banners-title-big {
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
@@ -32,33 +32,64 @@
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
+  position: relative;
   /* min-height: 400px; */
 }
 
-.flink-card-content-item.everyone .everyone-style-everyone {
-  position: relative;
+.flink-card-content-item .banners-title {
+  left: 2rem;
+  top: 1rem;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
 }
 
-.flink-card-content-item.everyone .tags-everyone-all {
+.flink-card-content-item .banner-button-group {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
   display: flex;
-  transform: rotate(0);
-  transition: 0.3s;
+}
+
+.flink-card-content-item .banner-button-group button {
+  background: var(--roydon-button-bg);
+  padding: 16px 12px;
+  border-radius: 16px;
+  box-shadow: var(--roydon-box-shadow);
+  color: var(--font-color);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.flink-card-content-item .banner-button-group button:hover {
+  background: var(--roydon-button-hover-bg);
+}
+
+.flink-card-content-item .banner-button-group button i {
+
+  margin-right: 0.2rem;
 }
 
 .flink-card-content-item.everyone .tags-everyone-wrapper {
+  margin-top: 7em;
   display: flex;
   flex-wrap: nowrap;
   /* animation: rowup 50s linear infinite; */
-  animation: myScroll 50s linear infinite;
+  animation: 12s linear 0s infinite normal none running linkScroll;
 }
 
-@keyframes myScroll {
+
+@keyframes linkScroll {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(0px);
   }
 
   100% {
-    transform: translateX(-40%);
+    transform: translateX(-50%);
   }
 }
 

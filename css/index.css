@@ -1375,6 +1375,8 @@ canvas:not(#ribbon-canvas),
   --roydon-small-card-bg: rgba(255,255,255,0.8);
   --roydon-card-mask: rgba(234,234,234,0.8);
   --roydon-hover-box-shadow: 0 5px 8px 5px rgba(69,151,233,0.188);
+  --roydon-button-bg: rgba(255,255,255,0.8);
+  --roydon-button-hover-bg: #f69;
 }
 body {
   position: relative;
@@ -4186,125 +4188,6 @@ h1.page-title + .tag-cloud-list {
 #nav .site-page:not(.child):hover:after {
   width: 100%;
 }
-.loading-bg {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: var(--roydon-card-mask);
-  z-index: 1001;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-}
-#loading-box .loading-img {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  margin: auto;
-  border: 5px solid #b7d3ee;
-  background: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu4.png") no-repeat center center;
-  background-size: cover;
-  -webkit-animation-duration: 0.3s;
-  -moz-animation-duration: 0.3s;
-  -o-animation-duration: 0.3s;
-  -ms-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-name: loadingAction;
-  -moz-animation-name: loadingAction;
-  -o-animation-name: loadingAction;
-  -ms-animation-name: loadingAction;
-  animation-name: loadingAction;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -moz-animation-direction: alternate;
-  -o-animation-direction: alternate;
-  -ms-animation-direction: alternate;
-  animation-direction: alternate;
-}
-#loading-box .loading-image-dot {
-  width: 30px;
-  height: 30px;
-  background: #6bdf8f;
-  position: absolute;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(32px, 32px);
-  -moz-transform: translate(32px, 32px);
-  -o-transform: translate(32px, 32px);
-  -ms-transform: translate(32px, 32px);
-  transform: translate(32px, 32px);
-}
-#loading-box.loaded .loading-bg {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  z-index: -1000;
-}
-@-moz-keyframes loadingAction {
-  0% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-  100% {
-    opacity: 0.6;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: alpha(opacity=60);
-  }
-}
-@-webkit-keyframes loadingAction {
-  0% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-  100% {
-    opacity: 0.6;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: alpha(opacity=60);
-  }
-}
-@-o-keyframes loadingAction {
-  0% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-  100% {
-    opacity: 0.6;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: alpha(opacity=60);
-  }
-}
-@keyframes loadingAction {
-  0% {
-    opacity: 1;
-    -ms-filter: none;
-    filter: none;
-  }
-  100% {
-    opacity: 0.6;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: alpha(opacity=60);
-  }
-}
 #pagination .pagination {
   margin-top: 1em;
   text-align: center;
@@ -5997,6 +5880,7 @@ blockquote.pullquote.right {
   --timeline-bg: #1f1f1f;
   --roydon-small-card-bg: rgba(0,0,0,0.5);
   --roydon-card-mask: rgba(22,22,22,0.8);
+  --roydon-button-bg: rgba(0,0,0,0.8);
 }
 [data-theme='dark'] #web_bg:before,
 [data-theme='dark'] #footer:before,

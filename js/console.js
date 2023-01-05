@@ -1,3 +1,23 @@
+function welcome() {
+    let welcome_text = '欢迎光顾本站~'
+    if (document.referrer !== '') {
+        let referrer = document.referrer.split("/")[2];
+        welcome_text = "欢迎你，来自" + referrer.toUpperCase() + "的用户！";
+        if (referrer.toUpperCase() == document.domain.toUpperCase()) return;
+    }
+    swal({
+        title: "欢迎",
+        text: welcome_text + '\n打开页面左侧音乐以获得更佳体验！',
+        imageUrl: "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu7.jpg",
+        timer: 5000,
+        showConfirmButton: true
+    });
+}
+$(document).ready(() => {
+    welcome()
+})
+
+
 var now1 = new Date();
 
 function createtime1() {
@@ -74,6 +94,6 @@ function createtime2() {
 createtime2();
 
 // 重写console方法
-console.log = function () { };
-console.error = function () { };
-console.warn = function () { };
+console.log = function () {};
+console.error = function () {};
+console.warn = function () {};
