@@ -1370,10 +1370,11 @@ canvas:not(#ribbon-canvas),
   --pseudo-hover: #ff3456;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
-  --roydon-box-shadow: 1px 1px 1px 1px #808080;
+  --roydon-box-shadow: 1px 1px 1px 1px #c0c0c0;
   --roydon-comments-bg: transparent;
   --roydon-small-card-bg: rgba(255,255,255,0.8);
   --roydon-card-mask: rgba(234,234,234,0.8);
+  --roydon-hover-box-shadow: 0 5px 8px 5px rgba(69,151,233,0.188);
 }
 body {
   position: relative;

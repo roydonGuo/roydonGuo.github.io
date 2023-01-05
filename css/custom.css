@@ -1191,16 +1191,15 @@ img.footer_mini_logo:hover {
 #bber .timeline ul li.bber-item {
     position: relative;
     width: 32%;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 1rem 1rem 0.5rem;
     transition: all 0.3s ease 0s;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     background: var(--roydon-small-card-bg);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* box-shadow: var(--roydon-box-shadow); */
     margin-right: 2%;
 }
 
@@ -1239,7 +1238,7 @@ img.footer_mini_logo:hover {
     display: flex;
     position: relative;
     margin: 1rem 0 0;
-    border: 1px dashed rgba(255, 192, 203, 0.6);
+    border: 1px dashed #f69;
     width: 100%;
 }
 
@@ -1282,7 +1281,8 @@ img.footer_mini_logo:hover {
 }
 
 #bber .timeline ul li.bber-item:hover {
-    border: 1px solid pink;
+    box-shadow: var(--roydon-hover-box-shadow);
+    transform: translateY(-3px);
 }
 
 #bber .bber-content-link {
