@@ -1382,23 +1382,21 @@ img.footer_mini_logo:hover {
 }
 
 #essay_page .author-content .author-content-item.essayPage {
-    height: 26rem;
+    height: 24em;
     width: 82%;
     margin-right: 2%;
     background: url(https://bu.dusays.com/2022/11/17/637615a3af26b.png) left center / cover no-repeat;
     color: wheat;
     overflow: hidden;
-    /* margin-top: 0px; */
 }
 
 #essay_page .author-content .author-content-item.essayPage-right {
     width: 16%;
-    height: 26rem;
+    height: 24em;
     background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
     background-size: contain;
     color: rgb(122, 49, 6);
     overflow: hidden;
-    /* margin-top: 0px; */
 }
 
 .bber-info-from>.iconfont {
@@ -1536,3 +1534,38 @@ img.footer_mini_logo:hover {
 /* div{
     backdrop-filter: saturate(150%) blur(20px);
 } */
+
+/* 首页文章三栏 */
+#recent-posts {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#recent-posts>.recent-post-item {
+    margin-top: 1em;
+    display: inline-block;
+    height: auto;
+}
+
+#recent-posts>.recent-post-item .post_cover {
+    width: 100%;
+}
+
+#recent-posts>.recent-post-item .post_cover img.post_bg {
+    width: 100%;
+    height: 100%
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.content {
+    display: none
+}
+
+@media screen and (max-width:768px) {
+    #recent-posts>.recent-post-item {
+        width: 100%
+    }
+}
+
+/*# sourceMappingURL=/sm/e91ff0653b41f1a04bad468b2ce1ff01d74e03c84bcb9d3f61b29394112373c4.map */
