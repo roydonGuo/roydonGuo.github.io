@@ -54,7 +54,7 @@
 
 @keyframes myScroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-10%);
   }
 
   100% {
