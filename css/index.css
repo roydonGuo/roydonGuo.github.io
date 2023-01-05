@@ -4403,7 +4403,6 @@ h2.f4.text-normal.mb-3 {
   height: 100%;
   position: fixed;
   background: var(--roydon-card-mask);
-  backdrop-filter: blur(20px);
   z-index: 1001;
   opacity: 1;
   -ms-filter: none;
@@ -4415,8 +4414,8 @@ h2.f4.text-normal.mb-3 {
   transition: 0.3s;
 }
 #loading-box .loading-img {
-  width: 100px;
-  height: 100px;
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   margin: auto;
   border: 5px solid #b7d3ee;
