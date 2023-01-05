@@ -1592,14 +1592,16 @@ img.footer_mini_logo:hover {
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item {
-    max-width: calc(9% - 10px);
+    max-width: 5% !important;
+    margin: 0 !important;
+    padding: 5px !important;
     box-sizing: content-box;
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item[title|="Genshin"],
 .OwO .OwO-body .OwO-items-image .OwO-item[title|="tom_jerry"],
 .OwO .OwO-body .OwO-items-image .OwO-item[title|="Snow-Miku"] {
-    max-width: calc(8% - 5px) !important;
+    max-width: 9% !important;
     box-sizing: content-box;
 }
 
@@ -1617,6 +1619,7 @@ img.footer_mini_logo:hover {
     max-height: 100px !important;
     width: 100px;
     margin: 4px;
+    border-radius: 8px !important;
     display: inline-block !important;
 }
 
@@ -1631,6 +1634,7 @@ img.footer_mini_logo:hover {
     .tk-comment .tk-owo-emotion[alt*="tom_jerry"] {
         max-width: calc(100% - 30px) !important;
         max-height: calc(100% - 30px) !important;
+        border-radius: 4px !important;
     }
 
     .OwO .OwO-body .OwO-items-image .OwO-item[title|="Genshin"],
@@ -1650,3 +1654,84 @@ img.footer_mini_logo:hover {
     background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;
 }
 
+/* 放大表情 */
+/* #owo-big {
+    position: fixed;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px #aaa solid;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+    transform: translate(0, -105%);
+    overflow: hidden;
+    animation: owoIn 0.3s cubic-bezier(0.42, 0, 0.3, 1.11);
+}
+
+[data-theme=dark] #owo-big {
+    background-color: #4a4a4a
+}
+
+#owo-big img {
+    width: 100%;
+} */
+
+/* 动画效果代码由 Heo：https://blog.zhheo.com/ 提供 */
+/* @keyframes owoIn {
+    0% {
+        transform: translate(0, -95%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, -105%);
+        opacity: 1;
+    }
+} */
+
+/* 评论区美化 */
+.twikoo .tk-comments .tk-submit {
+    margin-top: 1em;
+    background: var(--roydon-small-card-bg);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* 评论区评论大框 */
+.twikoo .tk-comments-container>.tk-comment {
+    padding: 1em;
+    border-radius: 16px;
+    background: var(--roydon-small-card-bg);
+    transition: .3s;
+}
+
+.tk-content img {
+    border-radius: 8px;
+}
+
+.twikoo .tk-comments-container>.tk-comment {
+    box-shadow: var(--roydon-box-shadow);
+}
+
+/* .twikoo .tk-comments-container>.tk-comment:hover {
+    box-shadow: var(--card-hover-box-shadow);
+} */
+
+/* 设备信息 */
+.twikoo .tk-extra {
+    border-radius: 8px;
+    padding: 0.5em;
+    box-shadow: var(--card-hover-box-shadow);
+    transition: .3s;
+}
+
+/* 加载更多按钮 */
+.twikoo .tk-expand {
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.twikoo .tk-extra:hover {
+    box-shadow: var(--card-hover-box-shadow);
+}

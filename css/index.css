@@ -1370,7 +1370,7 @@ canvas:not(#ribbon-canvas),
   --pseudo-hover: #ff3456;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
-  --roydon-box-shadow: 0 1px 0 1px #c0c0c0;
+  --roydon-box-shadow: 0 1px 2px 1px #c0c0c0;
   --roydon-comments-bg: transparent;
   --roydon-small-card-bg: rgba(255,255,255,0.8);
   --roydon-card-mask: rgba(234,234,234,0.8);
