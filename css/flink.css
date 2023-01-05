@@ -70,8 +70,14 @@
 }
 
 .flink-card-content-item .banner-button-group button i {
-
   margin-right: 0.2rem;
+}
+
+.flink-card-content-item.everyone .everyone-style-everyone {
+  display: flex;
+  width: 100%;
+  padding-bottom: 1rem;
+  transform: rotate(0deg);
 }
 
 .flink-card-content-item.everyone .tags-everyone-wrapper {
@@ -91,8 +97,8 @@
   }
 
   100% {
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    transform: translateX(-40%);
+    -webkit-transform: translateX(-40%);
   }
 }
 
