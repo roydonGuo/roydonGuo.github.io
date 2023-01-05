@@ -16,6 +16,16 @@
 // $(document).ready(() => {
 //     welcome()
 // })
+// if (window.location.href == 'http://localhost:4000/' || window.location.href == 'https://roydon.top/' || window.location.href == 'https://www.roydon.top/') {
+//     Snackbar.show({
+//         actionText: '关闭',
+//         text: '欢迎来到本站！',
+//         backgroundColor: '#f69',
+//         actionTextColor: '#fff',
+//         pos: 'top-left',
+//         duration: '5000'
+//     });
+// }
 
 
 var now1 = new Date();

@@ -1735,3 +1735,10 @@ img.footer_mini_logo:hover {
 .twikoo .tk-extra:hover {
     box-shadow: var(--card-hover-box-shadow);
 }
+
+/* 弹框 */
+.snackbar-container {
+    color: var(--font-color) !important;
+    font-weight: bold !important;
+    backdrop-filter: blur(20px) !important;
+}
