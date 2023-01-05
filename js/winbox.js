@@ -5,8 +5,7 @@ var CDN = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBg/'
 function createWinbox() {
   // sm("点击图片切换背景", "您可以选择操作：)")
 
-  btf.snackbarShow('ServiceWorker未激活')
-
+  btf.snackbarShow('点击图片切换背景：)')
 
   let div = document.createElement('div')
   document.body.appendChild(div)
