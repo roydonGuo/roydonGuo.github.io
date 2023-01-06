@@ -3595,6 +3595,7 @@ img.footer_mini_logo:hover {
 .flink-card-content-item {
   width: 100%;
   border-radius: 16px;
+  box-shadow: var(--roydon-box-shadow);
   background: var(--roydon-card-mask);
   position: relative;
   padding: 1rem 2rem;
