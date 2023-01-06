@@ -1035,6 +1035,7 @@ img.footer_mini_logo:hover {
 
 .announcement_content {
     line-height: 1;
+    max-height: 90px;
 }
 
 /* essay_page.css */
@@ -1601,7 +1602,7 @@ img.footer_mini_logo:hover {
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item {
-    max-width: 5% !important;
+    /* max-width: 5% !important; */
     margin: 0 !important;
     padding: 5px !important;
     box-sizing: content-box;
@@ -1635,14 +1636,21 @@ img.footer_mini_logo:hover {
 /* 手机端适配 */
 @media screen and (max-width: 768px) {
 
+    /* .OwO .OwO-body .OwO-items-image .OwO-item {
+        max-width: 20% !important;
+        margin: 0 !important;
+        padding: 5px !important;
+        box-sizing: content-box;
+    } */
+
     .tk-comment .vemoji[alt|="Genshin"],
     .tk-comment .tk-owo-emotion[alt*="Genshin"],
     .tk-comment .vemoji[alt|="Snow"],
     .tk-comment .tk-owo-emotion[alt*="Snow"],
     .tk-comment .vemoji[alt|="tom_jerry"],
     .tk-comment .tk-owo-emotion[alt*="tom_jerry"] {
-        max-width: calc(100% - 30px) !important;
-        max-height: calc(100% - 30px) !important;
+        max-width: calc(100% - 5px) !important;
+        max-height: calc(100% - 5px) !important;
         border-radius: 4px !important;
     }
 

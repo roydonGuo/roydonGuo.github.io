@@ -47,7 +47,7 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 #friend-circle-page .friends .friend .avatar {

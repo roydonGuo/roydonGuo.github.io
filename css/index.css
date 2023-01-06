@@ -1377,6 +1377,7 @@ canvas:not(#ribbon-canvas),
   --roydon-hover-box-shadow: 0 5px 8px 5px rgba(69,151,233,0.188);
   --roydon-button-bg: rgba(255,255,255,0.8);
   --roydon-button-hover-bg: #f69;
+  --roydon-nav-hover: #8a2be2;
 }
 body {
   position: relative;
@@ -3886,7 +3887,6 @@ h1.page-title + .tag-cloud-list {
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
 #page-header.not-top-img #nav a {
-  color: #fff;
   text-shadow: none;
 }
 #page-header.nav-fixed #nav {
@@ -4062,7 +4062,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--light-grey);
 }
 #nav a:hover {
-  color: var(--white);
+  color: var(--roydon-nav-hover) !important;
 }
 #nav #site-name {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
@@ -4107,7 +4107,7 @@ h1.page-title + .tag-cloud-list {
   margin-top: 8px;
   padding: 4px;
   width: max-content;
-  border-radius: 10px;
+  border-radius: 10px !important;
   background-color: var(--sidebar-bg);
   -webkit-box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
   box-shadow: 0 5px 20px -4px rgba(0,0,0,0.5);
@@ -4133,24 +4133,16 @@ h1.page-title + .tag-cloud-list {
   display: -ms-inline-flexbox;
   display: inline-box;
   display: inline-flex;
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 #nav .menus_items .menus_item .menus_item_child li:hover {
   background: var(--text-bg-hover);
-}
-#nav .menus_items .menus_item .menus_item_child li:first-child {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-#nav .menus_items .menus_item .menus_item_child li:last-child {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 #nav .menus_items .menus_item .menus_item_child li a {
   display: inline-block;
   padding: 8px 16px;
   width: 100%;
-  color: var(--font-color) !important;
+  color: var(--font-color);
   text-shadow: none !important;
 }
 #nav.hide-menu #toggle-menu {
@@ -4193,6 +4185,125 @@ h1.page-title + .tag-cloud-list {
 }
 #nav .site-page:not(.child):hover:after {
   width: 100%;
+}
+.loading-bg {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: var(--roydon-card-mask);
+  z-index: 1001;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#loading-box .loading-img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin: auto;
+  border: 5px solid #b7d3ee;
+  background: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu4.png") no-repeat center center;
+  background-size: cover;
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  -ms-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-name: loadingAction;
+  -moz-animation-name: loadingAction;
+  -o-animation-name: loadingAction;
+  -ms-animation-name: loadingAction;
+  animation-name: loadingAction;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  -ms-animation-direction: alternate;
+  animation-direction: alternate;
+}
+#loading-box .loading-image-dot {
+  width: 30px;
+  height: 30px;
+  background: #6bdf8f;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(32px, 32px);
+  -moz-transform: translate(32px, 32px);
+  -o-transform: translate(32px, 32px);
+  -ms-transform: translate(32px, 32px);
+  transform: translate(32px, 32px);
+}
+#loading-box.loaded .loading-bg {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  z-index: -1000;
+}
+@-moz-keyframes loadingAction {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+}
+@-webkit-keyframes loadingAction {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+}
+@-o-keyframes loadingAction {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
+}
+@keyframes loadingAction {
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+  }
 }
 #pagination .pagination {
   margin-top: 1em;

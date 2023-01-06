@@ -13,7 +13,6 @@
   .article-sort .article-sort-item:not(.year) {
     float: left;
     box-shadow: var(--roydon-box-shadow);
-    
     padding: 5px;
     /* border: 2px solid black; */
     width: 49%;
