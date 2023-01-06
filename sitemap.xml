@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/link/index.html</loc>
-    
-    <lastmod>2023-01-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/movies/index.html</loc>
     
     <lastmod>2023-01-06</lastmod>
@@ -57,6 +48,15 @@
   
   <url>
     <loc>https://www.roydon.top/tools/index.html</loc>
+    
+    <lastmod>2023-01-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/link/index.html</loc>
     
     <lastmod>2023-01-06</lastmod>
     
