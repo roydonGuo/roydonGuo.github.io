@@ -3302,8 +3302,6 @@ img.footer_mini_logo:hover {
   font-size: 2em;
   line-height: 2em;
   margin-right: 1em;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
 }
 
 .bber-gotobb {
@@ -3329,7 +3327,6 @@ img.footer_mini_logo:hover {
 
 #bbTimeList:hover {
   color: gold;
-  transition: all 0.2s ease-out 0s;
 }
 
 /* 文章页H1-H6图标样式效果 */
@@ -3361,10 +3358,6 @@ img.footer_mini_logo:hover {
   }
 }
 
-/* div{
-  backdrop-filter: saturate(150%) blur(20px);
-} */
-
 /* 首页文章三栏 */
 #recent-posts {
   align-content: flex-start;
@@ -3374,7 +3367,6 @@ img.footer_mini_logo:hover {
 }
 
 #recent-posts>.recent-post-item {
-  /* margin-top: 1em; */
   display: inline-block;
   height: auto;
 }

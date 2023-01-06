@@ -1,3 +1,5 @@
+
+
 function whenDOMReady() {
   roydon.loadbg()
   if (location.pathname == '/essay/') {
@@ -14,6 +16,7 @@ whenDOMReady()
 document.addEventListener("pjax:complete", whenDOMReady)
 
 roydon.randoMcBgGif()
+
 
 // roydon.sm("欢迎来到本站","目前存在pjax的bug：)")
 
