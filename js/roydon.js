@@ -110,7 +110,7 @@ function createWinbox() {
   winbox = WinBox({
     id: 'changeBgBox',
     index: 999,
-    icon: "img/favicon.png",
+    icon: "/img/favicon.png",
     title: "控制面板",
     width: "80%",
     height: "80%",
