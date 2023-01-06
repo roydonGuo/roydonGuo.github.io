@@ -17,7 +17,7 @@ roydon.randoMcBgGif()
 
 // roydon.sm("欢迎来到本站","目前存在pjax的bug：)")
 
-var now1 = new Date();
+var now1 = new Date()
 
 function createtime1() {
   var grt = new Date("08/28/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
@@ -90,7 +90,7 @@ function createtime2() {
     console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")
   );
 }
-createtime2();
+// createtime2();
 
 // 重写console方法
 console.log = function () {};
@@ -103,7 +103,7 @@ var winbox = ''
 function createWinbox() {
   // sm("点击图片切换背景", "您可以选择操作：)")
 
-  btf.snackbarShow('点击图片切换背景：)')
+  // btf.snackbarShow('点击图片切换背景：)')
   var CDN = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBg/'
   let div = document.createElement('div')
   document.body.appendChild(div)
