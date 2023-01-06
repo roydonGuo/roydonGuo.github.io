@@ -10,6 +10,7 @@ function whenDOMReady() {
     roydon.catalogActive()
   }
   roydon.danmu()
+  roydon.essay()
 }
 
 whenDOMReady()

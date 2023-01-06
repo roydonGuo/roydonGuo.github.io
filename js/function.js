@@ -1,33 +1,5 @@
 'use strict';
 
-var percentFlag = false; // 节流阀
-function essayScroll() {
-  let a = document.documentElement.scrollTop || window.pageYOffset; // 卷去高度
-  const waterfallResult = a % document.documentElement.clientHeight; // 卷去一个视口
-  result <= 99 || (result = 99);
-
-  if (
-    !percentFlag &&
-    waterfallResult + 100 >= document.documentElement.clientHeight &&
-    document.querySelector("#waterfall")
-  ) {
-    // console.info(waterfallResult, document.documentElement.clientHeight);
-    setTimeout(() => {
-      roydon.waterfall("#waterfall");
-    }, 500);
-  } else {
-    setTimeout(() => {
-      document.querySelector("#waterfall") && roydon.waterfall("#waterfall");
-    }, 500);
-  }
-
-  const r = window.scrollY + document.documentElement.clientHeight;
-
-  let p = document.getElementById("post-comment") || document.getElementById("footer");
-
-  (p.offsetTop + p.offsetHeight / 2 < r || 90 < result) && (percentFlag = true);
-}
-
 var roydon = {
 
   randomIndexVideo() { // 主页视频背景随机 
@@ -283,7 +255,33 @@ var roydon = {
   },
 
   essay() {
+    var percentFlag = false; // 节流阀
+    function essayScroll() {
+      let a = document.documentElement.scrollTop || window.pageYOffset; // 卷去高度
+      const waterfallResult = a % document.documentElement.clientHeight; // 卷去一个视口
+      result <= 99 || (result = 99);
 
+      if (
+        !percentFlag &&
+        waterfallResult + 100 >= document.documentElement.clientHeight &&
+        document.querySelector("#waterfall")
+      ) {
+        // console.info(waterfallResult, document.documentElement.clientHeight);
+        setTimeout(() => {
+          roydon.waterfall("#waterfall");
+        }, 500);
+      } else {
+        setTimeout(() => {
+          document.querySelector("#waterfall") && roydon.waterfall("#waterfall");
+        }, 500);
+      }
+
+      const r = window.scrollY + document.documentElement.clientHeight;
+
+      let p = document.getElementById("post-comment") || document.getElementById("footer");
+
+      (p.offsetTop + p.offsetHeight / 2 < r || 90 < result) && (percentFlag = true);
+    }
 
     var anzhiyu = {
       diffDate: function (d, more = false) {
