@@ -65,6 +65,15 @@
   </url>
   
   <url>
+    <loc>https://www.roydon.top/about/index.html</loc>
+    
+    <lastmod>2023-01-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.roydon.top/categories/index.html</loc>
     
     <lastmod>2023-01-06</lastmod>
@@ -102,15 +111,6 @@
   
   <url>
     <loc>https://www.roydon.top/fcircle/index.html</loc>
-    
-    <lastmod>2023-01-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/posts/1b88f555.html</loc>
     
     <lastmod>2023-01-06</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/about/index.html</loc>
+    <loc>https://www.roydon.top/posts/1b88f555.html</loc>
     
     <lastmod>2023-01-06</lastmod>
     
