@@ -108,7 +108,8 @@ function createWinbox() {
   // sm("点击图片切换背景", "您可以选择操作：)")
 
   // btf.snackbarShow('点击图片切换背景：)')
-  var CDN = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBg/'
+  var siteBgZIP = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/'
+  var siteBgPhoneZIP = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgPhoneZIP/'
   let div = document.createElement('div')
   document.body.appendChild(div)
   winbox = WinBox({
@@ -138,22 +139,22 @@ function createWinbox() {
 
     <h2 id="电脑壁纸"><a href="#电脑壁纸" class="headerlink" title="电脑壁纸"></a>电脑壁纸</h2>
     <div class="bgbox">
-    <a href="javascript:;" style="background-image:url(${CDN}dplo2m.jpg)" class="imgbox" onclick="roydon.changeBg('url(${CDN}dplo2m.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}wq215x.jpg)" class="imgbox" onclick="roydon.changeBg('url(${CDN}wq215x.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}e7g71w.jpg)" class="imgbox" onclick="roydon.changeBg('url(${CDN}e7g71w.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}72dvlv.jpg)" class="imgbox" onclick="roydon.changeBg('url(${CDN}72dvlv.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}k7wor1.jpg)" class="imgbox" onclick="roydon.changeBg('url(${CDN}k7wor1.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}1k2kp9.jpg)" class="imgbox" onclick="roydon.changeBg('url(${CDN}1k2kp9.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgZIP}dplo2m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}dplo2m.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgZIP}3zppld.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}3zppld.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgZIP}e7g71w.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}e7g71w.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgZIP}72dvlv.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}72dvlv.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgZIP}k7wor1.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}k7wor1.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgZIP}1k2kp9.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1k2kp9.webp)')"></a>
     </div>
 
     <h2 id="手机壁纸"><a href="#手机壁纸" class="headerlink" title="手机壁纸"></a>手机壁纸</h2>
     <div class="bgbox">
-    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)" class="pimgbox" onclick="roydon.changeBg('url(https\://w.wallhaven.cc/full/7p/wallhaven-7p66we.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)" class="pimgbox" onclick="roydon.changeBg('url(https\://w.wallhaven.cc/full/jx/wallhaven-jx88k5.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)" class="pimgbox" onclick="roydon.changeBg('url(https\://w.wallhaven.cc/full/gp/wallhaven-gpjj97.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(https://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)" class="pimgbox" onclick="roydon.changeBg('url(https\://w.wallhaven.cc/full/57/wallhaven-57x9l9.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}57od15.jpg)" class="pimgbox" onclick="changeBg('url(${CDN}57od15.jpg)')"></a>
-    <a href="javascript:;" style="background-image:url(${CDN}mp8zp8.jpg)" class="pimgbox" onclick="changeBg('url(${CDN}mp8zp8.jpg)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}7p66we.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}7p66we.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}jx88k5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}jx88k5.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}gpjj97.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}gpjj97.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57x9l9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57x9l9.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57od15.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57od15.webp)')"></a>
+    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}mp8zp8.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}mp8zp8.webp)')"></a>
     </div>
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
