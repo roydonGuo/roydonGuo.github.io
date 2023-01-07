@@ -1336,6 +1336,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
+  --roydon-site-bg: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/z8dljv.webp");
   --global-font-size: 14px;
   --global-bg: #231a1a;
   --font-color: #000;
@@ -5939,6 +5940,7 @@ blockquote.pullquote.right {
   margin-top: -20px;
 }
 [data-theme='dark'] {
+  --roydon-site-bg: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/4g16yl.webp");
   --global-bg: #0d0d0d;
   --font-color: rgba(255,255,255,0.95);
   --hr-border: rgba(255,255,255,0.4);

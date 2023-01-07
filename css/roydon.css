@@ -1817,12 +1817,8 @@ a.catalog-more:hover {
   border-radius: 4px
 }
 
-[data-theme='dark'] #web_bg {
-  background-image: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/4g16yl.webp);
-}
-
-[data-theme='light'] #web_bg {
-  background-image: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/z8dljv.webp);
+#web_bg {
+  background-image: var(--roydon-site-bg)
 }
 
 .bangumi-item .bangumi-picture img {
