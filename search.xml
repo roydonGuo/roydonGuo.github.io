@@ -971,6 +971,17 @@
     
     
     <entry>
+      <title>bilibili</title>
+      <link href="/bilibili/index.html"/>
+      <url>/bilibili/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
