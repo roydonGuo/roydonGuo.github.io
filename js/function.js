@@ -60,7 +60,7 @@ var roydon = {
   getCDNSiteBg() { //获取cdn图片资源
     $.ajax({
       type: 'GET',
-      url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/bgJSON.txt',
+      url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt',
       success: function (res) {
         roydon.cdnSiteBg = res.split(',')
       }
