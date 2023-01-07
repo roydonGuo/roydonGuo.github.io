@@ -982,17 +982,6 @@
     
     
     <entry>
-      <title>切换壁纸</title>
-      <link href="/changebg/index.html"/>
-      <url>/changebg/index.html</url>
-      
-        <content type="html"><![CDATA[<!-- <input type="color" id="color">document.querySelector('#color[input]').addEventListener('change', (e) => {  alert(e.path[0].value)  changeBg(e.path[0].value);}) -->]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>留言板</title>
       <link href="/comments/index.html"/>
       <url>/comments/index.html</url>
