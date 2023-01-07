@@ -1818,11 +1818,11 @@ a.catalog-more:hover {
 }
 
 [data-theme='dark'] #web_bg {
-  background-image: url("/img/ender_dragon.jpg");
+  background-image: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/4g16yl.webp);
 }
 
 [data-theme='light'] #web_bg {
-  background-image: url("/img/hutao.jpg");
+  background-image: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/z8dljv.webp);
 }
 
 .bangumi-item .bangumi-picture img {
