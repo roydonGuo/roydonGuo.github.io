@@ -2583,7 +2583,7 @@ figure.highlight pre .javascript .function {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item >.recent-post-info > .article-title {
