@@ -2643,6 +2643,7 @@ figure.highlight pre .javascript .function {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: bold;
 }
 .tag-cloud-list a:hover {
   color: #f69 !important;
@@ -3102,6 +3103,7 @@ h1.page-title + .tag-cloud-list {
 #aside-content .card-tag-cloud a {
   display: inline-block;
   padding: 0 4px;
+  font-weight: bold;
 }
 #aside-content .card-tag-cloud a:hover {
   color: #f69 !important;
