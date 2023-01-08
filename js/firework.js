@@ -4,7 +4,7 @@ if (location.pathname == '/') {
       window.webkitRequestAnimationFrame ||
       window.mozRequestAnimationFrame ||
       function (callback) {
-        window.setTimeout(callback, 1000)
+        window.setTimeout(callback, 10000)
         //每间隔10秒执行一次动画
       }
   })();
