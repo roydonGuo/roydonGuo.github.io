@@ -1305,7 +1305,7 @@
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
       
-        <content type="html"><![CDATA[<!-- <script src='//player.polyv.net/script/player.js'></script><div id='plv_19e11a1d968a647fb6cc921805131113_1'></div><script >var player = polyvPlayer({  'wrap':'#plv_19e11a1d968a647fb6cc921805131113_1',  'width':'100%',  'height':'600',  'vid': '19e11a1d968a647fb6cc921805131113_1',  'playsafe': '' // 播放加密视频的凭证, 取值参考文档: https://help.polyv.net/index.html#/vod/api/playsafe/token/create_token });</script> --><p>视频存放地址：<a href="http://v.cuplayer.com/secure/main">酷播云</a></p>]]></content>
+        <content type="html"><![CDATA[<!-- <script src='//player.polyv.net/script/player.js'></script><div id='plv_19e11a1d968a647fb6cc921805131113_1'></div><script >var player = polyvPlayer({  'wrap':'#plv_19e11a1d968a647fb6cc921805131113_1',  'width':'100%',  'height':'600',  'vid': '19e11a1d968a647fb6cc921805131113_1',  'playsafe': '' // 播放加密视频的凭证, 取值参考文档: https://help.polyv.net/index.html#/vod/api/playsafe/token/create_token });</script> --><p><strong>建设中~</strong></p><p>视频存放地址：<a href="http://v.cuplayer.com/secure/main">酷播云</a></p>]]></content>
       
     </entry>
     
@@ -1316,7 +1316,7 @@
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><strong>建设中~</strong></p>]]></content>
       
     </entry>
     
