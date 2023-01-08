@@ -1018,12 +1018,6 @@
   pointer-events: none;
   z-index: 3;
 }
-
-::selection {
-  color: #fff;
-  background: #2128bd;
-}
-
 .author-content-item.skills {
   display: flex;
   justify-content: center;
@@ -1833,7 +1827,6 @@ a.catalog-more:hover {
   opacity: .8;
 }
 
-/* 蕾姆rem看板娘 */
 #paul {
   left: 0;
   bottom: 0;
@@ -1846,7 +1839,6 @@ a.catalog-more:hover {
   margin: 0 auto;
 }
 
-/* 视频背景 */
 #video-bg {
   position: fixed;
   right: 0;
@@ -1891,7 +1883,6 @@ h1.post-title {
   white-space: nowrap !important;
 }
 
-/* 首页文章显示三栏 */
 #recent-posts>.recent-post-item:nth-child(n+2) {
   width: 32.3%;
 }
@@ -1906,7 +1897,6 @@ h1.post-title {
   height: 12rem !important;
 }
 
-/* 首页磁贴卡片美化 */
 #recent-posts>.recent-post-item {
   position: relative;
 }
@@ -1919,7 +1909,6 @@ h1.post-title {
   background-color: pink;
 }
 
-/* bilibli番剧插件 */
 .bangumi-active {
   background: #dbecfe !important;
   border-radius: 10px !important;
@@ -1955,7 +1944,6 @@ svg.icon.faa-tada {
   height: 1.5em;
 }
 
-/* 最新文章图标 */
 .newPost-left,
 .newPost-right {
   position: absolute;
@@ -1978,7 +1966,6 @@ svg.icon.faa-tada {
   left: 16px;
 }
 
-/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 #page-header:not(.not-top-img):before {
   background-color: transparent;
 }
@@ -2000,7 +1987,6 @@ svg.icon.faa-tada {
   font-weight: 900;
 }
 
-/* 头图透明 */
 #page-header {
   background: transparent !important;
 }
@@ -2263,7 +2249,6 @@ img.footer_mini_logo:hover {
   padding-left: 0 !important;
 }
 
-/* 文章post-item修改分类 */
 .recent-post-item .recent-post-info .article-meta-wrap .article-meta .article-meta__categories {
   position: absolute;
   top: .5rem;
@@ -2303,24 +2288,20 @@ img.footer_mini_logo:hover {
   border-radius: 10px;
 }
 
-/* 翻页按钮居中 */
 #pagination {
   width: 100%;
   margin: auto;
 }
 
-/* 夜间模式菜单栏发光字 */
 [data-theme="dark"] #nav .site-page,
 [data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {
   text-shadow: 0 0 2px var(--theme-color) !important;
 }
 
-/* 手机端适配 */
 [data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {
   text-shadow: 0 0 2px var(--theme-color) !important;
 }
 
-/* aside-clock */
 #hexo_electric_clock .clock-row {
   font-weight: 600 !important;
   font-size: .9em;
@@ -2620,7 +2601,6 @@ img.footer_mini_logo:hover {
   max-height: 90px;
 }
 
-/* 波浪css */
 .main-hero-waves-area {
   width: 100%;
   position: absolute;
@@ -2634,7 +2614,6 @@ img.footer_mini_logo:hover {
   height: 4rem;
 }
 
-/* Animation */
 .parallax>use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -2940,7 +2919,6 @@ img.footer_mini_logo:hover {
   font-size: 0.88rem;
 }
 
-/* 响应式 */
 @media screen and (max-width: 1300px) {
   #bber .timeline ul li.bber-item {
     width: 49%;
@@ -2978,7 +2956,6 @@ img.footer_mini_logo:hover {
   background: none !important;
 }
 
-/* index_bbtimebar */
 #bbTimeList {
   background: var(--card-bg);
   padding: 0.5em;
@@ -3038,7 +3015,6 @@ img.footer_mini_logo:hover {
   color: gold;
 }
 
-/* 文章页H1-H6图标样式效果 */
 .bbTimeList .bber-logo {
   animation: rotate 2s linear infinite;
 }
@@ -3067,7 +3043,6 @@ img.footer_mini_logo:hover {
   }
 }
 
-/* 首页文章三栏 */
 #recent-posts {
   align-content: flex-start;
   display: flex;
@@ -3099,7 +3074,6 @@ img.footer_mini_logo:hover {
   }
 }
 
-/* twikoo评论美化 */
 #twikoo .el-textarea textarea {
   min-height: 120px !important;
   background-size: 90px;
@@ -3145,7 +3119,6 @@ img.footer_mini_logo:hover {
   display: inline-block !important;
 }
 
-/* 手机端适配 */
 @media screen and (max-width: 768px) {
 
   .tk-comment .vemoji[alt|="Genshin"],
@@ -3167,7 +3140,6 @@ img.footer_mini_logo:hover {
   }
 }
 
-/* 右下角闭眼 */
 .el-textarea__inner {
   background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;
 }
@@ -3176,7 +3148,6 @@ img.footer_mini_logo:hover {
   background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;
 }
 
-/* 评论区 */
 .twikoo .tk-comments .tk-submit {
   margin-top: 1em;
   background: var(--roydon-small-card-bg);
@@ -3184,7 +3155,6 @@ img.footer_mini_logo:hover {
   padding: 10px;
 }
 
-/* 评论区评论大框 */
 .twikoo .tk-comments-container>.tk-comment {
   padding: 1em;
   border-radius: 16px;
@@ -3200,7 +3170,6 @@ img.footer_mini_logo:hover {
   box-shadow: var(--roydon-box-shadow);
 }
 
-/* 设备信息 */
 .twikoo .tk-extra {
   border-radius: 8px;
   padding: 0.5em;
@@ -3208,7 +3177,6 @@ img.footer_mini_logo:hover {
   transition: .3s;
 }
 
-/* 加载更多按钮 */
 .twikoo .tk-expand {
   font-size: 12px;
   font-weight: bold;
@@ -3350,7 +3318,6 @@ img.footer_mini_logo:hover {
   transform: translate(-60px);
 }
 
-/* 添加友链按钮快速填写格式 */
 .addBtn {
   display: flex;
   justify-content: center;
@@ -3468,7 +3435,6 @@ button {
   font-display: swap;
 }
 
-/* nav 设置透明 */
 #page-header.nav-fixed #nav {
   box-shadow: none !important;
 }
@@ -3509,7 +3475,6 @@ div#menus {
   opacity: 1;
 }
 
-/* #site-name */
 #nav #site-name {
   font-size: 1.2em;
 }
@@ -3518,7 +3483,6 @@ div#menus {
   font-weight: 900;
 }
 
-/* 滚动条 */
 ::-webkit-scrollbar {
   width: 5px;
   height: 10px;
@@ -3538,7 +3502,6 @@ div#menus {
   background-color: pink;
 }
 
-/* 页脚透明 */
 #footer {
   background: transparent !important;
   height: 66px;
@@ -3600,7 +3563,6 @@ div#menus {
   left: 0;
 }
 
-/* 导航栏模糊透视 */
 #nav {
   padding: 0 calc((100% - 1450px) / 2);
   backdrop-filter: saturate(150%) blur(20px);
@@ -3829,7 +3791,6 @@ div#menus {
   z-index: 1;
 }
 
-/* 侧边栏卡片渐变 */
 #aside-content>.card-widget.card-info {
   background: linear-gradient(-45deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
   background-size: 400%;
@@ -3851,12 +3812,10 @@ div#menus {
 
 }
 
-/* 博客页面所有图片圆角 */
 .post-content img {
   border-radius: 6px;
 }
 
-/* 标签外挂之tabs */
 #post .post-content .tabs {
   border-radius: 0 0 12px 12px;
 }
@@ -3870,14 +3829,12 @@ div#menus {
   color: blue;
 }
 
-/* bilibili视频块区域 */
 #article-container iframe {
   width: 100%;
   border-radius: 8px;
   min-height: 500px;
 }
 
-/* 代码块UI重设置 */
 #article-container .code-expand-btn i {
   color: pink;
 }
@@ -3886,7 +3843,6 @@ div#post:hover {
   box-sizing: border-box;
 }
 
-/* 评论框  */
 .vwrap {
   box-shadow: 2px 2px 5px #bbb;
   background: rgba(255, 255, 255, 0.5);
