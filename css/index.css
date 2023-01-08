@@ -1338,6 +1338,9 @@ canvas:not(#ribbon-canvas),
 :root {
   --roydon-site-bg: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/z8dljv.webp");
   --roydon-bili-color: #f69;
+  --roydon-pink: #ffc0cb;
+  --roydon-hotpink-: #ff69b4;
+  --roydon-deeppink: #ff1493;
   --global-font-size: 14px;
   --global-bg: #231a1a;
   --font-color: #000;
