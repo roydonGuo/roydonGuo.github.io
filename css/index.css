@@ -2637,7 +2637,9 @@ figure.highlight pre .javascript .function {
 }
 .tag-cloud-list a {
   display: inline-block;
-  padding: 0 8px;
+  padding: 0 2px;
+  margin: 0 2px;
+  border-radius: 8px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3102,7 +3104,9 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .card-tag-cloud a {
   display: inline-block;
-  padding: 0 4px;
+  padding: 0 2px;
+  margin: 0 2px;
+  border-radius: 6px;
   font-weight: bold;
 }
 #aside-content .card-tag-cloud a:hover {
