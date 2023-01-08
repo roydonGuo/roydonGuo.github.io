@@ -1337,6 +1337,7 @@ canvas:not(#ribbon-canvas),
 }
 :root {
   --roydon-site-bg: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/z8dljv.webp");
+  --roydon-bili-color: #f69;
   --global-font-size: 14px;
   --global-bg: #231a1a;
   --font-color: #000;
@@ -1379,6 +1380,7 @@ canvas:not(#ribbon-canvas),
   --roydon-button-bg: rgba(255,255,255,0.8);
   --roydon-button-hover-bg: #f69;
   --roydon-nav-hover: #8a2be2;
+  --roydon-state-dot-bg: #77ec9c;
 }
 body {
   position: relative;
