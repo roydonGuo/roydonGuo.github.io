@@ -1018,6 +1018,7 @@
   pointer-events: none;
   z-index: 3;
 }
+
 .author-content-item.skills {
   display: flex;
   justify-content: center;
@@ -3086,6 +3087,12 @@ img.footer_mini_logo:hover {
 
 #twikoo .OwO .OwO-body .OwO-items {
   max-height: 250px !important;
+}
+
+.OwO .OwO-body .OwO-items-show {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item {
