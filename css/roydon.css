@@ -3098,7 +3098,13 @@ img.footer_mini_logo:hover {
 .OwO .OwO-body .OwO-items-image .OwO-item {
   margin: 0 !important;
   padding: 5px !important;
+  max-width: 6% !important;
   box-sizing: content-box;
+}
+
+.OwO .OwO-body .OwO-items-image .OwO-item {
+    
+    box-sizing: border-box;
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item[title|="Genshin"],
