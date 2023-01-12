@@ -84,7 +84,6 @@
   margin-top: 7em;
   display: flex;
   flex-wrap: nowrap;
-  /* animation: rowup 50s linear infinite; */
   animation: 50s linear 0s infinite normal none running linkScroll;
   -webkit-animation: 50s linear 0s infinite normal none running linkScroll;
 }
