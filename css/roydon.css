@@ -3044,6 +3044,10 @@ img.footer_mini_logo:hover {
   }
 }
 
+.article-sort-item.year {
+  display: block;
+}
+
 #recent-posts {
   align-content: flex-start;
   display: flex;
