@@ -3045,7 +3045,7 @@ img.footer_mini_logo:hover {
 }
 
 .article-sort-item.year {
-  /* display: block; */
+  width: 100%;
 }
 
 #recent-posts {
@@ -3107,8 +3107,8 @@ img.footer_mini_logo:hover {
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item {
-    
-    box-sizing: border-box;
+
+  box-sizing: border-box;
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item[title|="Genshin"],
