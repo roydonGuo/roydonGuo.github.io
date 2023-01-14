@@ -2291,7 +2291,10 @@ img.footer_mini_logo:hover {
 
 #pagination {
   width: 100%;
+  display: flex;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 [data-theme="dark"] #nav .site-page,
