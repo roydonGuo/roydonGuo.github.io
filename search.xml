@@ -24,6 +24,10 @@
             
             <tag> nacos </tag>
             
+            <tag> Feign </tag>
+            
+            <tag> GateWay </tag>
+            
         </tags>
       
     </entry>
@@ -50,6 +54,8 @@
             <tag> SpringCloud </tag>
             
             <tag> eureka </tag>
+            
+            <tag> Ribbon </tag>
             
         </tags>
       
@@ -152,6 +158,8 @@
         <tags>
             
             <tag> Vue </tag>
+            
+            <tag> api </tag>
             
         </tags>
       
