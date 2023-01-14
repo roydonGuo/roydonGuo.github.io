@@ -2269,6 +2269,9 @@ img.footer_mini_logo:hover {
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
   margin-bottom: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .article-meta-wrap .iconfont {
