@@ -2684,6 +2684,22 @@ figure.highlight pre .javascript .function {
   margin: 0 0 1rem;
   overflow: hidden;
 }
+#movies_page #movies-list #movies-douban .movies-item:hover::before {
+  position: fixed;
+  width: inherit;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 100;
+  content: attr(data-title);
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(255,102,153,0.8);
+}
 @media screen and (max-width: 768px) {
   #movies_page #movies-list #movies-douban .movies-item {
     width: 100%;
