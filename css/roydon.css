@@ -2908,7 +2908,7 @@ img.footer_mini_logo:hover {
   height: 24em;
   width: 82%;
   margin-right: 2%;
-  background: url(https://bu.dusays.com/2022/11/17/637615a3af26b.png) left center / cover no-repeat;
+  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/pkgj13.webp) left center / cover no-repeat;
   color: wheat;
   overflow: hidden;
 }
@@ -4049,8 +4049,6 @@ div#post:hover {
   color: rgb(200, 39, 14);
   overflow: hidden;
 }
-/* 555555 */
-
 
 @media screen and (max-width: 768px) {
   #movies_page .author-content .author-content-item.moviesPage-right {
