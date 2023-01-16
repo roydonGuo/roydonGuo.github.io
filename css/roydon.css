@@ -4032,7 +4032,7 @@ div#post:hover {
   border-radius: 12px;
 }
 
-#movies_page .author-content .author-content-item.moviesPage {
+#movies_page .author-content .author-content-item.item-left {
   height: 24em;
   width: 82%;
   margin-right: 2%;
@@ -4041,7 +4041,7 @@ div#post:hover {
   overflow: hidden;
 }
 
-#movies_page .author-content .author-content-item.moviesPage-right {
+#movies_page .author-content .author-content-item.item-right {
   width: 16%;
   height: 24em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e493df.jpg) left center / cover no-repeat;
@@ -4051,11 +4051,67 @@ div#post:hover {
 }
 
 @media screen and (max-width: 768px) {
-  #movies_page .author-content .author-content-item.moviesPage-right {
+  #movies_page .author-content .author-content-item.item-right {
     display: none;
   }
 }
 
 #essay_page .author-content {
+  margin-top: 0 !important;
+}
+
+#article-container .author-content .author-content-item.item-left {
+  height: 24em;
+  width: 82%;
+  margin-right: 2%;
+  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/4xjgzz.webp) left center / cover no-repeat;
+  color: wheat;
+  overflow: hidden;
+}
+
+#article-container .author-content .author-content-item.item-right {
+  width: 16%;
+  height: 24em;
+  background: url(https://bu.dusays.com/2023/01/16/63c5537e52b53.jpg) left center / cover no-repeat;
+  background-size: contain;
+  color: rgb(200, 39, 14);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #article-container .author-content .author-content-item.item-right {
+    display: none;
+  }
+}
+
+#music_page .author-content {
+  margin-top: 0 !important;
+}
+
+#music_page .author-content .author-content-item.item-left {
+  height: 24em;
+  width: 82%;
+  margin-right: 2%;
+  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/8ovykj.webp) left center / cover no-repeat;
+  color: wheat;
+  overflow: hidden;
+}
+
+#music_page .author-content .author-content-item.item-right {
+  width: 16%;
+  height: 24em;
+  background: url(https://bu.dusays.com/2023/01/16/63c5537e4fc09.jpg) left center / cover no-repeat;
+  background-size: contain;
+  color: rgb(200, 39, 14);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #music_page .author-content .author-content-item.item-right {
+    display: none;
+  }
+}
+
+#music_page .author-content {
   margin-top: 0 !important;
 }
