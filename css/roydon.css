@@ -4088,7 +4088,7 @@ div#post:hover {
   position: absolute;
   left: 0;
   top: 0px !important;
-  width: 100px;
+  width: 120px;
   height: 100%;
   padding: 10px 0px 10px 10px;
 }
@@ -4112,7 +4112,7 @@ div#post:hover {
 }
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info {
-  padding-left: 100px;
+  padding-left: 120px;
 }
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-title {
