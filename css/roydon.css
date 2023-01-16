@@ -4036,7 +4036,7 @@ div#post:hover {
   height: 24em;
   width: 82%;
   margin-right: 2%;
-  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/3zppld.webp) left center / cover no-repeat;
+  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/1kzdg1.webp) left center / cover no-repeat;
   color: wheat;
   overflow: hidden;
 }
@@ -4127,6 +4127,9 @@ div#post:hover {
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-actor {
   border-bottom: 1px solid grey;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {}
