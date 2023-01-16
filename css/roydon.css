@@ -4031,3 +4031,74 @@ div#post:hover {
   background: rgb(252, 248, 244);
   border-radius: 12px;
 }
+
+#movies_page .author-content .author-content-item.moviesPage {
+  height: 24em;
+  width: 82%;
+  margin-right: 2%;
+  background: url(https://bu.dusays.com/2022/11/17/637615a3af26b.png) left center / cover no-repeat;
+  color: wheat;
+  overflow: hidden;
+}
+
+#movies_page .author-content .author-content-item.moviesPage-right {
+  width: 16%;
+  height: 24em;
+  background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
+  background-size: contain;
+  color: rgb(122, 49, 6);
+  overflow: hidden;
+}
+
+#movies_page #movies-list {
+  width: 100%;
+}
+
+#movies_page #movies-list #movies-douban {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#movies_page #movies-list #movies-douban .movies-item {
+  position: relative;
+  clear: both;
+  min-height: 180px;
+  padding: 10px;
+  box-shadow: var(--roydon-box-shadow);
+  height: 180px;
+  width: 32.3%;
+  background: var(--roydon-small-card-bg);
+  border-radius: 12px;
+  margin: 0 0 1rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #movies_page #movies-list #movies-douban .movies-item {
+    width: 100%;
+  }
+
+  #movies_page .author-content .author-content-item.moviesPage-right {
+    display: none;
+  }
+}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-pic {
+  position: absolute;
+  left: 0;
+  top: 0px !important;
+  width: 100px;
+  height: 100%;
+  padding: 10px 0px 10px 10px;
+}
+
+#movies_page blockquote>p {
+  margin: 0 !important;
+}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-pic img {
+  margin: 0px !important;
+  height: 100% !important;
+  border-radius: 8px !important;
+}
