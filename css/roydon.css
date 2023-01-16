@@ -4102,3 +4102,21 @@ div#post:hover {
   height: 100% !important;
   border-radius: 8px !important;
 }
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info {
+  padding-left: 120px;
+}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-title {
+  font-size: 1.5rem;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-meta {}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-actor {}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {}
