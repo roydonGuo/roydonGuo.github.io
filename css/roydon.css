@@ -4036,7 +4036,7 @@ div#post:hover {
   height: 24em;
   width: 82%;
   margin-right: 2%;
-  background: url(https://bu.dusays.com/2022/11/17/637615a3af26b.png) left center / cover no-repeat;
+  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/3zppld.webp) left center / cover no-repeat;
   color: wheat;
   overflow: hidden;
 }
@@ -4044,9 +4044,9 @@ div#post:hover {
 #movies_page .author-content .author-content-item.moviesPage-right {
   width: 16%;
   height: 24em;
-  background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
+  background: url(https://bu.dusays.com/2023/01/16/63c5537e493df.jpg) left center / cover no-repeat;
   background-size: contain;
-  color: rgb(122, 49, 6);
+  color: rgb(200, 39, 14);
   overflow: hidden;
 }
 
@@ -4098,13 +4098,21 @@ div#post:hover {
 }
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-pic img {
-  margin: 0px !important;
-  height: 100% !important;
-  border-radius: 8px !important;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#movies_page #movies-list #movies-douban .movies-item .movies-item-pic a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info {
-  padding-left: 120px;
+  padding-left: 100px;
 }
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-title {
@@ -4117,6 +4125,8 @@ div#post:hover {
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-meta {}
 
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-actor {}
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-actor {
+  border-bottom: 1px solid grey;
+}
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {}
