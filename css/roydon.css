@@ -4049,97 +4049,13 @@ div#post:hover {
   color: rgb(200, 39, 14);
   overflow: hidden;
 }
+/* 555555 */
 
-#movies_page #movies-list {
-  width: 100%;
-}
-
-#movies_page #movies-list #movies-douban {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-#movies_page #movies-list #movies-douban .movies-item {
-  position: relative;
-  clear: both;
-  min-height: 180px;
-  padding: 10px;
-  box-shadow: var(--roydon-box-shadow);
-  height: 180px;
-  width: 32.3%;
-  background: var(--roydon-small-card-bg);
-  border-radius: 12px;
-  margin: 0 0 1rem;
-  overflow: hidden;
-}
 
 @media screen and (max-width: 768px) {
-  #movies_page #movies-list #movies-douban .movies-item {
-    width: 100%;
-  }
-
   #movies_page .author-content .author-content-item.moviesPage-right {
     display: none;
   }
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-pic {
-  position: absolute;
-  left: 0;
-  top: 0px !important;
-  width: 120px;
-  height: 100%;
-  padding: 10px 0px 10px 10px;
-}
-
-#movies_page blockquote>p {
-  margin: 0 !important;
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-pic img {
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-pic a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info {
-  padding-left: 120px;
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-meta {}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-actor {
-  border-bottom: 1px solid grey;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-#movies_page .author-content {
-  margin-top: 0 !important;
 }
 
 #essay_page .author-content {
