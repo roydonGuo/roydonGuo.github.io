@@ -4117,6 +4117,7 @@ div#post:hover {
 
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-title {
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 1;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4132,4 +4133,14 @@ div#post:hover {
   white-space: nowrap;
 }
 
-#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {}
+#movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {
+  font-weight: bold;
+}
+
+#movies_page .author-content {
+  margin-top: 0 !important;
+}
+
+#essay_page .author-content {
+  margin-top: 0 !important;
+}
