@@ -2816,6 +2816,41 @@ figure.highlight pre .javascript .function {
   margin: 5px;
   border-radius: 6px !important;
 }
+#music_page #music-list #music-aplayer .music-aplayer-item-two {
+  position: relative;
+  clear: both;
+  min-height: 220px;
+  padding: 10px;
+  -webkit-box-shadow: var(--roydon-box-shadow);
+  box-shadow: var(--roydon-box-shadow);
+  height: 220px;
+  width: 49%;
+  background: var(--roydon-small-card-bg);
+  border-radius: 12px;
+  margin: 0 0 1rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  #music_page #music-list #music-aplayer .music-aplayer-item-two {
+    width: 100%;
+  }
+}
+#music_page #music-list #music-aplayer .music-aplayer-item-two .aplayer {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#music_page #music-list #music-aplayer .music-aplayer-item-two .aplayer .aplayer-body {
+  height: 90px;
+}
+#music_page #music-list #music-aplayer .music-aplayer-item-two .aplayer .aplayer-body .aplayer-pic {
+  height: 80px !important;
+  width: 80px !important;
+  margin: 5px;
+  border-radius: 6px !important;
+}
 .tag-cloud-list a {
   display: inline-block;
   padding: 0 2px;
