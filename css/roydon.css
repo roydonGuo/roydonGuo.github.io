@@ -2928,7 +2928,7 @@ img.footer_mini_logo:hover {
   width: 100%;
   border-radius: 16px;
   box-shadow: var(--roydon-box-shadow);
-  background: var(--roydon-card-mask);
+  background: var(--roydon-small-card-bg);
   position: relative;
   padding: 1rem 2rem;
   overflow: hidden;
