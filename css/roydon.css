@@ -110,6 +110,7 @@
   box-sizing: border-box;
   position: absolute;
   top: 36px;
+  background-size: 100% 100%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
@@ -1738,14 +1739,6 @@ a.catalog-more:hover {
   display: none;
 }
 
-@font-face {
-  font-family: "ali-black";
-  font-weight: 700;
-  src: url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/ngx4Rto7QDaF0wjwWujj1.woff2") format("woff2"),
-    url("//at.alicdn.com/wf/webfont/jmF1bH9rSbIN/A5DV5XIJJ9_XT5C2t2NRE.woff") format("woff");
-  font-display: swap;
-}
-
 #body-wrap .full_page .index-video {
   display: block !important;
 }
@@ -1851,19 +1844,7 @@ a.catalog-more:hover {
   z-index: -9999;
 }
 
-h1#site-title {
-  font-family: "ali-black";
-  font-size: 3em !important;
-}
-
-a.article-title,
-a.blog-slider__title,
-a.categoryBar-list-link,
-h1.post-title {
-  font-family: "ali-black";
-}
-
-#aside-content .card-widget:last-child {
+/* #aside-content .card-widget:last-child {
   background: url('https://bu.dusays.com/2022/11/17/6375f55771d07.png');
   background-repeat: no-repeat;
   background-position: left;
@@ -1873,7 +1854,7 @@ h1.post-title {
   color: hotpink;
   font-weight: 800;
   font-size: 16px;
-}
+} */
 
 #aside-content .card-webinfo .webinfo .webinfo-item {
   padding: 0 10px;
@@ -2666,70 +2647,9 @@ img.footer_mini_logo:hover {
   }
 }
 
-/* #bber .bber-music {
-  width: 100%;
-  height: 90px;
-  margin: 0.5rem 0;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid #d6def5;
-  background: #0000ff2e;
-}
-
-#bber .aplayer {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#bber .aplayer.aplayer-withlrc .aplayer-pic {
-  height: 82px !important;
-  width: 82px !important;
-  margin: 4px;
-  border-radius: 6px !important;
-}
-
-.bber-music .aplayer.aplayer-withlrc .aplayer-info {
-  padding: 5px 7px 0;
-}
-
-#bber .aplayer .aplayer-info .aplayer-music .aplayer-title {
-  font-size: 1rem;
-  font-weight: 800;
-  margin: 0;
-}
-
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-time {
-  position: initial;
-}
-
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
-  background: gray;
-  height: 6px;
-  border-radius: 8px;
-  transition: 0.3s;
-  overflow: hidden;
-}
-
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
-  height: 100%;
-  border-radius: 8px;
-}
-
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
-  height: 100%;
-  border-radius: 8px;
-}
-
-#bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
-  display: none;
-} */
-
 #essay_page .author-content .author-content-item.essayPage {
   height: 24em;
-  width: 82%;
-  margin-right: 2%;
+  width: 83%;
   background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/9mw29d.webp) left center / cover no-repeat;
   color: wheat;
   overflow: hidden;
