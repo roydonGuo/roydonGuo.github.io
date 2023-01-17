@@ -2666,7 +2666,7 @@ img.footer_mini_logo:hover {
   }
 }
 
-#bber .bber-music {
+/* #bber .bber-music {
   width: 100%;
   height: 90px;
   margin: 0.5rem 0;
@@ -2724,7 +2724,7 @@ img.footer_mini_logo:hover {
 
 #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
   display: none;
-}
+} */
 
 #essay_page .author-content .author-content-item.essayPage {
   height: 24em;
@@ -3830,16 +3830,6 @@ div#post:hover {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  #movies_page .author-content .author-content-item.item-right {
-    display: none;
-  }
-}
-
-#essay_page .author-content {
-  margin-top: 0 !important;
-}
-
 #article-container .author-content .author-content-item.item-left {
   height: 24em;
   width: 83%;
@@ -3857,16 +3847,6 @@ div#post:hover {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  #article-container .author-content .author-content-item.item-right {
-    display: none;
-  }
-}
-
-#article-container .author-content {
-  margin-top: 0 !important;
-}
-
 #music_page .author-content .author-content-item.item-left {
   height: 24em;
   width: 83%;
@@ -3882,14 +3862,4 @@ div#post:hover {
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
-}
-
-@media screen and (max-width: 768px) {
-  #music_page .author-content .author-content-item.item-right {
-    display: none;
-  }
-}
-
-#music_page .author-content {
-  margin-top: 0 !important;
 }

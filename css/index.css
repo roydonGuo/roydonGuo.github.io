@@ -2319,6 +2319,11 @@ figure.highlight pre .javascript .function {
 #essay_page .author-content {
   margin-top: 0 !important;
 }
+@media screen and (max-width: 768px) {
+  #essay_page .author-content .essayPage-right {
+    display: none;
+  }
+}
 #essay_page #essay {
   width: 100%;
   margin-top: 1em;
@@ -2814,6 +2819,11 @@ figure.highlight pre .javascript .function {
 #movies_page .author-content {
   margin-top: 0 !important;
 }
+@media screen and (max-width: 768px) {
+  #movies_page .author-content .item-right {
+    display: none;
+  }
+}
 #movies_page blockquote p {
   margin: 0;
 }
@@ -2890,6 +2900,15 @@ figure.highlight pre .javascript .function {
   display: inline-block;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#movies_page #movies-list #movies-douban .movies-item .movies-item-pic a:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 #movies_page #movies-list #movies-douban .movies-item .movies-item-pic img {
   margin: 0px;
@@ -2897,6 +2916,11 @@ figure.highlight pre .javascript .function {
   width: 100%;
   object-fit: cover;
   border-radius: 8px;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -moz-transition: -moz-transform 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out;
+  -ms-transition: -ms-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
 }
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info {
   padding-left: 120px;
@@ -2927,6 +2951,11 @@ figure.highlight pre .javascript .function {
 }
 #music_page .author-content {
   margin-top: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  #music_page .author-content .item-right {
+    display: none;
+  }
 }
 #music_page blockquote p {
   margin: 0;
@@ -3208,6 +3237,14 @@ h1.page-title + .tag-cloud-list {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 1.5em;
+}
+#article-container .author-content {
+  margin-top: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  #article-container .author-content .item-right {
+    display: none;
+  }
 }
 #article-container img {
   margin-bottom: 0.5rem;
