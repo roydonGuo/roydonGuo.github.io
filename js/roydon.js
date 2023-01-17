@@ -139,41 +139,32 @@ function createWinbox() {
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:pink;display:block;width:100%;padding: 10px 0;border-radius:10px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
 
     <h2 id="电脑壁纸"><a href="#电脑壁纸" class="headerlink" title="电脑壁纸"></a>电脑壁纸</h2>
-    <div class="bgbox">
-    <a href="javascript:;" style="background-image:url(${siteBgZIP}dplo2m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}dplo2m.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgZIP}3zppld.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}3zppld.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgZIP}e7g71w.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}e7g71w.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgZIP}72dvlv.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}72dvlv.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgZIP}k7wor1.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}k7wor1.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgZIP}1k2kp9.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1k2kp9.webp)')"></a>
-    </div>
+    <details class="folding-tag" cyan><summary> 查看电脑壁纸 </summary>
+              <div class='content'>
+              <div class="bgbox"><a href="javascript:;" style="background-image:url(${siteBgZIP}dplo2m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}dplo2m.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}3zppld.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}3zppld.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}e7g71w.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}e7g71w.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}72dvlv.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}72dvlv.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}k7wor1.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}k7wor1.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}1k2kp9.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1k2kp9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}1p8rk3.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1p8rk3.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}5gdw85.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}5gdw85.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}28rr8m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}28rr8m.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}577mx5.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}577mx5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}gp78ll.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}gp78ll.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}x828yd.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}x828yd.webp)')"></a></div>
+              </div>
+            </details>
 
     <h2 id="手机壁纸"><a href="#手机壁纸" class="headerlink" title="手机壁纸"></a>手机壁纸</h2>
-    <div class="bgbox">
-    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}7p66we.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}7p66we.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}jx88k5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}jx88k5.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}gpjj97.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}gpjj97.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57x9l9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57x9l9.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57od15.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57od15.webp)')"></a>
-    <a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}mp8zp8.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}mp8zp8.webp)')"></a>
-    </div>
+    <details class="folding-tag" cyan><summary> 查看手机壁纸 </summary>
+              <div class='content'>
+              <div class="bgbox"><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}7p66we.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}7p66we.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}jx88k5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}jx88k5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}gpjj97.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}gpjj97.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57x9l9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57x9l9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57od15.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57od15.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}mp8zp8.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}mp8zp8.webp)')"></a></div>
+              </div>
+            </details>
     
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
-    <div class="bgbox">
-    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="roydon.changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
-    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="roydon.changeBg('linear-gradient(to right, pink, #ff3456)')"></a>
-    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="roydon.changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
-    <a href="javascript:;"  class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="roydon.changeBg('linear-gradient(to right, pink, #ff3456)')"></a>
-    </div>
+    <details class="folding-tag" cyan><summary> 查看渐变色 </summary>
+              <div class='content'>
+              <div class="bgbox"><a href="javascript:;"  class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="roydon.changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a><a href="javascript:;"  class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="roydon.changeBg('linear-gradient(to right, pink, #ff3456)')"></a><a href="javascript:;"  class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="roydon.changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a><a href="javascript:;"  class="box" style="background: linear-gradient(to right, pink, #ff3456)" onclick="roydon.changeBg('linear-gradient(to right, pink, #ff3456)')"></a></div>
+              </div>
+            </details>
     
     <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>
-    <div class="bgbox">
-    <a href="javascript:;"  class="box" style="background: #7D9D9C" onclick="roydon.changeBg('#7D9D9C')"></a>
-    <a href="javascript:;"  class="box" style="background: #eecda3" onclick="roydon.changeBg('#eecda3')"></a>  
-    <a href="javascript:;"  class="box" style="background: #ff3456" onclick="roydon.changeBg('#ff3456')"></a>
-    <a href="javascript:;"  class="box" style="background: #ff3456" onclick="roydon.changeBg('#ff3456')"></a>   
-    
-    </div>
+    <details class="folding-tag" cyan><summary> 查看纯色 </summary>
+              <div class='content'>
+              <div class="bgbox"><a href="javascript:;"  class="box" style="background: #7D9D9C" onclick="roydon.changeBg('#7D9D9C')"></a><a href="javascript:;"  class="box" style="background: #eecda3" onclick="roydon.changeBg('#eecda3')"></a>  <a href="javascript:;"  class="box" style="background: #ff3456" onclick="roydon.changeBg('#ff3456')"></a><a href="javascript:;"  class="box" style="background: #ff3456" onclick="roydon.changeBg('#ff3456')"></a>   </div>
+              </div>
+            </details>
 `;
 }
 
