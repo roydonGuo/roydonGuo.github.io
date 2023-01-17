@@ -2747,6 +2747,10 @@ figure.highlight pre .javascript .function {
 #movies_page #movies-list #movies-douban .movies-item .movies-item-info .movies-item-info-comments {
   font-weight: bold;
   line-height: 1.5;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 #music_page .author-content {
   margin-top: 0 !important;
