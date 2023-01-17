@@ -241,7 +241,7 @@
   height: 2.5rem;
   width: 5rem;
   border-radius: 1.2rem;
-  backdrop-filter: blur(30px);
+  background: var(--roydon-button-bg);
   display: flex;
   align-items: center;
   justify-content: center;
