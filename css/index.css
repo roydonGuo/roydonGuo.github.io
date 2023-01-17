@@ -2814,7 +2814,7 @@ figure.highlight pre .javascript .function {
   height: 80px !important;
   width: 80px !important;
   margin: 5px;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
 }
 #music_page #music-list #music-aplayer .music-aplayer-item-two {
   position: relative;
@@ -2824,7 +2824,7 @@ figure.highlight pre .javascript .function {
   -webkit-box-shadow: var(--roydon-box-shadow);
   box-shadow: var(--roydon-box-shadow);
   height: 220px;
-  width: 49%;
+  width: 49.5%;
   background: var(--roydon-small-card-bg);
   border-radius: 12px;
   margin: 0 0 1rem;
@@ -2849,7 +2849,7 @@ figure.highlight pre .javascript .function {
   height: 80px !important;
   width: 80px !important;
   margin: 5px;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
 }
 .tag-cloud-list a {
   display: inline-block;
