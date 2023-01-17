@@ -1,14 +1,14 @@
 function whenDOMReady() {
   roydon.loadbg()
-  if (location.pathname == '/essay/') {
-    roydon.countUp()
-    roydon.essay()
-  }
+  // if (location.pathname == '/essay/') {
+  //   roydon.countUp()
+  //   roydon.essay()
+  // }
   if (location.pathname.substring(0, 6) == '/tags/' || '/categories/' == location.pathname.substring(0, 12)) {
     roydon.catalogActive()
   }
   roydon.danmu()
-  roydon.essay()
+  // roydon.essay()
 }
 
 whenDOMReady()
