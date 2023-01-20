@@ -1382,17 +1382,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/test.js"/>
-      <url>/js/test.js</url>
-      
-        <content type="html"><![CDATA["z8e8qy.webp","weog1q.webp","rr3y61.webp","zygv6v.webp","9mpkkd.webp","y89xrl.webp","o3kl69.webp","9mv66d.webp","wqwj5r.webp","pk5y8j.webp","1kzdg1.webp","l3rqzr.webp","l8qylr.webp","x6527v.webp","jx9req.webp","qzdgo5.webp","1p82g1.webp","qz93rr.webp","pkgj13.webp","dplo2m.webp","572k81.webp","o3zzj7.webp","m958z9.webp","e7g71w.webp","8ovykj.webp","x89v9z.webp","wqklx6.webp","q28x3l.webp","e7d6kr.webp","pkrpkm.webp","4xjgzz.webp","vqx88l.webp","8old52.webp","jx8ey5.webp","6ovy9w.webp","2879mg.webp","72dvlv.webp","1p8rk3.webp","zyge7y.webp","m96o1m.webp","571je1.webp","5gdw85.webp","vqx6yp.webp","g7gx87.webp","85xq92.webp","zyxw9g.webp","6dkk2w.webp","9d5wmx.webp","0pwd2e.webp","4g16yl.webp","2ewe36.webp","3zppld.webp","l3d2yq.webp","9mk6j1.webp","m9o1v8.webp","725qz3.webp","9mw29d.webp","2858ey.webp","g7kwk3.webp","mder79.webp","577mx5.webp","vqxjzp.webp","m9ey79.webp","j37y3w.webp","y8r5rd.webp","8op8oj.webp","z8kjmj.webp","rdz5ym.webp","m9j7om.webp","9mlz98.webp","z87eqv.webp","y8d1lg.webp","vgkp28.webp","l3x26q.webp","rdqlej.webp","x828yd.webp","q6z9qr.webp","8okm6j.webp","72mr69.webp","lmy5my.webp","z8ryog.webp","pkx9y3.webp","k7wor1.webp","dpd8qo.webp","z8dljv.webp","kwxod1.webp","dpmk9j.webp","o3eye9.webp","pkqj3p.webp","3lzm99.webp","1k2kp9.webp","gp8ewd.webp","9dmkmd.webp","qz2ozr.webp","kxwey6.webp","gp78ll.webp","g7ex8q.webp","y8oxpx.webp","jx3q8y.webp","v98wrp.webp","jx5pm5.webp","y8w15l.webp","wqp6q6.webp","j3o78m.webp","rr26v7.webp","zym92v.webp","z8vjrw.webp","l3ze3y.webp","dp2q8j.webp","q23w67.webp","28rr8m.webp","v95lq3.webp"//phone"mp8zp8.webp","x65e23.webp","1kd8p9.webp","6o9e56.webp","3z1dg9.webp","57p6e8.webp","l3pdyy.webp","6oek9w.webp","g76xee.webp","287r5y.webp","8o6rzk.webp","q21wp7.webp","jx88k5.webp","gpjj97.webp","l8qqkq.webp","5glvk5.webp","6og386.webp","7p6619.webp","7p66we.webp","968k58.webp","m9r7r1.webp","m3d119.webp","57x9l9.webp","rdkd3q.webp","57od15.webp","yx76gg.webp","m3ppwy.webp"//https://anime-1313439510.cos.ap-shanghai.myqcloud.com/anime/anime.json]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/roydon.js"/>
       <url>/js/roydon.js</url>
       
@@ -1403,11 +1392,11 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title></title>
+      <link href="/js/test.js"/>
+      <url>/js/test.js</url>
       
-        <content type="html"><![CDATA[<!-- <script src='//player.polyv.net/script/player.js'></script><div id='plv_19e11a1d968a647fb6cc921805131113_1'></div><script >var player = polyvPlayer({  'wrap':'#plv_19e11a1d968a647fb6cc921805131113_1',  'width':'100%',  'height':'600',  'vid': '19e11a1d968a647fb6cc921805131113_1',  'playsafe': '' // 播放加密视频的凭证, 取值参考文档: https://help.polyv.net/index.html#/vod/api/playsafe/token/create_token });</script> --><!-- <div align="center"><img src="https://gcore.jsdelivr.net/gh/roydonGuo/roydonGuo/assets/github-contribution-grid-snake.svg"/></div>视频存放地址：[酷播云](http://v.cuplayer.com/secure/main) -->]]></content>
+        <content type="html"><![CDATA["z8e8qy.webp","weog1q.webp","rr3y61.webp","zygv6v.webp","9mpkkd.webp","y89xrl.webp","o3kl69.webp","9mv66d.webp","wqwj5r.webp","pk5y8j.webp","1kzdg1.webp","l3rqzr.webp","l8qylr.webp","x6527v.webp","jx9req.webp","qzdgo5.webp","1p82g1.webp","qz93rr.webp","pkgj13.webp","dplo2m.webp","572k81.webp","o3zzj7.webp","m958z9.webp","e7g71w.webp","8ovykj.webp","x89v9z.webp","wqklx6.webp","q28x3l.webp","e7d6kr.webp","pkrpkm.webp","4xjgzz.webp","vqx88l.webp","8old52.webp","jx8ey5.webp","6ovy9w.webp","2879mg.webp","72dvlv.webp","1p8rk3.webp","zyge7y.webp","m96o1m.webp","571je1.webp","5gdw85.webp","vqx6yp.webp","g7gx87.webp","85xq92.webp","zyxw9g.webp","6dkk2w.webp","9d5wmx.webp","0pwd2e.webp","4g16yl.webp","2ewe36.webp","3zppld.webp","l3d2yq.webp","9mk6j1.webp","m9o1v8.webp","725qz3.webp","9mw29d.webp","2858ey.webp","g7kwk3.webp","mder79.webp","577mx5.webp","vqxjzp.webp","m9ey79.webp","j37y3w.webp","y8r5rd.webp","8op8oj.webp","z8kjmj.webp","rdz5ym.webp","m9j7om.webp","9mlz98.webp","z87eqv.webp","y8d1lg.webp","vgkp28.webp","l3x26q.webp","rdqlej.webp","x828yd.webp","q6z9qr.webp","8okm6j.webp","72mr69.webp","lmy5my.webp","z8ryog.webp","pkx9y3.webp","k7wor1.webp","dpd8qo.webp","z8dljv.webp","kwxod1.webp","dpmk9j.webp","o3eye9.webp","pkqj3p.webp","3lzm99.webp","1k2kp9.webp","gp8ewd.webp","9dmkmd.webp","qz2ozr.webp","kxwey6.webp","gp78ll.webp","g7ex8q.webp","y8oxpx.webp","jx3q8y.webp","v98wrp.webp","jx5pm5.webp","y8w15l.webp","wqp6q6.webp","j3o78m.webp","rr26v7.webp","zym92v.webp","z8vjrw.webp","l3ze3y.webp","dp2q8j.webp","q23w67.webp","28rr8m.webp","v95lq3.webp"//phone"mp8zp8.webp","x65e23.webp","1kd8p9.webp","6o9e56.webp","3z1dg9.webp","57p6e8.webp","l3pdyy.webp","6oek9w.webp","g76xee.webp","287r5y.webp","8o6rzk.webp","q21wp7.webp","jx88k5.webp","gpjj97.webp","l8qqkq.webp","5glvk5.webp","6og386.webp","7p6619.webp","7p66we.webp","968k58.webp","m9r7r1.webp","m3d119.webp","57x9l9.webp","rdkd3q.webp","57od15.webp","yx76gg.webp","m3ppwy.webp"//https://anime-1313439510.cos.ap-shanghai.myqcloud.com/anime/anime.json]]></content>
       
     </entry>
     
@@ -1419,6 +1408,17 @@
       <url>/link/index.html</url>
       
         <content type="html"><![CDATA[<div class="addBtn"><button onclick="roydon.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="roydon.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div><p><h2>🐉我的友链关键字</h2><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- name: roydon</span><br><span class="line">  link: https:<span class="comment">//www.roydon.top</span></span><br><span class="line">  avatar: https:<span class="comment">//gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu.webp</span></span><br><span class="line">  descr: 如琉璃般飘落</span><br><span class="line">  theme_color: pink</span><br><span class="line">  siteshot: https:<span class="comment">//bu.dusays.com/2023/01/04/63b5663b9c22e.png</span></span><br></pre></td></tr></table></figure></p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[<!-- <script src='//player.polyv.net/script/player.js'></script><div id='plv_19e11a1d968a647fb6cc921805131113_1'></div><script >var player = polyvPlayer({  'wrap':'#plv_19e11a1d968a647fb6cc921805131113_1',  'width':'100%',  'height':'600',  'vid': '19e11a1d968a647fb6cc921805131113_1',  'playsafe': '' // 播放加密视频的凭证, 取值参考文档: https://help.polyv.net/index.html#/vod/api/playsafe/token/create_token });</script> --><!-- <div align="center"><img src="https://gcore.jsdelivr.net/gh/roydonGuo/roydonGuo/assets/github-contribution-grid-snake.svg"/></div>视频存放地址：[酷播云](http://v.cuplayer.com/secure/main) -->]]></content>
       
     </entry>
     

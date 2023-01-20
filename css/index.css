@@ -4809,7 +4809,7 @@ h1.page-title + .tag-cloud-list {
 #article-container {
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-weight: 600;
+  font-weight: bold;
 }
 #article-container a {
   color: #006aff;
@@ -4828,7 +4828,7 @@ h1.page-title + .tag-cloud-list {
   transition: filter 375ms ease-in 0.2s;
 }
 #article-container p {
-  margin: 0;
+  margin: 0 0 10px;
 }
 #article-container iframe {
   margin: 0 0 20px;
