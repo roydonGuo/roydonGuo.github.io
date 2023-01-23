@@ -363,7 +363,7 @@ var roydon = {
   //   anzhiyu.reflashEssayWaterFall();
 
   // },
- 
+
   initIndexEssay: function () {
     setTimeout(() => {
       let essay_bar_swiper = new Swiper(".essay_bar_swiper_container", {
@@ -804,6 +804,8 @@ var roydon = {
     if (randomBar) {
       randomBar.style.display = 'none'
     }
-  }
+  },
+
+
 
 }

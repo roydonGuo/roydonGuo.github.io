@@ -4435,7 +4435,7 @@ h1.page-title + .tag-cloud-list {
 }
 #post-info #post-meta a:hover {
   color: #f69;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #post-info #post-meta time {
   display: none;
