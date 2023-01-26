@@ -2873,7 +2873,7 @@ figure.highlight pre .javascript .function {
 }
 #movies_page #movies-list #movies-douban .movies-item:hover::before {
   position: fixed;
-  width: inherit;
+  width: 30%;
   margin: auto;
   left: 0;
   right: 0;
