@@ -2882,7 +2882,7 @@ figure.highlight pre .javascript .function {
   text-align: center;
   z-index: 100;
   content: attr(data-title);
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   padding: 10px;
   background-color: rgba(255,102,153,0.8);
