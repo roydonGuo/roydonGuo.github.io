@@ -2833,9 +2833,6 @@ figure.highlight pre .javascript .function {
     display: none;
   }
 }
-#movies_page blockquote p {
-  margin: 0;
-}
 #movies_page #movies-list {
   width: 100%;
 }
@@ -2968,9 +2965,6 @@ figure.highlight pre .javascript .function {
     display: none;
   }
 }
-#music_page blockquote p {
-  margin: 0;
-}
 #music_page #music-list {
   width: 100%;
 }
@@ -3011,10 +3005,8 @@ figure.highlight pre .javascript .function {
   margin: 0 0 1rem;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-  #music_page #music-list #music-aplayer .music-aplayer-item {
-    width: 100%;
-  }
+#music_page #music-list #music-aplayer .music-aplayer-item:+maxWidth768() {
+  width: 100%;
 }
 #music_page #music-list #music-aplayer .music-aplayer-item .aplayer {
   margin: 0;
