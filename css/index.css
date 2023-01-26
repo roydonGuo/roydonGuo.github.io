@@ -2547,6 +2547,11 @@ figure.highlight pre .javascript .function {
   padding: 10px;
   background-color: rgba(255,102,153,0.8);
 }
+@media screen and (max-width: 768px) {
+  .flink-list > div:hover>a::before {
+    width: 60%;
+  }
+}
 .flink-list > div .cover {
   width: 100%;
   -webkit-transition: -webkit-transform 0.5s ease-out;
@@ -2886,6 +2891,11 @@ figure.highlight pre .javascript .function {
   color: #fff;
   padding: 10px;
   background-color: rgba(255,102,153,0.8);
+}
+@media screen and (max-width: 768px) {
+  #movies_page #movies-list #movies-douban .movies-item:hover::before {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 768px) {
   #movies_page #movies-list #movies-douban .movies-item {
