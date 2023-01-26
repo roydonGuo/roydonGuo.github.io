@@ -4526,7 +4526,7 @@ h1.page-title + .tag-cloud-list {
   border-radius: 10px;
 }
 #nav .menus_items .menus_item:hover {
-  background: #ffc0cb;
+  background: var(--text-bg-hover);
 }
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
