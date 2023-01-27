@@ -1474,7 +1474,6 @@ hr:before {
 .table-wrap {
   overflow-x: scroll;
   margin: 0 0 10px;
-  border-radius: 10px;
 }
 table {
   display: table;
@@ -1484,6 +1483,9 @@ table {
   empty-cells: show;
 }
 table thead {
+  background: rgba(153,169,191,0.4);
+}
+table tbody {
   background: rgba(153,169,191,0.2);
 }
 table th,
