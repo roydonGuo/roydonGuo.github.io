@@ -4822,7 +4822,6 @@ h1.page-title + .tag-cloud-list {
 #article-container img {
   display: block;
   margin: 0 auto;
-  border-radius: 10px;
   max-width: 100%;
   -webkit-transition: filter 375ms ease-in 0.2s;
   -moz-transition: filter 375ms ease-in 0.2s;
