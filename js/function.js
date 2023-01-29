@@ -363,7 +363,9 @@ var roydon = {
   //   anzhiyu.reflashEssayWaterFall();
 
   // },
-
+  replaceAll(e, n, t) {
+    return e.split(n).join(t);
+  },
   initIndexEssay: function () {
     setTimeout(() => {
       let essay_bar_swiper = new Swiper(".essay_bar_swiper_container", {
