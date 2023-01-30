@@ -4125,8 +4125,8 @@ li.categoryBar-list-item {
   background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   border-radius: 16px;
   padding: 8px !important;
-  -webkit-box-shadow: #5a5a5a -10px -10px 20px 20px inset;
-  box-shadow: #5a5a5a -10px -10px 20px 20px inset;
+  -webkit-box-shadow: rgba(50,50,50,0.2) -10px -10px 20px 20px inset;
+  box-shadow: rgba(50,50,50,0.2) -10px -10px 20px 20px inset;
   overflow: hidden;
   background-size: 100% !important;
   background-position: center !important;
