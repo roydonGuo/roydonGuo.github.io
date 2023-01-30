@@ -2506,11 +2506,6 @@ figure.highlight pre .javascript .function {
   float: left;
   overflow: hidden;
   border-radius: 10px;
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  -moz-transition: -moz-transform 0.5s ease-out;
-  -o-transition: -o-transform 0.5s ease-out;
-  -ms-transition: -ms-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
   -webkit-box-shadow: 0 14px 38px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.06);
   box-shadow: 0 14px 38px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.06);
 }
@@ -4100,31 +4095,34 @@ h1.page-title + .tag-cloud-list {
   width: 100% !important;
 }
 ul.categoryBar-list {
-  margin: 5px 5px 0 5px !important;
+  margin: 8px !important;
   padding: 0 !important;
 }
 li.categoryBar-list-item {
   font-weight: bold;
   display: inline-block;
-  height: 180px !important;
-  margin: 5px 0.5% 0 0.5% !important;
+  height: 85px !important;
+  margin: 4px 0.5% 0 0.5% !important;
   background-image: -webkit-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: -moz-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: -o-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: -ms-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
-  border-radius: 10px;
-  padding: 25px 0 25px 25px !important;
-  -webkit-box-shadow: rgba(50,50,50,0.3) 50px 50px 50px 50px inset;
-  box-shadow: rgba(50,50,50,0.3) 50px 50px 50px 50px inset;
+  border-radius: 16px;
+  padding: 8px !important;
+  -webkit-box-shadow: rgba(50,50,50,0.2) 20px 20px 20px 20px inset;
+  box-shadow: rgba(50,50,50,0.2) 20px 20px 20px 20px inset;
   overflow: hidden;
   background-size: 100% !important;
   background-position: center !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 li.categoryBar-list-item:hover {
-  background-size: 110% !important;
-  -webkit-box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);
-  box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);
+  background-size: 120% !important;
 }
 li.categoryBar-list-item:hover span.categoryBar-list-count::after {
   -webkit-transition: all 0.5s;
@@ -4139,50 +4137,26 @@ li.categoryBar-list-item:hover span.categoryBar-list-count::after {
   transform: translate(-100%, 0);
 }
 a.categoryBar-list-link {
-  color: #ffc0cb !important;
-  font-size: 22px !important;
+  color: #ffd700 !important;
+  font-size: 1.5rem !important;
+}
+a.categoryBar-list-link:hover {
+  color: var(--roydon-nav-hover) !important;
 }
 a.categoryBar-list-link::before {
   content: '🔅' !important;
-  margin-right: 10px;
-  color: #ffc0cb !important;
-  font-size: 20px !important;
-}
-a.categoryBar-list-link:after {
-  content: '';
-  position: relative;
-  width: 0;
-  bottom: 0;
-  display: block;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #ff69b4;
-}
-a.categoryBar-list-link:hover:after {
-  width: 90%;
-  left: 1%;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  margin-right: 4px;
+  font-size: 1.5rem !important;
 }
 span.categoryBar-list-count {
   display: block !important;
-  color: #ffc0cb !important;
-  font-size: 20px !important;
+  color: #fff !important;
+  font-size: 1.2rem !important;
 }
 span.categoryBar-list-count::before {
   content: '📖' !important;
-  padding-right: 15px !important;
-}
-span.categoryBar-list-count::after {
-  padding: 5px;
-  display: block !important;
-  color: #fff !important;
-  font-size: 20px !important;
-  position: relative;
-  right: -100%;
+  padding-right: 4px !important;
+  font-size: 1.2rem !important;
 }
 li.categoryBar-list-item:nth-child(1) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87e2c0e8.jpg');
@@ -4217,47 +4191,14 @@ li.categoryBar-list-item:nth-child(10) {
 li.categoryBar-list-item:nth-child(11) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87f365b5.jpg');
 }
-li.categoryBar-list-item:nth-child(1)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(2)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(3)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(4)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(5)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(6)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(7)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(8)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(9)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(10)>span::after {
-  content: 'unknow' !important;
-}
-li.categoryBar-list-item:nth-child(11)>span::after {
-  content: 'unknow' !important;
-}
 li.categoryBar-list-item {
-  width: 24% !important;
+  width: 15.6% !important;
 }
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {
     width: 48% !important;
     height: 150px !important;
-    margin: 5px 1% 0 1% !important;
+    margin: 4px 1% 0 1% !important;
   }
 }
 .categoryBar-list {
