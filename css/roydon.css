@@ -2897,7 +2897,7 @@ img.footer_mini_logo:hover {
 .twikoo .tk-extra {
   border-radius: 8px;
   padding: 0.5em;
-  box-shadow: var(--card-hover-box-shadow);
+  box-shadow: var(--roydon-box-shadow);
   transition: .3s;
 }
 
