@@ -4095,14 +4095,29 @@ h1.page-title + .tag-cloud-list {
   width: 100% !important;
 }
 ul.categoryBar-list {
-  margin: 8px !important;
+  margin: 5px !important;
   padding: 0 !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 li.categoryBar-list-item {
   font-weight: bold;
   display: inline-block;
-  height: 85px !important;
-  margin: 4px 0.5% 0 0.5% !important;
+  height: 100px !important;
+  margin: 5px 0.5% !important;
   background-image: -webkit-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: -moz-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
   background-image: -o-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
@@ -4192,17 +4207,17 @@ li.categoryBar-list-item:nth-child(11) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87f365b5.jpg');
 }
 li.categoryBar-list-item {
-  width: 15.6% !important;
+  width: 15.66% !important;
 }
 @media screen and (max-width: 650px) {
   li.categoryBar-list-item {
     width: 48% !important;
     height: 150px !important;
-    margin: 4px 1% 0 1% !important;
+    margin: 5px 1% !important;
   }
 }
 .categoryBar-list {
-  max-height: 190px;
+  max-height: 110px;
   overflow: auto;
 }
 .categoryBar-list::-webkit-scrollbar {
