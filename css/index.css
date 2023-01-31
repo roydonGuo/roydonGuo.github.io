@@ -4116,6 +4116,7 @@ ul.categoryBar-list {
 li.categoryBar-list-item {
   font-weight: bold;
   display: inline-block;
+  position: relative;
   height: 100px !important;
   margin: 5px 0.5% !important;
   background-image: -webkit-linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);
@@ -4152,26 +4153,37 @@ li.categoryBar-list-item:hover span.categoryBar-list-count::after {
   transform: translate(-100%, 0);
 }
 a.categoryBar-list-link {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+  text-align: center;
   color: #ffd700 !important;
   font-size: 1.5rem !important;
 }
 a.categoryBar-list-link:hover {
   color: var(--roydon-nav-hover) !important;
 }
-a.categoryBar-list-link::before {
-  content: '🔅' !important;
-  margin-right: 4px;
-  font-size: 1.5rem !important;
-}
 span.categoryBar-list-count {
-  display: block !important;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0 0.5rem;
+  border-radius: 22%;
   color: #fff !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
+  background: rgba(0,0,0,0.2);
 }
 span.categoryBar-list-count::before {
-  content: '📖' !important;
+  content: '\f115' !important;
   padding-right: 4px !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
 }
 li.categoryBar-list-item:nth-child(1) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87e2c0e8.jpg');
