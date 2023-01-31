@@ -2316,61 +2316,11 @@ img.footer_mini_logo:hover {
   padding: 4px !important;
 }
 
-#random {
-  width: 24% !important;
-  border-radius: 16px;
-  background: url(https://bu.dusays.com/2022/11/22/637ce7ce67d6a.jpg) center / cover no-repeat;
-  background-size: cover;
-  border-radius: 16px;
-  font-size: 1.4rem;
-  position: relative;
-}
-
-#random-banner {
-  display: none;
-}
-
-#random:hover {
-  transition: all 0.3s;
-}
-
-#random:hover #random-hover {
-  display: block !important;
-}
-
-#random-banner {
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 16px;
-}
-
-#random-banner:hover {
-  background: transparent;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s;
-}
-
-#random-hover {
-  position: absolute;
-  bottom: 0%;
-  border-radius: 16px;
-}
-
-#random-hover:hover {
-  background: transparent;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s;
-}
-
 .recent-posts>.recent-post-item:first-child {
   width: 74% !important;
 }
 
 @media screen and (max-width: 1050px) {
-  #random {
-    display: none !important;
-  }
-
   .recent-posts>.recent-post-item:first-child {
     width: 100% !important;
   }
@@ -2671,7 +2621,7 @@ img.footer_mini_logo:hover {
   box-sizing: border-box;
   display: flex;
   transition: all 0.6s ease 0s;
-  margin: 1em auto 0;
+  margin: 0 auto;
   align-items: center;
   height: 3em;
   width: 100%;

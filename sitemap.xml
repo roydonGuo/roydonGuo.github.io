@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/link/index.html</loc>
-    
-    <lastmod>2023-01-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/movies/index.html</loc>
     
     <lastmod>2023-01-31</lastmod>
@@ -65,25 +56,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/posts/yscard.html</loc>
-    
-    <lastmod>2023-01-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/posts/4b0178e0.html</loc>
-    
-    <lastmod>2023-01-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/posts/zhizi.html</loc>
+    <loc>https://www.roydon.top/link/index.html</loc>
     
     <lastmod>2023-01-31</lastmod>
     
@@ -218,6 +191,33 @@
   </url>
   
   <url>
+    <loc>https://www.roydon.top/posts/yscard.html</loc>
+    
+    <lastmod>2023-01-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/posts/4b0178e0.html</loc>
+    
+    <lastmod>2023-01-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/posts/zhizi.html</loc>
+    
+    <lastmod>2023-01-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.roydon.top/Gallery/index.html</loc>
     
     <lastmod>2023-01-31</lastmod>
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/Gallery/minecraft/index.html</loc>
+    <loc>https://www.roydon.top/Gallery/genshin/index.html</loc>
     
     <lastmod>2023-01-31</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/Gallery/genshin/index.html</loc>
+    <loc>https://www.roydon.top/Gallery/minecraft/index.html</loc>
     
     <lastmod>2023-01-31</lastmod>
     
