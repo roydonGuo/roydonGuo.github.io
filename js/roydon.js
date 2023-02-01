@@ -187,6 +187,33 @@ function toggleWinbox() {
   else createWinbox();
 }
 
+function swiperInit() {
+  var mySwiper = new Swiper('.swiperPost', {
+    // direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    //自动轮播
+    autoplay: {
+      delay: 3000, //时间 毫秒
+      disableOnInteraction: false, //用户操作之后是否停止自动轮播默认true 
+    },
+    mousewheel: true,
+  })
+}
+swiperInit()
+
+
 //重定向浏览器地址
 // pjax.site_handleResponse = pjax.handleResponse;
 // pjax.handleResponse = function(responseText, request, href, options){
@@ -195,5 +222,3 @@ function toggleWinbox() {
 //   });
 //   pjax.site_handleResponse(responseText,request,href,options);
 // }
-
-
