@@ -807,7 +807,30 @@ var roydon = {
       randomBar.style.display = 'none'
     }
   },
-
+  swiperInit() {
+    var mySwiper = new Swiper('.swiperPost', {
+      // direction: 'vertical', // 垂直切换选项
+      loop: true, // 循环模式选项
+  
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+  
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      //自动轮播
+      autoplay: {
+        delay: 3000, //时间 毫秒
+        disableOnInteraction: false, //用户操作之后是否停止自动轮播默认true 
+      },
+      mousewheel: true,
+    })
+  }
 
 
 }

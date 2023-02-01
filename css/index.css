@@ -5218,6 +5218,12 @@ h2.f4.text-normal.mb-3 {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
+#index-top .index-top-container .right-grop .swiperPost .swiper-button-prev::after {
+  font-size: 2rem;
+}
+#index-top .index-top-container .right-grop .swiperPost .swiper-button-next::after {
+  font-size: 2rem;
+}
 #index-top .index-top-container .right-grop .swiperPost .swiper-post-item {
   display: -webkit-box;
   display: -moz-box;
