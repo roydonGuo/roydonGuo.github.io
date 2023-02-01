@@ -3495,7 +3495,7 @@ h1.page-title + .tag-cloud-list {
   display: inline-block;
   padding: 0 2px;
   margin: 0 2px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: bold;
 }
 #aside-content .card-tag-cloud a:hover {
@@ -5245,6 +5245,11 @@ h2.f4.text-normal.mb-3 {
   background: -webkit-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
   color: transparent;
   -webkit-background-clip: text;
+  -webkit-animation: ran 5s linear infinite;
+  -moz-animation: ran 5s linear infinite;
+  -o-animation: ran 5s linear infinite;
+  -ms-animation: ran 5s linear infinite;
+  animation: ran 5s linear infinite;
 }
 #index-top .index-top-container .right-grop #about-card {
   height: 56%;
@@ -5263,6 +5268,38 @@ h2.f4.text-normal.mb-3 {
   position: relative;
   overflow: hidden;
   max-height: 22em;
+}
+@-moz-keyframes ran {
+  from {
+    backgroud-position: 0 0;
+  }
+  to {
+    background-position: 2000px 0;
+  }
+}
+@-webkit-keyframes ran {
+  from {
+    backgroud-position: 0 0;
+  }
+  to {
+    background-position: 2000px 0;
+  }
+}
+@-o-keyframes ran {
+  from {
+    backgroud-position: 0 0;
+  }
+  to {
+    background-position: 2000px 0;
+  }
+}
+@keyframes ran {
+  from {
+    backgroud-position: 0 0;
+  }
+  to {
+    background-position: 2000px 0;
+  }
 }
 .loading-bg {
   display: -webkit-box;
