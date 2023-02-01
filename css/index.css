@@ -2497,80 +2497,21 @@ figure.highlight pre .javascript .function {
 .flink-list {
   overflow: auto;
 }
-.flink-list > div {
+.flink-list .flink-list-item {
   width: calc(20% - 16px);
-  height: 130px;
+  height: 120px;
   position: relative;
-  display: block;
   margin: 8px;
   float: left;
   overflow: hidden;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 14px 38px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.06);
-  box-shadow: 0 14px 38px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.06);
+  border-radius: 16px;
 }
-.flink-list > div .info {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.flink-list > div:hover .info {
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -o-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-}
-.flink-list > div:hover .wrapper img {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.flink-list > div:hover>a::before {
-  position: fixed;
-  width: 30%;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 20%;
-  border-radius: 10px;
-  text-align: center;
-  z-index: 100;
-  content: attr(data-title);
-  font-size: 16px;
-  color: var(--font-color);
-  padding: 10px;
-  background-color: rgba(255,102,153,0.8);
-}
-@media screen and (max-width: 768px) {
-  .flink-list > div:hover>a::before {
-    width: 60%;
-  }
-}
-.flink-list > div .cover {
-  width: 100%;
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  -moz-transition: -moz-transform 0.5s ease-out;
-  -o-transition: -o-transform 0.5s ease-out;
-  -ms-transition: -ms-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-}
-.flink-list > div .wrapper {
+.flink-list .flink-list-item .flink-list-card .wrapper {
   position: relative;
 }
-.flink-list > div .wrapper .fadeIn {
-  -webkit-animation: coverIn 0.8s ease-out forwards;
-  -moz-animation: coverIn 0.8s ease-out forwards;
-  -o-animation: coverIn 0.8s ease-out forwards;
-  -ms-animation: coverIn 0.8s ease-out forwards;
-  animation: coverIn 0.8s ease-out forwards;
-}
-.flink-list > div .wrapper img {
-  height: 130px;
+.flink-list .flink-list-item .flink-list-card .wrapper .fadeIn {
+  width: 100%;
+  height: 120px;
   pointer-events: none;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   -moz-transition: -moz-transform 0.5s ease-out;
@@ -2578,7 +2519,12 @@ figure.highlight pre .javascript .function {
   -ms-transition: -ms-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
 }
-.flink-list > div .info {
+.flink-list .flink-list-item .flink-list-card .info {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -2613,27 +2559,26 @@ figure.highlight pre .javascript .function {
   -ms-transition: -ms-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
 }
-.flink-list > div .info img {
+.flink-list .flink-list-item .flink-list-card .info .flink-avatar {
   position: relative;
   top: 26px;
-  width: 66px;
-  height: 66px;
-  margin: 0 auto !important;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
   z-index: 1;
   text-align: center;
   pointer-events: none;
 }
-.flink-list > div .info span {
-  padding: 20px 10% 60px 10%;
+.flink-list .flink-list-item .flink-list-card .info .flink-sitename {
+  padding: 20px 10% 60px;
   font-size: 16px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
-  -webkit-box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 2px 5px #000;
+  box-shadow: 0 2px 5px #000;
   background-color: var(--roydon-small-card-bg);
   color: var(--font-color);
   white-space: nowrap;
@@ -2641,34 +2586,50 @@ figure.highlight pre .javascript .function {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-.flink-list>a .info,
-.flink-list>a .wrapper .cover {
-  position: absolute;
-  top: 0;
+.flink-list .flink-list-item:hover .wrapper .fadeIn {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.flink-list .flink-list-item:hover .info {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.flink-list .flink-list-item:hover>a::before {
+  position: fixed;
+  width: 30%;
+  margin: auto;
   left: 0;
+  right: 0;
+  top: 20%;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 100;
+  content: attr(data-title);
+  font-size: 16px;
+  color: var(--font-color);
+  padding: 10px;
+  background-color: rgba(255,102,153,0.8);
+}
+@media screen and (max-width: 768px) {
+  .flink-list .flink-list-item:hover>a::before {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 1024px) {
-  .flink-list > div {
+  .flink-list .flink-list-item {
     width: calc(33.33333% - 16px);
   }
 }
 @media screen and (max-width: 600px) {
-  .flink-list > div {
+  .flink-list .flink-list-item {
     width: calc(50% - 16px);
   }
-}
-.justified-gallery > div > img,
-.justified-gallery > figure > img,
-.justified-gallery > a > a > img,
-.justified-gallery > div > a > img,
-.justified-gallery > figure > a > img,
-.justified-gallery > a > svg,
-.justified-gallery > div > svg,
-.justified-gallery > figure > svg,
-.justified-gallery > a > a > svg,
-.justified-gallery > div > a > svg,
-.justified-gallery > figure > a > svg {
-  position: static !important;
 }
 #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 1em;
@@ -3386,7 +3347,7 @@ h1.page-title + .tag-cloud-list {
   pointer-events: none;
 }
 .flexcard-flink-list > a .info span {
-  padding: 20px 10% 60px 10%;
+  padding: 40px 10% 60px 10%;
   font-size: 16px;
   width: 100%;
   text-align: center;
