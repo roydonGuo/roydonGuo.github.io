@@ -5273,7 +5273,8 @@ h2.f4.text-normal.mb-3 {
   font-weight: bold;
   font-size: 20px;
   font-family: "黑体";
-  color: #8c888b;
+  display: -webkit-box;
+  overflow: hidden;
   background: -webkit--webkit-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
   background: -webkit--moz-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
   background: -webkit--o-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);

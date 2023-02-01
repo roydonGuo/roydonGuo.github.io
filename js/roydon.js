@@ -9,6 +9,7 @@ function whenDOMReady() {
   }
   roydon.danmu()
   roydon.swiperInit()
+  roydon.hideIndexTop()
 
   // roydon.essay()
 }

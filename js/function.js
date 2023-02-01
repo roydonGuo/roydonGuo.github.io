@@ -811,13 +811,13 @@ var roydon = {
     var mySwiper = new Swiper('.swiperPost', {
       // direction: 'vertical', // 垂直切换选项
       loop: true, // 循环模式选项
-  
+
       // 如果需要分页器
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-  
+
       // 如果需要前进后退按钮
       navigation: {
         nextEl: '.swiper-button-next',
@@ -830,7 +830,19 @@ var roydon = {
       },
       mousewheel: true,
     })
+  },
+  isIndex() {
+    return location.pathname == '/' ? true : false
+  },
+  hideIndexTop() {
+    if (!roydon.isIndex()) {
+      var indexTop = document.querySelector(".index-top-container")
+      if (indexTop) {
+        indexTop.style.display = "none"
+      }
+    }
   }
+
 
 
 }
