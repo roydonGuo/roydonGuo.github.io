@@ -1,22 +1,19 @@
 'use strict';
 
 var roydon = {
-
   randomIndexVideo() { // 主页视频背景随机 
     const videoCDN = ["https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao.mp4",
       "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao2.mp4",
       "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/nahida.mp4",
-      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4"
+      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4",
+      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu4.mp4"
     ]
-    window.onload = function () {
-      var indexVideo = document.querySelector("#index-video");
-      if (indexVideo) {
-        var videoIndex = Math.floor(Math.random() * videoCDN.length)
-        indexVideo.src = videoCDN[videoIndex]
-      }
+    var indexVideo = document.querySelector("#index-video")
+    if (indexVideo) {
+      var videoIndex = Math.floor(Math.random() * videoCDN.length)
+      indexVideo.src = videoCDN[videoIndex]
     }
   },
-
   randoMcBgGif() { // 首页随机mc背景图片
     var mcBgGif = [
       "https://bu.dusays.com/2022/11/24/637f50838e27c.gif",
@@ -40,7 +37,6 @@ var roydon = {
       }, 5000)
     }
   },
-
   sm(title, msg) { //vue弹窗
     new Vue({
       data: function () {
@@ -63,17 +59,16 @@ var roydon = {
       url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt',
       success: function (res) {
         roydon.cdnSiteBg = res.split(',')
+        console.log(roydon.cdnSiteBg)
       }
     })
   },
-
   saveData(name, data) { // 存数据
     localStorage.setItem(name, JSON.stringify({
       'time': Date.now(),
       'data': data
     }))
   },
-
   loadData(name, time) { // 取数据
     let data = JSON.parse(localStorage.getItem(name));
     // 过期或有错误返回 0
@@ -800,7 +795,6 @@ var roydon = {
       $list.scrollLeft = ($catalog.offsetLeft - $list.offsetLeft) - ($list.offsetWidth - $catalog.offsetWidth) / 2
     }
   },
-
   removeRandomBanner() {
     var randomBar = document.querySelector('#random')
     if (randomBar) {
@@ -834,7 +828,7 @@ var roydon = {
   isIndex() {
     return location.pathname == '/' ? true : false
   },
-  hideIndexTop() {
+  hideIndexTop() { //index-top只在首页一个页面展示
     if (!roydon.isIndex()) {
       var indexTop = document.querySelector(".index-top-container")
       if (indexTop) {
