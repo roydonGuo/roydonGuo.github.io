@@ -3247,11 +3247,11 @@ h1.page-title + .tag-cloud-list {
   box-shadow: none;
 }
 .flexcard-flink-list > a:hover .info {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
 }
 .flexcard-flink-list > a:hover .wrapper img {
   -webkit-transform: scale(1.2);
