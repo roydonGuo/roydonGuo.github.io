@@ -3177,7 +3177,7 @@ figure.highlight pre .javascript .function {
   flex-direction: column;
 }
 .flink-list .flink-list-item .flink-list-card .info .flink-user-info .flink-sitename .link-level {
-  font-size: 32px !important;
+  font-size: 1.6rem !important;
 }
 .flink-list .flink-list-item:hover .wrapper .fadeIn {
   -webkit-transform: scale(1.2);
