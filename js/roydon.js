@@ -22,24 +22,22 @@ roydon.randomIndexVideo() //首页视频背景随机
 roydon.initIndexEssay() //初始化首页即可短文banner
 
 // console.log(roydon.getCDNSiteBg());
-var cdnSiteBg = []
-// 1. 创建 XHR 对象
-var xhr = new XMLHttpRequest()
-// 2. 调用 open 函数
-xhr.open('GET', 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt')
-// 3. 调用 send 函数，发起 Ajax 请求
-xhr.send()
-// 4. 监听 onreadystatechange 事件
-xhr.onreadystatechange = function () {
-  //监听 xhr 对象的请求状态 readyState ；与服务器响应的状态 status
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    // 获取服务器响应的数据xhr.responseText(json格式的字符串)
-    console.log(xhr.responseText)
-  }
-}
+// var cdnSiteBg = []
+// // 1. 创建 XHR 对象
+// var xhr = new XMLHttpRequest()
+// // 2. 调用 open 函数
+// xhr.open('GET', 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt')
+// // 3. 调用 send 函数，发起 Ajax 请求
+// xhr.send()
+// // 4. 监听 onreadystatechange 事件
+// xhr.onreadystatechange = function () {
+//   //监听 xhr 对象的请求状态 readyState ；与服务器响应的状态 status
+//   if (xhr.readyState === 4 && xhr.status === 200) {
+//     // 获取服务器响应的数据xhr.responseText(json格式的字符串)
+//     console.log(xhr.responseText)
+//   }
+// }
 
-var ss = '"z8e8qy.webp","weog1q.webp","rr3y61.webp","zygv6v.webp","9mpkkd.webp","y89xrl.webp","o3kl69.webp","9mv66d.webp","wqwj5r.webp","pk5y8j.webp","1kzdg1.webp","l3rqzr.webp","l8qylr.webp","x6527v.webp","jx9req.webp","qzdgo5.webp","1p82g1.webp","qz93rr.webp","pkgj13.webp","dplo2m.webp","572k81.webp","o3zzj7.webp","m958z9.webp","e7g71w.webp","8ovykj.webp","x89v9z.webp","wqklx6.webp","q28x3l.webp","e7d6kr.webp","pkrpkm.webp","4xjgzz.webp","vqx88l.webp","8old52.webp","jx8ey5.webp","6ovy9w.webp","2879mg.webp","72dvlv.webp","1p8rk3.webp","zyge7y.webp","m96o1m.webp","571je1.webp","5gdw85.webp","vqx6yp.webp","g7gx87.webp","85xq92.webp","zyxw9g.webp","6dkk2w.webp","9d5wmx.webp","0pwd2e.webp","4g16yl.webp","2ewe36.webp","3zppld.webp","l3d2yq.webp","9mk6j1.webp","m9o1v8.webp","725qz3.webp","9mw29d.webp","2858ey.webp","g7kwk3.webp","mder79.webp","577mx5.webp","vqxjzp.webp","m9ey79.webp","j37y3w.webp","y8r5rd.webp","8op8oj.webp","z8kjmj.webp","rdz5ym.webp","m9j7om.webp","9mlz98.webp","z87eqv.webp","y8d1lg.webp","vgkp28.webp","l3x26q.webp","rdqlej.webp","x828yd.webp","q6z9qr.webp","8okm6j.webp","72mr69.webp","lmy5my.webp","z8ryog.webp","pkx9y3.webp","k7wor1.webp","dpd8qo.webp","z8dljv.webp","kwxod1.webp","dpmk9j.webp","o3eye9.webp","pkqj3p.webp","3lzm99.webp","1k2kp9.webp","gp8ewd.webp","9dmkmd.webp","qz2ozr.webp","kxwey6.webp","gp78ll.webp","g7ex8q.webp","y8oxpx.webp","jx3q8y.webp","v98wrp.webp","jx5pm5.webp","y8w15l.webp","wqp6q6.webp","j3o78m.webp","rr26v7.webp","zym92v.webp","z8vjrw.webp","l3ze3y.webp","dp2q8j.webp","q23w67.webp","28rr8m.webp","v95lq3.webp"'.split(',')
-// console.log(ss);
 // document.onkeydown = function (e) {
 //   if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，不能打开控制台喔!"), event.keyCode = 0, event.returnValue = !1, !1
 // };
