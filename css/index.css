@@ -3162,7 +3162,7 @@ figure.highlight pre .javascript .function {
 }
 .flink-list .flink-list-item .flink-list-card .info .flink-user-info .flink-sitename {
   font-size: 16px;
-  line-height: 1.2rem;
+  line-height: 1;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -3177,7 +3177,7 @@ figure.highlight pre .javascript .function {
   flex-direction: column;
 }
 .flink-list .flink-list-item .flink-list-card .info .flink-user-info .flink-sitename .link-level {
-  font-size: 1.6rem !important;
+  font-size: 1.8rem !important;
 }
 .flink-list .flink-list-item:hover .wrapper .fadeIn {
   -webkit-transform: scale(1.2);
