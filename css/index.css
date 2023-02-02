@@ -2214,9 +2214,8 @@ figure.highlight pre .javascript .function {
 .category-lists .category-list .category-list-item {
   position: relative;
   margin: 0 0 1rem;
-  min-height: 120px;
   height: 180px;
-  width: 32.33%;
+  width: 15.66%;
   background: var(--roydon-small-card-bg);
   background-size: 100%;
   background-position: center;
@@ -2239,6 +2238,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(1) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(1) .category-list-link {
@@ -2255,7 +2255,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2289,6 +2289,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(2) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(2) .category-list-link {
@@ -2305,7 +2306,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2339,6 +2340,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(3) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(3) .category-list-link {
@@ -2355,7 +2357,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2389,6 +2391,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(4) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(4) .category-list-link {
@@ -2405,7 +2408,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2439,6 +2442,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(5) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(5) .category-list-link {
@@ -2455,7 +2459,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2489,6 +2493,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(6) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(6) .category-list-link {
@@ -2505,7 +2510,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2539,6 +2544,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(7) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(7) .category-list-link {
@@ -2555,7 +2561,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2589,6 +2595,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(8) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(8) .category-list-link {
@@ -2605,7 +2612,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2639,6 +2646,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(9) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(9) .category-list-link {
@@ -2655,7 +2663,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2689,6 +2697,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(10) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(10) .category-list-link {
@@ -2705,7 +2714,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -2739,6 +2748,7 @@ figure.highlight pre .javascript .function {
 @media screen and (max-width: 768px) {
   .category-lists li.category-list-item:nth-child(11) {
     height: 120px;
+    width: 32.33%;
   }
 }
 .category-lists li.category-list-item:nth-child(11) .category-list-link {
@@ -2755,7 +2765,7 @@ figure.highlight pre .javascript .function {
   transform: translate(0, -50%);
   width: 100%;
   height: 100%;
-  padding: 15% 0;
+  padding: 30% 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -4687,7 +4697,7 @@ a.categoryBar-list-link {
   width: 100%;
   text-align: center;
   color: #ffd700;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 a.categoryBar-list-link:hover {
   color: var(--roydon-nav-hover);
@@ -4695,17 +4705,17 @@ a.categoryBar-list-link:hover {
 span.categoryBar-list-count {
   position: absolute;
   top: 0.5rem;
-  right: 1rem;
+  right: 0.5rem;
   padding: 0 0.5rem;
-  border-radius: 22%;
+  border-radius: 4px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.5rem;
   background: rgba(0,0,0,0.2);
 }
 span.categoryBar-list-count::before {
   content: '\f115';
   padding-right: 4px;
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 li.categoryBar-list-item:nth-child(1) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87e2c0e8.jpg');
