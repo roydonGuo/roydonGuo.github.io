@@ -3087,11 +3087,11 @@ figure.highlight pre .javascript .function {
   width: 100%;
   height: 120px;
   pointer-events: none;
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  -moz-transition: -moz-transform 0.5s ease-out;
-  -o-transition: -o-transform 0.5s ease-out;
-  -ms-transition: -ms-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .flink-list .flink-list-item .flink-list-card .info {
   -webkit-transform: translateY(-100%);
@@ -3127,11 +3127,11 @@ figure.highlight pre .javascript .function {
   height: 100%;
   overflow: hidden;
   border-radius: 8px;
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  -moz-transition: -moz-transform 0.5s ease-out;
-  -o-transition: -o-transform 0.5s ease-out;
-  -ms-transition: -ms-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .flink-list .flink-list-item .flink-list-card .info .flink-avatar {
   position: relative;
@@ -3145,10 +3145,10 @@ figure.highlight pre .javascript .function {
   text-align: center;
   pointer-events: none;
 }
-.flink-list .flink-list-item .flink-list-card .info .flink-sitename {
-  padding: 20px 10% 60px;
-  font-size: 16px;
+.flink-list .flink-list-item .flink-list-card .info .flink-user-info {
   width: 100%;
+  height: 60%;
+  padding: 20px 10% 60px;
   text-align: center;
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 5px #000;
@@ -3159,6 +3159,9 @@ figure.highlight pre .javascript .function {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+}
+.flink-list .flink-list-item .flink-list-card .info .flink-user-info .flink-sitename {
+  font-size: 16px;
 }
 .flink-list .flink-list-item:hover .wrapper .fadeIn {
   -webkit-transform: scale(1.2);
