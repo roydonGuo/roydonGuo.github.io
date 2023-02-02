@@ -4032,9 +4032,10 @@ h1.page-title + .tag-cloud-list {
 #aside-content .card-info .card-info-social-icons .social-icon {
   margin: 0 10px;
   color: var(--font-color);
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 #aside-content .card-info .card-info-social-icons i {
+  font-size: 1.4rem;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -5161,7 +5162,10 @@ h2.f4.text-normal.mb-3 {
   margin: 0 10px;
   color: #fff;
   text-shadow: 2px 4px 8px rgba(0,0,0,0.15);
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+#page-header #site_social_icons .social-icon .iconbrand {
+  font-size: 1.4rem;
 }
 #page-header #scroll-down {
   position: absolute;

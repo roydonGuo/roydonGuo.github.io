@@ -1940,11 +1940,6 @@ svg.icon.faa-tada {
   font-size: 24px;
 }
 
-span#subtitle:hover {
-  color: pink;
-  box-shadow: 2px 2px 1px black;
-}
-
 #article-container .btn-beautify.outline {
   border-radius: 20px;
   border: 5px solid;
