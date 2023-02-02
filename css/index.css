@@ -3148,7 +3148,7 @@ figure.highlight pre .javascript .function {
 .flink-list .flink-list-item .flink-list-card .info .flink-user-info {
   width: 100%;
   height: 60%;
-  padding: 20px 10% 60px;
+  padding: 30px 10% 60px;
   text-align: center;
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 5px #000;
@@ -3162,6 +3162,22 @@ figure.highlight pre .javascript .function {
 }
 .flink-list .flink-list-item .flink-list-card .info .flink-user-info .flink-sitename {
   font-size: 16px;
+  line-height: 1.2rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.flink-list .flink-list-item .flink-list-card .info .flink-user-info .flink-sitename .link-level {
+  font-size: 32px !important;
 }
 .flink-list .flink-list-item:hover .wrapper .fadeIn {
   -webkit-transform: scale(1.2);
