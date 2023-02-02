@@ -52,14 +52,15 @@ var roydon = {
       }
     })
   },
-  cdnSiteBg: [],
   getCDNSiteBg() { //获取cdn图片资源
+    var cdnSiteBg= []
     $.ajax({
       type: 'GET',
       url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt',
       success: function (res) {
-        roydon.cdnSiteBg = res.split(',')
-        console.log(roydon.cdnSiteBg)
+        // console.log(res)
+        cdnSiteBg = res.split(',')
+        return cdnSiteBg
       }
     })
   },
