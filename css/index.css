@@ -3093,6 +3093,23 @@ figure.highlight pre .javascript .function {
   -ms-transition: -ms-transform 0.5s ease-out !important;
   transition: transform 0.5s ease-out !important;
 }
+.flink-list .flink-list-item .flink-list-card .wrapper .link-card-tag {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 4px 8px;
+  color: var(--font-color);
+  z-index: 1;
+  border-radius: 16px 0px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  background-size: 500% !important;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  -o-animation: gradient 5s ease infinite;
+  -ms-animation: gradient 5s ease infinite;
+  animation: gradient 5s ease infinite;
+}
 .flink-list .flink-list-item .flink-list-card .info {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
