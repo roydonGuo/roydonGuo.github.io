@@ -5597,8 +5597,8 @@ h2.f4.text-normal.mb-3 {
   transition: 0.3s;
 }
 #index-top .index-top-container .left-grop #random-banner .banners-title {
-  top: 2.9rem;
-  left: 3rem;
+  top: 2rem;
+  left: 2rem;
   font-family: "-apple-system";
   position: absolute;
   display: -webkit-box;
@@ -5644,7 +5644,7 @@ h2.f4.text-normal.mb-3 {
   transition: 0.3s;
 }
 #index-top .index-top-container .left-grop #random-banner #skills-group-all .skills-group-wrapper {
-  margin-top: 6rem;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
