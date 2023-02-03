@@ -3104,11 +3104,11 @@ figure.highlight pre .javascript .function {
   font-size: 0.8rem;
   line-height: 1.4;
   background-size: 500% !important;
-  -webkit-animation: gradient 5s ease infinite;
-  -moz-animation: gradient 5s ease infinite;
-  -o-animation: gradient 5s ease infinite;
-  -ms-animation: gradient 5s ease infinite;
-  animation: gradient 5s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+  -moz-animation: gradient 10s ease infinite;
+  -o-animation: gradient 10s ease infinite;
+  -ms-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .flink-list .flink-list-item .flink-list-card .info {
   -webkit-transform: translateY(-100%);
