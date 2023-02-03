@@ -11,14 +11,17 @@ function GetUrlRelativePath() {
   return relUrl;
 }
 $(document).ready(function () {
-  var {
+  const {
     Query,
     User
   } = AV;
   AV.init({
-    appId: "itTEnRp2e8zPuxOcSkAOmEc7-MdYXbMMI",
-    appKey: "JYgISKzbk3hNbNoNj5P0XEIe",
-    serverURL: "https://ittenrp2.api.lncldglobal.com"
+    appId: "n5bJDnhkFDPpUxlHphl01Fa6-gzGzoHsz",
+    appKey: "N6dnp2zcXFvTon5Emp0cG3Nm",
+    serverURLs: "https://n5bjdnhk.lc-cn-n1-shared.com"
+    // appId: "itTEnRp2e8zPuxOcSkAOmEc7-MdYXbMMI",
+    // appKey: "JYgISKzbk3hNbNoNj5P0XEIe",
+    // serverURL: "https://ittenrp2.api.lncldglobal.com"
     // appId: "PMHJupAc9h04752ZS0JbU9TW-gzGzoHsz",
     // appKey: "iapeQUi15n90QgF2MaOvMiuW",
     // serverURL: "https://pmhjupac.lc-cn-n1-shared.com"
@@ -26,7 +29,7 @@ $(document).ready(function () {
   var dianzans = [];
   var hrefs = [];
   var ids = [];
-  const query2 = new AV.Query('dianzan');
+  const query2 = new AV.Query('Zan');
   query2.find().then((dzs) => {
     for (i = dzs.length - 1; i >= 0; i--) {
       dianzans.push(dzs[i]["attributes"]["count"]);
@@ -47,7 +50,7 @@ function setCount() {
   var dianzans = [];
   var hrefs = [];
   var ids = [];
-  const query2 = new AV.Query('dianzan');
+  const query2 = new AV.Query('Zan');
   query2.find().then((dzs) => {
     for (i = dzs.length - 1; i >= 0; i--) {
       dianzans.push(dzs[i]["attributes"]["count"]);
@@ -69,7 +72,7 @@ function dianzan() {
     var dianzans = [];
     var hrefs = [];
     var ids = [];
-    const query = new AV.Query('dianzan');
+    const query = new AV.Query('Zan');
     query.find().then((dzs) => {
       for (i = dzs.length - 1; i >= 0; i--) {
         dianzans.push(dzs[i]["attributes"]["count"]);
@@ -78,7 +81,7 @@ function dianzan() {
       }
       if (hrefs.indexOf(GetUrlRelativePath()) == -1) {
         console.log(1)
-        const TestObject = AV.Object.extend('dianzan');
+        const TestObject = AV.Object.extend('Zan');
         const testObject = new TestObject();
         testObject.set('href', GetUrlRelativePath());
         testObject.set('count', 1);
@@ -94,7 +97,7 @@ function dianzan() {
       setCount();
     });
   } catch (err) {
-    const TestObject = AV.Object.extend('dianzan');
+    const TestObject = AV.Object.extend('Zan');
     const testObject = new TestObject();
     testObject.set('href', GetUrlRelativePath());
     testObject.set('count', 1);
