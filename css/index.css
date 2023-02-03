@@ -3222,6 +3222,18 @@ figure.highlight pre .javascript .function {
 #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 1em;
 }
+#recent-posts .firstpost-item:before {
+  content: "最新";
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  color: #ffd700;
+  background: #00f;
+  padding: 0 16px;
+  border-radius: 0 0 12px 12px;
+}
 #recent-posts > .recent-post-item {
   display: -webkit-box;
   display: -moz-box;
