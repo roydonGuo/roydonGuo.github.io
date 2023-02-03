@@ -3161,15 +3161,18 @@ figure.highlight pre .javascript .function {
 }
 .flink-list .flink-list-item .flink-list-card .info .flink-level {
   position: absolute;
-  font-size: 1.8rem;
+  line-height: 1.2;
   z-index: 1;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(10px, -18px);
-  -moz-transform: translate(10px, -18px);
-  -o-transform: translate(10px, -18px);
-  -ms-transform: translate(10px, -18px);
-  transform: translate(10px, -18px);
+  -webkit-transform: translate(5px, -5px);
+  -moz-transform: translate(5px, -5px);
+  -o-transform: translate(5px, -5px);
+  -ms-transform: translate(5px, -5px);
+  transform: translate(5px, -5px);
+}
+.flink-list .flink-list-item .flink-list-card .info .flink-level .lv {
+  font-size: 1.8rem;
 }
 .flink-list .flink-list-item:hover .wrapper .fadeIn {
   -webkit-transform: scale(1.2);
