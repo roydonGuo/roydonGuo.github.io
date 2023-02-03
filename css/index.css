@@ -3087,11 +3087,11 @@ figure.highlight pre .javascript .function {
   width: 100%;
   height: 120px;
   pointer-events: none;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: -webkit-transform 0.5s ease-out !important;
+  -moz-transition: -moz-transform 0.5s ease-out !important;
+  -o-transition: -o-transform 0.5s ease-out !important;
+  -ms-transition: -ms-transform 0.5s ease-out !important;
+  transition: transform 0.5s ease-out !important;
 }
 .flink-list .flink-list-item .flink-list-card .info {
   -webkit-transform: translateY(-100%);
