@@ -1372,6 +1372,7 @@ canvas:not(#ribbon-canvas),
   --pseudo-hover: #ff3456;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
+  --roydon-ganyu-color: #1fb0f9;
   --roydon-box-shadow: 0 0 2px 0 #c0c0c0;
   --roydon-comments-bg: transparent;
   --roydon-small-card-bg: rgba(255,255,255,0.8);
@@ -1383,6 +1384,7 @@ canvas:not(#ribbon-canvas),
   --roydon-state-dot-bg: #77ec9c;
   --roydon-a-color: #f2b94b;
   --roydon-a-font-weight: bold;
+  --roydon-aside-item-hover-color: #fdb2f7;
 }
 body {
   position: relative;
@@ -4051,6 +4053,21 @@ h1.page-title + .tag-cloud-list {
   background-repeat: no-repeat;
   background-position: center;
 }
+#aside-content .card-info {
+  background: -webkit-linear-gradient(135deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
+  background: -moz-linear-gradient(135deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
+  background: -o-linear-gradient(135deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
+  background: -ms-linear-gradient(135deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
+  background: linear-gradient(-45deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
+  background-size: 400%;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  -o-animation: gradient 5s ease infinite;
+  -ms-animation: gradient 5s ease infinite;
+  animation: gradient 5s ease infinite;
+  position: relative;
+  color: #fff;
+}
 #aside-content .card-info .author-info__name {
   font-weight: 900;
   font-size: 1.6em;
@@ -4120,6 +4137,75 @@ h1.page-title + .tag-cloud-list {
     transition: top 0.3s;
   }
 }
+#aside-content .sticky_layout .card-recent-post {
+  border-radius: 40px;
+  border: 8px solid #000;
+  background: url("https://bu.dusays.com/2023/01/02/63b2e761872df.webp");
+  background-size: cover;
+}
+#aside-content .sticky_layout .card-recent-post .item-headline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 50%;
+  top: 10px;
+  padding: 0 10px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #000;
+  border-radius: 20px;
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  -ms-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#aside-content .sticky_layout .card-recent-post .item-headline i,
+#aside-content .sticky_layout .card-recent-post .item-headline span {
+  display: none;
+}
+#aside-content .sticky_layout .card-recent-post .item-headline:hover {
+  border: 2px solid #000;
+  border-radius: 48px;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu.webp");
+  background-size: cover;
+}
+#aside-content .sticky_layout .card-recent-post .aside-list {
+  margin: 40px 0 0;
+}
 #aside-content .card-tag-cloud a {
   display: inline-block;
   padding: 0 4px;
@@ -4150,6 +4236,15 @@ h1.page-title + .tag-cloud-list {
   align-items: center;
   padding: 5px;
   border-radius: 10px;
+}
+#aside-content .aside-list > .aside-list-item:hover {
+  border-radius: 16px;
+  background-color: var(--roydon-ganyu-color);
+  -webkit-transition: 0.6s ease-in-out;
+  -moz-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
+  -ms-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
   overflow: hidden;
@@ -6228,6 +6323,7 @@ h2.f4.text-normal.mb-3 {
 }
 #article-container h1 {
   padding-left: 32px;
+  color: #c00;
 }
 #article-container h1:before {
   margin-left: -26px;
@@ -6238,6 +6334,7 @@ h2.f4.text-normal.mb-3 {
 }
 #article-container h2 {
   padding-left: 30px;
+  color: #f00;
 }
 #article-container h2:before {
   margin-left: -24px;
@@ -6248,6 +6345,7 @@ h2.f4.text-normal.mb-3 {
 }
 #article-container h3 {
   padding-left: 28px;
+  color: #ff4d4d;
 }
 #article-container h3:before {
   margin-left: -22px;
@@ -6258,6 +6356,7 @@ h2.f4.text-normal.mb-3 {
 }
 #article-container h4 {
   padding-left: 26px;
+  color: #f99;
 }
 #article-container h4:before {
   margin-left: -20px;
@@ -6268,6 +6367,7 @@ h2.f4.text-normal.mb-3 {
 }
 #article-container h5 {
   padding-left: 24px;
+  color: #ffe6e6;
 }
 #article-container h5:before {
   margin-left: -18px;
@@ -6290,16 +6390,19 @@ h2.f4.text-normal.mb-3 {
 #article-container ul p {
   margin: 0 0 5px;
 }
+#article-container li {
+  line-height: 1.2;
+}
 #article-container li::marker {
   color: #f69;
   font-weight: 600;
-  font-size: 1.05em;
+  font-size: 1.5em;
 }
 #article-container li:hover::marker {
   color: var(--pseudo-hover);
 }
 #article-container ul > li {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 #article-container > :last-child {
   margin-bottom: 0 !important;

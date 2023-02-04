@@ -1570,59 +1570,6 @@ a.catalog-more:hover {
   display: block !important;
 }
 
-.aside-list .aside-list-item:hover {
-  border-radius: 16px;
-  background-color: #fdb2f7;
-  transition: .6s ease-in-out;
-}
-
-#aside-content .card-recent-post {
-  border-radius: 40px;
-  border: 8px solid #000;
-  background: url(https://bu.dusays.com/2023/01/02/63b2e761872df.webp);
-  background-size: cover;
-}
-
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  left: 50%;
-  top: 10px;
-  padding: 0 10px;
-  transform: translateX(-50%);
-  background: black;
-  border-radius: 20px;
-  transition: .6s ease-in-out;
-  cursor: default;
-  user-select: none;
-}
-
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.aside-list {
-  margin: 40px 0 0;
-}
-
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline i {
-  display: none;
-}
-
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline span {
-  display: none;
-}
-
-.page #aside-content .sticky_layout .card-widget:nth-child(2)>.item-headline:hover {
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 48px;
-  width: 200px;
-  height: 200px;
-  transition: .6s ease-in-out;
-  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu.webp);
-  background-size: cover;
-}
-
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap .article-meta__tags {
   padding: 3px;
   border-radius: 4px
@@ -3276,27 +3223,6 @@ div#menus {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-}
-
-#aside-content>.card-widget.card-info {
-  background: linear-gradient(-45deg, #b7d3ee, #5d6fc9, #ebfffe, #485dab);
-  background-size: 400%;
-  animation: gradient 5s ease infinite;
-  position: relative;
-  color: white;
-}
-
-#post .post-content h1 {
-  color: rgb(255, 0, 128);
-}
-
-#post .post-content h2 {
-  color: rgb(255, 68, 161);
-}
-
-#post .post-content h3 {
-  color: rgb(255, 120, 188);
-
 }
 
 #post .post-content .tabs {
