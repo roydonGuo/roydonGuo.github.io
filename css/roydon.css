@@ -2353,8 +2353,9 @@ img.footer_mini_logo:hover {
 }
 
 .announcement_content {
-  line-height: 1;
-  max-height: 90px;
+  position: relative;
+  height: 150px;
+  width: 100%;
 }
 
 .main-hero-waves-area {

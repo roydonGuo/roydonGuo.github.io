@@ -212,6 +212,45 @@ function toggleWinbox() {
   else createWinbox();
 }
 
+var shenhe = "shenhe"
+new spine.SpinePlayer("player-container", {
+  jsonUrl: shenhe + "/" + shenhe + ".json",
+  atlasUrl: shenhe + "/" + shenhe + ".atlas",
+  premultipliedAlpha: false,
+  showControls: false,
+  alpha: true,
+  backgroundColor: "#00000000",
+  animation: "animation",
+  viewport: {
+    x: 0,
+    y: -550,
+    width: 1012.2 / 2,
+    height: 2046.31 / 2,
+    padLeft: "0%",
+    padRight: "0%",
+    padTop: "0%",
+    padBottom: "0%"
+  }
+});
+new spine.SpinePlayer("player-container2", {
+  jsonUrl: shenhe+"/shenhelh.json",
+  atlasUrl: shenhe+"/shenhelh.atlas",
+  premultipliedAlpha: false,
+  showControls: false,
+  alpha: true,
+  backgroundColor: "#00000000",
+  animation: "animation",
+  viewport: {
+        x: 0,
+        y: -550,
+        width: 1012.2/2,
+        height: 2046.31/2,
+        padLeft: "0%",
+        padRight: "0%",
+        padTop: "0%",
+        padBottom: "0%"
+    }
+});
 
 //重定向浏览器地址
 // pjax.site_handleResponse = pjax.handleResponse;

@@ -4043,6 +4043,14 @@ h1.page-title + .tag-cloud-list {
   margin-top: 1em;
   padding: 10px;
 }
+#aside-content .card-announcement {
+  height: 160px;
+  padding: 0 !important;
+  background-image: url("../img/shenhe_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #aside-content .card-info .author-info__name {
   font-weight: 900;
   font-size: 1.6em;
