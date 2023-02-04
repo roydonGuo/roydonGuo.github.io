@@ -10,7 +10,7 @@ function whenDOMReady() {
   roydon.danmu()
   roydon.swiperInit()
   roydon.hideIndexTop()
-
+  roydon.shenheSpine() //侧边栏申鹤spine
   // roydon.essay()
 }
 
@@ -20,7 +20,7 @@ document.addEventListener("pjax:complete", whenDOMReady)
 // roydon.randoMcBgGif()//随机mcgif
 roydon.randomIndexVideo() //首页视频背景随机
 roydon.initIndexEssay() //初始化首页即可短文banner
-roydon.shenheSpine() //侧边栏申鹤spine
+
 
 var cdnSiteBg = new Array
 // 1. 创建 XHR 对象
