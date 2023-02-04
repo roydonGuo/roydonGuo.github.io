@@ -52,18 +52,7 @@ var roydon = {
       }
     })
   },
-  getCDNSiteBg() { //获取cdn图片资源
-    var cdnSiteBg = []
-    $.ajax({
-      type: 'GET',
-      url: 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt',
-      success: function (res) {
-        // console.log(res)
-        cdnSiteBg = res.split(',')
-        return cdnSiteBg
-      }
-    })
-  },
+
   saveData(name, data) { // 存数据
     localStorage.setItem(name, JSON.stringify({
       'time': Date.now(),
@@ -840,44 +829,50 @@ var roydon = {
   //侧边栏申鹤spine
   shenheSpine() {
     var shenhe = "shenhe"
-    new spine.SpinePlayer("player-container", {
-      jsonUrl: "/"+shenhe + "/" + shenhe + ".json",
-      atlasUrl: "/"+shenhe + "/" + shenhe + ".atlas",
-      premultipliedAlpha: false,
-      showControls: false,
-      alpha: true,
-      backgroundColor: "#00000000",
-      animation: "animation",
-      viewport: {
-        x: 0,
-        y: -550,
-        width: 1012.2 / 2,
-        height: 2046.31 / 2,
-        padLeft: "0%",
-        padRight: "0%",
-        padTop: "0%",
-        padBottom: "0%"
-      }
-    });
-    new spine.SpinePlayer("player-container2", {
-      jsonUrl: "/"+shenhe + "/shenhelh.json",
-      atlasUrl: "/"+shenhe + "/shenhelh.atlas",
-      premultipliedAlpha: false,
-      showControls: false,
-      alpha: true,
-      backgroundColor: "#00000000",
-      animation: "animation",
-      viewport: {
-        x: 0,
-        y: -550,
-        width: 1012.2 / 2,
-        height: 2046.31 / 2,
-        padLeft: "0%",
-        padRight: "0%",
-        padTop: "0%",
-        padBottom: "0%"
-      }
-    });
+    var pc1 = document.querySelector("#player-container")
+    if (pc1) {
+      new spine.SpinePlayer("player-container", {
+        jsonUrl: "/" + shenhe + "/" + shenhe + ".json",
+        atlasUrl: "/" + shenhe + "/" + shenhe + ".atlas",
+        premultipliedAlpha: false,
+        showControls: false,
+        alpha: true,
+        backgroundColor: "#00000000",
+        animation: "animation",
+        viewport: {
+          x: 0,
+          y: -550,
+          width: 1012.2 / 2,
+          height: 2046.31 / 2,
+          padLeft: "0%",
+          padRight: "0%",
+          padTop: "0%",
+          padBottom: "0%"
+        }
+      });
+    }
+    var pc2 = document.querySelector("#player-container2")
+    if (pc2) {
+      new spine.SpinePlayer("player-container2", {
+        jsonUrl: "/" + shenhe + "/shenhelh.json",
+        atlasUrl: "/" + shenhe + "/shenhelh.atlas",
+        premultipliedAlpha: false,
+        showControls: false,
+        alpha: true,
+        backgroundColor: "#00000000",
+        animation: "animation",
+        viewport: {
+          x: 0,
+          y: -550,
+          width: 1012.2 / 2,
+          height: 2046.31 / 2,
+          padLeft: "0%",
+          padRight: "0%",
+          padTop: "0%",
+          padBottom: "0%"
+        }
+      });
+    }
   }
 
 

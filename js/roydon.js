@@ -10,7 +10,7 @@ function whenDOMReady() {
   roydon.danmu()
   roydon.swiperInit()
   roydon.hideIndexTop()
-  roydon.shenheSpine() //侧边栏申鹤spine
+
   // roydon.essay()
 }
 
@@ -20,24 +20,22 @@ document.addEventListener("pjax:complete", whenDOMReady)
 // roydon.randoMcBgGif()//随机mcgif
 roydon.randomIndexVideo() //首页视频背景随机
 roydon.initIndexEssay() //初始化首页即可短文banner
+roydon.shenheSpine() //侧边栏申鹤spine
 
-
-// console.log(roydon.getCDNSiteBg());
-var cdnSiteBg = []
+var cdnSiteBg = new Array
 // 1. 创建 XHR 对象
-var xhr = new XMLHttpRequest()
-// 2. 调用 open 函数
-xhr.open('GET', 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt')
-// 3. 调用 send 函数，发起 Ajax 请求
-xhr.send()
-// 4. 监听 onreadystatechange 事件
-xhr.onreadystatechange = function () {
-  //监听 xhr 对象的请求状态 readyState ；与服务器响应的状态 status
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    // 获取服务器响应的数据xhr.responseText(json格式的字符串)
-    console.log(xhr.responseText)
+function getCDNSiteBg() { //获取cdn图片资源
+  var xhr = new XMLHttpRequest()
+  xhr.open('GET', 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN@1.2.3/siteBgZIP.txt')
+  xhr.send()
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      cdnSiteBg = xhr.responseText.replace(/\s*/g, "").split(',')
+      // console.log(cdnSiteBg);
+    }
   }
 }
+
 
 // document.onkeydown = function (e) {
 //   if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，不能打开控制台喔!"), event.keyCode = 0, event.returnValue = !1, !1
@@ -125,15 +123,56 @@ console.log = function () {};
 console.error = function () {};
 console.warn = function () {};
 
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = src
+    script.onload = resolve
+    script.onerror = reject
+    document.head.appendChild(script)
+  })
+}
+
+var siteBgZIP = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/'
+var siteBgPhoneZIP = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgPhoneZIP/'
+
+//切换一组图片,s表示手机或电脑
+function getNewCDNBg(s) {
+  if (s == 'pc') {
+    getCDNSiteBg()
+    cdnSiteBg.sort(function () {
+      return 0.5 - Math.random();
+    })
+    var new6bgs = [] //随机选出六条数据
+    for (let index = 0; index < 6; index++) {
+      var temp = Math.floor(Math.random() * cdnSiteBg.length)
+      new6bgs.push(temp)
+    }
+    // console.log(new6bgs);
+    // console.log(cdnSiteBg[new6bgs[0]]);
+    var pcbgc = document.querySelector("#pc-bg")
+    if (pcbgc) {
+      pcbgc.innerHTML = `
+      <a style="background-image:url(${siteBgZIP}${cdnSiteBg[new6bgs[0]]})" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}${cdnSiteBg[new6bgs[0]]})')" href="javascript:;"></a>
+      <a style="background-image:url(${siteBgZIP}${cdnSiteBg[new6bgs[1]]})" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}${cdnSiteBg[new6bgs[1]]})')" href="javascript:;"></a>
+      <a style="background-image:url(${siteBgZIP}${cdnSiteBg[new6bgs[2]]})" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}${cdnSiteBg[new6bgs[2]]})')" href="javascript:;"></a>
+      <a style="background-image:url(${siteBgZIP}${cdnSiteBg[new6bgs[3]]})" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}${cdnSiteBg[new6bgs[3]]})')" href="javascript:;"></a>
+      <a style="background-image:url(${siteBgZIP}${cdnSiteBg[new6bgs[4]]})" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}${cdnSiteBg[new6bgs[4]]})')" href="javascript:;"></a>
+      <a style="background-image:url(${siteBgZIP}${cdnSiteBg[new6bgs[5]]})" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}${cdnSiteBg[new6bgs[5]]})')" href="javascript:;"></a>
+      `
+    }
+
+  }
+}
+
 /* winbox */
 var winbox = ''
 
 function createWinbox() {
   // sm("点击图片切换背景", "您可以选择操作：)")
-
+  getCDNSiteBg()
   // btf.snackbarShow('点击图片切换背景：)')
-  var siteBgZIP = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/'
-  var siteBgPhoneZIP = 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgPhoneZIP/'
+
   let div = document.createElement('div')
   document.body.appendChild(div)
   winbox = WinBox({
@@ -170,14 +209,14 @@ function createWinbox() {
     <h2 id="电脑壁纸"><a href="#电脑壁纸" class="headerlink" title="电脑壁纸"></a>电脑壁纸</h2>
     <details class="folding-tag" cyan><summary> 查看电脑壁纸 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" style="background-image:url(${siteBgZIP}dplo2m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}dplo2m.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}3zppld.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}3zppld.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}e7g71w.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}e7g71w.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}72dvlv.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}72dvlv.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}k7wor1.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}k7wor1.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}1k2kp9.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1k2kp9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}1p8rk3.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1p8rk3.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}5gdw85.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}5gdw85.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}28rr8m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}28rr8m.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}577mx5.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}577mx5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}gp78ll.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}gp78ll.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}x828yd.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}x828yd.webp)')"></a></div>
+              <p><div class="bgbox" id="pc-bg"><a href="javascript:;" style="background-image:url(${siteBgZIP}dplo2m.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}dplo2m.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}e7g71w.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}e7g71w.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}72dvlv.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}72dvlv.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}1k2kp9.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}1k2kp9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}5gdw85.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}5gdw85.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgZIP}577mx5.webp)" class="imgbox" onclick="roydon.changeBg('url(${siteBgZIP}577mx5.webp)')"></a></div></p><button onclick="getNewCDNBg('pc')" style="background:#F69;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;margin: 0 auto;"> 切换一批图片</button>
               </div>
             </details>
 
     <h2 id="手机壁纸"><a href="#手机壁纸" class="headerlink" title="手机壁纸"></a>手机壁纸</h2>
     <details class="folding-tag" cyan><summary> 查看手机壁纸 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}7p66we.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}7p66we.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}jx88k5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}jx88k5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}gpjj97.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}gpjj97.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57x9l9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57x9l9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57od15.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57od15.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}rdkd3q.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}rdkd3q.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}5glvk5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}5glvk5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}mp8zp8.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}mp8zp8.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}1kd8p9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}1kd8p9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}3z1dg9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}3z1dg9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}6oek9w.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}6oek9w.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}m3ppwy.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}m3ppwy.webp)')"></a></div>
+              <div class="bgbox" id="pg-bg"><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}7p66we.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}7p66we.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}jx88k5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}jx88k5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}gpjj97.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}gpjj97.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57x9l9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57x9l9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}57od15.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}57od15.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}rdkd3q.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}rdkd3q.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}5glvk5.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}5glvk5.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}mp8zp8.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}mp8zp8.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}1kd8p9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}1kd8p9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}3z1dg9.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}3z1dg9.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}6oek9w.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}6oek9w.webp)')"></a><a href="javascript:;" style="background-image:url(${siteBgPhoneZIP}m3ppwy.webp)" class="pimgbox" onclick="roydon.changeBg('url(${siteBgPhoneZIP}m3ppwy.webp)')"></a></div>
               </div>
             </details>
     
