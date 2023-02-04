@@ -3647,6 +3647,9 @@ figure.highlight pre .javascript .function {
 }
 .tag-cloud-list a:hover {
   color: #f69 !important;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
@@ -4111,7 +4114,7 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .card-tag-cloud a {
   display: inline-block;
-  padding: 0 2px;
+  padding: 0 4px;
   margin: 0 2px;
   border-radius: 4px;
   font-weight: bold;
