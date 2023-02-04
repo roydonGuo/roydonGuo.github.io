@@ -10,7 +10,7 @@ function whenDOMReady() {
   roydon.danmu()
   roydon.swiperInit()
   roydon.hideIndexTop()
-
+  roydon.shenheSpine() //侧边栏申鹤spine
   // roydon.essay()
 }
 
@@ -21,22 +21,23 @@ document.addEventListener("pjax:complete", whenDOMReady)
 roydon.randomIndexVideo() //首页视频背景随机
 roydon.initIndexEssay() //初始化首页即可短文banner
 
+
 // console.log(roydon.getCDNSiteBg());
-// var cdnSiteBg = []
-// // 1. 创建 XHR 对象
-// var xhr = new XMLHttpRequest()
-// // 2. 调用 open 函数
-// xhr.open('GET', 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt')
-// // 3. 调用 send 函数，发起 Ajax 请求
-// xhr.send()
-// // 4. 监听 onreadystatechange 事件
-// xhr.onreadystatechange = function () {
-//   //监听 xhr 对象的请求状态 readyState ；与服务器响应的状态 status
-//   if (xhr.readyState === 4 && xhr.status === 200) {
-//     // 获取服务器响应的数据xhr.responseText(json格式的字符串)
-//     console.log(xhr.responseText)
-//   }
-// }
+var cdnSiteBg = []
+// 1. 创建 XHR 对象
+var xhr = new XMLHttpRequest()
+// 2. 调用 open 函数
+xhr.open('GET', 'https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP.txt')
+// 3. 调用 send 函数，发起 Ajax 请求
+xhr.send()
+// 4. 监听 onreadystatechange 事件
+xhr.onreadystatechange = function () {
+  //监听 xhr 对象的请求状态 readyState ；与服务器响应的状态 status
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    // 获取服务器响应的数据xhr.responseText(json格式的字符串)
+    console.log(xhr.responseText)
+  }
+}
 
 // document.onkeydown = function (e) {
 //   if (123 == e.keyCode || (e.ctrlKey && e.shiftKey && (74 === e.keyCode || 73 === e.keyCode || 67 === e.keyCode)) || (e.ctrlKey && 85 === e.keyCode)) return btf.snackbarShow("你真坏，不能打开控制台喔!"), event.keyCode = 0, event.returnValue = !1, !1
@@ -212,45 +213,6 @@ function toggleWinbox() {
   else createWinbox();
 }
 
-var shenhe = "shenhe"
-new spine.SpinePlayer("player-container", {
-  jsonUrl: shenhe + "/" + shenhe + ".json",
-  atlasUrl: shenhe + "/" + shenhe + ".atlas",
-  premultipliedAlpha: false,
-  showControls: false,
-  alpha: true,
-  backgroundColor: "#00000000",
-  animation: "animation",
-  viewport: {
-    x: 0,
-    y: -550,
-    width: 1012.2 / 2,
-    height: 2046.31 / 2,
-    padLeft: "0%",
-    padRight: "0%",
-    padTop: "0%",
-    padBottom: "0%"
-  }
-});
-new spine.SpinePlayer("player-container2", {
-  jsonUrl: shenhe+"/shenhelh.json",
-  atlasUrl: shenhe+"/shenhelh.atlas",
-  premultipliedAlpha: false,
-  showControls: false,
-  alpha: true,
-  backgroundColor: "#00000000",
-  animation: "animation",
-  viewport: {
-        x: 0,
-        y: -550,
-        width: 1012.2/2,
-        height: 2046.31/2,
-        padLeft: "0%",
-        padRight: "0%",
-        padTop: "0%",
-        padBottom: "0%"
-    }
-});
 
 //重定向浏览器地址
 // pjax.site_handleResponse = pjax.handleResponse;
