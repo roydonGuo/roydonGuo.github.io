@@ -7165,6 +7165,7 @@ blockquote.pullquote.right {
   padding: 5px 18px;
   background: #f69;
   color: var(--white);
+  border-radius: 5px;
 }
 .hide-inline > .hide-button:hover,
 .hide-block > .hide-button:hover {
