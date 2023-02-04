@@ -3239,7 +3239,7 @@ figure.highlight pre .javascript .function {
 #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 1em;
 }
-#recent-posts .firstpost-item:before {
+#recent-posts .firstpost-item:after {
   content: "最新";
   font-size: 1rem;
   font-weight: bold;
