@@ -3635,8 +3635,8 @@ figure.highlight pre .javascript .function {
 }
 .tag-cloud-list a {
   display: inline-block;
-  padding: 0 2px;
-  margin: 0 2px;
+  padding: 0 8px;
+  margin: 2px 4px;
   border-radius: 8px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
