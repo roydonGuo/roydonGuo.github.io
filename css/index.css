@@ -2233,7 +2233,7 @@ figure.highlight pre .javascript .function {
   background-size: 120% !important;
 }
 .category-lists li.category-list-item:nth-child(1) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87e2c0e8.jpg');
+  background: url('/img/category/android.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2284,7 +2284,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(2) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87fdb290.jpg');
+  background: url('/img/category/dsa.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2335,7 +2335,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(3) {
-  background: url('https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/l3d2yq.webp');
+  background: url('/img/category/genshin.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2386,7 +2386,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(4) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f8800c958.jpg');
+  background: url('/img/category/harmonyOS.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2437,7 +2437,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(5) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87e2afa0.jpg');
+  background: url('/img/category/spring.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2488,7 +2488,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(6) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f8af1b.jpg');
+  background: url('/img/category/code.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2539,7 +2539,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(7) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f1b4c4.jpg');
+  background: url('/img/category/mc.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2590,7 +2590,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(8) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f6d94e.png');
+  background: url('/img/category/python.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2743,7 +2743,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(11) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f365b5.jpg');
+  background: url('/img/category/windows.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -4868,28 +4868,28 @@ span.categoryBar-list-count::before {
   font-size: 0.5rem;
 }
 li.categoryBar-list-item:nth-child(1) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87e2c0e8.jpg');
+  background: url('/img/category/android.webp');
 }
 li.categoryBar-list-item:nth-child(2) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87fdb290.jpg');
+  background: url('/img/category/dsa.webp');
 }
 li.categoryBar-list-item:nth-child(3) {
-  background: url('https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/l3d2yq.webp');
+  background: url('/img/category/genshin.webp');
 }
 li.categoryBar-list-item:nth-child(4) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f8800c958.jpg');
+  background: url('/img/category/harmonyOS.webp');
 }
 li.categoryBar-list-item:nth-child(5) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87e2afa0.jpg');
+  background: url('/img/category/spring.webp');
 }
 li.categoryBar-list-item:nth-child(6) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f8af1b.jpg');
+  background: url('/img/category/code.webp');
 }
 li.categoryBar-list-item:nth-child(7) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f1b4c4.jpg');
+  background: url('/img/category/mc.webp');
 }
 li.categoryBar-list-item:nth-child(8) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f6d94e.png');
+  background: url('/img/category/python.webp');
 }
 li.categoryBar-list-item:nth-child(9) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87e29eac.png');
@@ -4898,7 +4898,7 @@ li.categoryBar-list-item:nth-child(10) {
   background: url('https://bu.dusays.com/2022/11/17/6375f87f166d9.jpg');
 }
 li.categoryBar-list-item:nth-child(11) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f365b5.jpg');
+  background: url('/img/category/windows.webp');
 }
 li.categoryBar-list-item {
   width: 15.66%;
