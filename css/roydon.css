@@ -2369,6 +2369,7 @@ img.footer_mini_logo:hover {
   width: 16%;
   height: 24em;
   background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
+  background-color: brown;
   background-size: contain;
   color: rgb(122, 49, 6);
   overflow: hidden;
@@ -3430,6 +3431,7 @@ div#post:hover {
   width: 16%;
   height: 24em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e493df.jpg) left center / cover no-repeat;
+  background-color: thistle;
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
@@ -3447,6 +3449,7 @@ div#post:hover {
   width: 16%;
   height: 24em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e52b53.jpg) left center / cover no-repeat;
+  background-color: lavender;
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
@@ -3464,6 +3467,7 @@ div#post:hover {
   width: 16%;
   height: 24em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e4fc09.jpg) left center / cover no-repeat;
+  background-color: bisque;
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
