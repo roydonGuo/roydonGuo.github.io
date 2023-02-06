@@ -3995,7 +3995,7 @@ h1.page-title + .tag-cloud-list {
   padding: 10px;
 }
 #aside-content .card-announcement {
-  height: 160px;
+  height: 200px;
   padding: 0 !important;
   background-image: url("../img/shenhe_bg.png");
   background-size: cover;
