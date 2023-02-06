@@ -1,6 +1,6 @@
 #canvas {
   display: block;
-  /* width: 100vw; */
+  width: 80%;
   height: 100%;
   border-radius: 20px
 }
@@ -8,14 +8,14 @@
 #repro-time {
   position: absolute;
   top: 0%;
-  left: 0%;
+  right: 0%;
   height: 50px;
   width: 280px;
   line-height: 40px;
   text-align: center;
   background-color: brown;
   padding: 5px;
-  border-radius: 20px 0;
+  border-radius: 0 20px;
 }
 
 .larger {
@@ -48,18 +48,18 @@
   height: 24em;
   color: wheat;
   overflow: hidden;
-}
-
-.hutao {
-  position: relative;
-  height: 100%;
-  width: 100%;
   background-image: url("/log/bg.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   border-radius: 20px;
-  /* overflow: hidden; */
+}
+
+.hutao {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  overflow: hidden;
 }
 
 #log {
