@@ -3230,7 +3230,7 @@ figure.highlight pre .javascript .function {
 }
 @media screen and (max-width: 1024px) {
   .flink-list .flink-list-item {
-    width: calc(33.33333% - 16px);
+    width: calc(33.33% - 16px);
   }
 }
 @media screen and (max-width: 600px) {
