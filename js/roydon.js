@@ -261,3 +261,6 @@ function toggleWinbox() {
 //   });
 //   pjax.site_handleResponse(responseText,request,href,options);
 // }
+
+var errorMSG = document.querySelector("#message")
+errorMSG.style.display = 'none';

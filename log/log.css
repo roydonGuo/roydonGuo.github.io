@@ -118,14 +118,14 @@
   font-size: 0.8rem;
 }
 
-.banner-button-group {
+.card-button-group {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
 
 }
 
-.banner-button {
+.card-button {
   height: 2rem;
   width: 4rem;
   border-radius: 1.2rem;
