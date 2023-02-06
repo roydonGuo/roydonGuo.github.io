@@ -1,7 +1,7 @@
 var showtime = function () {
   var nowtime = new Date()
   console.log(nowtime);
-  var tipdate = "距离胡桃复刻："
+  var tipdate = "距离胡桃复刻还剩："
   var endtime = new Date("2023/2/7 18:00:00"); //结束时间
   var lefttime = endtime.getTime() - nowtime.getTime(), //距离结束时间的毫秒数
     leftd = Math.floor(lefttime / (1000 * 60 * 60 * 24)), //计算天数
@@ -14,3 +14,4 @@ var div = document.querySelector("#repro-time");
 setInterval(function () {
   div.innerHTML = showtime();
 }, 1000)
+
