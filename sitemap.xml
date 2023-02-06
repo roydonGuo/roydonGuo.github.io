@@ -38,25 +38,7 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/manifest.json</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/owo.json</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/movies/index.html</loc>
     
     <lastmod>2023-02-06</lastmod>
     
@@ -75,6 +57,24 @@
   
   <url>
     <loc>https://www.roydon.top/shenhe/shenhe.json</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/manifest.json</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/movies/index.html</loc>
     
     <lastmod>2023-02-06</lastmod>
     

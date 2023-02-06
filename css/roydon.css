@@ -239,8 +239,8 @@
 }
 
 .author-content-item .card-content .banner-button-group .banner-button {
-  height: 2.5rem;
-  width: 5rem;
+  height: 2rem;
+  width: 4rem;
   border-radius: 1.2rem;
   background: var(--roydon-button-bg);
   display: flex;
