@@ -1,0 +1,127 @@
+#canvas {
+  display: block;
+  /* width: 100vw; */
+  height: 100%;
+  border-radius: 20px
+}
+
+#repro-time {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 50px;
+  width: 280px;
+  line-height: 40px;
+  text-align: center;
+  background-color: brown;
+  padding: 5px;
+  border-radius: 20px 0;
+}
+
+.larger {
+  border-radius: 8px;
+  display: block !important;
+  margin: 8px auto !important;
+  width: 100px !important;
+  max-width: 120px !important;
+}
+
+.log-top-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.log-top-content-item {
+  width: 49%;
+  border-radius: 24px;
+  box-shadow: var(--roydon-box-shadow);
+  position: relative;
+  /* padding: 1rem 2rem; */
+  overflow: hidden;
+
+}
+
+.logPage-left {
+  width: 83%;
+  height: 24em;
+  color: wheat;
+  overflow: hidden;
+}
+
+.hutao {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("/log/bg.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+#log {
+  width: 100%;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .logPage-left {
+    width: 100%;
+  }
+
+  .logPage-right {
+    display: none
+  }
+}
+
+
+.logPage-right {
+  width: 16%;
+  height: 24em;
+  background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
+  background-size: contain;
+  background-color: brown;
+  color: gold;
+  overflow: hidden;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.cart-tips {
+  font-size: 1rem;
+}
+
+.cart-title {
+  font-size: 0.8rem;
+}
+
+.banner-button-group {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+}
+
+.banner-button {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 1.2rem;
+  background: var(--roydon-button-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
