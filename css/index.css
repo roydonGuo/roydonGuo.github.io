@@ -2115,7 +2115,10 @@ figure.highlight pre .javascript .function {
   padding: 0 !important;
 }
 .article-sort-item.year {
-  font-size: 1.43em;
+  width: 100%;
+  padding: 0 1rem;
+  background: var(--text-bg-hover);
+  font-size: 1.6rem;
 }
 .article-sort-item.year:hover:before {
   border-color: #f69;
