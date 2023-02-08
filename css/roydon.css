@@ -1281,7 +1281,7 @@ a.catalog-more:hover {
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3);
+  background: transparent !important;
   border-radius: 4px;
   border: 1px solid transparent;
 }
@@ -2217,9 +2217,9 @@ img.footer_mini_logo:hover {
 }
 
 #Jay-footer .footer-item {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   line-height: 1rem;
-  margin: .7rem 0;
+  margin: .5rem 0;
   color: white;
 }
 
@@ -2229,7 +2229,7 @@ img.footer_mini_logo:hover {
 
 #Jay-footer .footer-title {
   color: pink;
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin: 0 auto;
 }
 
@@ -2464,6 +2464,7 @@ img.footer_mini_logo:hover {
 
 .article-sort-item.year {
   width: 100%;
+  margin: 0.5rem auto;
 }
 
 #recent-posts {

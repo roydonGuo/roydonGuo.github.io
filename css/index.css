@@ -1355,7 +1355,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff3456;
+  --btn-hover-color: #f69;
   --btn-color: #fff;
   --btn-bg: #f69;
   --text-bg-hover: rgba(255,102,153,0.7);
@@ -1369,7 +1369,7 @@ canvas:not(#ribbon-canvas),
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #ff3456;
+  --pseudo-hover: #f69;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
   --roydon-ganyu-color: #1fb0f9;
@@ -1496,7 +1496,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #ff3456;
+  background: #f69;
   color: #f7f7f7;
 }
 button {
@@ -6182,7 +6182,7 @@ h2.f4.text-normal.mb-3 {
   font-weight: bold;
 }
 #article-container a {
-  color: #006aff;
+  color: #8a2be2;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -6588,7 +6588,7 @@ h2.f4.text-normal.mb-3 {
 }
 #rightside {
   position: fixed;
-  right: -48px;
+  right: -45px;
   bottom: 40px;
   z-index: 100;
   opacity: 0;
@@ -6776,7 +6776,7 @@ h2.f4.text-normal.mb-3 {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #f69;
-  --waline-active-color: #ff3456;
+  --waline-active-color: #f69;
 }
 #waline-wrap .vuser {
   -webkit-transition: all 0.5s;

@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
           $header.classList.add('nav-fixed')
           if (window.getComputedStyle($rightside).getPropertyValue('opacity') === '0') {
-            $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
+            $rightside.style.cssText = 'opacity: 1; transform: translateX(-58px)'
           }
         } else {
           if (currentTop === 0) {
