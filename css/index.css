@@ -3201,7 +3201,7 @@ figure.highlight pre .javascript .function {
   top: 0;
   left: 1rem;
   color: #ffd700;
-  background: #00f;
+  background: #8a2be2;
   padding: 0 16px;
   border-radius: 0 0 12px 12px;
 }
@@ -5670,7 +5670,7 @@ h2.f4.text-normal.mb-3 {
   background: var(--card-bg);
   background-size: cover;
   border: var(--style-border);
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
   -webkit-box-shadow: var(--roydon-box-shadow);
   box-shadow: var(--roydon-box-shadow);

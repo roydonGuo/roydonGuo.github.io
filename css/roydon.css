@@ -2319,25 +2319,25 @@ img.footer_mini_logo:hover {
 .parallax>use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
-  fill: #5782f0a6;
+  fill: #5782f038;
 }
 
 .parallax>use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
-  fill: #8faaedab;
+  fill: #b2c2eb38;
 }
 
 .parallax>use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
-  fill: #9eb4e868;
+  fill: #7d9be238;
 }
 
 .parallax>use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
-  fill: #819ce185;
+  fill: #bdc9e738;
 }
 
 @keyframes move-forever {
