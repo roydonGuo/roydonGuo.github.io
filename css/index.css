@@ -5856,10 +5856,10 @@ h2.f4.text-normal.mb-3 {
   transition: all 0.3s;
 }
 #index-top .index-top-container .right-grop .swiperPost .swiper-button-prev::after {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 #index-top .index-top-container .right-grop .swiperPost .swiper-button-next::after {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 #index-top .index-top-container .right-grop .swiperPost .swiper-post-item {
   display: -webkit-box;
@@ -5926,6 +5926,28 @@ h2.f4.text-normal.mb-3 {
   -o-animation: ran 10s linear infinite;
   -ms-animation: ran 10s linear infinite;
   animation: ran 10s linear infinite;
+}
+#index-top .index-top-container .right-grop .swiperPost .post-tag {
+  background: -webkit-linear-gradient(45deg, #ffd100, #f00, #ffd700);
+  background: -moz-linear-gradient(45deg, #ffd100, #f00, #ffd700);
+  background: -o-linear-gradient(45deg, #ffd100, #f00, #ffd700);
+  background: -ms-linear-gradient(45deg, #ffd100, #f00, #ffd700);
+  background: linear-gradient(45deg, #ffd100, #f00, #ffd700);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 4px 8px;
+  color: var(--font-color);
+  z-index: 1;
+  border-radius: 16px 0px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  background-size: 500% !important;
+  -webkit-animation: gradient 10s ease infinite;
+  -moz-animation: gradient 10s ease infinite;
+  -o-animation: gradient 10s ease infinite;
+  -ms-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 #index-top .index-top-container .right-grop #about-card {
   height: 56%;
