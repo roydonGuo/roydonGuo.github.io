@@ -2776,7 +2776,7 @@ figure.highlight pre .javascript .function {
   flex: 1 auto;
   margin: 0 auto;
   padding: 1em 15px;
-  max-width: 1450px;
+  max-width: 1500px;
   width: 100%;
 }
 @media screen and (max-width: 900px) {
@@ -2796,7 +2796,7 @@ figure.highlight pre .javascript .function {
 }
 @media screen and (min-width: 2000px) {
   .layout {
-    max-width: 1450px;
+    max-width: 1500px;
   }
 }
 .layout > div:first-child:not(.recent-posts) {
@@ -2834,11 +2834,11 @@ figure.highlight pre .javascript .function {
   }
 }
 .layout.hide-aside {
-  max-width: 1450px;
+  max-width: 1500px;
 }
 @media screen and (min-width: 2000px) {
   .layout.hide-aside {
-    max-width: 1450px;
+    max-width: 1500px;
   }
 }
 .layout.hide-aside > div {
@@ -5597,7 +5597,7 @@ h2.f4.text-normal.mb-3 {
 }
 #index-top {
   width: 100%;
-  max-width: 1450px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 1em 10px 0;
 }

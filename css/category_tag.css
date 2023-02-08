@@ -94,15 +94,11 @@
 }
 
 .catalog-list-item a {
-  margin: 0 .2em;
-  padding: 0.2em 0.3em 0.3em;
+  margin: 0 4px;
+  padding: 4px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 6px !important;
   color: var(--font-color);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 

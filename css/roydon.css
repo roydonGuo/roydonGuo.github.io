@@ -1218,10 +1218,10 @@
 }
 
 .catalog-list-item a {
-  margin: 0 2px;
-  padding: 6px;
+  margin: 0 5px;
+  padding: 5px;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 5px;
   color: var(--font-color);
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1232,7 +1232,7 @@
 
 .catalog-list-item:hover a {
   background: pink;
-  color: aqua;
+  color: var(--roydon-nav-hover);
 }
 
 .catalog-list-item.selected a {
