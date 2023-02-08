@@ -263,4 +263,6 @@ function toggleWinbox() {
 // }
 
 var errorMSG = document.querySelector("#message")
-errorMSG.style.display = 'none';
+if (errorMSG) {
+  errorMSG.style.display = 'none'
+}
