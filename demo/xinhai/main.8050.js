@@ -34963,7 +34963,7 @@ var config_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _a
     });
 };
 
-const configLoading = getJSON('config.json');
+const configLoading = getJSON('xinhai/config.json');
 function getConfig() {
     return config_awaiter(this, void 0, void 0, function* () {
         return configLoading;
