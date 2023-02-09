@@ -3880,7 +3880,7 @@ var Texture = /** @class */ (function (_super) {
             }
             if (utils_es.TextureCache[id]) {
                 // eslint-disable-next-line no-console
-                console.warn("Texture added to the cache with an id [" + id + "] that already had an entry");
+                // console.warn("Texture added to the cache with an id [" + id + "] that already had an entry");
             }
             utils_es.TextureCache[id] = texture;
         }
@@ -4112,7 +4112,7 @@ var RenderTexture = /** @class */ (function (_super) {
             var scaleMode = arguments[3];
             var resolution = arguments[4];
             // we have an old render texture..
-            console.warn("Please use RenderTexture.create(" + width + ", " + height + ") instead of the ctor directly.");
+            // console.warn("Please use RenderTexture.create(" + width + ", " + height + ") instead of the ctor directly.");
             _legacyRenderer = arguments[0];
             /* eslint-enable prefer-rest-params, no-console */
             frame = null;
@@ -5835,14 +5835,14 @@ var ContextSystem = /** @class */ (function (_super) {
         // this is going to be fairly simple for now.. but at least we have room to grow!
         if (!attributes.stencil) {
             /* eslint-disable max-len, no-console */
-            console.warn('Provided WebGL context does not have a stencil buffer, masks may not render correctly');
+            // console.warn('Provided WebGL context does not have a stencil buffer, masks may not render correctly');
             /* eslint-enable max-len, no-console */
         }
         var hasuint32 = isWebGl2 || !!gl.getExtension('OES_element_index_uint');
         this.supports.uint32Indices = hasuint32;
         if (!hasuint32) {
             /* eslint-disable max-len, no-console */
-            console.warn('Provided WebGL context does not support 32 index buffer, complex graphics may not render correctly');
+            // console.warn('Provided WebGL context does not support 32 index buffer, complex graphics may not render correctly');
             /* eslint-enable max-len, no-console */
         }
     };
@@ -6582,7 +6582,7 @@ var GeometrySystem = /** @class */ (function (_super) {
                 attributes[j].size = program.attributeData[j].size;
             }
             else if (!attributes[j].size) {
-                console.warn("PIXI Geometry attribute '" + j + "' size cannot be determined (likely the bound shader does not have the attribute)"); // eslint-disable-line
+                // console.warn("PIXI Geometry attribute '" + j + "' size cannot be determined (likely the bound shader does not have the attribute)"); // eslint-disable-line
             }
             tempStride[attributes[j].buffer] += attributes[j].size * byteSizeMap$1[attributes[j].type];
         }
@@ -6771,7 +6771,7 @@ var GeometrySystem = /** @class */ (function (_super) {
                 }
             }
             else {
-                console.warn('unsupported index buffer type: uint32');
+                // console.warn('unsupported index buffer type: uint32');
             }
         }
         else if (geometry.instanced) {
@@ -16758,7 +16758,7 @@ function sayHello(type) {
         (_a = window.console).log.apply(_a, args);
     }
     else if (window.console) {
-        window.console.log("PixiJS " + VERSION + " - " + type + " - http://www.pixijs.com/");
+        // window.console.log("PixiJS " + VERSION + " - " + type + " - http://www.pixijs.com/");
     }
     saidHello = true;
 }
@@ -23228,19 +23228,19 @@ var log_logger;
 (function (logger) {
     function log(tag, ...messages) {
         if (config["b" /* config */].logLevel <= config["b" /* config */].LOG_LEVEL_VERBOSE) {
-            console.log(`[${tag}]`, ...messages);
+            // console.log(`[${tag}]`, ...messages);
         }
     }
     logger.log = log;
     function warn(tag, ...messages) {
         if (config["b" /* config */].logLevel <= config["b" /* config */].LOG_LEVEL_WARNING) {
-            console.warn(`[${tag}]`, ...messages);
+            // console.warn(`[${tag}]`, ...messages);
         }
     }
     logger.warn = warn;
     function error(tag, ...messages) {
         if (config["b" /* config */].logLevel <= config["b" /* config */].LOG_LEVEL_ERROR) {
-            console.error(`[${tag}]`, ...messages);
+            // console.error(`[${tag}]`, ...messages);
         }
     }
     logger.error = error;
@@ -34908,25 +34908,25 @@ const TAG = 'Net';
 function getJSON(url) {
     return __awaiter(this, void 0, void 0, function* () {
         const result = yield request(url, { responseType: 'json' });
-        console.log(TAG, `[${url}] (JSON)`, result);
+        // console.log(TAG, `[${url}] (JSON)`, result);
         return result;
     });
 }
 function postJSON(url, json) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log(TAG, 'Post JSON', url, json);
+        // console.log(TAG, 'Post JSON', url, json);
         const result = yield request(url, {
             method: 'POST',
             body: json,
             responseType: 'json',
         });
-        console.log(TAG, `[${url}] (POST)`, result);
+        // console.log(TAG, `[${url}] (POST)`, result);
         return result;
     });
 }
 function request(url, options = {}) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log(TAG, `[${url}]`);
+        // console.log(TAG, `[${url}]`);
         // DON'T use fetch because it refuses to load local files
         const xhr = new XMLHttpRequest();
         xhr.open(options.method || 'GET', url);
