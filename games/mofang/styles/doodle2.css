@@ -41,6 +41,7 @@ body {
   height: 600px;
   background-image: url(../bg.jpg);
   border-radius: 20px;
+  position: relative;
 }
 
 .graydient {
