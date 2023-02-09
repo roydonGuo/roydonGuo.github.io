@@ -203,7 +203,7 @@ function createWinbox() {
     <div class="bgbox">
     <button onclick="javascript:loadScript('https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js');" style="background:#fc8cff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"> 樱花飘落</button>
     <button onclick="javascript:loadScript('/js/xh1.js');" style="background:#3cf4ff;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"> 雪花飘落</button>
-    <button onclick="javascript:loadScript('/js/xh2.js');" style="background:#ff6224;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"> 秋叶飘落</button>
+    <button onclick="javascript:loadScript('https://cdn.nesxc.com/js/leaves.js');" style="background:#ff6224;display:block;width:32%;padding: 15px 0;border-radius:6px;color:white;"> 秋叶飘落</button>
     </div>
 
     <h2 id="电脑壁纸"><a href="#电脑壁纸" class="headerlink" title="电脑壁纸"></a>电脑壁纸</h2>
