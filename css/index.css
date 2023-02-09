@@ -5093,13 +5093,14 @@ li.categoryBar-list-item {
   text-align: center;
   border-left: 1px solid #ddd;
   border-top: 1px solid #ddd;
-  font-size: 11px;
+  font-size: 10px;
+  line-height: 1;
 }
 .contrib-column-first {
   border-left: 0;
 }
 .table-column {
-  padding: 10px;
+  padding: 5px;
   display: table-cell;
   width: 33%;
   vertical-align: top;
