@@ -1355,7 +1355,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #f69;
+  --btn-hover-color: #f05;
   --btn-color: #fff;
   --btn-bg: #f69;
   --text-bg-hover: rgba(255,102,153,0.7);
@@ -1369,7 +1369,7 @@ canvas:not(#ribbon-canvas),
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #f69;
+  --pseudo-hover: #f05;
   --headline-presudo: #a0a0a0;
   --scrollbar-color: #49b1f5;
   --roydon-ganyu-color: #1fb0f9;
@@ -7101,7 +7101,7 @@ h2.f4.text-normal.mb-3 {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: #f69;
-  --waline-active-color: #f69;
+  --waline-active-color: #f05;
 }
 #waline-wrap .vuser {
   -webkit-transition: all 0.5s;
