@@ -278,3 +278,8 @@
 .aplayer .aplayer-lrc .aplayer-lrc-contents>.aplayer-lrc-current {
   color: #cf07f7;
 }
+
+.aplayer .aplayer-lrc:after,
+.aplayer .aplayer-lrc:before {
+  content: none !important;
+}
