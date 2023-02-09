@@ -9,14 +9,14 @@
   position: relative;
   width: 150px;
   height: 150px;
-  border: 5px solid gold
+  /* border: 5px solid gold */
 }
 
 #about-page .author-box .author-img img {
   border-radius: 50%;
   overflow: hidden;
-  width: 145px;
-  height: 145px;
+  width: 150px;
+  height: 150px;
 }
 
 #about-page .author-box .image-dot {
@@ -2220,7 +2220,7 @@ img.footer_mini_logo:hover {
   font-size: 0.8rem;
   line-height: 1rem;
   margin: .5rem 0;
-  color: white;
+  color: var(--roydon-a-color);
 }
 
 #Jay-footer .footer-item:hover {
@@ -2235,7 +2235,7 @@ img.footer_mini_logo:hover {
 
 #footer-banner {
   padding: 1rem;
-  color: white;
+  color: var(--roydon-a-color);
   backdrop-filter: blur(20px);
   background: transparent;
   display: flex;
@@ -2872,8 +2872,8 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 10px;
+  width: 2px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -3289,4 +3289,10 @@ div#post:hover {
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
+}
+
+.page .hide-aside #page,
+#archive {
+  padding: 0 !important;
+  background: none !important;
 }

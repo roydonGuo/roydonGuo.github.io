@@ -1,0 +1,783 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  display: inline;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  line-height: 40px;
+  margin: 0;
+  vertical-align: baseline;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+
+#fail {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin-left: -288px;
+  margin-top: -117px;
+}
+
+@media not screen and (-webkit-transform-3d) {
+  #container {
+    visibility: hidden;
+  }
+
+  #fail {
+    display: block;
+  }
+}
+
+.mofang {
+  width: 100%;
+  height: 600px;
+  background-image: url(../bg.jpg);
+  border-radius: 20px;
+}
+
+.graydient {
+  background: #000;
+  background: -moz-radial-gradient(center, ellipse cover, #444 0%, #000000 90%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #444), color-stop(90%, #000000));
+  background: -webkit-radial-gradient(center, ellipse cover, #444 0%, #000000 90%);
+  background: -o-radial-gradient(center, ellipse cover, #444 0%, #000000 90%);
+  background: -ms-radial-gradient(center, ellipse cover, #444 0%, #000000 90%);
+  background: radial-gradient(ellipse at center, #444 0%, #000000 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000', GradientType=1);
+}
+
+.grey {
+  background: #555;
+}
+
+.white {
+  background: #FFF;
+}
+
+#container {
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.text {
+  font-size: 200;
+}
+
+.text.textDown {
+  color: #DC422F;
+}
+
+.text.textBack {
+  color: #F5B400;
+}
+
+.text.textRight {
+  color: #3D81F6;
+}
+
+.shadow {
+  pointer-events: none;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: black;
+  box-shadow: 0 0 100px 80px black;
+  opacity: 0.06;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.bubble {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 3px solid black;
+  bottom: 4px;
+  line-height: normal;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+}
+
+.mobile .bubble {
+  background: #000;
+  border: 2px solid #555;
+  bottom: auto;
+  position: absolute;
+  right: 0;
+  top: 44px;
+}
+
+.pointerdown {
+  bottom: -15px;
+  display: block;
+  height: 15px;
+  margin: 0 0 0 -5px;
+  outline: none;
+  position: absolute;
+  right: 42px;
+}
+
+.mobile .pointerdown {
+  display: none;
+}
+
+.pointerup {
+  display: none;
+}
+
+.mobile .pointerup {
+  top: -15px;
+  display: block;
+  outline: none;
+  position: absolute;
+  right: 68px;
+}
+
+.bubbleicon {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fadeTransition {
+  -webkit-transition: opacity 250ms;
+  -moz-transition: opacity 250ms;
+  -ms-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+#sharebubble {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#uibuttons {
+  display: inline-block;
+}
+
+#buttonpanel {
+  line-height: normal;
+  position: absolute;
+  right: 0;
+}
+
+#shareshortlink {
+  background: #ddd;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+  vertical-align: top;
+  width: 120px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#shareshortlink::-ms-clear {
+  display: none;
+}
+
+#uipanel {
+  bottom: 40px;
+  height: 32px;
+  margin: 0 auto;
+  opacity: 0;
+  position: relative;
+  width: 572px;
+}
+
+.mobile #uipanel {
+  bottom: auto;
+  top: 4px;
+  right: 4px;
+  width: 100%;
+  position: absolute;
+}
+
+#movecounter {
+  bottom: -8px;
+  color: #ddd;
+  display: inline-block;
+  font-family: "Rubik One";
+  font-size: 14pt;
+  left: 0;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.mobile #movecounter {
+  bottom: auto;
+  top: 0;
+  color: #555;
+  padding: 4px 20px;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.upgradetext,
+.helptext {
+  font-family: arial;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 120px;
+  color: #999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.helptext {
+  font-family: arial;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 200px;
+  color: #999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#helpnext {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+#helpimage {
+  width: 160px;
+  height: 123px;
+  background-size: 160px 123px;
+}
+
+#helpimage.one {
+  background: no-repeat url(../media/help_rotate.png);
+  width: 140px;
+  height: 100px;
+  background-size: 140px 100px;
+}
+
+#helpimage.two {
+  background: no-repeat url(../media/help_twist.png);
+  width: 140px;
+  height: 100px;
+  background-size: 140px 100px;
+}
+
+.SPRITE_carrot_grey_up_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) -34px -168px;
+  width: 15px;
+  height: 15px;
+  background-size: 49px 688px
+}
+
+.SPRITE_email_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -472px;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_facebook_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -304px;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_google_plus_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -84px;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_help_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -422px;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_search_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 0;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_share_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -640px;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_twitter_96_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -590px;
+  width: 48px;
+  height: 48px;
+  background-size: 49px 688px
+}
+
+.SPRITE_carrot_down_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -556px;
+  width: 15px;
+  height: 15px;
+  background-size: 49px 688px
+}
+
+.SPRITE_email_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -270px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_facebook_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -236px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_google_plus_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -354px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_help_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -168px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_help_64_2x:hover {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -50px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_search_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -522px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_search_64_2x:hover {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) -17px -556px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_share_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -134px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_share_64_2x:hover {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -202px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+.SPRITE_twitter_64_2x {
+  background: no-repeat url(/logos/2014/rubiks/sprite-ui.png) 0 -388px;
+  width: 32px;
+  height: 32px;
+  background-size: 49px 688px
+}
+
+#certName,
+#certSolved {
+  width: 1100px;
+  color: #DC422F;
+  padding: 20px;
+  font-family: "Rubik One", Arial, sans-serif;
+  font-size: 180px;
+  text-align: center;
+  line-height: .97em;
+  text-transform: uppercase;
+}
+
+#certDate,
+#certMovesHeader,
+#certTimeHeader,
+#certName,
+#certSolved,
+#certTimeNumber,
+#certMovesNumber {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#certDate {
+  width: 1000px;
+  color: #000;
+  padding: 20px;
+  font-family: "Rubik One", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 110px;
+  text-align: center;
+  line-height: .8em;
+}
+
+#certMovesHeader,
+#certTimeHeader {
+  width: 1000px;
+  color: #000;
+  padding: 20px;
+  font-family: "Rubik One", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 90px;
+  text-align: center;
+  line-height: .8em;
+}
+
+#certTimeNumber,
+#certMovesNumber {
+  width: 1000px;
+  color: #3D81F6;
+  padding: 20px;
+  font-family: "Rubik One", Arial, sans-serif;
+  font-size: 180px;
+  text-align: center;
+  line-height: 1.0em;
+  text-transform: uppercase;
+}
+
+#certLarryName,
+#certErnoName {
+  width: 1000px;
+  color: #FF6C00;
+  padding: 20px;
+  font-family: "Rubik One", Arial, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  line-height: 1.0em;
+}
+
+#larrySignature {
+  width: 1000px;
+  height: 300px;
+  background-image: url("../media/Larry_Signature_400x120.png");
+  background-size: 700px 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#ernoSignature {
+  width: 1000px;
+  height: 300px;
+  background-image: url("../media/Erno_Signature_400x120.png");
+  background-size: 700px 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#lineLeft,
+#lineRight {
+  width: 1000px;
+  height: 10px;
+  background-color: #000;
+  display: inline-block;
+  background-image: url("../media/LogoFaces_0002_white.png");
+  background-repeat: no-repeat;
+  background-position: 100px 100px;
+}
+
+.logoFace {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1000;
+  background-size: 100% 100%;
+  background-repeat: none;
+  top: 0px;
+  right: 1px;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-image: url("../media/LogoFaces_0002_white.png");
+}
+
+.faceRight .logoFace {
+  background-image: url("../media/LogoFaces_0000_Goo.png");
+}
+
+.faceDown .logoFace {
+  background-image: url("../media/LogoFaces_0001_gle.png");
+}
+
+.faceDown .logoFace.ie {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.cube .sticker.red {
+  background: #DC422F;
+}
+
+.cube .sticker.white {
+  background: #FFFFFF;
+}
+
+.cube .sticker.blue {
+  background: #3D81F6;
+}
+
+.cube .sticker.green {
+  background: #009D54;
+}
+
+.cube .sticker.orange {
+  background: #FF6C00;
+}
+
+.cube .sticker.yellow {
+  background: #FDCC09;
+}
+
+.textBox_IE {
+  z-index: 10;
+  top: 0;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+}
+
+.faceLabel {
+  display: none;
+  position: absolute;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+  color: #FFF;
+}
+
+.cube .cubelet {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.cube
+
+/*.cubelet >*/
+.face {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-color: #000;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 0.05em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cube
+
+/*.cubelet >*/
+.face.faceIntroverted {
+  background-color: #000;
+}
+
+.cube
+
+/*.cubelet >*/
+.face.faceTransparent {
+  background-color: transparent;
+}
+
+.purty .face {
+  opacity: 0.5;
+}
+
+.purty .face.faceFront {
+  background-color: #FFF;
+}
+
+.purty .face.faceUp {
+  background-color: #E87000;
+}
+
+.purty .face.faceRight {
+  background-color: #3D81F6;
+}
+
+.purty .face.faceDown {
+  background-color: #DC422F;
+}
+
+.purty .face.faceLeft {
+  background-color: #009D54;
+}
+
+.purty .face.faceBack {
+  background-color: #F5B400;
+}
+
+.cube
+
+/*.cubelet > */
+.face>.wireframe {
+  display: none;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.cube .sticker {
+  width: 100%;
+  height: 100%;
+  background-color: #F0F;
+  border-radius: 0.1em;
+  text-align: center;
+}
+
+.cube .sticker.red {
+  background: #DC422F;
+}
+
+.cube .sticker.white {
+  background: #F3F3F3;
+}
+
+.cube .sticker.blue {
+  background: #3D81F6;
+}
+
+.cube .sticker.green {
+  background: #009D54;
+}
+
+.cube .sticker.orange {
+  background: #E87000;
+}
+
+.cube .sticker.yellow {
+  background: #F5B400;
+}
+
+.cube .sticker.stickerLogo {
+  background: #F3F3F3 url("../media/rubiksLogoClassic.png");
+  background-size: 100% 100%;
+  background-repeat: none;
+}
+
+.cube
+
+/*.cubelet >*/
+.face>.id {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 90%;
+  height: 90%;
+  font-size: 1em;
+  line-height: 0.9em;
+  text-align: center;
+  color: #000;
+}
+
+.cube
+
+/*.cubelet >*/
+.face>.id>.underline {
+  border-bottom: 1px solid #000;
+}
+
+.cube
+
+/*.cubelet > */
+.face.faceIntroverted>.id {
+  color: #FEFEFE;
+}
+
+.cube
+
+/*.cubelet >*/
+.face.faceIntroverted>.id>.underline {
+  border-bottom: 1px solid #FEFEFE;
+}
+
+.cube
+
+/*.cubelet >*/
+.face>.text {
+  display: none;
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #FFF;
+  font-size: 1em;
+  line-height: 1em;
+}
