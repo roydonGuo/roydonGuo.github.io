@@ -3024,11 +3024,6 @@ button {
   margin: 0 auto;
 }
 
-#aside-content .card-info #card-info-btn:hover {
-  margin: 0 18%;
-  transition: .3s;
-}
-
 #universe {
   display: block;
   position: fixed;
