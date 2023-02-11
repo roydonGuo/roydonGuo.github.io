@@ -6073,10 +6073,10 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus .menus_items .menus_item .menus_item_child {
   position: absolute;
-  right: -117%;
+  right: -145%;
   display: none;
   margin-top: 10px;
-  padding: 4px;
+  padding: 5px;
   width: max-content;
   border-radius: 10px !important;
   background-color: var(--sidebar-bg);
@@ -6111,7 +6111,7 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus .menus_items .menus_item .menus_item_child li a {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 15px;
   width: 100%;
   color: var(--font-color);
   text-shadow: none !important;
