@@ -127,7 +127,7 @@ body:has(#anMusic-page) #nav-music {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 20px;
 }
 
 #anMusic-page .aplayer-info .aplayer-controller .aplayer-bar-wrap {
