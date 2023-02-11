@@ -1372,7 +1372,7 @@ canvas:not(#ribbon-canvas),
   --roydon-card-mask: rgba(234,234,234,0.8);
   --roydon-hover-box-shadow: 0 5px 8px 5px rgba(69,151,233,0.188);
   --roydon-button-bg: rgba(255,255,255,0.8);
-  --roydon-button-hover-bg: #f69;
+  --roydon-button-hover-bg: #425aef;
   --roydon-nav-hover: #8a2be2;
   --roydon-state-dot-bg: #77ec9c;
   --roydon-a-color: #f2b94b;
@@ -5736,7 +5736,7 @@ h2.f4.text-normal.mb-3 {
   display: box;
   display: flex;
   width: 40px;
-  height: 80%;
+  height: 40px;
   color: #ffd700;
   position: relative;
   padding: 0 !important;
@@ -5893,7 +5893,7 @@ h2.f4.text-normal.mb-3 {
   background-color: var(--text-bg-hover);
 }
 #nav #nav_group #blog_name #site-name {
-  height: 45px;
+  height: 40px;
   padding: 0 5px;
   border-radius: 10px;
   margin-left: 5px;
@@ -5905,7 +5905,6 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus {
   height: 100%;
-  line-height: 1.5 !important;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -5929,10 +5928,12 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus .menus_items {
   display: inline;
+  height: 40px;
 }
 #nav #nav_group #menus .menus_items .menus_item {
   position: relative;
   display: inline-block;
+  height: 40px;
   padding: 0 8px;
   margin: auto 4px;
   border-radius: 10px;
@@ -5960,9 +5961,9 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus .menus_items .menus_item .menus_item_child {
   position: absolute;
-  right: -140%;
+  right: -117%;
   display: none;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 4px;
   width: max-content;
   border-radius: 10px !important;
@@ -5977,7 +5978,7 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus .menus_items .menus_item .menus_item_child:before {
   position: absolute;
-  top: -8px;
+  top: -10px;
   left: 0;
   width: 100%;
   height: 20px;
@@ -5998,7 +5999,7 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #menus .menus_items .menus_item .menus_item_child li a {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 5px 10px;
   width: 100%;
   color: var(--font-color);
   text-shadow: none !important;
@@ -6023,13 +6024,13 @@ h2.f4.text-normal.mb-3 {
   align-items: center;
 }
 #nav #nav_group #buttons div {
-  border-radius: 10px;
+  border-radius: 50%;
   -webkit-transition: 0.5s !important;
   -moz-transition: 0.5s !important;
   -o-transition: 0.5s !important;
   -ms-transition: 0.5s !important;
   transition: 0.5s !important;
-  background-color: rgba(0,0,0,0.063);
+  background-color: rgba(0,0,0,0.102);
   margin: 0 2px;
 }
 #nav #nav_group #buttons div a {
@@ -6039,8 +6040,8 @@ h2.f4.text-normal.mb-3 {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   line-height: 1;
   -webkit-box-align: center;
   -moz-box-align: center;
@@ -6059,7 +6060,7 @@ h2.f4.text-normal.mb-3 {
   font-size: 1.2rem;
 }
 #nav #nav_group #buttons div:hover {
-  background-color: var(--text-bg-hover);
+  background-color: var(--roydon-button-hover-bg);
 }
 #nav.show {
   opacity: 1;
@@ -6097,7 +6098,6 @@ h2.f4.text-normal.mb-3 {
   display: none;
 }
 #nav .site-page {
-  padding-bottom: 6px;
   display: inline-block;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   font-size: 0.78em;
@@ -8206,27 +8206,27 @@ blockquote.pullquote.right {
 }
 #article-container .timeline.blue {
   --timeline-color: #428bca;
-  --timeline-bg: rgba(66,139,202, 0.2);
+  --timeline-bg: rgba(66,139,202, 0.8);
 }
 #article-container .timeline.pink {
   --timeline-color: #ff69b4;
-  --timeline-bg: rgba(255,105,180, 0.2);
+  --timeline-bg: rgba(255,105,180, 0.8);
 }
 #article-container .timeline.red {
   --timeline-color: #f00;
-  --timeline-bg: rgba(255,0,0, 0.2);
+  --timeline-bg: rgba(255,0,0, 0.8);
 }
 #article-container .timeline.purple {
   --timeline-color: #6f42c1;
-  --timeline-bg: rgba(111,66,193, 0.2);
+  --timeline-bg: rgba(111,66,193, 0.8);
 }
 #article-container .timeline.orange {
   --timeline-color: #ff8c00;
-  --timeline-bg: rgba(255,140,0, 0.2);
+  --timeline-bg: rgba(255,140,0, 0.8);
 }
 #article-container .timeline.green {
   --timeline-color: #5cb85c;
-  --timeline-bg: rgba(92,184,92, 0.2);
+  --timeline-bg: rgba(92,184,92, 0.8);
 }
 #article-container .timeline .timeline-item {
   margin: 0 0 15px;
