@@ -184,7 +184,7 @@
 }
 
 .author-content-item .author-content-item-title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
 }
@@ -492,7 +492,7 @@
 
 .author-content-item .author-content-item-tips {
   opacity: 0.8;
-  font-size: 1rem;
+  font-size: 0.5em;
   margin-bottom: 0.5rem;
 }
 
@@ -2360,7 +2360,6 @@ img.footer_mini_logo:hover {
 #essay_page .author-content .author-content-item.essayPage {
   height: 20em;
   width: 83%;
-  background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/9mw29d.webp) left center / cover no-repeat;
   color: wheat;
   overflow: hidden;
 }
@@ -2368,12 +2367,11 @@ img.footer_mini_logo:hover {
 #essay_page .author-content .author-content-item.essayPage-right {
   width: 16%;
   height: 20em;
-  background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
   background-color: brown;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  color: rgb(122, 49, 6);
+  color: var(--font-color);
   overflow: hidden;
 }
 

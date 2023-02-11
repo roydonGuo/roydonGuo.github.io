@@ -1,8 +1,7 @@
 function whenDOMReady() {
   roydon.loadbg()
   // if (location.pathname == '/essay/') {
-  //   roydon.countUp()
-  //   roydon.essay()
+  //   roydon.essayInit()
   // }
   if (location.pathname.substring(0, 6) == '/tags/' || '/categories/' == location.pathname.substring(0, 12)) {
     roydon.catalogActive()

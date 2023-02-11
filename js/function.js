@@ -710,6 +710,13 @@ var roydon = {
       anMusicPage.querySelector('.aplayer-list').classList.remove("aplayer-list-hide");
     })
   },
+  // essayInit() {
+  //   $(function () {
+  //     $('#essay-list').jaliswall({
+  //       item: '.essay-item'
+  //     });
+  //   });
+  // }
 
 
 }
