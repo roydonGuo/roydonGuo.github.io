@@ -2358,7 +2358,7 @@ img.footer_mini_logo:hover {
 }
 
 #essay_page .author-content .author-content-item.essayPage {
-  height: 24em;
+  height: 20em;
   width: 83%;
   background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/9mw29d.webp) left center / cover no-repeat;
   color: wheat;
@@ -2367,9 +2367,32 @@ img.footer_mini_logo:hover {
 
 #essay_page .author-content .author-content-item.essayPage-right {
   width: 16%;
-  height: 24em;
+  height: 20em;
   background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
   background-color: brown;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: rgb(122, 49, 6);
+  overflow: hidden;
+}
+
+#gallery_page .author-content .author-content-item.galleryPage {
+  height: 20em;
+  width: 83%;
+  /* background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/9mw29d.webp) left center / cover no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: wheat;
+  overflow: hidden;
+}
+
+#gallery_page .author-content .author-content-item.galleryPage-right {
+  width: 16%;
+  height: 20em;
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   color: rgb(122, 49, 6);
   overflow: hidden;
@@ -3233,7 +3256,7 @@ div#post:hover {
 }
 
 #movies_page .author-content .author-content-item.item-left {
-  height: 24em;
+  height: 20em;
   width: 83%;
   background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/1kzdg1.webp) left center / cover no-repeat;
   color: wheat;
@@ -3242,16 +3265,18 @@ div#post:hover {
 
 #movies_page .author-content .author-content-item.item-right {
   width: 16%;
-  height: 24em;
+  height: 20em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e493df.jpg) left center / cover no-repeat;
   background-color: thistle;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
 }
 
 #article-container .author-content .author-content-item.item-left {
-  height: 24em;
+  height: 20em;
   width: 83%;
   background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/4xjgzz.webp) left center / cover no-repeat;
   color: wheat;
@@ -3260,16 +3285,18 @@ div#post:hover {
 
 #article-container .author-content .author-content-item.item-right {
   width: 16%;
-  height: 24em;
+  height: 20em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e52b53.jpg) left center / cover no-repeat;
   background-color: lavender;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;
 }
 
 #music_page .author-content .author-content-item.item-left {
-  height: 24em;
+  height: 20em;
   width: 83%;
   background: url(https://gcore.jsdelivr.net/gh/roydonGuo/CDN/siteBgZIP/m9ey79.webp) left center / cover no-repeat;
   color: wheat;
@@ -3278,9 +3305,11 @@ div#post:hover {
 
 #music_page .author-content .author-content-item.item-right {
   width: 16%;
-  height: 24em;
+  height: 20em;
   background: url(https://bu.dusays.com/2023/01/16/63c5537e4fc09.jpg) left center / cover no-repeat;
   background-color: bisque;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   color: rgb(200, 39, 14);
   overflow: hidden;

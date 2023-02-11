@@ -46,7 +46,7 @@
 
 .logPage-left {
   width: 83%;
-  height: 24em;
+  height: 20em;
   color: wheat;
   overflow: hidden;
   background-image: url("/log/bg.png");
@@ -90,8 +90,10 @@
 
 .logPage-right {
   width: 16%;
-  height: 24em;
+  height: 20em;
   background: url(https://bu.dusays.com/2022/11/17/637607ee5d734.gif) left center / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   background-color: brown;
   color: gold;
