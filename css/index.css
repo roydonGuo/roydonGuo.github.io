@@ -5907,6 +5907,7 @@ h2.f4.text-normal.mb-3 {
 }
 #nav #nav_group #blog_name #site-name {
   height: 40px;
+  line-height: 40px;
   padding: 0 5px;
   border-radius: 10px;
   margin-left: 5px;
@@ -5942,6 +5943,7 @@ h2.f4.text-normal.mb-3 {
 #nav #nav_group #menus .menus_items {
   display: inline;
   height: 40px;
+  line-height: 40px;
 }
 #nav #nav_group #menus .menus_items .menus_item {
   position: relative;
