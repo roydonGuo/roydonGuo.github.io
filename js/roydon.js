@@ -15,7 +15,6 @@ function whenDOMReady() {
 
 whenDOMReady()
 document.addEventListener("pjax:complete", whenDOMReady)
-
 // roydon.randoMcBgGif()//随机mcgif
 roydon.randomIndexVideo() //首页视频背景随机
 roydon.initIndexEssay() //初始化首页即可短文banner
