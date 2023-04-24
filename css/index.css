@@ -2270,7 +2270,7 @@ figure.highlight pre .javascript .function {
   background-size: 120% !important;
 }
 .category-lists li.category-list-item:nth-child(1) {
-  background: url('/img/category/android.webp');
+  background: url('/img/category/ai.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2321,7 +2321,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(2) {
-  background: url('/img/category/genshin.webp');
+  background: url('/img/category/android.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2372,7 +2372,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(3) {
-  background: url('/img/category/harmonyOS.webp');
+  background: url('/img/category/genshin.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2423,7 +2423,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(4) {
-  background: url('/img/category/spring.webp');
+  background: url('/img/category/harmonyOS.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2474,7 +2474,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(5) {
-  background: url('/img/category/code.webp');
+  background: url('/img/category/spring.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2525,7 +2525,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(6) {
-  background: url('/img/category/mc.webp');
+  background: url('/img/category/code.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2576,7 +2576,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(7) {
-  background: url('/img/category/mysql.webp');
+  background: url('/img/category/mc.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2627,7 +2627,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(8) {
-  background: url('/img/category/python.webp');
+  background: url('/img/category/mysql.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2678,7 +2678,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(9) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87e29eac.png');
+  background: url('/img/category/python.webp');
   background-size: 100%;
   background-position: center;
 }
@@ -2729,7 +2729,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(10) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f166d9.jpg');
+  background: url('https://bu.dusays.com/2022/11/17/6375f87e29eac.png');
   background-size: 100%;
   background-position: center;
 }
@@ -2780,7 +2780,7 @@ figure.highlight pre .javascript .function {
   margin-right: 4px;
 }
 .category-lists li.category-list-item:nth-child(11) {
-  background: url('/img/category/windows.webp');
+  background: url('https://bu.dusays.com/2022/11/17/6375f87f166d9.jpg');
   background-size: 100%;
   background-position: center;
 }
@@ -2826,6 +2826,57 @@ figure.highlight pre .javascript .function {
   background: rgba(0,0,0,0.2);
 }
 .category-lists li.category-list-item:nth-child(11) .category-list-count:before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f115';
+  margin-right: 4px;
+}
+.category-lists li.category-list-item:nth-child(12) {
+  background: url('/img/category/windows.webp');
+  background-size: 100%;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .category-lists li.category-list-item:nth-child(12) {
+    height: 120px;
+    width: 32.33%;
+  }
+}
+.category-lists li.category-list-item:nth-child(12) .category-list-link {
+  color: var(--roydon-a-color);
+  font-size: 20px;
+  font-weight: var(--roydon-a-font-weight);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 30% 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .category-lists li.category-list-item:nth-child(12) .category-list-link {
+    padding: 20% 0;
+  }
+}
+.category-lists li.category-list-item:nth-child(12) .category-list-link:hover {
+  color: var(--roydon-nav-hover);
+}
+.category-lists li.category-list-item:nth-child(12) .category-list-count {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  background: rgba(0,0,0,0.2);
+}
+.category-lists li.category-list-item:nth-child(12) .category-list-count:before {
   font-family: 'Font Awesome 6 Free';
   content: '\f115';
   margin-right: 4px;
@@ -4917,36 +4968,39 @@ span.categoryBar-list-count::before {
   font-size: 0.5rem;
 }
 li.categoryBar-list-item:nth-child(1) {
-  background: url('/img/category/android.webp');
+  background: url('/img/category/ai.webp');
 }
 li.categoryBar-list-item:nth-child(2) {
-  background: url('/img/category/genshin.webp');
+  background: url('/img/category/android.webp');
 }
 li.categoryBar-list-item:nth-child(3) {
-  background: url('/img/category/harmonyOS.webp');
+  background: url('/img/category/genshin.webp');
 }
 li.categoryBar-list-item:nth-child(4) {
-  background: url('/img/category/spring.webp');
+  background: url('/img/category/harmonyOS.webp');
 }
 li.categoryBar-list-item:nth-child(5) {
-  background: url('/img/category/code.webp');
+  background: url('/img/category/spring.webp');
 }
 li.categoryBar-list-item:nth-child(6) {
-  background: url('/img/category/mc.webp');
+  background: url('/img/category/code.webp');
 }
 li.categoryBar-list-item:nth-child(7) {
-  background: url('/img/category/mysql.webp');
+  background: url('/img/category/mc.webp');
 }
 li.categoryBar-list-item:nth-child(8) {
-  background: url('/img/category/python.webp');
+  background: url('/img/category/mysql.webp');
 }
 li.categoryBar-list-item:nth-child(9) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87e29eac.png');
+  background: url('/img/category/python.webp');
 }
 li.categoryBar-list-item:nth-child(10) {
-  background: url('https://bu.dusays.com/2022/11/17/6375f87f166d9.jpg');
+  background: url('https://bu.dusays.com/2022/11/17/6375f87e29eac.png');
 }
 li.categoryBar-list-item:nth-child(11) {
+  background: url('https://bu.dusays.com/2022/11/17/6375f87f166d9.jpg');
+}
+li.categoryBar-list-item:nth-child(12) {
   background: url('/img/category/windows.webp');
 }
 li.categoryBar-list-item {
