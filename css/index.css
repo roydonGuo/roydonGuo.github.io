@@ -1326,7 +1326,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --roydon-site-bg: url("https://w.wallhaven.cc/full/vq/wallhaven-vqojj8.jpg");
+  --roydon-site-bg: url("https://roydon-blog.oss-cn-shanghai.aliyuncs.com/background/wallhaven-vqojj8.webp");
   --roydon-bili-color: #f69;
   --roydon-pink: #ffc0cb;
   --roydon-hotpink-: #ff69b4;
@@ -1411,7 +1411,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url(https://w.wallhaven.cc/full/vq/wallhaven-vqojj8.jpg);
+  background: url(https://roydon-blog.oss-cn-shanghai.aliyuncs.com/background/wallhaven-vqojj8.webp);
   background-attachment: local;
   background-position: center;
   background-size: cover;
