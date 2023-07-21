@@ -1,0 +1,504 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>为hexo博客butterfly主题添加一个自定义live2d | roydon</title><meta name="keywords" content="JavaScript"><meta name="author" content="roydon,3133010060@qq.com"><meta name="copyright" content="roydon"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="为hexo博客butterfly主题添加一个自定义live2d仓库地址：GitHub - EYHN&#x2F;hexo-helper-live2d: Add the Sseexxyyy live2d to your hexo! 首先npm安装包： 1npm install --save hexo-helper-live2d 安装好包后就可以在你的博客文件夹下的_config.yml文件或主题文件夹下的的_c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为hexo博客butterfly主题添加一个自定义live2d">
+<meta property="og:url" content="https://www.roydon.top/posts/live2d.html">
+<meta property="og:site_name" content="roydon">
+<meta property="og:description" content="为hexo博客butterfly主题添加一个自定义live2d仓库地址：GitHub - EYHN&#x2F;hexo-helper-live2d: Add the Sseexxyyy live2d to your hexo! 首先npm安装包： 1npm install --save hexo-helper-live2d 安装好包后就可以在你的博客文件夹下的_config.yml文件或主题文件夹下的的_c">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/roydonGuo/Typora-Pic/md-pic202301141536531.png">
+<meta property="article:published_time" content="2023-07-21T17:21:20.000Z">
+<meta property="article:modified_time" content="2023-07-21T09:34:40.268Z">
+<meta property="article:author" content="roydon">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/roydonGuo/Typora-Pic/md-pic202301141536531.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.roydon.top/posts/live2d"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"X0C9B1Y395","apiKey":"647945f168ebe35551ed4db649f294a7","indexName":"roydon","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: roydon","link":"链接: ","source":"来源: roydon","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"pink","bgDark":"rgba(0, 0, 0, 0.8)","position":"top-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '为hexo博客butterfly主题添加一个自定义live2d',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-21 09:34:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_3603575_clr3kjixtq6.css"><link rel="stylesheet" href="//at.alicdn.com/t/c/font_3724351_hmmm4fjv1tc.css"><link rel="stylesheet" href="/css/spine.css"><link rel="stylesheet" href="/css/roydon.css"><link rel="stylesheet" href="/css/music.css"><link rel="stylesheet" href="/log/log.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><script defer src="https://cdn.cbd.int/jquery@latest/dist/jquery.min.js"></script><script defer src="/log/live2d.min.js"></script><script defer src="/log/live2dcubismcore.min.js"></script><div id="myscoll"></div><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="roydon" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="an_music_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">47</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon--article"></i><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-guidang"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-categories"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yulezhongxin"></i><span> 娱乐</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw iconfont icon-xiangce"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw iconfont icon-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw iconfont icon-dianying"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-kafei"></i><span> 休闲</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/animation/"><i class="fa-fw iconfont icon-anima"></i><span> 动画</span></a></li><li><a class="site-page child" href="/demo/"><i class="fa-fw iconfont icon-demo"></i><span> 试验</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw iconfont icon-game"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-xin"></i><span> 交友</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw iconfont icon-pinglun"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-links"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw iconfont icon-guanzhu"></i><span> 关注</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-shenghuo"></i><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i><span> 追番</span></a></li><li><a class="site-page child" href="/essay/"><i class="fa-fw iconfont icon-bibi"></i><span> 哔哔</span></a></li><li><a class="site-page child" href="/tools/"><i class="fa-fw iconfont icon-ziyuan"></i><span> 工具</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-wangluo"></i><span> 本站</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/log/"><i class="fa-fw iconfont icon-calendar"></i><span> 日志</span></a></li><li><a class="site-page child" href="/stats/"><i class="fa-fw iconfont icon-stats"></i><span> 统计</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw iconfont icon-kaixin"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div class="nav_group" id="nav_group"><div id="blog_name"><div class="list-button"><i class="fas fa-grip-vertical"></i><div class="list-content"><div class="list-content-group"><div class="group-title">推荐✨</div><div class="list-box"><a class="box-item" href="https://github.com/roydonGuo" rel="external nofollow" title="Github" target="_blank" one-link-mark="yes"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f3b3c7075.png"/><span>Github</span></a><a class="box-item" href="https://gitee.com/guo-yc" rel="external nofollow" title="Gitee" target="_blank" one-link-mark="yes"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f4abe21a9.png"/><span>Gitee</span></a><a class="box-item" href="https://blog.csdn.net/m0_51390535" rel="external nofollow" title="CSDN" target="_blank" one-link-mark="yes"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f3b3bb6f4.png"/><span>CSDN</span></a></div></div><div class="list-content-group"><div class="group-title">项目🔅</div><div class="list-box"><a class="box-item" href="https://github.com/roydonGuo/WeatherForcast4" title="" target="_blank" rel="noopener nofollow" one-link-mark="yes"><img class="entered exited" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f3b3bcf65.png"/><span>天气预报APP</span></a><a class="box-item" href="https://github.com/gcb1120/google2022/tree/develop" title="" target="_blank" rel="noopener nofollow" one-link-mark="yes"><img class="entered exited" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f3b3c75d9.png"/><span>Google2022</span></a></div></div></div></div><a id="site-name" href="javascript:;" onclick="pjax.loadUrl(&quot;/&quot;)">roydon</a></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon--article"></i><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-guidang"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-categories"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-yulezhongxin"></i><span> 娱乐</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw iconfont icon-xiangce"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw iconfont icon-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw iconfont icon-dianying"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-kafei"></i><span> 休闲</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/animation/"><i class="fa-fw iconfont icon-anima"></i><span> 动画</span></a></li><li><a class="site-page child" href="/demo/"><i class="fa-fw iconfont icon-demo"></i><span> 试验</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw iconfont icon-game"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-xin"></i><span> 交友</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw iconfont icon-pinglun"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw iconfont icon-links"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw iconfont icon-guanzhu"></i><span> 关注</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-shenghuo"></i><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw iconfont icon-bilibili"></i><span> 追番</span></a></li><li><a class="site-page child" href="/essay/"><i class="fa-fw iconfont icon-bibi"></i><span> 哔哔</span></a></li><li><a class="site-page child" href="/tools/"><i class="fa-fw iconfont icon-ziyuan"></i><span> 工具</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-wangluo"></i><span> 本站</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/log/"><i class="fa-fw iconfont icon-calendar"></i><span> 日志</span></a></li><li><a class="site-page child" href="/stats/"><i class="fa-fw iconfont icon-stats"></i><span> 统计</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw iconfont icon-kaixin"></i><span> 关于</span></a></li></ul></div></div></div><div id="buttons"><div id="search-button"><a class="site-page-to social-icon search" title="搜索文章"><i class="iconfont icon-sousuo fa-fw"></i></a></div><div id="console"><a class="site-page-to social-icon search" href="javascript:;" onclick="toggleWinbox()" title="打开功能窗口"><i class="iconfont icon-pc"></i></a></div><div id="switch-theme"><a class="site-page-to social-icon search" href="javascript:;" onclick="roydon.switchNightMode()" title="切换主题"><i class="iconfont icon-taiyang" id="dark-theme-coin"></i></a></div><div id="toggle-menu"> <a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">为hexo博客butterfly主题添加一个自定义live2d</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label"></span><time class="post-meta-date-created" datetime="2023-07-21T17:21:20.000Z" title=" 2023-07-21 17:21:20">2023-07-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label"></span><time class="post-meta-date-updated" datetime="2023-07-21T09:34:40.268Z" title=" 2023-07-21 09:34:40">2023-07-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">366</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="为hexo博客butterfly主题添加一个自定义live2d"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|&nbsp<span class="post-meta-dianzan"><a class="dianzan" href="javascript:void(0)" onclick="dianzan()"><i class="iconfont icon-dianzan"></i><span class="post-meta-label"> 点赞:</span><span class="dianzan-count">0</span></a></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="为hexo博客butterfly主题添加一个自定义live2d"><a href="#为hexo博客butterfly主题添加一个自定义live2d" class="headerlink" title="为hexo博客butterfly主题添加一个自定义live2d"></a>为hexo博客butterfly主题添加一个自定义live2d</h1><p>仓库地址：<a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">GitHub - EYHN/hexo-helper-live2d: Add the Sseexxyyy live2d to your hexo!</a></p>
+<p>首先npm安装包：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+<p>安装好包后就可以在你的博客文件夹下的<strong>_config.yml</strong>文件或主题文件夹下的的<strong>_config.butterfly.yml</strong>文件中引用啦~</p>
+<p>我这里在<strong>_config.yml</strong>文件中添加了如下配置：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## live2d</span></span><br><span class="line"><span class="comment">#https://github.com/EYHN/hexo-helper-live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 是否开启live2d</span></span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span> <span class="comment"># 脚本从本地引入</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span> <span class="comment"># 插件在站点上的根目录(相对路径)</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span> <span class="comment"># 脚本文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span> <span class="comment"># 模型文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span> <span class="comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中 </span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">false</span> <span class="comment"># 调试, 是否控制台日志</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">rem</span> <span class="comment"># vert_swimwear # 填写放进live2d_models文件夹中的模型文件夹名字</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">1</span> <span class="comment"># canvas 模型与canvas的缩放</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">150</span> <span class="comment"># 宽度</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">300</span> <span class="comment"># 高度</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span> <span class="comment"># 显示位置</span></span><br><span class="line">    <span class="attr">hOffset:</span> <span class="number">0</span> <span class="comment">#水平偏移</span></span><br><span class="line">    <span class="attr">vOffset:</span> <span class="number">-60</span> <span class="comment">#垂直偏移</span></span><br><span class="line">  <span class="attr">dialog:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment">#显示人物对话框</span></span><br><span class="line">    <span class="attr">hitokoto:</span> <span class="literal">false</span> <span class="comment">#使用一言API</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">false</span> <span class="comment"># 手机端是否显示</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.5</span> <span class="comment"># 移动设备上的缩放</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacity:</span> <span class="number">1</span> <span class="comment"># 透明度</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明：仔细看配置我这里用的模型不是默认提供的，而是自己的live2d模型。</p>
+</blockquote>
+<p>模型文件位置：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/roydonGuo/Typora-Pic@main/resource-image-20230721171540654.png" alt="image-20230721171540654"></p>
+<p>本站使用的<strong>rem</strong>所以配置中的<strong>use</strong>后面就写<strong>rem</strong>（文件夹名）</p>
+<p>实现效果：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/roydonGuo/Typora-Pic@main/resource-image-20230721171832611.png" alt="image-20230721171832611"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/roydonGuo">roydon</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.roydon.top/posts/live2d.html">https://www.roydon.top/posts/live2d.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.roydon.top" target="_blank">roydon</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="https://gcore.jsdelivr.net/gh/roydonGuo/Typora-Pic/md-pic202301141536531.png" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 投个币</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/aiwhohowwhy.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/04/24/64468ba41391f.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">AI工具究竟是帮手还是对手</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/JavaScript.html" title="JavaScript"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f87e29eac.png" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-08-24</div><div class="title">JavaScript</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div><div class="comment-barrage js-pjax"></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/ganyu.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">roydon</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">47</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div><a id="card-info-btn" href="/about"><i class="iconfont icon-taiyang"></i><span>了解更多</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://bu.dusays.com/2022/11/17/6375f81693911.jpg" target="_blank" title="QQ"><i class="iconbrand icon-qq"></i></a><a class="social-icon" href="https://bu.dusays.com/2022/11/17/6375f816936cb.png" target="_blank" title="WeChat"><i class="iconbrand icon-wechat"></i></a><a class="social-icon" href="https://github.com/roydonGuo" target="_blank" title="Github"><i class="iconbrand icon-github"></i></a><a class="social-icon" href="https://blog.csdn.net/m0_51390535" target="_blank" title="csdn"><i class="iconbrand icon-csdn"></i></a><a class="social-icon" href="https://mail.qq.com/" target="_blank" title="Email"><i class="iconbrand icon-email"></i></a></div></div><div class="card-widget card-announcement"><div id="player-container"></div> <div id="player-container2"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BAhexo%E5%8D%9A%E5%AE%A2butterfly%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AE%9A%E4%B9%89live2d"><span class="toc-number">1.</span> <span class="toc-text">为hexo博客butterfly主题添加一个自定义live2d</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/live2d.html" title="为hexo博客butterfly主题添加一个自定义live2d"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://gcore.jsdelivr.net/gh/roydonGuo/Typora-Pic/md-pic202301141536531.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="为hexo博客butterfly主题添加一个自定义live2d"/></a><div class="content"><a class="title" href="/posts/live2d.html" title="为hexo博客butterfly主题添加一个自定义live2d">为hexo博客butterfly主题添加一个自定义live2d</a><time datetime="2023-07-21T17:21:20.000Z" title=" 2023-07-21 17:21:20">2023-07-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/aiwhohowwhy.html" title="AI工具究竟是帮手还是对手"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/04/24/64468ba41391f.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="AI工具究竟是帮手还是对手"/></a><div class="content"><a class="title" href="/posts/aiwhohowwhy.html" title="AI工具究竟是帮手还是对手">AI工具究竟是帮手还是对手</a><time datetime="2023-04-24T22:05:38.000Z" title=" 2023-04-24 22:05:38">2023-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/MySQL%E7%B4%A2%E5%BC%95.html" title="MySQL索引"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/02/09/63e4ce1b46c75.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="MySQL索引"/></a><div class="content"><a class="title" href="/posts/MySQL%E7%B4%A2%E5%BC%95.html" title="MySQL索引">MySQL索引</a><time datetime="2023-02-11T21:57:41.000Z" title=" 2023-02-11 21:57:41">2023-02-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/MySQL%E5%9F%BA%E7%A1%80.html" title="MySQL基础"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/02/09/63e4ce1b46c75.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="MySQL基础"/></a><div class="content"><a class="title" href="/posts/MySQL%E5%9F%BA%E7%A1%80.html" title="MySQL基础">MySQL基础</a><time datetime="2023-02-09T18:32:45.000Z" title=" 2023-02-09 18:32:45">2023-02-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/RabbitMQ.html" title="RabbitMQ"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2023/02/01/63da3937d23af.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="RabbitMQ"/></a><div class="content"><a class="title" href="/posts/RabbitMQ.html" title="RabbitMQ">RabbitMQ</a><time datetime="2023-02-01T17:48:03.000Z" title=" 2023-02-01 17:48:03">2023-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/gateway.html" title="SpringCloud之gateway"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2022/11/17/6375f87e22964.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="SpringCloud之gateway"/></a><div class="content"><a class="title" href="/posts/gateway.html" title="SpringCloud之gateway">SpringCloud之gateway</a><time datetime="2023-01-27T23:28:41.000Z" title=" 2023-01-27 23:28:41">2023-01-27</time></div></div></div><div class="home-indicator"></div></div></div></div></main><footer id="footer"><div id="footer_deal"><a class="deal_link" href="" title="qq" target="_blank"><i class="iconbrand icon-qq"></i></a><a class="deal_link" href="" title="wechat" target="_blank"><i class="iconbrand icon-wechat"></i></a><a class="deal_link" href="" title="邮件" target="_blank"><i class="iconbrand icon-email"></i></a><img class="footer_mini_logo entered loading" style="border-radius:50%" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/hutao_hai.gif" onclick="btf.scrollToDest(0,500)" title="返回顶部"/><a class="deal_link" href="https://github.com/roydonGuo" title="github" target="_blank"><i class="iconbrand icon-github"></i></a><a class="deal_link" href="" title="csdn" target="_blank"><i class="iconbrand icon-csdn"></i></a><a class="deal_link" href="" title="bilibili" target="_blank"><i class="iconfont icon-bilibili"></i></a></div><div id="Jay-footer"><div class="footer-group"><h3 class="footer-title">直达</h3><div class="footer-links"><a class="footer-item" href="https://roydon.xyz" target="_blank">主页</a><a class="footer-item" href="/music">音乐欣赏</a><a class="footer-item" href="/movies">电影欣赏</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" href="/categories/Android/">Android</a><a class="footer-item" href="/categories/HUAWEI/">HUAWEI</a><a class="footer-item" href="/categories/Java/">Java</a></div></div><div class="footer-group"><h3 class="footer-title">关于</h3><div class="footer-links"><a class="footer-item" href="/about/">关于我</a><a class="footer-item" href="/link">友链</a><a class="footer-item" href="/fcircle/">朋友圈</a></div></div><div class="footer-group"><h3 class="footer-title">友链</h3><div class="footer-links" id="friend-links-in-footer"></div></div></div><div id="footer-banner"><div class="footer-banner-links"><div class="footer-banner-left"><div class="footer-banner-left"><div id="footer-banner-tips"></div><script src="https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js"></script><script>var typed = new Typed("#footer-banner-tips", {
+  strings: ["希望你所做的，能换来你所想拥有的一切。", "it's a common saying that man who has a sattled purpose will surelly succeed."],
+  startDelay: 200,
+  backDelay: 2000,
+  typeSpeed: 100,
+  loop: true,
+  backSpeed: 20
+})
+</script></div></div><div class="footer-banner-right"><a class="footer-banner-link" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" title="Hexo">框架</a><a class="footer-banner-link">|</a><a class="footer-banner-link" target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly" title="theme">主题</a><a class="footer-banner-link">|</a><a class="footer-banner-link" href="/about/" title="about">关于</a></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="iconfont icon-kaixin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="iconfont icon-bibi"></i></a><a id="switch_commentBarrage" href="javascript:switchCommentBarrage();" title="开关弹幕"><i class="iconfont icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div><script src="https://npm.elemecdn.com/vue@2.6.14"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://guo.yicheng.plus',
+      region: '',
+      onCommentLoaded: function () {
+        if (location.pathname == '/comments/') addDanmaku();
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://guo.yicheng.plus',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'n5bJDnhkFDPpUxlHphl01Fa6-gzGzoHsz',
+      appKey: 'N6dnp2zcXFvTon5Emp0cG3Nm',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://guo.yicheng.plus',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script>LA.init({id:"JsTC3BXZ3pFkbT8s",ck:"JsTC3BXZ3pFkbT8s"})</script><script>new LingQue.Monitor().init({id:"JsTC3BXZ3pFkbT8s",sendSuspicious:true});</script><script async pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script><script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script><script defer src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script><script defer src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script defer src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script defer src="//cdn.jsdelivr.net/npm/leancloud-storage@4.0.0/dist/av-min.js"></script><script defer src="/js/spine.js"></script><canvas id="universe"></canvas><script defer src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script async src="/roydon/random.js"></script><script defer src="/js/function.js"></script><script defer src="/js/roydon.js"></script><script defer src="/js/dianzan.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="14px" data-random="true" async="async"></script><script src="//code.tidio.co/z0lx6wwsfanr2xuagzl5gsszkidfuv2g.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://pan.anzhiy.cn/d/anzhiyu/js/Meting2.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/c/font_3603575_clr3kjixtq6.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '50ms');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '500ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('categoryBar-list-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('movies-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('essay-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '500ms');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"jsonPath":"/live2dw/assets/remu.model.json"},"display":{"width":150,"height":300,"position":"left","hOffset":0,"vOffset":-60},"dialog":{"enable":false,"hitokoto":false},"mobile":{"show":false,"scale":0.5},"react":{"opacity":1},"log":false});</script></body></html>
