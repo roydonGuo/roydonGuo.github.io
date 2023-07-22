@@ -6210,7 +6210,7 @@ h2.f4.text-normal.mb-3 {
 }
 #index-top .index-top-container .left-grop {
   width: 49%;
-  height: 400px;
+  height: 460px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -6247,7 +6247,7 @@ h2.f4.text-normal.mb-3 {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  height: 66%;
+  height: 71%;
   background: var(--card-bg);
   background-size: cover;
   border: var(--style-border);
@@ -6398,13 +6398,13 @@ h2.f4.text-normal.mb-3 {
 }
 #index-top .index-top-container .left-grop #categoryBar {
   width: 100%;
-  height: 30%;
+  height: 26%;
   background: var(--card-bg);
   border-radius: 16px;
 }
 #index-top .index-top-container .right-grop {
   width: 49%;
-  height: 400px;
+  height: 460px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -6426,7 +6426,7 @@ h2.f4.text-normal.mb-3 {
 }
 #index-top .index-top-container .right-grop .swiperPost {
   width: 100%;
-  height: 40%;
+  height: 49%;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -6531,7 +6531,7 @@ h2.f4.text-normal.mb-3 {
   animation: gradient 10s ease infinite;
 }
 #index-top .index-top-container .right-grop #about-card {
-  height: 56%;
+  height: 48%;
   background: var(--card-bg);
   border-radius: 16px;
 }
