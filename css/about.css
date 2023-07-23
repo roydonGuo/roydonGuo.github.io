@@ -52,6 +52,9 @@
 .author-content-item {
   width: 49%;
   border-radius: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: var(--roydon-box-shadow);
   position: relative;
   padding: 1rem 2rem;
