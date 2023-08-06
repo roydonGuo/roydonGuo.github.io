@@ -2250,7 +2250,7 @@ img.footer_mini_logo:hover {
 #footer-banner .footer-banner-links {
   display: flex;
   justify-content: space-between;
-  max-width: 88%;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
