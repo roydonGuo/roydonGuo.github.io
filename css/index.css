@@ -6794,6 +6794,7 @@ h2.f4.text-normal.mb-3 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  max-height: 50vh;
   -webkit-transition: filter 375ms ease-in 0.2s;
   -moz-transition: filter 375ms ease-in 0.2s;
   -o-transition: filter 375ms ease-in 0.2s;
