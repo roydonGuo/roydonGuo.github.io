@@ -393,7 +393,7 @@ var roydon = {
     const commentBarrageConfig = {
       maxBarrage: 1,
       barrageTime: 5000,
-      twikooUrl: "https://twikoo.roydon.cc",
+      twikooUrl: "https://twikoo.roydon.asia",
       accessToken: "04fdc390db1b4efd9ed7de5954e0e968",
       pageUrl: window.location.pathname,
       barrageTimer: [],
