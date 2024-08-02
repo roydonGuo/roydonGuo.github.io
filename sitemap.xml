@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.roydon.top/shenhe/shenhelh.json</loc>
-    
-    <lastmod>2024-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/stats/index.html</loc>
     
     <lastmod>2024-08-02</lastmod>
@@ -30,6 +21,15 @@
   
   <url>
     <loc>https://www.roydon.top/tools/index.html</loc>
+    
+    <lastmod>2024-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.roydon.top/shenhe/shenhelh.json</loc>
     
     <lastmod>2024-08-02</lastmod>
     
@@ -255,15 +255,6 @@
   
   <url>
     <loc>https://www.roydon.top/posts/live2d.html</loc>
-    
-    <lastmod>2024-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/posts/yscard.html</loc>
     
     <lastmod>2024-08-02</lastmod>
     
@@ -1004,13 +995,6 @@
   </url>
   
   <url>
-    <loc>https://www.roydon.top/tags/Genshin/</loc>
-    <lastmod>2024-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.roydon.top/tags/Android/</loc>
     <lastmod>2024-08-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -1126,13 +1110,6 @@
   
   <url>
     <loc>https://www.roydon.top/categories/HUAWEI/</loc>
-    <lastmod>2024-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.roydon.top/categories/Genshin/</loc>
     <lastmod>2024-08-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

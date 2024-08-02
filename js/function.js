@@ -1,12 +1,8 @@
 'use strict';
 
 var roydon = {
-  randomIndexVideo() { // 主页视频背景随机 
-    const videoCDN = ["https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao.mp4",
-      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao2.mp4",
-      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/nahida.mp4",
-      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4",
-      "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu4.mp4"
+  randomIndexVideo() { // 主页视频背景随机
+    const videoCDN = ["http://43.240.221.8:9000/roydon-blog/video/Soothing%20Minecraft%20%E2%80%93%20Glowing%20Caves.mp4"
     ]
     var indexVideo = document.querySelector("#index-video")
     if (indexVideo) {
@@ -596,7 +592,7 @@ var roydon = {
       //自动轮播
       autoplay: {
         delay: 3000, //时间 毫秒
-        disableOnInteraction: false, //用户操作之后是否停止自动轮播默认true 
+        disableOnInteraction: false, //用户操作之后是否停止自动轮播默认true
       },
       mousewheel: true,
     })
