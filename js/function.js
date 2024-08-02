@@ -4,6 +4,8 @@ var roydon = {
     randomIndexVideo() { // 主页视频背景随机
         const videoCDN = [
             "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/minecraft-relaxing-fireplace.mp4",
+            "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/black-hole.mp4",
+            "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/minecraft-glowing-caves.mp4",
             // "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/hutao2.mp4",
             // "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/nahida.mp4",
             // "https://gcore.jsdelivr.net/gh/roydonGuo/CDN/videos/ganyu_heimao.mp4",
