@@ -4254,7 +4254,7 @@ h1.page-title + .tag-cloud-list {
   -o-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  background: url("http://43.240.221.8:9000/roydon-blog/image/6zSXMVPeSqYP9ay.thumb.1000_0.jpeg");
+  background: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/avatar-cat.jpeg");
   background-size: cover;
 }
 #aside-content .sticky_layout .card-recent-post .aside-list {
@@ -6553,7 +6553,7 @@ h2.f4.text-normal.mb-3 {
   border-radius: 50%;
   margin: auto;
   border: 5px solid #b7d3ee;
-  background: url("http://43.240.221.8:9000/roydon-blog/image/6zSXMVPeSqYP9ay.thumb.1000_0.jpeg") no-repeat center center;
+  background: url("https://gcore.jsdelivr.net/gh/roydonGuo/CDN/avatar/avatar-cat.jpeg") no-repeat center center;
   background-size: cover;
   -webkit-animation-duration: 0.3s;
   -moz-animation-duration: 0.3s;
