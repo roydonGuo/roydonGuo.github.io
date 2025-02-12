@@ -3683,6 +3683,112 @@ figure.highlight pre .javascript .function {
   line-height: 1.5;
   overflow: hidden;
 }
+#projects_page .author-content {
+  margin-top: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  #projects_page .author-content .item-right {
+    display: none;
+  }
+}
+#projects_page #projects-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+#projects_page #projects-list .projects-item {
+  clear: both;
+  -webkit-box-shadow: var(--roydon-box-shadow);
+  box-shadow: var(--roydon-box-shadow);
+  height: 320px;
+  width: 32.66%;
+  background: var(--roydon-small-card-bg);
+  border-radius: 12px;
+  margin: 0 0 1rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  #projects_page #projects-list .projects-item {
+    width: 100%;
+  }
+}
+#projects_page #projects-list .projects-item .projects-item-pic {
+  width: 100%;
+  height: 60%;
+}
+#projects_page #projects-list .projects-item .projects-item-pic a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#projects_page #projects-list .projects-item .projects-item-pic a:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#projects_page #projects-list .projects-item .projects-item-pic img {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  -moz-transition: -moz-transform 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out;
+  -ms-transition: -ms-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+#projects_page #projects-list .projects-item .projects-item-info {
+  padding: 12px;
+}
+#projects_page #projects-list .projects-item .projects-item-info .projects-item-info-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#projects_page #projects-list .projects-item .projects-item-info .projects-item-info-actor {
+  border-bottom: 1px solid #808080;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#projects_page #projects-list .projects-item .projects-item-info .projects-item-info-comments {
+  font-weight: bold;
+  line-height: 1.5;
+  overflow: hidden;
+}
+#projects_page #projects-list .projects-item .projects-item-info .projects-item-info-tags .projects-item-info-tag {
+  background: #b4dbfc;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
 .tag-cloud-list a {
   display: inline-block;
   padding: 0 8px;
